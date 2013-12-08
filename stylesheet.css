@@ -211,8 +211,8 @@ h1 {
 @media only screen and (min-width : 421px) {
 #pull {
     display:none;}
-    }
     
- .menulist {
+.menulist {
  	display:none;	
  }
+}

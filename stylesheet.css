@@ -186,14 +186,14 @@ h1 {
 	}
 	
 @media only screen and (max-width : 480px) {  
-    .nav {  
+    .navlinks {  
         display: none;  
         float: none;  
         width: 100%;}
     #pull {
         display:block;}
     #pull:after {  
-        content:'nav'';  
+        content:''';  
        }
     
     #menu { background-color:#ffffff;

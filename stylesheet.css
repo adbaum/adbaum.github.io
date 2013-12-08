@@ -7,10 +7,12 @@ background-position:center;
 }
 
 .nav {
-    background-color:#8BBDAE;
+    background-color:#000000;
     text-align:center;
     position:fixed;
     width:100%;
+    opacity:0.8;
+    filter:alpha(opacity=80); 
     }
 
 .nav a {
@@ -18,6 +20,8 @@ background-position:center;
     text-decoration:none;
     font-family:tahoma;
     padding:20px
+    opacity:0.8;
+    filter:alpha(opacity=80); 
     }
 
 .nav a:hover {
@@ -25,6 +29,8 @@ background-position:center;
     text-decoration:none;
     font-family:tahoma;
     padding:20px
+    opacity:0.8;
+    filter:alpha(opacity=80); 
     }
     
  .nav a:visited {
@@ -32,15 +38,21 @@ background-position:center;
     text-decoration:none;
     font-family:tahoma;
     padding:20px
+    opacity:0.8;
+    filter:alpha(opacity=80); 
     }
 
 .navlinks {
     display:inline-block;
     padding:13px;
+    opacity:0.8;
+    filter:alpha(opacity=80); 
     }
 
 .navlinks:hover {
     background-color:#404040;
+    opacity:0.8;
+    filter:alpha(opacity=80); 
     }
 
 .buffer {

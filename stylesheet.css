@@ -11,8 +11,8 @@ background-position:center;
     text-align:center;
     position:fixed;
     width:100%;
-    opacity:0.8;
-    filter:alpha(opacity=80); 
+    opacity:0.5;
+    filter:alpha(opacity=50); 
     }
 
 .nav a {
@@ -20,8 +20,8 @@ background-position:center;
     text-decoration:none;
     font-family:tahoma;
     padding:20px
-    opacity:0.8;
-    filter:alpha(opacity=80); 
+    opacity:0.5;
+    filter:alpha(opacity=50); 
     }
 
 .nav a:hover {
@@ -29,8 +29,8 @@ background-position:center;
     text-decoration:none;
     font-family:tahoma;
     padding:20px
-    opacity:0.8;
-    filter:alpha(opacity=80); 
+    opacity:0.5;
+    filter:alpha(opacity=50); 
     }
     
  .nav a:visited {
@@ -38,21 +38,21 @@ background-position:center;
     text-decoration:none;
     font-family:tahoma;
     padding:20px
-    opacity:0.8;
-    filter:alpha(opacity=80); 
+    opacity:0.5;
+    filter:alpha(opacity=50); 
     }
 
 .navlinks {
     display:inline-block;
     padding:13px;
-    opacity:0.8;
-    filter:alpha(opacity=80); 
+    opacity:0.5;
+    filter:alpha(opacity=50); 
     }
 
 .navlinks:hover {
     background-color:#404040;
-    opacity:0.8;
-    filter:alpha(opacity=80); 
+    opacity:0.5;
+    filter:alpha(opacity=50); 
     }
 
 .buffer {

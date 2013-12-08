@@ -196,7 +196,7 @@ h1 {
         content:''';  
        }
     
-    #menu { background-color:#ffffff;
+    .menu { background-color:#ffffff;
     text-align:center;
     position:fixed;
     width:100%;

@@ -205,7 +205,8 @@ h1 {
     top:0px;
     left:0px;
     box-shadow: 1px 2px 3px 0px #5E5E5E;
-    display:block;}
+    display:block;
+    padding:20px}
     
     #menu { background-color:#ffffff;
     text-align:center;

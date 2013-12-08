@@ -7,7 +7,7 @@ background-position:center;
 }
 
 .nav {
-    background-color:#FFAA7B;
+    background-color:#ffffff;
     text-align:center;
     position:fixed;
     width:100%;
@@ -18,7 +18,7 @@ background-position:center;
     }
 
 .nav a {
-    color:#ffffff;
+    color:#000000;
     text-decoration:none;
     font-family:tahoma,sans-serif;
     padding:20px

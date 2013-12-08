@@ -67,7 +67,7 @@ background-position:center;
     text-align:center;
     width:100%;
     min-height:100%;
-    margin:20px;
+    float:left;
     }
 
 .sectionhead {

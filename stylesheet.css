@@ -196,7 +196,7 @@ h1 {
         content:''';  
        }
     
-    #menulist {
+    .menulist {
     background-color:#ffffff;
     text-align:center;
     position:fixed;
@@ -213,6 +213,6 @@ h1 {
     display:none;}
     }
     
- #menulist {
+ .menulist {
  	display:none;	
  }

@@ -119,7 +119,7 @@ background-position:center;
    margin:5px;
    vertical-align:top;
    display:inline-block;
-  width:382px;
+  max-width:382px;
   padding:10px;
   }
 

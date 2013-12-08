@@ -20,8 +20,6 @@ background-position:center;
     text-decoration:none;
     font-family:tahoma;
     padding:20px
-    opacity:0.5;
-    filter:alpha(opacity=50); 
     }
 
 .nav a:hover {
@@ -29,8 +27,6 @@ background-position:center;
     text-decoration:none;
     font-family:tahoma;
     padding:20px
-    opacity:0.5;
-    filter:alpha(opacity=50); 
     }
     
  .nav a:visited {
@@ -38,8 +34,6 @@ background-position:center;
     text-decoration:none;
     font-family:tahoma;
     padding:20px
-    opacity:0.5;
-    filter:alpha(opacity=50); 
     }
 
 .navlinks {

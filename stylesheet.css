@@ -26,6 +26,13 @@ background-position:center;
     font-family:tahoma;
     padding:15px
     }
+    
+ .nav a:visited {
+    color:#ffffff;
+    text-decoration:none;
+    font-family:tahoma;
+    padding:15px
+    }
 
 .navlinks {
     display:inline-block;

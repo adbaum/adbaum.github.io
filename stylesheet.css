@@ -201,7 +201,7 @@ h1 {
     left:0px;
     box-shadow: 1px 2px 3px 0px #5E5E5E;}
     #pull:after {  
-        content:".nav";  
+        content:"";  
         background-color:#ffffff;
     text-align:center;
     position:fixed;
@@ -214,15 +214,7 @@ h1 {
 
 @media only screen and (min-width : 481px) {
 #pull {
-    display:none;
-    background-color:#ffffff;
-    text-align:center;
-    position:fixed;
-    width:100%;
-    z-index:10px;
-    top:0px;
-    left:0px;
-    box-shadow: 1px 2px 3px 0px #5E5E5E;}
+    display:none;}
     }
 
     
@@ -242,4 +234,4 @@ $(window).resize(function(){
     if(w > 320 && menu.is(':hidden')) {  
         menu.removeAttr('style');  
     }  
-});   
+});    

@@ -185,3 +185,53 @@ h1 {
 	line-height:10px;
 	}
 	
+@media only screen and (max-width : 480px) {  
+    .nav {  
+        display: none;  
+        float: none;  
+        width: 100%;}
+    #pull {
+        display:block;
+        background-color:#ffffff;
+    text-align:center;
+    position:fixed;
+    width:100%;
+    z-index:10px;
+    top:0px;
+    left:0px;
+    box-shadow: 1px 2px 3px 0px #5E5E5E;}
+    #pull:after {  
+        content:"";  
+        background-color:#ffffff;
+    text-align:center;
+    position:fixed;
+    width:100%;
+    z-index:10px;
+    top:0px;
+    left:0px;
+    box-shadow: 1px 2px 3px 0px #5E5E5E;}
+        }
+
+@media only screen and (min-width : 481px) {
+#pull {
+    display:none;}
+    }
+
+    
+$(function() {  
+    var pull        = $('#pull');  
+        menu        = $('.nav');  
+        menuHeight  = menu.height();  
+  
+    $(pull).on('click', function(e) {  
+        e.preventDefault();  
+        menu.slideToggle();  
+    });  
+});  
+
+$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+});   

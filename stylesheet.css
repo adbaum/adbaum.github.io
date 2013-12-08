@@ -12,7 +12,6 @@ background-position:center;
     position:fixed;
     width:100%;
     z-index:10px;
-    padding:10px;
     }
 
 .nav a {
@@ -68,7 +67,7 @@ background-position:center;
     text-align:center;
     width:100%;
     min-height:100%;
-    margin:10px;
+    margin-right:10px;
     }
 
 .sectionhead {

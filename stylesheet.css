@@ -215,12 +215,21 @@ h1 {
     z-index:10px;
     top:0px;
     left:0px;
-    box-shadow: 1px 2px 3px 0px #5E5E5E;
-    	
-    }
+    box-shadow: 1px 2px 3px 0px #5E5E5E;}
+    
+    #menulist {
+    	font-family:Tahoma,sans-serif;
+  color:#A3A3A3;
+  font-size:15px;
+  	text-decoration:none;}
+  	
         }
 
 @media only screen and (min-width : 421px) {
 #pull {
     display:none;}
     }
+    
+ #menulist {
+ 	display:none;	
+ }

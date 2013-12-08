@@ -43,7 +43,8 @@ background-position:center;
     }
 
 .navlinks:hover {
-    background-color:#D4D4D4;
+    background-color:ffffff;
+    opacity:0.5;
     }
 
 .buffer {

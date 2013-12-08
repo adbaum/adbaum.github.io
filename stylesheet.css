@@ -12,6 +12,7 @@ background-position:center;
     position:fixed;
     width:100%;
     z-index:10px;
+    margin:auto;
     }
 
 .nav a {

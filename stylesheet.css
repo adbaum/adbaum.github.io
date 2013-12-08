@@ -59,12 +59,14 @@ background-position:center;
    font-family:Tahoma;
     font-size:90px;
     color:#ffffff;
+    box-shadow: 1px 2px 3px 0px #5E5E5E;
     }
     
 .buffer2 {
    font-family:Tahoma;
    font-size:20px;
    color:#ffffff;
+   box-shadow: 1px 2px 3px 0px #5E5E5E;
     }
 
 .main {

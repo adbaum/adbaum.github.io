@@ -196,18 +196,6 @@ h1 {
         content:''';  
        }
     
-    .navlinks2 {  
-    background-color:#ffffff;
-    text-align:center;
-    position:fixed;
-    width:100%;
-    z-index:10px;
-    top:0px;
-    left:0px;
-    box-shadow: 1px 2px 3px 0px #5E5E5E;
-    display:block;
-    padding:13px}
-    
     #menu { background-color:#ffffff;
     text-align:center;
     position:fixed;
@@ -218,10 +206,15 @@ h1 {
     box-shadow: 1px 2px 3px 0px #5E5E5E;}
     
     #menulist {
-    	font-family:Tahoma,sans-serif;
-  color:#A3A3A3;
-  font-size:15px;
-  	text-decoration:none;}
+    display:block;
+     background-color:#ffffff;
+    text-align:center;
+    position:fixed;
+    width:100%;
+    z-index:10px;
+    top:0px;
+    left:0px;
+    box-shadow: 1px 2px 3px 0px #5E5E5E;}
   	
         }
 

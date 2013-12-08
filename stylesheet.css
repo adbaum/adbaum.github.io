@@ -193,7 +193,7 @@ h1 {
     #pull {
         display:block;}
     #pull:after {  
-        content:"";  
+        content:'nav'';  
        }
     
     #menu { background-color:#ffffff;

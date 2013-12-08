@@ -10,9 +10,9 @@ background-position:center;
     background-color:#000000;
     text-align:center;
     position:fixed;
-    width:98%;
+    width:100%;
     z-index:10px;
-    padding-left:10px;
+    display:block;
     }
 
 .nav a {

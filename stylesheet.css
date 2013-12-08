@@ -74,6 +74,10 @@ background-position:center;
     min-height:100%;
     }
 
+#scratch {
+	text-align:center;
+}
+
 .sectionhead {
     text-align:center;
     font-family:Tahoma;

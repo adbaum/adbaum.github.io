@@ -11,8 +11,8 @@ background-position:center;
     text-align:center;
     position:fixed;
     width:100%;
-    opacity:0.5;
-    filter:alpha(opacity=50); 
+    opacity:0.7;
+    filter:alpha(opacity=70); 
     }
 
 .nav a {
@@ -39,14 +39,14 @@ background-position:center;
 .navlinks {
     display:inline-block;
     padding:13px;
-    opacity:0.5;
-    filter:alpha(opacity=50); 
+    opacity:0.7;
+    filter:alpha(opacity=70); 
     }
 
 .navlinks:hover {
     background-color:#404040;
-    opacity:0.5;
-    filter:alpha(opacity=50); 
+    opacity:0.7;
+    filter:alpha(opacity=70); 
     }
 
 .buffer {

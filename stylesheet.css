@@ -57,11 +57,13 @@ background-position:center;
 .buffer1 {
    font-family:Tahoma;
     font-size:90px;
+    color:#ffffff;
     }
     
 .buffer2 {
    font-family:Tahoma;
    font-size:20px;
+   color:#ffffff;
     }
 
 .main {

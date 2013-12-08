@@ -24,14 +24,14 @@ background-position:center;
     }
 
 .nav a:hover {
-    color:#707070;
+    color:#000000;
     text-decoration:none;
     font-family:tahoma;
     padding:20px
     }
     
  .nav a:visited {
-    color:#707070;
+    color:#000000;
     text-decoration:none;
     font-family:tahoma;
     padding:20px
@@ -43,7 +43,7 @@ background-position:center;
     }
 
 .navlinks:hover {
-    background-color:#404040;
+    background-color:#D4D4D4;
     }
 
 .buffer {

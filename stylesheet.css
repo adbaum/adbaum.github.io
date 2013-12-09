@@ -205,8 +205,13 @@ h1 {
     top:0px;
     left:0px;
     box-shadow: 1px 2px 3px 0px #5E5E5E;}
-  	
-        }
+    
+    .menulist2 {
+  	color:#000000;
+    	text-decoration:none;
+    	font-family:tahoma,sans-serif;
+	padding:20px
+        }}
 
 @media only screen and (min-width : 421px) {
 #pull {
@@ -214,4 +219,8 @@ h1 {
     
 .menulist {
  display:none;}
+ 
+.menulist2 {
+  	display:none;
+        }
 }

@@ -78,6 +78,7 @@ background-color:#F9C76E;
     
 .buffer2 {
    font-family:'Open-Sans', Tahoma,sans-serif;
+   font-weight:700;
    font-size:20px;
    color:#ffffff;
     }
@@ -97,6 +98,7 @@ background-color:#F9C76E;
     text-align:center;
     font-family:'Open-Sans',Tahoma,sans-serif;
     font-size:30px;
+    font-weight:700;
     }
     
 .sectionbody {

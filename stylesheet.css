@@ -220,7 +220,7 @@ p  {
 	font-size:15px;
 }
 	
-@media only screen and (max-width:600px) {  
+@media only screen and (max-width : 600px) {  
     .nav {  
         display: none;  
         float: none;  
@@ -247,13 +247,15 @@ p  {
 
 }
 
-@media only screen and (min-width:601px) {
+@media only screen and (min-width : 601px) {
 
 #pull {
     display:none;}
     
 .menulist {
-	display:none;}
+	display:none;
+	float: none;  
+        width: 100%;}
 
 .navlinks2 {
 	display:none;}

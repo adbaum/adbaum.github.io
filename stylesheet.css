@@ -55,10 +55,12 @@ background-color:#F9C76E;
     border-bottom:1px solid #E8E8E8;
     padding-top:6px;
     padding-bottom:6px;
+    color:#000000;
     }
 
 .navlinks2:hover {
 	background-color:#E8E8E8;
+	color:#000000;
     width:100%;
     text-align:center;
     border-bottom:1px solid #E8E8E8;
@@ -68,6 +70,7 @@ background-color:#F9C76E;
     
 .navlinks3 {
     display:inline-block;
+    color:#000000;
     width:100%;
     text-align:center;
     border-bottom:1px solid #E8E8E8;
@@ -79,6 +82,7 @@ background-color:#F9C76E;
 
 .navlinks3:hover {
 	background-color:#E8E8E8;
+	color:#000000;
     width:100%;
     text-align:center;
     border-bottom:1px solid #E8E8E8;

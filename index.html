@@ -18,7 +18,7 @@
 <script>
 $(function() {  
     var pull        = $('#pull');  
-        menu        = $('nav.menulist2');  
+        menu        = $('div.menulist2');  
         menuHeight  = menu.height();  
   
     $(pull).on('click', function(e) {  
@@ -29,7 +29,7 @@ $(function() {
    
 $(window).resize(function(){  
     var w = $(window).width();  
-    if(w > 600 && menu.is(':hidden')) {  
+    if(w > 320 && menu.is(':hidden')) {  
         menu.removeAttr('style');  
     }  
 });
@@ -43,7 +43,7 @@ $(window).resize(function(){
       <div class="navlinks2"><a href='#designer'>Designer</a></div>
       <div class="navlinks2"><a href='#leader'>Leader</a></div>
       <div class="navlinks3"><a href='#contact'>Contact</a></div>
-      </div><a href="#" id='pull'>Menu</a></div>
+      </div><a href="#" id="pull">Menu</a></div>
     <div class="nav">
       <div class="navlinks"><a href='#home'>Home</a></div>
       <div class="navlinks"><a href='#designer'>Designer</a></div>

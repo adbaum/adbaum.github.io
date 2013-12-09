@@ -113,7 +113,8 @@ background-color:#F9C76E;
     text-align:center;
     width:100%;
     min-height:100%;
-    max-width:1080px;
+    max-width:1800px;
+    float:center;
     }
 
 #scratch {

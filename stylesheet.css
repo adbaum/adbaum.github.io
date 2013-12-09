@@ -93,7 +93,6 @@ background-color:#F9C76E;
     padding-top:150px;
     padding-bottom:400px;
     display:block;
-    float:center;
     text-align:center;
     width:100%;
     }
@@ -117,8 +116,7 @@ background-color:#F9C76E;
     width:100%;
     min-height:100%;
     max-width:1300px;
-    display:block;
-    float:center;
+   margin:auto;
     }
 
 hr {

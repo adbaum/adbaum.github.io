@@ -111,8 +111,6 @@ background-color:#F9C76E;
 .main {
     background-color:#ffffff;
     text-align:center;
-    display:block;
-    float:center;
     max-width:1300px;
     width:100%;
     min-height:100%;

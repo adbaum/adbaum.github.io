@@ -246,8 +246,6 @@ p  {
     .menulist2 {
 display:none;}
 
-#lastdiv {
-	display:none;
 }
 
 }
@@ -258,9 +256,5 @@ display:none;}
     
 .menulist {
  display:none;}
- 
-#horizontal {
-	display:none;
-}
  
 }

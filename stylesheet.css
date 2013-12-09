@@ -64,6 +64,25 @@ background-color:#F9C76E;
     padding-top:6px;
     padding-bottom:6px;
     }
+    
+.navlinks3 {
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    border-bottom:1px solid #E8E8E8;
+    padding-top:6px;
+    padding-bottom:6px;
+    margin-bottom:6px;
+    }
+
+.navlinks3:hover {
+    width:100%;
+    text-align:center;
+    border-bottom:1px solid #E8E8E8;
+    padding-top:6px;
+    padding-bottom:6px;
+    margin-bottom:6px;
+    }
 
 .buffer {
     padding-top:150px;

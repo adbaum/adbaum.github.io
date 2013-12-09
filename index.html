@@ -18,7 +18,7 @@
 <script>
 $(function() {
 			var pull 		= $('#pull');
-				menu 		= $('div.menulist');
+				menu 		= $('div.menulist2');
 				menuHeight	= menu.height();
 
 			$(pull).on('click', function(e) {
@@ -28,7 +28,7 @@ $(function() {
 
 			$(window).resize(function(){
         		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
+        		if(w > 600 && menu.is(':hidden')) {
         			menu.removeAttr('style');
         		}
     		});

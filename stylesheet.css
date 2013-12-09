@@ -244,9 +244,12 @@ p  {
     padding-bottom:13px;}
     
     .menulist2 {
-display:none;
+display:none;}
+
+#lastdiv {
+	display:none;
 }
-    
+
 }
 
 @media only screen and (min-width : 601px) {
@@ -255,5 +258,9 @@ display:none;
     
 .menulist {
  display:none;}
+ 
+#horizontal {
+	display:none;
+}
  
 }

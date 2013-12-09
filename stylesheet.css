@@ -56,16 +56,17 @@ background-color:#F9C76E;
     padding-top:6px;
     padding-bottom:6px;
     color:#000000;
+    font-family:'Open-Sans'tahoma,sans-serif;
     }
 
 .navlinks2:hover {
 	background-color:#E8E8E8;
 	color:#000000;
-    width:100%;
-    text-align:center;
-    border-bottom:1px solid #E8E8E8;
-    padding-top:6px;
-    padding-bottom:6px;
+    }
+    
+.navlinks2:visited {
+	background-color:#E8E8E8;
+	color:#000000;
     }
     
 .navlinks3 {
@@ -78,17 +79,17 @@ background-color:#F9C76E;
     padding-bottom:6px;
     margin-bottom:6px;
     margin-bottom:12px;
+    font-family:'Open-Sans'tahoma,sans-serif;
     }
 
 .navlinks3:hover {
 	background-color:#E8E8E8;
 	color:#000000;
-    width:100%;
-    text-align:center;
-    border-bottom:1px solid #E8E8E8;
-    padding-top:6px;
-    padding-bottom:6px;
-    margin-bottom:12px;
+    }
+
+.navlinks3:visited {
+	background-color:#E8E8E8;
+	color:#000000;
     }
 
 .buffer {

@@ -204,7 +204,8 @@ h1 {
     z-index:10px;
     top:0px;
     left:0px;
-    box-shadow: 1px 2px 3px 0px #5E5E5E;}
+    box-shadow: 1px 2px 3px 0px #5E5E5E;
+    padding:13px;}
     
     .menulist2 {
 display:none;

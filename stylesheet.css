@@ -113,9 +113,12 @@ background-color:#F9C76E;
     text-align:center;
     width:100%;
     min-height:100%;
-    max-width:1300px;
-    float:middle;
     }
+
+hr {
+	width:60%;
+	color:#E8E8E8;
+}
 
 #scratch {
 	text-align:center;

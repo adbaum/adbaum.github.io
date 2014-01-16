@@ -21,7 +21,7 @@
       font-size:15pt;
       }
       
-    .slide1 {
+    #slide1 {
       background-image: url('http://upload.wikimedia.org/wikipedia/commons/8/8c/20080615_Wrigley_Building_clock_and_Tribune_Tower_from_Sixteen.jpg');
       background-position:fixed;
       background-size:100%;
@@ -30,7 +30,7 @@
       height:600px;
     }
     
-    .slide2 {
+    #slide2 {
       background-image: url('http://upload.wikimedia.org/wikipedia/commons/3/36/South-Bend-1866.gif');
       background-position:fixed;
       background-size:100%;
@@ -84,8 +84,8 @@ $.fn.stopAtTop= function () {
 };
 })(window);
 
-$('.slide1').stopAtTop();
-$('.slide2').stopAtTop();
+$('#slide1').stopAtTop();
+$('#slide2').stopAtTop();
 $('#three').stopAtTop();
 $('#four').stopAtTop();
     
@@ -95,10 +95,10 @@ $('#four').stopAtTop();
   </head>
   <body>
   
-  <div class="slide1">
+  <div id="slide1">
     <span class="title">Hello world.</span>
   </div>
-  <div class="slide2">
+  <div id="slide2">
     <span class="title">Hello world.</span>
   </div>
   

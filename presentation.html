@@ -5,6 +5,11 @@
     <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
     
   <style>
+    body {
+      background-image:url('http://www.artfinding.com/images/svv/1/664/roy_lichtenstein_roy_lichtenstein_19231997_crying_girl_1963-268-1.jpg'>);
+      background-position:fixed;
+      background-width:100%;
+  
     .container {
       background-color:#ffffff;
       width:100%;
@@ -16,91 +21,36 @@
       font-weight:700;
       }
       
-    span {
+    .body {
+      text-align:center;
+      display:block;
+      width:100%;
       font-family:'Monday';
       font-size:15pt;
-      }
+      padding:15%;
       
-    #slide1 {
-      background-image: url('http://upload.wikimedia.org/wikipedia/commons/8/8c/20080615_Wrigley_Building_clock_and_Tribune_Tower_from_Sixteen.jpg');
-      background-position:fixed;
-      background-size:100%;
+      }
+    
+    .buffer {
       text-align:center;
-      display:block;
-      height:600px;
+      width:100%;
+      font-family:'Monda';
+      color:#ffffff;
+      font-size:30pt;
+      font-weight:700;
+      padding-top:200pt;
+      padding-bottom:200pt;
     }
-    
-    #slide2 {
-      background-image: url('http://upload.wikimedia.org/wikipedia/commons/3/36/South-Bend-1866.gif');
-      background-position:fixed;
-      background-size:100%;
-      text-align:center;
-      display:block;
-      height:600px;
-    }
-    
-    
-    (function(window){
-$.fn.stopAtTop= function () {
-    var $this = this,
-        $window = $(window),
-        thisPos = $this.offset().top,
-        //thisPreservedTop = $this.css("top"),
-        setPosition,
-        under,
-        over;
-
-    under = function(){
-        if ($window.scrollTop() < thisPos) {
-            $this.css({
-                position: 'absolute',
-                top: ""
-            });
-            setPosition = over;
-        }
-    };
-
-    over = function(){
-        if (!($window.scrollTop() < thisPos)){
-            $this.css({
-                position: 'fixed',
-                top: 0
-            });
-            setPosition = under;
-        }
-    };
-
-    setPosition = over;
-
-    $window.resize(function()
-    {
-        bumperPos = pos.offset().top;
-        thisHeight = $this.outerHeight();
-        setPosition();
-    });
-
-    $window.scroll(function(){setPosition();});
-    setPosition();
-};
-})(window);
-
-$('#slide1').stopAtTop();
-$('#slide2').stopAtTop();
-$('#three').stopAtTop();
-$('#four').stopAtTop();
-    
     
   </style>
   
   </head>
   <body>
   
-  <div id="slide1">
-    <span class="title">Hello world.</span>
-  </div>
-  <div id="slide2">
-    <span class="title">Hello world.</span>
-  </div>
+    <div style="buffer">Hello World.</div>
+    <div style="body">Hello World.</div>
+    <div style="buffer">Hello World.</div>
+    <div style="body">Hello World.</div>
   
   
   

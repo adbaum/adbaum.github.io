@@ -103,6 +103,10 @@
       border-bottom:2px solid #ffffff;
       }
       
+      .navmobile {
+      display:none;
+      }
+      
       @media (max-width: 400px) {
       .article {
       width:80%;
@@ -137,6 +141,21 @@
       .navbar {
       display:none;
       }
+      
+      .navmobile {
+      position:fixed;
+      z-index:10;
+      text-align:center;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      }
+      
       }
       
       @media (min-width: 401px) and (max-width: 800px) {
@@ -148,6 +167,10 @@
       .article2 {
       width:70%;
       margin:0 auto;
+      }
+      
+      .navmobile {
+      display:none;
       }
       
       p {
@@ -179,6 +202,8 @@
     
     <body>
       <div class="navbar"><b>Part</b><a class="navlinks" href="">One</a><a class="navlinks" href="">Two</a><a class="navlinks" href="">Three</a><a class="navlinks" href="">Four</a></div>
+      <div class="navmobile">Menu</div>
+      
       <div class="divbuffer"><br></div>
       <div class="divbottom">
         <div class="article">

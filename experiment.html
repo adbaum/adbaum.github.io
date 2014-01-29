@@ -221,18 +221,20 @@
       
     </style>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
-      
-      $('navmobile').on('click', function(e) {  
-        e.preventDefault();  
-        menu.slideToggle();  
-    });  
-});
+    <script src="//code.jquery.com/jquery-1.10.2.js">
     </script>
     
     </head>
     
     <body>
+    
+    <script>
+$( "navmobile" ).click(function() {
+  $( "navmobilelist" ).slideToggle( "slow" );
+});
+</script>
+    
+    
       <div class="navbar"><b>Part</b><a class="navlinks" href="">One</a><a class="navlinks" href="">Two</a><a class="navlinks" href="">Three</a><a class="navlinks" href="">Four</a></div>
       
       

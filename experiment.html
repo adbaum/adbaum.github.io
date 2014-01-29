@@ -12,7 +12,7 @@
   <script>
   $(window).scroll(function () {
 
-        $('#divtop, #divtop2, #headline, #subhead').css({
+        $('#divtop, #divtop2').css({
             'top': -($(this).scrollTop() / 3) + "px"
         });
 
@@ -51,34 +51,29 @@
         font-weight:600;
       }
       
-      #headline {
-      font-family:'Open-Sans',Tahoma,sans-serif;
-      font-weight:800;
-      margin-left:10%;
-      margin-top:250px;
-      font-size:90px;
-      color:#000000;
-      z-index:20;
-      }
-      
-      #subhead {
-      font-family:'Open-Sans',Tahoma,sans-serif;
-      font-weight:600;
-      margin-top:300px;
-      margin-left:10%;
-      font-size:30px;
-      color:#000000;
-      z-index:20;
-      }
-      
       .divbuffer {
       z-index:10px;
-      margin-top:400px;
+      margin-top:200px;
       margin-bottom:200px;
       float:block;
       width:100%;
       }
-
+      
+      .headline {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:800;
+      margin-left:10%;
+      font-size:90px;
+      color:#000000;
+      }
+      
+      .subhead {
+      font-family:'Open-Sans',Tahoma,sans-serif;
+      font-weight:600;
+      margin-left:10%;
+      font-size:30px;
+      color:#000000;
+      }
       
       .divbottom {
       background-color:#ffffff;

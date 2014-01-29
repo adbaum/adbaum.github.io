@@ -174,7 +174,7 @@
       color:#ffffff;
       font-weight:500;
       text-decoration:none;
-      display:block;
+      display:none;
       }
       
       }
@@ -231,14 +231,17 @@
     <body>
     
     <script>
-$( "navmobile" ).click(function() {
-  $( "navmobilelist" ).slideToggle( "slow" );
+$('navmobile').click(function() {
+  $( 'navmobilelist' ).slideToggle('slow');
 });
 </script>
     
     
       <div class="navbar"><b>Part</b><a class="navlinks" href="">One</a><a class="navlinks" href="">Two</a><a class="navlinks" href="">Three</a><a class="navlinks" href="">Four</a></div>
       
+      <div class="navmobilelist">
+        <a class="navlinks" href="">One</a><br><br><a class="navlinks" href="">Two</a><br><br><a class="navlinks" href="">Three</a><br><br><a class="navlinks" href="">Four</a>
+      </div>
       <div class="navmobile"><b>Menu</b></div>
       
       <div class="divbuffer"><br></div>

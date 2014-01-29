@@ -12,7 +12,7 @@
   <script>
   $(window).scroll(function () {
 
-        $('#divtop, #divtop2').css({
+        $('#divtop, #divtop2, #divtop3').css({
             'top': -($(this).scrollTop() / 3) + "px"
         });
 
@@ -44,6 +44,17 @@
         z-index:20;
         margin-top:3600px;
         margin-left:10%;
+        position:absolute;
+        font-family:'open sans', tahoma, sans-serif;
+        font-size:24pt;
+        width:200px;
+        font-weight:600;
+      }
+      
+      #divtop3 {
+        z-index:20;
+        margin-top:7000px;
+        margin-left:70%;
         position:absolute;
         font-family:'open sans', tahoma, sans-serif;
         font-size:24pt;
@@ -228,6 +239,10 @@
         display:none;
       }
       
+      #divtop3 {
+        display:none;
+      }
+      
       .navlinks2 {
       font-family:'opens sans', tahoma, sans-serif;
       font-size:12pt;
@@ -316,6 +331,10 @@
       #divtop2 {
         display:none;
       }
+      
+      #divtop3 {
+        display:none;
+      }
       }
       
     </style>
@@ -328,6 +347,7 @@
     <!--QUOTES-->
     <div id="divtop">"Do not take life too seriously. You will never get out of it alive."</div>
     <div id="divtop2">"We all live in a yellow submarine."</div>
+    <div id="divtop3">"What you doin' in the club on a Thursday?"</div>
     <!--end quotes-->
     
     

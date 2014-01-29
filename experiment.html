@@ -155,7 +155,23 @@
       color:#ffffff;
       font-weight:500;
       text-decoration:none;
-      display:block;
+      }
+      
+      
+      #panel
+      {
+      position:fixed;
+      z-index:20;
+      text-align:center;
+      width:100%;
+      background-color:#000000;
+      padding:10px;
+      font-family:'opens sans', tahoma, sans-serif;
+      font-size:12pt;
+      color:#ffffff;
+      font-weight:500;
+      text-decoration:none;
+      display:none;
       }
       
       
@@ -201,9 +217,15 @@
       
     </style>
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 </script>
-    
+<script> 
+$(document).ready(function(){
+  $(".navmobile").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
     
     
     </head>

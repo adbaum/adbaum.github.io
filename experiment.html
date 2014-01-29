@@ -107,6 +107,10 @@
       display:none;
       }
       
+      .navlist {
+      display:none;
+      }
+      
       @media (max-width: 400px) {
       .article {
       width:80%;
@@ -142,7 +146,7 @@
       display:none;
       }
       
-      .navmobile {
+      .navmobile, .navlist {
       position:fixed;
       z-index:10;
       text-align:center;
@@ -155,6 +159,12 @@
       font-weight:500;
       text-decoration:none;
       display:block;
+      }
+      
+      .navlist
+      {
+      padding:50px;
+      display:none;
       }
       
       }
@@ -171,6 +181,10 @@
       }
       
       .navmobile {
+      display:none;
+      }
+      
+      .navlist {
       display:none;
       }
       
@@ -195,9 +209,18 @@
       }
       }
       
-      
-      
     </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script> 
+$(document).ready(function(){
+  $(".navmobile").click(function(){
+    $(".navlist").slideToggle("slow");
+  });
+});
+</script>
+    
+    
     
     </head>
     

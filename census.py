@@ -1,4 +1,4 @@
-"""Special thanks to my buddy, Aiden Feay, for helping me figure out how to write pass 404s.
+"""Special thanks to my buddy, Aidan Feay, for helping me figure out how to write pass 404s.
 Also, I totally understand that this is among the least efficient ways for me to scrape these values. I'm so sorry.
 
 This code scrapes city names and 2012 population estimates for all cities in Indiana."""

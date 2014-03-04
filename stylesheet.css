@@ -87,10 +87,27 @@ margin:0;
 .navlinks3:visited {
 	background-color:#ffffff;
     }
+    
+    
+.scroll {
+	background-color:#ffffff;
+	position:absolute;
+	bottom:0;
+	color:#000000;
+  	font-size:15px;
+  	font-family: 'open sans',tahoma, sans-serif;
+  	text-decoration:none;
+  	margin:0px;
+  	padding-left:10%;
+  	padding-right:0;
+  	padding-bottom:5px;
+  	padding-top:5px;
+  	width:90%;
+
+}
 
 .buffer {
     padding-top:150px;
-    padding-bottom:400px;
     display:block;
     text-align:center;
     width:100%;

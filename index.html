@@ -24,13 +24,13 @@ $(document).ready(function() {
 		var aTag = $("a[name='"+ aid +"']");
 		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
 	}
-	$("#link").click(function() {
+	$("a").click(function() {
 	var href = $(this).attr('href').replace('#', '')
 		scrollToAnchor(href);
 	});
 });
 </script>
-   
+
 <!--Okay, this part I got from a tutorial. I don't know jquery yet, beyond some simple customization.-->
 <script>
 $(function() {  

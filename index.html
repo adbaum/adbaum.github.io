@@ -18,18 +18,18 @@
 
 </script>
 
-<script>
+<!--<script>
 $(document).ready(function() {
 	function scrollToAnchor(aid){
 		var aTag = $("a[name='"+ aid +"']");
 		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
 	}
 	$("a").click(function() {
-	/*var href = $(this).attr('href').replace('#', '')*/
-		scrollToAnchor('home','designer','leader','contact');
+	var href = $(this).attr('href').replace('#', '')
+		scrollToAnchor(href);
 	});
 });
-</script>
+</script>-->
    
 <!--Okay, this part I got from a tutorial. I don't know jquery yet, beyond some simple customization.-->
 <script>

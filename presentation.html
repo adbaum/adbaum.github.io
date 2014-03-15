@@ -78,7 +78,7 @@ body,html {
   position:absolute;
   height:100%;
   z-index:2;
-  color:#090909;
+  color:#ffffff;
 }
 
 .title span:first-child {
@@ -101,11 +101,11 @@ body,html {
 		$(window).scroll(function () {
 
         $('.title').css({
-            'top': -($(this).scrollTop() / -2) + "px"
+            'top': -($(this).scrollTop() / 1) + "px"
         });
         
         $('.icon').css({
-            'top': -($(this).scrollTop() / 1) + "px"
+            'top': -($(this).scrollTop() / -2) + "px"
         });
 
     });

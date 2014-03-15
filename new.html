@@ -58,18 +58,17 @@ body,html {
   height:100%;
   min-height:100%;
   margin:0px;
-  background-image:url('http://subtlepatterns.com/patterns/geometry.png');
-  background-repeat:repeat;
-  max-height:1000px;
+  background-color:#FBC67B;
 }
 
-/*.backgroundimage {
-  background-color:#FBC67B;
+.backgroundimage {
   opacity: 0.6;
   z-index:1;
   min-height:100%;
   position:relative;
-}*/
+  background-image:url('http://subtlepatterns.com/patterns/geometry.png');
+  background-repeat:repeat;
+}
 
 .icon {
   position:absolute;
@@ -88,7 +87,7 @@ body,html {
   background-color:transparent;
   position:fixed;
   z-index:3;
-  color:#000000;
+  color:#ffffff;
 }
 
 .title span:first-child {
@@ -116,7 +115,7 @@ body,html {
             'top': -($(this).scrollTop() / 2) + "px"
         });
         
-        $('.title').css({
+        $('.backgroundimage').css({
             'top': -($(this).scrollTop() / .8) + "px"
         });
 
@@ -137,7 +136,7 @@ body,html {
 			</span>
 		</div>
 		<div class="intro">
-		<!--<div class="backgroundimage"></div>-->
+		<div class="backgroundimage">
 			<div class="title">
 				<span>Hi, I'm Adam.</span><br><br>
 				<span>I'm a thinker and a storyteller.<br>But mostly, I'm a problem solver.</span>

@@ -75,6 +75,7 @@ body,html {
   background-image:url('http://subtlepatterns.com/patterns/geometry.png');
   background-repeat:repeat;
   height:1000px;
+  position:absolute;
 }
 
 .title {
@@ -110,6 +111,10 @@ body,html {
         
         $('.icon').css({
             'top': -($(this).scrollTop() / 2) + "px"
+        });
+
+	$('.background').css({
+            'top': -($(this).scrollTop() / .9) + "px"
         });
 
     });

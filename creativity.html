@@ -1,7 +1,162 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-  </body>
-</html>
+  	<head>
+    	<title>Adam Baumgartner | Journalistic Designer</title>
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	
+	 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<style>
+		
+body,html {
+	margin:0px;
+	background-color:#ffffff;
+	height:100%;
+	min-height:100%;
+	background-image:url('http://farm4.staticflickr.com/3829/13174178175_632dc7f216_o.png');
+  	background-repeat:repeat;
+}
+
+.nav {
+	background-color:#ffffff;
+  	width:100%;
+  	text-align:center;
+  	position:fixed;
+  	top:0px;
+  	left:0px;
+  	z-index:20;
+  	box-shadow: 1px 2px 3px 0px #5E5E5E;
+  	padding:12px;
+}
+
+.nav a {
+    color:#000000;
+    font-size:15px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration:none;
+    margin:10px;
+    font-weight:600;
+    padding:12px;
+}
+
+.nav a:hover {
+   color:#ffffff;
+   font-size:15px;
+   font-family: 'open sans', sans-serif;;
+   margin:10px;
+   font-weight:600;
+   padding:12px;
+   background-color:#F8C56E;
+}
+
+.nav a:active {
+   color:#ffffff;
+   font-size:15px;
+   font-family: 'open sans', sans-serif;;
+   margin:10px;
+   font-weight:600;
+   padding:12px;
+   background-color:#F8C56E;
+}
+
+.intro {
+  width:100%;
+  height:100%;
+  min-height:100%;
+  margin:0px;
+  background-color:rgba(248, 197, 110, 0.9)
+}
+
+.icon {
+  position:absolute;
+  width:100%;
+  height:100%;
+  min-height:100%;
+  margin:0px;
+  z-index:2;
+  margin-top:75px;
+}
+
+.title {
+  padding-left:20%;
+  padding-top:17%;
+  font-family: 'Bitter', serif;
+  background-color:transparent;
+  position:fixed;
+  z-index:3;
+  color:#ffffff;
+}
+
+.title span:first-child {
+  font-size:80pt;
+  font-weight:700;
+  line-height:70pt;
+}
+
+.title span:nth-of-type(2) {
+  font-size:20pt;
+}
+
+.main {
+  z-index:7;
+  min-height:1500px;
+  margin-left:35%;
+  width:50%;
+  background-color:#ffffff;
+  position:relative;
+  box-shadow: 0px 2px 3px 1px #5E5E5E;
+  color:#000000;
+  font-family:'open san', tahoma, sans-serif;
+  font-size:12pt;
+}
+
+.main h1 {
+  font-family:'bitter',sans-serif;
+  font-weight:700;
+  font-size:30pt;
+  line-height:-10;
+  color:#000000;
+  text-align:center;
+}
+
+	</style>
+	
+	<script>
+		$(window).scroll(function () {
+        
+        $('.icon').css({
+            'top': -($(this).scrollTop() / 3) + "px"
+        });
+
+	$('.main').css({
+            'top': -($(this).scrollTop() / .95) + "px"
+        });
+        
+        $('.title').css({
+            'top': -($(this).scrollTop() / 1.1) + "px"
+        });
+
+    });
+	</script>
+
+    </head>
+
+
+    <body>
+		<div class="intro">
+			<div class="title">
+				<span>Creativity, in a nutshell.</span><br><br>
+				<span>A look at a semester of life<br>in Ball State's Media Art Direction class</span>
+			</div>
+			<div class="icon"><img style="width:100%;" src="http://farm8.staticflickr.com/7224/13153709753_9da69dece1_o.png"></div>
+		</div>
+		<div class="main">
+			<br><br><br><br>
+			<h1>I'm a storyteller.</h1>
+			But also this and that.
+		</div>
+
+    </body>
+ </html>

@@ -171,6 +171,22 @@ hr {
 
     });
 	</script>
+	
+	<script>
+ 
+ function audio(el) {
+	 var audio = document.getElementById(el.id+"audio");
+	 audio.play();
+ 
+	  }
+ 
+ function kill(el) {
+	 var audio = document.getElementById(el.id+"audio");
+	 audio.pause();
+ 
+	  }
+ 
+</script>
 
     </head>
 
@@ -252,8 +268,14 @@ hr {
 			<p>So, we ended up with this awesome piece.</p>
 			<p>I did all the coding myself, including the responsiveness.</p>
 			<p>See the story on alive <a href="http://feature.ballstatedaily.com/knightsofthedinnertable.html">here</a>.</p>
+			<br><br><br><br>
 			
-				
+ 
+<a href="#" id="harlem" onclick="audio(this)">play harlem shake</a><br><a href="#" id="harlem" onclick="kill(this)">stop</a><audio id="harlemaudio" src="http://dev.interactive-creation-works.net/1/1.ogg" ></audio><br><br>
+ 
+ 
+<a href="#" id="adam" onclick="audio(this)">play adam's voice</a><br><a href="#" id="adam" onclick="kill(this)">stop</a><audio id="adamaudio" src="http://upload.wikimedia.org/wikipedia/commons/8/80/Field_cricket_Gryllus_pennsylvanicus.ogg" ></audio>
+
 			</div>
 		</div>
 

@@ -4,12 +4,12 @@
 function getTime(credits, time, day)
 	{
 		var examTime = "not available";
-		
+
 		if (time.length < 7)
 			{
 				time = '0' + time;
 			}
-		
+
 		if (credits != 5 && time == "08:00am" && (day == "TR" || day ==""))
 			{
 				examTime = "7:30-9:30am on Wednesday, April 30";
@@ -106,7 +106,7 @@ function getTime(credits, time, day)
 			{
 				examTime = "7:00-9:00pm on Wednesday, April 30";
 			}
-			
+
 	document.getElementById('output').innerHTML = "The exam for that course is " + examTime + "."
 	}
 </script>
@@ -117,31 +117,31 @@ function getTime(credits, time, day)
 		font-family:tahoma, sans-serif;
 		font-size:12pt;
 	}
-	
+
 	button {
 		border:0px;
 		background-color:#339999;
 		color:#ffffff;
 	}
-	
+
 	button:active {
 		border:0px;
 		background-color:#267878;
 		color:#ffffff;
 	}
-	
+
 	input {
 		background-color:#E8E8E8;
 		color:#000000;
 		border:0px;
 		padding:1px;
 	}
-	
+
 </style>
 
 <div class="app">
 Enter a course credits, time and days of the week.<br>
-<input type="text" id="credits" placeholder="Credits" value=""><input type="text" id="time" placeholder="12:00pm" value=""><input type="text" id="day" placeholder="TR" value="">
+<input type="text" size="3" id="credits" placeholder="Credits" value=""><input type="text" size="12" id="time" placeholder="12:00pm" value=""><input type="text" size="9" id="day" placeholder="TR" value="">
 <button onclick="getTime(document.getElementById('credits').value, document.getElementById('time').value, document.getElementById('day').value);">Find exam</button><hr>
 <div id="output"></div>
 </div>

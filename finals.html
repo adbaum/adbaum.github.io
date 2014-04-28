@@ -134,7 +134,7 @@ function getTime(credits, time, day)
 
 <div class="app">
 Enter a course credits, time and days of the week.<br>
-<input type="text" size="3" id="credits" value="3"><input type="text" size="12" id="time" value="8:00am"><input type="text" size="9" id="day" value="TR"><br>
+<input type="text" size="3" id="credits" placeholder="3" value=""><input type="text" size="12" id="time" placeholder="12:00pm" value=""><input type="text" size="9" id="day" placeholder="TR" value="">
 <button onclick="getTime(document.getElementById('credits').value, document.getElementById('time').value, document.getElementById('day').value);">Find exam</button><hr>
 <div id="output"></div>
 </div>

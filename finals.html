@@ -152,6 +152,20 @@ function getTime(credits, time, day)
 		font-size:10pt;
 		color:#919191;
 	}
+	
+	.source a {
+		text-align:right;
+		font-size:10pt;
+		color:#919191;
+		text-decoration:underline;
+	}
+	
+	.source a:hover {
+		text-align:right;
+		font-size:10pt;
+		color:#919191;
+		text-decoration:underline;
+	}
 
 </style>
 
@@ -160,7 +174,8 @@ Enter a course credits, time and days of the week.<br>
 <input type="text" size="4" id="credits" placeholder="Credits" value=""><input type="text" size="12" id="time" placeholder="12:00pm" value=""><input type="text" size="9" id="day" placeholder="TR" value="">
 <button onclick="getTime(document.getElementById('credits').value, document.getElementById('time').value, document.getElementById('day').value);">Find exam</button>
 <br><br><div id="output"></div><br>
-<div class="source">Source | <a href="http://cms.bsu.edu/-/media/WWW/DepartmentalContent/AcademicSystems/Calendars/201314/Spr14FESch.pdf">Ball State University</a></div>
+<div class="source">Source: <a href="http://cms.bsu.edu/-/media/WWW/DepartmentalContent/AcademicSystems/Calendars/201314/Spr14FESch.pdf">Ball State University</a></div>
+<div class="source">Ball State Daily News | <a href="http://cms.bsu.edu/-/media/WWW/DepartmentalContent/AcademicSystems/Calendars/201314/Spr14FESch.pdf">Aidan Feay</a></div>
 </div>
 </body>
 </html>

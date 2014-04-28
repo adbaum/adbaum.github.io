@@ -107,7 +107,7 @@ function getTime(credits, time, day)
 				examTime = "7:00-9:00pm on Wednesday, April 30";
 			}
 
-	document.getElementById('output').innerHTML = "The exam for that course is " + examTime + "."
+	document.getElementById('output').innerHTML = "The exam is " + examTime + "."
 	}
 </script>
 <style>
@@ -140,9 +140,10 @@ function getTime(credits, time, day)
 	#output {
 		background-color:#339999;
 		color:#ffffff;
-		font-size:15px;
+		font-size:18px;
 		text-align:center;
 		padding:10px;
+		height:50px;
 	}
 
 </style>
@@ -150,7 +151,7 @@ function getTime(credits, time, day)
 <div class="app">
 Enter a course credits, time and days of the week.<br>
 <input type="text" size="3" id="credits" placeholder="Credits" value=""><input type="text" size="12" id="time" placeholder="12:00pm" value=""><input type="text" size="9" id="day" placeholder="TR" value="">
-<button onclick="getTime(document.getElementById('credits').value, document.getElementById('time').value, document.getElementById('day').value);">Find exam</button><hr>
+<button onclick="getTime(document.getElementById('credits').value, document.getElementById('time').value, document.getElementById('day').value);">Find exam</button>
 <div id="output"></div>
 </div>
 </body>

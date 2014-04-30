@@ -201,6 +201,37 @@ hr {
 	margin-bottom:20px;
 }
 
+.shadowbox {
+	width:100%;
+	height:100%;
+	background-color:#000000;
+	opacity:0.6;
+	position:fixed;
+	z-index:40;
+	display:none;
+}
+
+.shadowbox2 {
+	position:fixed;
+	z-index:40;
+	background-color:#999999;
+	background-image:url('http://subtlepatterns.com/patterns/tweed.png');
+	background-repeat:repeat;
+	display:none;
+	color:#ffffff;
+	text-align:center;
+	padding:20px;
+	top:15%;
+	height:70%;
+	overflow-y:auto;
+	left:30%;
+	width:40%;
+	-moz-border-radius: 10px;
+    	-webkit-border-radius: 10px;
+    	-khtml-border-radius: 10px;
+    	border-radius: 10px;
+}
+
 	</style>
 	
 	<script>
@@ -245,6 +276,24 @@ hr {
 
 
     <body>
+    
+    <div class="shadowbox"></div>
+    <div class="shadowbox2">
+    	<i>Choose a picture to hear what Gora has to say.</i>
+    	<br><br>
+    	<img style="width:100%" src="https://s3.amazonaws.com/media.bsd/11106_marchingbandp.jpg">
+    	<br><br>
+    	<img style="width:100%" src="https://s3.amazonaws.com/media.bsd/11103_bsuvolleyballp.jpg">
+    	<br><br>
+    	<img style="width:100%" src="https://s3.amazonaws.com/media.bsd/11104_lettermanp.jpg">
+    	<br><br>
+    	<img style="width:100%" src="https://s3.amazonaws.com/media.bsd/11105_russiandollsp.jpg">
+    	<br><br>
+    
+    
+    </div>
+    
+    
 		<div class="intro">
 			<div class="title">
 				<span>Work it.</span><br><br>
@@ -271,6 +320,18 @@ hr {
 			
 			</div>
 		</div>
+
+<script>
+$(document).ready(function(){
+  $(".shadowbox").click(function(){
+    $(".shadowbox, .shadowbox2").fadeOut()
+  });
+  $(".title").click(function(){
+    $(".shadowbox, .shadowbox2").fadeIn();
+  });
+});
+</script>
+
 
     </body>
  </html>

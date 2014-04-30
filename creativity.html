@@ -79,10 +79,10 @@ body,html {
   min-height:100%;
   margin:0px;
   z-index:2;
-  max-height:3000px;
   background-image:url('https://farm8.staticflickr.com/7208/14068044822_b507ca19dd_o.jpg');
   background-repeat:no-repeat;
   background-position:center top;
+  background-size:100%;
 }
 
 .icon2 {
@@ -95,6 +95,7 @@ body,html {
   background-image:url('https://farm8.staticflickr.com/7408/13884601937_92f0a4505d_o.png');
   background-repeat:no-repeat;
   background-position:center bottom;
+  background-size:100%;
 }
 
 .title {
@@ -173,6 +174,10 @@ hr {
         
         $('.icon').css({
             'top': -($(this).scrollTop() / 3) + "px"
+        });
+        
+        $('.icon').css({
+            'top': -($(this).scrollTop() / 4) + "px"
         });
 
 	$('.main').css({

@@ -8,6 +8,8 @@
 	
 	 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	 
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	 
 	 <link rel="shortcut icon" href="https://farm3.staticflickr.com/2940/13968350681_738c6da8be.jpg">
 	
 	<style>
@@ -343,6 +345,19 @@ hr {
 			
 			</div>
 		</div>
+		
+		<script>
+$(document).ready(function() {
+	function scrollToAnchor(aid){
+		var aTag = $("a[name='"+ aid +"']");
+		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+	}
+	$("a").click(function() {
+	var href = $(this).attr('href').replace('#', '')
+		scrollToAnchor(href);
+	});
+});
+</script>
 
 <script>
 $(document).ready(function(){

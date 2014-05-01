@@ -232,6 +232,201 @@ hr {
 	cursor:pointer;
 }
 
+#tablet {
+	display:none;
+}
+
+@media (max-width: 800px) {
+
+#nope {
+	display:none;
+}
+
+.introt {
+  width:100%;
+  height:900px;
+  max-height:3000px;
+  
+}
+
+.introt:hover {
+  cursor:pointer;
+  text-decoration:underline;
+}
+
+.icont {
+  position:absolute;
+  width:100%;
+  height:100%;
+  min-height:100%;
+  margin-top:50px;
+  z-index:2;
+  /*background-image:url('https://farm8.staticflickr.com/7208/14068044822_b507ca19dd_o.jpg');
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:100%;*/
+}
+
+.icon2t {
+  position:absolute;
+  margin-top:400px;
+  width:100%;
+  height:100%;
+  z-index:4;
+  /*background-image:url('https://farm8.staticflickr.com/7408/13884601937_92f0a4505d_o.png');
+  background-repeat:no-repeat;
+  background-position:center bottom;
+  background-size:100%;*/
+}
+
+.titlet {
+  padding-left:10%;
+  padding-top:15%;
+  font-family: 'Bitter', serif;
+  background-color:transparent;
+  position:fixed;
+  z-index:3;
+  color:#339999;
+}
+
+.titlet:hover {
+  text-decoration:underline;
+}
+
+.titlet span:first-child {
+  font-size:60pt;
+  font-weight:700;
+  line-height:60pt;
+}
+
+.titlet span:nth-of-type(2) {
+  font-size:20pt;
+}
+
+.maint {
+  z-index:7;
+  background-color:#ffffff;
+  position:relative;
+  color:#000000;
+  font-family:'open san', tahoma, sans-serif;
+  font-size:12pt;
+  padding-bottom:150px;
+  border-top:30px solid #FF745E;
+}
+
+.maint a {
+  color:#ffffff;
+  font-family:'open san', tahoma, sans-serif;
+  font-size:12pt;
+  text-decoration:none;
+  background-color:#FF745E;
+}
+
+.maint a:hover {
+  color:#FF745E;
+  font-family:'open san', tahoma, sans-serif;
+  font-size:12pt;
+  text-decoration:none;
+  background-color:#ffffff;
+}
+
+.maint h1 {
+  font-family:'bitter',sans-serif;
+  font-weight:700;
+  font-size:40pt;
+  line-height:-10;
+  color:#000000;
+  margin-bottom:20px;
+}
+
+.contentt {
+	width:80%;
+	margin-left:10%;
+	padding-top:50px;
+	text-align:center;
+	font-size:20pt;
+	color:#339999;
+	
+}
+
+.contentt img {
+	border:1px solid #339999;
+}
+
+
+hr {
+	color:#909090;
+	margin-top:50px;
+	margin-bottom:20px;
+}
+
+.shadowbox {
+	width:100%;
+	height:100%;
+	background-color:#000000;
+	opacity:0.6;
+	position:fixed;
+	z-index:40;
+	display:none;
+}
+
+.shadowbox2, .shadowbox3, .shadowbox4, .shadowbox5, .shadowbox6, .shadowbox7, .shadowbox8, .shadowbox9, .shadowbox10, .shadowbox11 {
+	position:fixed;
+	z-index:40;
+	background-color:#999999;
+	background-image:url('http://subtlepatterns.com/patterns/tweed.png');
+	background-repeat:repeat;
+	display:none;
+	color:#ffffff;
+	padding:50px;
+	top:5%;
+	height:70%;
+	overflow-y:auto;
+	left:20%;
+	width:50%;
+	-moz-border-radius: 10px;
+    	-webkit-border-radius: 10px;
+    	-khtml-border-radius: 10px;
+    	border-radius: 10px;
+    	font-family:'open sans', sans-serif;
+}
+
+.shadowbox2 h1, .shadowbox3 h1, .shadowbox4 h1, .shadowbox5 h1, .shadowbox6 h1, .shadowbox7 h1, .shadowbox8 h1, .shadowbox9 h1, .shadowbox10 h1, .shadowbox11 h1 {
+	font-family:'bitter',sans-serif;
+  	font-weight:700;
+  	font-size:40pt;
+  	color:#ffffff;
+  	margin-bottom:20px;
+  	margin-top:0px;
+}
+
+.shadowbox2 img, .shadowbox3 img, .shadowbox4 img, .shadowbox5 img, .shadowbox6 img, .shadowbox7 img, .shadowbox8 img, .shadowbox9 img, .shadowbox10 img, .shadowbox11 img {
+	border:5px solid #ffffff;
+	width:60%;
+}
+
+.shadowbox2 a, .shadowbox3 a, .shadowbox4 a, .shadowbox5 a, .shadowbox6 a, .shadowbox7 a, .shadowbox8 a, .shadowbox9 a, .shadowbox10 a, .shadowbox11 a {
+	color:#ffffff;
+	text-decoration:underline;
+	font-family:'open sans', sans-serif;
+}
+
+.shadowbox2 a:hover, .shadowbox3 a:hover, .shadowbox4 a:hover, .shadowbox5 a:hover, .shadowbox6 a:hover, .shadowbox7 a:hover, .shadowbox8 a:hover, .shadowbox9 a:hover, .shadowbox10 a:hover, .shadowbox11 a:hover {
+	text-decoration:none;
+}
+
+.button1, .button2, .button3, .button4, .button5, .button6, .button7, .button8 {
+	text-decoration:none;
+}
+
+.button1:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover, .button6:hover, .button7:hover, .button8:hover {
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+	
+}
+
 	</style>
 	
 	<script>
@@ -457,7 +652,7 @@ hr {
 			 <a href="#up"><div class="header">
     				CREATIVITY.
     			</div></a>
-		<div class="intro">
+	<span id="nope"><div class="intro">
 			<div class="title">
 				<span>Work it.</span><br><br>
 				<span>Ready for your close up?<br>How to direct a photo shoot.</span>
@@ -481,7 +676,34 @@ hr {
 			<br><br>
 			
 			</div>
+		</div></span>
+		
+		
+		<span id="tablet">
+			<div class="introt">
+			<div class="titlet">
+				<span>Work it.</span><br><br>
+				<span>Ready for your close up?<br>How to direct a photo shoot.</span>
+			</div>
+			<div class="icont"><br><br><br><img style="width:100%;" src="https://farm8.staticflickr.com/7190/13884684809_fc51020f4c_o.jpg"></div>
 		</div>
+		<div class="main">
+			<div class="content">
+				<div style="width:600px;margin:15px;display:inline-block;vertical-align:top;"><span class="button1"><img style="width:100%" src="https://farm3.staticflickr.com/2904/13990819733_28755cc70c.jpg"><br>Finding the nothing, making it something.</span><br><br><br><span class="button4"><img style="width:100%" src="http://afbaumgartner.com/GoraGif.gif"><br><img style="width:100%" src="http://afbaumgartner.com/KODT.gif"><br><img style="width:100%" src="http://afbaumgartner.com/72HRS.gif"><br>Thinking of design as tags and variables.</span></div>
+				<div style="width:600px;margin:15px;display:inline-block;vertical-align:top;"><span class="button2"><img style="width:100%" src="https://farm8.staticflickr.com/7316/13970834815_3b74fd153b.jpg"><br>A new illustrating experience.</span><br><br><br><span class="button5"><img style="width:100%" src="https://farm8.staticflickr.com/7256/13881861344_4fc5d0f83e.jpg"><br>How to create a better ad.</span><br><br><br><span class="button7"><img style="width:100%" src="http://api.ning.com/files/NFpLPbeZNYAcyKy9Qhxfwo4tUrISiKUOEt3rvm9mUS5*nEUQuW1*wexwLB*rgS2laFZpxuzxqncqmYfcv3BRetRFiFALuqyI/frostbiteGFX01.jpg"><br>We have a winner! Thinking up a first-place graphic.</span></div>
+				<div style="width:600px;margin:15px;display:inline-block;vertical-align:top;"><span class="button3"><img style="width:100%" src="https://farm8.staticflickr.com/7412/13967655352_f804830a0d.jpg"><br>Quotes gone awry.</span><br><br><br><span class="button6"><img style="width:100%" src="http://www.snd.org/wp-content/uploads/2014/03/Backstory.jpg"><br>Problem solving at #SNDmakes.</span><br><br><br><span class="button8"><img style="width:100%" src="https://farm8.staticflickr.com/7058/14053096176_92769a06e0_o.png"><br>Can't find your final? There's an app for that.</span></div>
+				<br><br><br>			
+			
+			
+			
+			
+			
+			<br><br>
+			
+			</div>
+		</div>
+			
+		</span>
 		
 		<script>
 $(document).ready(function() {

@@ -371,6 +371,15 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $(".shadowbox").click(function(){
+    $(".shadowbox, .shadowbox11").fadeOut()
+  });
+  $(".button1").click(function(){
+    $(".shadowbox, .shadowbox11").fadeIn();
+  });
+});
+
+$(document).ready(function(){
+  $(".shadowbox").click(function(){
     $(".shadowbox, .shadowbox3").fadeOut()
   });
   $(".button2").click(function(){

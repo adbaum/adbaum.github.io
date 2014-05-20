@@ -15,15 +15,14 @@ function getWord(kword)
 			}
 		
 		else {
-			var youLost = "You answered " + knaidel + ". The correct spelling is knaidel.";
+			var youLost = "You answered " + kword + ". The correct spelling is knaidel.";
 			document.getElementById('output').innerHTML = youLost;
 		}
 	}
 </script>
 
 <script>
- 
- function audio(el) {
+function audio(el) {
 	 var audio = document.getElementById(el.id+"audio");
 	 audio.play()
 	  }

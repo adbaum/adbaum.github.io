@@ -25,15 +25,15 @@ function getWord(word)
  
  function audio(el) {
 	 var audio = document.getElementById(el.id+"audio");
-	 audio.play();
-	 
-function refreshData(el)
+	 audio.play(function refreshData(el)
 {
     x = 5;  // 5 Seconds
  
     // Do your thing here
  
-    setTimeout(refreshData, x*1000);
+    setTimeout(refreshData, x*1000););
+	 
+
 }
  
  

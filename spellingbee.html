@@ -10,13 +10,31 @@ function getWord(word1)
 		if (word1 === correctSpelling)
 			{
 				// here we're telling the person they're correct
+				var youWin = "The correct spelling is knaidel. Well done! Arvind Mahankali won with this word in 2013.";
+				document.getElementById('output1').innerHTML = youWin;
+			}
+
+		else {
+			var youLost = "You answered " + word1 + ". The correct spelling is knaidel. Arvind Mahankali won with this word in 2013.";
+			document.getElementById('output1').innerHTML = youLost;
+		}
+	}
+	
+function getWord(word2)
+	{
+
+		var correctSpelling = "knaidel";
+		word1 = word1.toLowerCase();
+		if (word2 === correctSpelling)
+			{
+				// here we're telling the person they're correct
 				var youWin = "The correct spelling is knaidel. Well done!";
-				document.getElementById('output').innerHTML = youWin;
+				document.getElementById('output2').innerHTML = youWin;
 			}
 
 		else {
 			var youLost = "You answered " + word1 + ". The correct spelling is knaidel.";
-			document.getElementById('output').innerHTML = youLost;
+			document.getElementById('output2').innerHTML = youLost;
 		}
 	}
 </script>
@@ -36,18 +54,32 @@ function getWord(word1)
 <div>
 <center><h2><b>Test your knowledge.</b></h2>
 Think you're smarter than those snot-nosed spelling bee kids? Try out some of their words, see who is smarter.
-<br><hr><br>
+<br><br><hr><br>
+<span id="knaidel" onclick="audio(this)"><h3><b>Play sound</b></h3></span><audio id="knaidelaudio"><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron/k/kna/knaid/knaidel__us_1.mp3" type="audio/mpeg"><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron_ogg/k/kna/knaid/knaidel__us_1.ogg" type="audio/mpeg"></audio>
 <b>Origin:</b> Yiddish<br>
-<b>Part of Speech:</b> Noun<br>
+<b>Part of Speech:</b> noun<br>
 <b>Definition:</b> a type of dumpling eaten especially in Jewish households during Passover<br>
-<b>In a sentence:</b> My grandparents would offer me a ******* during our Passover meals.<br><br>
-
-
-<span id="knaidel" onclick="audio(this)"><b>Play sound</b></span><audio id="knaidelaudio"><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron/k/kna/knaid/knaidel__us_1.mp3" type="audio/mpeg"><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron_ogg/k/kna/knaid/knaidel__us_1.ogg" type="audio/mpeg"></audio>
+<b>In a sentence:</b> My grandparents would offer me a <span id="knaidel2" onclick="audio(this)"><b>hear word</b></span><audio id="knaidel2audio"><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron/k/kna/knaid/knaidel__us_1.mp3" type="audio/mpeg"><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron_ogg/k/kna/knaid/knaidel__us_1.ogg" type="audio/mpeg"></audio> during our Passover meals.<br><br>
 <br><br>
-<input type="text" size="5" id="word1" placeholder="" value="">
+<input type="text" size="15" id="word1" placeholder="" value="">
 <button onclick="getWord(document.getElementById('word1').value);">Answer</button>
-<br><br><div id="output"></div><br><br>
+<br><br><div id="output1"></div><br>
+
+<hr><br>
+
+<span id="knack" onclick="audio(this)"><h3><b>Play sound</b></h3></span><audio id="knackaudio"><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron/k/kna/knack/knack__us_1.mp3" type="audio/mpeg"><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron_ogg/k/kna/knack/knack__us_1.ogg" type="audio/mpeg"></audio>
+<b>Origin:</b> late Middle English<br>
+<b>Part of Speech:</b> noun<br>
+<b>Definition:</b> An acquired or natural skill at performing a task, or a tendency to do something<br>
+<b>In a sentence:</b> xxxxx.<br><br>
+<br><br>
+<input type="text" size="15" id="word2" placeholder="" value="">
+<button onclick="getWord(document.getElementById('word2').value);">Answer</button>
+<br><br><div id="output2"></div><br>
+
+
+
+<br><br><br>
 <div class="source">Source: <a href="http://www.spellingbee.com/champions-and-their-winning-words">National Spelling Bee</a></div>
 </center></div>
 </body>

@@ -2,17 +2,17 @@
 <html>
 <head>
 <script>
-function getWord(knaidel)
+function getTime(time)
 	{
-		var correctSpelling = "knaidel, stupid. You're wrong";
+		var examTime = "not available. Be sure your information looks like the example";
 		day = day.toUpperCase();
 
-		if (knaidel != "knaidel")
+		else if (time == "09:00am")
 			{
-				correctSpelling = "knaidel. Well done";
+				examTime = "7:30-9:30am on Friday, May 2";
 			}
 
-	document.getElementById('output').innerHTML = "The spelling is " + correctSpelling + "."
+	document.getElementById('output').innerHTML = "The exam is " + examTime + "."
 	}
 </script>
 </head>
@@ -23,8 +23,8 @@ function getWord(knaidel)
 <div class="app">
 Xxxxxx<br>
 <br><br>
-<input type="text" size="5" id="knaidel" placeholder="" value="">
-<button onclick="getWord(document.getElementById('knaidel').value);">Answer</button>
+<input type="text" size="5" id="time" placeholder="" value="">
+<button onclick="getTime(document.getElementById('time').value);">Answer</button>
 <br><br><div id="output"></div>
 <div class="source">Source: <a href="http://www.spellingbee.com/champions-and-their-winning-words">National Spelling Bee</a></div>
 </div>

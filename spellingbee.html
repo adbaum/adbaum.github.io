@@ -8,7 +8,7 @@
 
 
 <script>
-function getTime(time, day)
+function getTime(credits, time)
 	{
 		var examTime = "not available. Be sure your information looks like the example";
 		day = day.toUpperCase();
@@ -18,7 +18,7 @@ function getTime(time, day)
 				time = '0' + time;
 			}
 
-		if (time != "08:00am" && (day == "TR" || day ==""))
+		if (credits != 5 && time == "08:00am")
 			{
 				examTime = "7:30-9:30am on Wednesday, April 30";
 			}
@@ -150,8 +150,8 @@ Enter course credits, time and days of the week.<br>
 	Remember to include a colon in the time.
 </span>
 </i><br><br>
-<input type="text" size="12" id="time" placeholder="12:00pm" value=""><input type="text" size="9" id="day" placeholder="TR" value="">
-<button onclick="document.getElementById('time').value, document.getElementById('day').value);">Find exam</button>
+<input type="text" size="5" id="credits" placeholder="Credits" value=""><input type="text" size="12" id="time" placeholder="12:00pm" value="">
+<button onclick="getTime(document.getElementById('credits').value, document.getElementById('time').value);">Find exam</button>
 <br><br><div id="output"></div><br><span class="finals"><i>Actual exam times may vary. Consult <a href="http://cms.bsu.edu/-/media/WWW/DepartmentalContent/AcademicSystems/Calendars/201314/Spr14FESch.pdf">this document</a> or check with a professor if you have concerns.</i></span><br><hr>
 <div class="source">Source: <a href="http://cms.bsu.edu/-/media/WWW/DepartmentalContent/AcademicSystems/Calendars/201314/Spr14FESch.pdf">Ball State University</a></div>
 <div class="source">Ball State Daily News | Aidan Feay</div>

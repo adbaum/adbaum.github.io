@@ -11,10 +11,12 @@ function getWord(word)
 		var examTime = "not available. Be sure your information looks like the example";
 		word = word.toUpperCase();
 
-		if (word != "knaidel")
-			{
-				examTime = "7:30-9:30am on Wednesday, April 30";
-			)}
+		if(word == "knaidel") {
+    examTime("Great! Let's start!")
+}
+else {
+    examTime("Uhhh, don't tell anyone, but you can still play.")
+}
 
 	document.getElementById('output').innerHTML = "The exam is " + examTime + "."
 	}

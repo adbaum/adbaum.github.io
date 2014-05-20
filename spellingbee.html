@@ -4,18 +4,18 @@
 <script>
 function getWord(word)
 	{
-		if (word === "knaidel")
+		var correctSpelling = "knaidel";
+		if (word === correctSpelling)
 			{
-				correctSpelling = "knaidel. You win!";
+				// here we're telling the person they're correct
+				var youWin = "knaidel. You win!";
+				document.getElementById('output').innerHTML = youWin;
 			}
 		
 		else {
-			correctSpelling = "knaidel, dummy.";
+			var youLost = "knaidel, dummy.";
+			document.getElementById('output').innerHTML = youLost;
 		}
-
-	document.getElementById('output').innerHTML = getSpelling
-	
-	var getSpelling = "The correct spelling is " + correctSpelling;
 	}
 </script>
 </head>

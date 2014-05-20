@@ -26,6 +26,18 @@ function getWord(word)
  function audio(el) {
 	 var audio = document.getElementById(el.id+"audio");
 	 audio.play();
+	 
+function refreshData(el)
+{
+    x = 5;  // 5 Seconds
+ 
+    // Do your thing here
+ 
+    setTimeout(refreshData, x*1000);
+}
+ 
+ 
+refreshData();
  
 	  }
 </script> 
@@ -38,7 +50,7 @@ function getWord(word)
 <b>Test your knowledge.</b><br><br>
 Think you're smarter than those snot-nosed spelling bee kids? Try out some of their words, see do.
 <br><br>
-<span id="knaidel" onclick="audio(this)">Play sound</span><audio id="knaidelaudio" loop><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron/k/kna/knaid/knaidel__us_1.mp3" type="audio/mpeg"><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron_ogg/k/kna/knaid/knaidel__us_1.ogg" type="audio/mpeg"></audio>
+<span id="knaidel" onclick="audio(this)">Play sound</span><audio id="knaidelaudio"><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron/k/kna/knaid/knaidel__us_1.mp3" type="audio/mpeg"><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron_ogg/k/kna/knaid/knaidel__us_1.ogg" type="audio/mpeg"></audio>
 <br><br>
 <input type="text" size="5" id="word" placeholder="" value="">
 <button onclick="getWord(document.getElementById('word').value);">Answer</button>

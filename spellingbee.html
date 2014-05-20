@@ -19,12 +19,14 @@ function getWord(word1)
 			document.getElementById('output1').innerHTML = youLost;
 		}
 	}
-	
-function getWord(word2)
+</script>
+
+<script>
+	function getWord(word2)
 	{
 
 		var correctSpelling = "knaidel";
-		word1 = word1.toLowerCase();
+		word2 = word2.toLowerCase();
 		if (word2 === correctSpelling)
 			{
 				// here we're telling the person they're correct
@@ -33,7 +35,7 @@ function getWord(word2)
 			}
 
 		else {
-			var youLost = "You answered " + word1 + ". The correct spelling is knaidel.";
+			var youLost = "You answered " + word2 + ". The correct spelling is knaidel.";
 			document.getElementById('output2').innerHTML = youLost;
 		}
 	}

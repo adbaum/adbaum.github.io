@@ -4,15 +4,15 @@
 <script>
 function getWord(knaidel)
 	{
-		var getSpelling = "I'm sorry, the correct spelling is knaidel. You lose.";
-		knaidel = knaidel.toUpperCase();
+		var correctSpelling = "knaidel, stupid. You're wrong";
+		day = day.toUpperCase();
 
-		if (knaidel != "knaidel")
+		if (credits == "knaidel")
 			{
-				getSpelling = "Correct! You champ, you.";
+				correctSpelling = "knaidel. Well done";
 			}
 
-	document.getElementById('output').innerHTML = getSpelling
+	document.getElementById('output').innerHTML = "The spelling is " + correctSpelling + "."
 	}
 </script>
 </head>

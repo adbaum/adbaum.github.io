@@ -6,12 +6,12 @@
 
 
 <script>
-function getWord(spellingWord)
+function getWord(word)
 	{
 		var examTime = "not available. Be sure your information looks like the example";
-		spellingWord = spellingWord.toUpperCase();
+		word = word.toUpperCase();
 
-		if (spellingWord == "knaidel")
+		if (word == "knaidel")
 			{
 				examTime = "7:30-9:30am on Wednesday, April 30";
 			)}
@@ -25,8 +25,8 @@ function getWord(spellingWord)
 <div class="container">
 <div class="app">
 Enter course credits, time and days of the week.<br><br><br>
-<input type="text" size="12" id="spellingWord" placeholder="Spell word" value="">
-<button onclick="getWord(document.getElementById('spellingWord').value);">Check your answer</button>
+<input type="text" size="12" id="word" placeholder="Spell word" value="">
+<button onclick="getWord(document.getElementById('word').value);">Check your answer</button>
 <br><br><div id="output"></div><br><hr>
 </div>
 </div>

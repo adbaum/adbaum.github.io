@@ -2,12 +2,12 @@
 <html>
 <head>
 <script>
-function getWord(word)
+function getWord(word1)
 	{
 
 		var correctSpelling = "knaidel";
-		word = word.toLowerCase();
-		if (word === correctSpelling)
+		word1 = word1.toLowerCase();
+		if (word1 === correctSpelling)
 			{
 				// here we're telling the person they're correct
 				var youWin = "The correct spelling is knaidel. Well done!";
@@ -15,7 +15,7 @@ function getWord(word)
 			}
 
 		else {
-			var youLost = "You answered " + word + ". The correct spelling is knaidel.";
+			var youLost = "You answered " + word1 + ". The correct spelling is knaidel.";
 			document.getElementById('output').innerHTML = youLost;
 		}
 	}
@@ -45,8 +45,8 @@ Think you're smarter than those snot-nosed spelling bee kids? Try out some of th
 
 <span id="knaidel" onclick="audio(this)"><b>Play sound</b></span><audio id="knaidelaudio"><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron/k/kna/knaid/knaidel__us_1.mp3" type="audio/mpeg"><source src="http://www.oxforddictionaries.com/us/media/american_english/us_pron_ogg/k/kna/knaid/knaidel__us_1.ogg" type="audio/mpeg"></audio>
 <br><br>
-<input type="text" size="5" id="word" placeholder="" value="">
-<button onclick="getWord(document.getElementById('word').value);">Answer</button>
+<input type="text" size="5" id="word1" placeholder="" value="">
+<button onclick="getWord(document.getElementById('word1').value);">Answer</button>
 <br><br><div id="output"></div><br><br>
 <div class="source">Source: <a href="http://www.spellingbee.com/champions-and-their-winning-words">National Spelling Bee</a></div>
 </center></div>

@@ -4,16 +4,18 @@
 <script>
 function getWord(word)
 	{
-		var correctSpelling = "knaidel";
+		word = word.toUpperCase();
+		
+		var correctSpelling = "KNAIDEL";
 		if (word === correctSpelling)
 			{
 				// here we're telling the person they're correct
-				var youWin = "knaidel. You win!";
+				var youWin = "The correct spelling is knaidel. Well done!";
 				document.getElementById('output').innerHTML = youWin;
 			}
 		
 		else {
-			var youLost = "knaidel, dummy.";
+			var youLost = "You answered " + word + ". The correct spelling is knaidel.";
 			document.getElementById('output').innerHTML = youLost;
 		}
 	}

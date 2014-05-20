@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function getWord(knaidel)
+	{
+		var badSpelling = "I'm sorry, the correct spelling is knaidel. You lose.";
+		knaidel = knaidel.toUpperCase();
+
+		if (knaidel != "knaidel")
+			{
+				examTime = "Correct! You champ, you.";
+			}
+
+	document.getElementById('output').innerHTML = examTime
+	}
+</script>
+</head>
+
+
+<body>
+<div class="navbarbig">
+				  <a style="margin-left:20px" href="http://www.ballstatedaily.com">Ball State Daily</a> | Find Your Finals
+				</div>
+<div class="container">
+<div class="app">
+Xxxxxx<br>
+<br><br>
+<input type="text" size="5" id="knaidel" placeholder="" value="">
+<button onclick="getTime(document.getElementById('knaidel').value);">Answer</button>
+<br><br><div id="output"></div>
+<div class="source">Source: <a href="http://www.spellingbee.com/champions-and-their-winning-words">National Spelling Bee</a></div>
+</div>
+</div>
+</body>
+</htmL>

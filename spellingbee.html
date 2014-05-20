@@ -4,13 +4,17 @@
 <script>
 function getWord(word)
 	{
-		/*var getSpelling = "I'm sorry, the correct spelling is knaidel. You lose.";
-		word = word.toUpperCase();*/
+		var getSpelling = "The correct spelling is " + correctSpelling ;
+		word = word.toUpperCase();
 
 		if (word === "knaidel")
 			{
-				getSpelling = "Correct! You champ, you.";
+				correctSpelling = "knaidel. You win!";
 			}
+		
+		else {
+			correctSpelling = "knaidel, dummy.";
+		}
 
 	document.getElementById('output').innerHTML = getSpelling
 	}

@@ -4,9 +4,6 @@
 <script>
 function getWord(word)
 	{
-		var getSpelling = "The correct spelling is " + correctSpelling;
-		word = word.toUpperCase();
-
 		if (word === "knaidel")
 			{
 				correctSpelling = "knaidel. You win!";
@@ -17,6 +14,8 @@ function getWord(word)
 		}
 
 	document.getElementById('output').innerHTML = getSpelling
+	
+	var getSpelling = "The correct spelling is " + correctSpelling;
 	}
 </script>
 </head>

@@ -497,7 +497,7 @@ function getWord20(word20)
 	
 var youWin = 0;
 var is_correct = function () {
-   return youWin++;
+   document.getElementById('output21').innerHTML = youWin++;
 }
 var get_share_text = function () {
    document.getElementById('output21').innerHTML = 'I got ' + youWin + ' out of 20';

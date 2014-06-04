@@ -9,17 +9,17 @@
 	}
 	
 	.bigpicture {
-		display:inline;
+		display:block;
 		width:100%;
 	}
 	
-	@media (min-width:549px;){
+	@media (max-width: 550px){
 	.bigpicture {
 		display:none;
 	}
 	
 	.smallpicture {
-		display:inline-block;
+		display:block;
 	}
 		
 	}
@@ -29,7 +29,7 @@
 	
 	
 	<body>
-		<div class="bigpicture"><img src="https://farm4.staticflickr.com/3845/14345890514_294748c2ba_o.png"></div>
+		<div class="bigpicture"><img width="100%" src="https://farm4.staticflickr.com/3845/14345890514_294748c2ba_o.png"></div>
 		<div class="smallpicture" style="width:100%;">
 		<h3>Xxxxxx</h3>
 		<p>Hello I am chatter and I look like this.</p>

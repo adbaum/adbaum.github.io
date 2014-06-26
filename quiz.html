@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Design</title>
+	
+	
+	<style>
+	/* line 11, ../sass/quiz.scss */
+.quiz-container {
+  border-top:1px solid #000000;
+  width: 50%;
+  margin: 0% auto;
+  margin-top: 20px;
+  margin-bottom: 150px;
+  text-align: center;
+}
+
+/* line 21, ../sass/quiz.scss */
+.qhead {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+/* line 26, ../sass/quiz.scss */
+
+/* line 40, ../sass/quiz.scss */
+.question {
+  font-family: ff-din-web-condensed,helvetica,sans-serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 1.17em;
+  margin: 0% auto;
+  margin-bottom: 20px;
+}
+
+/* line 49, ../sass/quiz.scss */
+ol.answers {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  list-style-type: none;
+  counter-reset: li-counter;
+  margin: 0px auto;
+  width: 65%;
+}
+
+/* line 59, ../sass/quiz.scss */
+ol.answers > li:before {
+  font-family: ff-din-web-condensed,helvetica,sans-serif;
+  font-weight: bold;
+  color: #fb4834;
+  font-size: 1em;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #bfd1df;
+  text-align: center;
+  width: 30px;
+  display: inline-block;
+  content: counter(li-counter);
+  counter-increment: li-counter;
+  padding-top:3px;
+}
+
+/* line 75, ../sass/quiz.scss */
+ol.answers > li {
+  text-align: left;
+  margin: 20px 0px;
+}
+
+/* line 80, ../sass/quiz.scss */
+ol.answers > li:hover {
+  background-color: #f4f0ee;
+}
+
+/* line 84, ../sass/quiz.scss */
+.hintbutton {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: .9em;
+  line-height: 1;
+  font-family: ff-din-web-condensed,helvetica,sans-serif;
+  font-weight: 800;
+  padding: .7em .7em .6em;
+  border: 0;
+  text-transform: uppercase;
+  margin-top: 20px 20px 30px 0px;
+  display: inline-block;
+  cursor: pointer;
+  width:160px;
+  margin:0px 5px 20px;
+  display:inline-block;
+}
+
+/* line 99, ../sass/quiz.scss */
+.hintbutton:hover {
+  background-color: #f4f0ee !important;
+}
+
+.selected {
+  background-color: #dfdfe0;
+}
+
+.answer > p {
+  margin: 20px 0 20px 0px;
+}
+
+.score {
+  float: right;
+  padding: 15px 20px 0 0;
+  font-size: 14px;
+  font-family:Harriet Display;
+  font-style:italic;
+}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+	<div class="quiz-container">
+		<!--head-->
+		<div class="qhead">
+			<div class="number">
+				1
+			</div>
+
+		</div>
+		<!--body-->
+		<div>
+			<div class="question">
+				What is the name of the city where Vax is taking place?
+			</div>
+			<ol class="answers">
+				<li>Washington, DC</li>
+				<li>Philadelphia</li>
+				<li>Los Angeles</li>
+				<li>Chicago</li>
+			</ol>
+				<div class="hintbutton">
+					Need a hint?
+				</div>
+
+			</div>
+			<div id="rightanswer">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend lorem lobortis gravida aliquam. Aliquam a adipiscing ante, aliquet tincidunt diam. Aliquam sit amet consectetur purus. Aenean in felis a metus aliquam placerat id imperdiet ipsum. Vivamus sodales id ligula non condimentum. Quisque tristique sem non neque blandit elementum. Sed tristique malesuada mi sit amet varius. Nam ac quam id arcu varius pharetra. Aenean ligula neque, viverra eu posuere et, molestie quis urna. Vivamus sollicitudin interdum est, et gravida mi luctus ut. Ut mollis, justo ac laoreet tincidunt, turpis massa posuere risus, eu tincidunt felis leo nec turpis.</p>
+			</div>
+
+			<div id="wronganswer">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend lorem lobortis gravida aliquam. Aliquam a adipiscing ante, aliquet tincidunt diam. Aliquam sit amet consectetur purus. Aenean in felis a metus aliquam placerat id imperdiet ipsum. Vivamus sodales id ligula non condimentum. Quisque tristique sem non neque blandit elementum. Sed tristique malesuada mi sit amet varius. Nam ac quam id arcu varius pharetra. Aenean ligula neque, viverra eu posuere et, molestie quis urna. Vivamus sollicitudin interdum est, et gravida mi luctus ut. Ut mollis, justo ac laoreet tincidunt, turpis massa posuere risus, eu tincidunt felis leo nec turpis.</p>
+			</div>
+
+			<div id="hintbody">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend lorem lobortis gravida aliquam. Aliquam a adipiscing ante, aliquet tincidunt diam. Aliquam sit amet consectetur purus.
+			</div>
+		</div>
+
+
+
+	</div>
+</body>
+</html>

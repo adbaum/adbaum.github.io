@@ -2,13 +2,14 @@
 <html>
 <head>
 	<title>Quiz Design</title>
-	
-	<script>
-function getTime() {
-    dhours = 5
-    result = dhours * 21.8;
-    document.getElementById("hammock").innerHTML = result;
-}
+
+<script>
+function getAge()
+	{
+		var hours=document.getElementById("hours");
+		result = hours * 21.8
+		document.getElementById('output').innerHTML = result
+	}
 </script>
 
 </head>
@@ -17,11 +18,11 @@ function getTime() {
 
 
 <div class="sitting-calculator">
-	<input type="text" size="5" id="dhours" placeholder="ex. 4" value="">
+	<input type="text" size="5" id="hours" placeholder="ex. 4" value="">
 
-	<button onclick="getTime()">How quickly are you killing yourself?</button>
+	<button onclick="getAge()">How quickly are you killing yourself?</button>
 
-<div id="result"></div>
+<div id="output"></div>
 
 </div>
 

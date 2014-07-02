@@ -6,7 +6,7 @@
 	<script>
 dhours = document.getElementById(dhours)
 
-function getTime(hours) {
+function getTime(dhours) {
     z = 2;
     result = dhours * 21.8;
     document.getElementById("result").innerHTML = result;
@@ -19,7 +19,7 @@ function getTime(hours) {
 
 
 <div class="sitting-calculator">
-	<input type="text" size="5" id="hours" placeholder="ex. 4" value="">
+	<input type="text" size="5" id="dhours" placeholder="ex. 4" value="">
 
 	<button onclick="getAge(document.getElementById('dhours').value;">How quickly are you killing yourself?</button>
 

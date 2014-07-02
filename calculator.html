@@ -8,9 +8,11 @@ function getAge(inputHours)
 	{
 		var minutes = inputHours * 21.8;
 		var hours = Math.floor(minutes / 60);
-		result = hours;
+		var minutes = Math.floor(inputHours - (60*hours));
+		//result = hours;
+		$('output').html("<p>Hours: </p>" + hours + " <p>Min: </p>" + minutes);
 		
-		document.getElementById('output').innerHTML = result;
+		//document.getElementById('output').innerHTML = result;
 	}
 </script>
 

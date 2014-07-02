@@ -1,37 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Death Calc</title>
+<center>
+<div style="margin:10px 0px;padding:30px 0px;background-color:#ffffff" class="sitting-calculator"><input placeholder="Hours sitting each week" id="inputHours" width="230px" type="text" /> <br /> <button onclick="getAge(document.getElementById('inputHours').value)" style="width: 195px;" class="calculate">Calculate</button> <br /><br />
+<div style="display:none;" id="output"></div>
+</div>
+</center>
 
-<script>
+<script type="text/javascript">
+
+$(".calculate").click(function(){
+    $("#output").slideDown('fast');
+  });
+
 function getAge(inputHours)
 	{
 		var textHours = inputHours
 		var minutes = inputHours * 21.8;
+		var minutes_low = inputHours * 0.3;
+		var minutes_high = inputHours * 44.7;
+
+		var hours_low = Math.floor(minutes_low / 60);
+		var minutes_low = Math.floor(minutes_low - (60*hours));
+
+		var hours_high = Math.floor(minutes_high / 60);
+		var minutes_high = Math.floor(minutes_high - (60*hours));
+
 		var hours = Math.floor(minutes / 60);
 		var minutes = Math.floor(minutes - (60*hours));
 		
 		var min_year = inputHours * 21.8 * 52;
 		var days = Math.round(min_year / 60 / 24);
 		
+		var min_year_low = inputHours * 0.3 * 52;
+		var days_low = Math.round(min_year / 60 / 24);
+
+		var min_year_high = inputHours * 44.7 * 52;
+		var days_high = Math.round(min_year / 60 / 24);
+
 		//document.getElementById('output').innerHTML = "<p>Hours: " + hours + " Min: " + minutes + "</p><p>Days: " + days + "</p>";
-		document.getElementById('output').innerHTML = "<p>Sitting " + textHours + " hours weekly, you shave <b>" + hours + " hours</b> and <b>" + minutes + " minutes</b> off your life.</p><p>Per year, you lose about <b>" + days + " days.</b></p>";
+		document.getElementById('output').innerHTML = "<p>Sitting <b>" + textHours + " hours weekly</b>, you shave <b>" + hours + " hours</b> and <b>" + minutes + " minutes</b> off your life.</p><p>Per year, you lose about <b>" + days + " days.*</b></p>
+<p style="font-size:10pt;">With margin of error, you may lose about " + hours_low + " to " + hours_high + " weekly, and " + days_low + " to " + days_high + "in a year.</p>";
 	}
 </script>
-
-</head>
-<body>
-
-
-
-<div class="sitting-calculator">
-	<input type="text" size="5" id="inputHours" placeholder="ex. 4" value="">
-
-	<button onclick="getAge(document.getElementById('inputHours').value)">How quickly are you killing yourself?</button>
-
-<div id="output"></div>
-
-</div>
-
-</body>
-</html>

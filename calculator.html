@@ -4,9 +4,12 @@
 	<title>Death Calc</title>
 
 <script>
-function getAge(hours)
+function getAge(inputHours)
 	{
-		var result = hours * 21.8;
+		var minutes = inputHours * 21.8;
+		var hours = Math.floor(minutes / 60);
+		result = hours;
+		
 		document.getElementById('output').innerHTML = result;
 	}
 </script>
@@ -17,9 +20,9 @@ function getAge(hours)
 
 
 <div class="sitting-calculator">
-	<input type="text" size="5" id="hours" placeholder="ex. 4" value="">
+	<input type="text" size="5" id="inputHours" placeholder="ex. 4" value="">
 
-	<button onclick="getAge(document.getElementById('hours').value)">How quickly are you killing yourself?</button>
+	<button onclick="getAge(document.getElementById('inputHours').value)">How quickly are you killing yourself?</button>
 
 <div id="output"></div>
 

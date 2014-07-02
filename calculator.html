@@ -13,8 +13,8 @@ function getAge(inputHours)
 		var min_year = inputHours * 21.8 * 52;
 		var days = Math.round(min_year / 60 / 24);
 		
-		document.getElementById('output').innerHTML = "<p>Hours: " + hours + " Min: " + minutes + "</p><p>Days: " + days + "</p>";
-		//document.getElementById('output').innerHTML = "<p>For every week you sit " + inputHours ", you shave " + hours + " hours and " + minutes + " minutes off your life.</p><p>Per year, you lose about " + days + " days.</p>";
+		//document.getElementById('output').innerHTML = "<p>Hours: " + hours + " Min: " + minutes + "</p><p>Days: " + days + "</p>";
+		document.getElementById('output').innerHTML = "<p>Sitting that many hours weekly, you shave " + hours + " hours and " + minutes + " minutes off your life.</p><p>Per year, you lose about " + days + " days.</p>";
 	}
 </script>
 

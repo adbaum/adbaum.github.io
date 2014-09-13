@@ -83,10 +83,6 @@ body {
     z-index: 1;
 }
 
-.footer {
-	margin-top:70px;
-}
-
 .footer, .replacenav {
 	width:100%;
 }
@@ -132,6 +128,7 @@ body {
 	width:100%;
 	background-color:#ffffff;
 	margin:0px;
+	padding-bottom:70px;
 }
 
 .content {

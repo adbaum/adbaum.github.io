@@ -1,0 +1,496 @@
+body {
+	margin:0px;
+}
+
+.hero {
+	width:100%;
+	/*background-image:url('/assets/subtlepatternsdotcom.png');*/
+	background-image:url('/assets/glasses-v15.png');
+	background-attachment:fixed;
+	background-size:400px 400px;
+	background-position:center bottom;
+}
+
+.hero h1 {
+	color:#FFAE53;
+	font-family:'fugaz one', sans-serif;
+	margin:0px;
+	font-size:5em;
+}
+
+.hero h1:first-child {
+	padding:80px 0px 0px 5%;
+}
+
+.hero h1:nth-child(2) {
+	padding:0px 0px 85px 5%;
+}
+
+.navmobile {
+	display:none;
+}
+
+.nav {
+	width:100%;
+}
+
+.nav div {
+	width:20%;
+	display:inline-block;
+	float:left;
+	font-size:0.8em;
+	font-family:'lato', sans-serif;
+	font-weight:700;
+	text-transform: uppercase;
+	color:#ffffff;
+	text-align:center;
+	padding:5px 0px 5px 0px;
+}
+
+.nav div:hover {
+	cursor:pointer;
+	border-top:2px solid transparent;
+		-o-transition:.2s;
+  		-ms-transition:.2s;
+  		-moz-transition:.2s;
+  		-webkit-transition:.2s;
+		transition:.2s;
+}
+
+.nav div:first-child {
+	background-color:#FF5947;
+}
+
+.nav div:nth-child(2) {
+	background-color:#FFAE53;
+}
+
+.nav div:nth-child(3) {
+	background-color:#6AB084;
+}
+
+.nav div:nth-child(4) {
+	background-color:#008586;
+}
+
+.nav div:nth-child(5) {
+	background-color:#0E2F3F;
+}
+
+.fixed {
+    position: fixed; 
+    top: 0; 
+    z-index: 1;
+}
+
+.footer {
+	margin-top:70px;
+}
+
+.footer, .replacenav {
+	width:100%;
+}
+
+.replacenav {
+	display:none;
+}
+
+.footer div, .replacenav div {
+	width:20%;
+	display:inline-block;
+	float:left;
+	font-size:0.8em;
+	font-family:'lato', sans-serif;
+	font-weight:700;
+	text-transform: uppercase;
+	color:#ffffff;
+	text-align:center;
+	padding:5px 0px 0px 0px;
+}
+
+.footer div:first-child, .replacenav div:first-child {
+	background-color:#FF5947;
+}
+
+.footer div:nth-child(2), .replacenav div:nth-child(2) {
+	background-color:#FFAE53;
+}
+
+.footer div:nth-child(3), .replacenav div:nth-child(3) {
+	background-color:#6AB084;
+}
+
+.footer div:nth-child(4), .replacenav div:nth-child(4) {
+	background-color:#008586;
+}
+
+.footer div:nth-child(5), .replacenav div:nth-child(5) {
+	background-color:#0E2F3F;
+}
+
+.main {
+	width:100%;
+	background-color:#ffffff;
+	margin:0px;
+}
+
+.content {
+	width:100%;
+	max-width:1280px;
+	margin:0 auto;
+}
+
+.portfolio {
+	width:100%;
+}
+
+.portfolio-table {
+	width:60%;
+	margin:0 auto;
+	text-align:center;
+	padding-top:50px;
+}
+
+.portfolio-table div {
+	width:30%;
+	min-width:100px;
+	margin:0px 1%;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.portfolio-table div .image {
+	width:100%;
+	margin:5px 0px;
+	vertical-align:top;
+}
+
+.image {
+	background-image:url('/assets/bg-glasses-v2.png');
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:20%;
+	display:inline-block;
+	-o-transition:.4s;
+  	-ms-transition:.4s;
+  	-moz-transition:.4s;
+  	-webkit-transition:.4s;
+	transition:.4s;
+}
+
+.image:hover {
+	background-size:50%;
+	-o-transition:.4s;
+  	-ms-transition:.4s;
+  	-moz-transition:.4s;
+  	-webkit-transition:.4s;
+	transition:.4s;
+}
+
+.image img {
+	width:100%;
+	-o-transition:.3s;
+  	-ms-transition:.3s;
+  	-moz-transition:.3s;
+  	-webkit-transition:.3s;
+	transition:.3s;
+}
+
+.image img:hover {
+	opacity:0.2;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-o-transition:.3s;
+  	-ms-transition:.3s;
+  	-moz-transition:.3s;
+  	-webkit-transition:.3s;
+	transition:.3s;
+	cursor:pointer;
+}
+
+.text p:first-child {
+	font-family: 'Droid Serif', serif;
+	font-weight:400;
+	font-style: italic;
+	font-size:1.3em;
+	width:60%;
+	color:#666;
+	margin:0 auto;
+	padding-top:90px;
+}
+
+.text p {
+	width:50%;
+	margin:0 auto;
+	padding:4px 0px;
+}
+
+p {
+	font-family:'lato', arial, sans-serif;
+	font-size:0.80em;
+	font-weight:400;
+	line-height:1.6em;
+	color:#999;
+}
+
+h5 {
+	font-family:'lato', arial, sans-serif;
+	font-size:0.9em;
+	font-weight:900;
+	text-transform:uppercase;
+	margin:0px;
+	width:100%;
+	color:#999;
+}
+
+.konami {
+	height:1000px;
+	width:100%;
+	background-image:url('http://www.artinaid.com/wp-content/uploads/2013/02/Galaxia-y-Espacio-Exterior.jpg');
+	background-attachment: fixed;
+	display:none;
+}
+
+ul {
+	margin:0px;
+}
+
+.scene {
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+@media (max-width:790px) {
+	ul img {
+		width:80%;
+	}
+
+	.nav {
+		display:none;
+	}
+
+	.navmobile {
+		width:100%;
+		display:block;
+		position:fixed;
+		margin:0px;
+		z-index:5;
+		background-color:#ffffff;
+}
+
+	#drop {
+		display:none;
+}
+
+	#dropbutton{
+		width:100%;
+		background-color:#E3E3E3;
+		background-image:url('/assets/menu-bg.png');
+		background-size:100%;
+		float:left;
+		font-size:0.8em;
+		font-family:'lato', sans-serif;
+		font-weight:900;
+		text-transform: uppercase;
+		color:#ffffff;
+		text-align:center;
+		padding:0px 0px 0px 0px;
+
+
+}
+
+	#dropbutton:hover{
+		background-color:#EBEBEB;
+		opacity:0.9;
+		cursor:pointer;
+			-o-transition:.2s;
+  			-ms-transition:.2s;
+  			-moz-transition:.2s;
+  			-webkit-transition:.2s;
+  			transition:.2s;
+	}
+
+	.arrow {
+		width:25px;
+	}
+
+	.arrow-flipped {
+		transform: rotate(180deg);
+  		-ms-transform: rotate(180deg); /* IE 9 */
+  		-moz-transform: rotate(180deg); /* Firefox */
+ 		-webkit-transform: rotate(180deg); /* Safari and Chrome */
+  		-o-transform: rotate(180deg); /* Opera */
+	}
+
+	#drop div {
+		width:100%;
+		display:block;
+		float:left;
+		font-size:0.8em;
+		font-family:'lato', sans-serif;
+		font-weight:700;
+		text-transform: uppercase;
+		color:#ffffff;
+		text-align:center;
+		padding:7px 0px 7px 0px;
+		margin:0px;
+}
+
+	#drop div:hover {
+		cursor:pointer;
+		opacity:0.85;
+			-o-transition:.2s;
+  			-ms-transition:.2s;
+  			-moz-transition:.2s;
+  			-webkit-transition:.2s;
+  			transition:.2s;
+
+}
+
+	.navmobile div:first-child {
+		background-color:#FF5947;
+		 margin:0px;
+}
+
+	.navmobile div:nth-child(2) {
+		background-color:#FFAE53;
+}
+
+	.navmobile div:nth-child(3) {
+		background-color:#6AB084;
+}
+
+	.navmobile div:nth-child(4) {
+		background-color:#008586;
+}
+
+	.navmobile div:nth-child(5) {
+		background-color:#0E2F3F;
+}
+
+	.replacenav {
+		display:block;
+}
+
+
+	.hero h1 {
+		font-size:4em;
+}
+
+	.hero h1:first-child {
+		padding:80px 0px 0px 5%;
+}
+
+	.hero h1:nth-child(2) {
+		padding:0px 0px 70px 5%;
+		margin-top:-15px;
+}
+
+	.portfolio-table {
+		padding-top:40px;
+		width:80%;
+}
+
+	.portfolio-table div {
+		width:45%;
+		display:inline-block;
+}
+
+	.text p:first-child {
+		width:80%;
+		padding-top:70px;
+}
+}
+
+
+@media (max-width:660px) {
+		.hero h1 {
+		font-size:3em;
+}
+
+	.hero h1:first-child {
+		padding:100px 2% 0px 5%;
+}
+
+	.hero h1:nth-child(2) {
+		padding:0px 2% 90px 5%;
+		margin-top:-10px;
+}
+
+	.content {
+		width:85%;
+}
+
+	.portfolio-table {
+		width:100%;
+		padding-top:40px;
+}
+
+	.portfolio-table div {
+		width:45%;
+		display:inline-block;
+}
+
+	.text p:first-child {
+		font-size:1.1em;
+		width:100%;
+		padding-top:60px;
+}
+}
+
+@media (max-width:500px) {
+
+	.hero {
+		background-size:300px 300px;
+}
+
+	.hero h1 {
+		font-size:2.2em;
+}
+
+	.hero h1:first-child {
+		padding:70px 2% 0px 5%;
+}
+
+	.hero h1:nth-child(2) {
+		padding:0px 2% 50px 5%;
+}
+
+	.content {
+		width:90%;
+}
+
+	.portfolio-table {
+		padding-top:40px;
+}
+
+	.portfolio-table div {
+		width:100%;
+		display:inline-block;
+}
+
+	.text p:first-child {
+		font-size:0.9em;
+		padding-top:40px;
+}
+
+}
+
+@media (max-width:300px) {
+	.hero h1 {
+		font-size:2.1em;
+}
+
+	.hero h1:first-child {
+		padding:70px 2% 0px 5%;
+}
+
+	.hero h1:nth-child(2) {
+		padding:0px 2% 50px 5%;
+}
+	.content {
+		width:95%;
+}
+}

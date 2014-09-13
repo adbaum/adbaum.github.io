@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="shortcut icon" href="/assets/header.png">
+<title>AdBaum | Media Designer</title>
+
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<link href="styles/masonry.css" rel="stylesheet" type="text/css">
+
+<link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="javascript.js"></script>
+<script src="js/konami.js"></script>
+
+<script>
+   $(document).ready(function(){
+       $(window).bind('scroll', function() {
+       var navHeight = $( window ).height() - 200;
+             if ($(window).scrollTop() > navHeight) {
+                 $('.nav').addClass('fixed');
+             }
+             else {
+                 $('.nav').removeClass('fixed');
+             }
+        });
+    });
+</script>
+
+<script>
+
+var easter_egg = new Konami();
+easter_egg.code = function() { 
+	$( ".konami" ).fadeIn( "slow" );
+	$( ".main" ).fadeOut( "fast" );
+}
+easter_egg.load();
+
+</script>
+
+<script>
+$(document).ready(function() {
+$( "#dropbutton" ).click(function() {
+	$( "#drop" ).slideToggle( "fast" );
+	$( ".arrow").toggleClass("arrow-flipped");
+	});
+
+
+
+});
+
+</script>
+
+
+</head>
+
+<body>
+
+
+<div class="navmobile">
+	<div id="drop">
+		<a href="#">
+			<div>
+			Home
+		</div>
+		</a>
+		<div>
+			Portfolio
+		</div>
+		<div>
+			Experience
+		</div>
+		<div>
+			Contact
+		</div>
+		<div>
+			Resume
+		</div>
+	</div>
+	<div id="dropbutton">
+		<img src="/assets/arrow.png" class="arrow">
+	</div>
+</div>
+
+<div class="hero">
+	<!--<ul id="scene">
+		<li class="layer" data-depth="0.1">-->
+	<h1>Good <span id="log"></span>.</h1>
+	<h1>My name is Adam.</h1>
+<!--</li>
+</ul-->
+</div>
+
+<div class="replacenav">
+	<div></div><div></div><div></div><div></div><div></div>
+</div>
+
+<div class="nav" id="nav">
+	<a href="#">
+	<div>
+		Home
+	</div>
+	</a>
+	<div>
+		Portfolio
+	</div>
+	<div>
+		Experience
+	</div>
+	<div>
+		Contact
+	</div>
+	<div>
+		Resume
+	</div>
+</div>
+<div class="main">
+
+	<div class="content">
+		<div class="text">
+			<p>
+					I'm a designer and a storyteller. But mostly, I'm a problem solver. Currently, I work for Vox Media. I've also done print design for the Indianapolis Star and graphics reporting for the Chicago Tribune.
+			</p>
+
+		</div>
+		<div class="portfolio">
+			<div class="portfolio-table">
+			<div>
+				<div class="image">
+					<img src="/assets/portfolio-b/brazil.png">
+				</div>
+
+				<div class="image">	
+					<img src="/assets/portfolio-b/flu.jpg">
+				</div>
+
+				<div class="image">
+					<img src="/assets/portfolio-b/populationchange.jpg">
+				</div>
+
+				<div class="image">	
+					<img src="/assets/portfolio-b/frostbite.jpg"/></div>
+
+				
+			</div>
+			<div>
+				
+				<div class="image">	
+					<img src="/assets/portfolio-b/spellingbee.png">
+				</div>
+
+				<div class="image">	
+					<img src="/assets/portfolio-b/72hrs.png">
+				</div>
+
+				<div class="image">
+					<img src="/assets/portfolio-b/touch.jpg">
+				</div>
+
+				<div class="image">
+					<img src="/assets/portfolio-b/lovescience.jpg">
+				</div>
+			</div>
+			<div>
+				<div class="image">
+					<img src="/assets/portfolio-b/gora.png">
+				</div>
+
+				<div class="image">	
+					<img src="/assets/portfolio-b/biofuel.jpg">
+				</div>
+
+				<div class="image">
+					<img src="/assets/portfolio-b/foodtruck.png">
+				</div>
+
+				<div class="image">	
+					<img src="/assets/portfolio-b/love.jpg">
+				</div>
+
+			</div>
+		</div>
+
+		</div>
+
+		<div class="text">
+				<p>
+					I'm a designer and a storyteller. But mostly, I'm a problem solver. Currently, I work for Vox Media. I've also done print design for the Indianapolis Star and graphics reporting for the Chicago Tribune.
+				</p>
+		</div>
+
+	</div>
+
+</div>
+
+
+<div class="konami">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<ul id="scene">
+		<li class="layer" data-depth="0.40"><img src="http://wellhealthqc.com/wp-content/uploads/2014/01/star_divider_gold_by_toxicestea-d4fsnk2.png"></li>
+		<li class="layer" data-depth="0.80"><img src="http://persephonemagazine.com/wp-content/uploads/2013/07/unicornrainbowanimated.gif"></li>
+	</ul>
+</center>
+</div>
+
+<div class="footer">
+	<div></div><div></div><div></div><div></div><div></div>
+</div>
+
+
+<script src="deploy/parallax.min.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+
+</body>
+
+</html>

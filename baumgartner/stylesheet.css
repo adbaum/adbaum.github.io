@@ -8,7 +8,7 @@ a {
 
 .hero {
 	width:100%;
-	background-image:url('www.afbaumgartner.com/baumgartner/assets/glasses-v15.png');
+	background-image:url('http://www.afbaumgartner.com/baumgartner/assets/glasses-v15.png');
 	background-attachment:fixed;
 	background-size:400px 400px;
 	background-position:center bottom;
@@ -345,7 +345,7 @@ ul {
 	#dropbutton{
 		width:100%;
 		background-color:#E3E3E3;
-		background-image:url('www.afbaumgartner.com/baumgartner/assets/menu-bg.png');
+		background-image:url('http://www.afbaumgartner.com/baumgartner/assets/menu-bg.png');
 		background-size:100%;
 		float:left;
 		font-size:0.8em;

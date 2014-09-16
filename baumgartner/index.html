@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="shortcut icon" href="www.afbaumgartner.com/baumgartner/assets/header.png">
+<title>AdBaum | Media Designer</title>
+
+<link href="www.afbaumgartner.com/baumgartner/stylesheet.css" rel="stylesheet" type="text/css">
+
+<link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="www.afbaumgartner.com/baumgartner/js/javascript.js"></script>
+<script src="www.afbaumgartner.com/baumgartner/js/konami.js"></script>
+
+<script>
+
+var easter_egg = new Konami();
+easter_egg.code = function() { 
+	$( ".konami" ).fadeIn( "slow" );
+	$( ".main" ).fadeOut( "fast" );
+}
+easter_egg.load();
+
+</script>
+
+<script>
+$(document).ready(function() {
+$( "#dropbutton" ).click(function() {
+	$( "#drop" ).slideToggle( "fast" );
+	$( ".arrow").toggleClass("arrow-flipped");
+	$( "#dropbutton").toggleClass("dropped");
+	});
+
+
+
+});
+
+</script>
+
+<script>
+$(document).ready(function () {
+    $(window).scroll(function () {
+
+        var y = $(this).scrollTop();
+
+        $('.link').each(function (event) {
+            if (y >= $($(this).attr('href')).offset().top - 0) {
+                $('.link').not(this).removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+
+    });
+});
+
+$(function () {
+    $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: (target.offset().top - 0)
+                }, 850);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+
+</head>
+
+<body id="top">
+
+
+<div class="navmobile">
+	<div id="drop">
+		<a href="#top">
+			Home
+		</a>
+		<a href="#section_one">
+			Portfolio
+		</a>
+		<a href="#section_two">
+			Experience
+		</a>
+		<a href="#">
+			Contact
+		</a>
+		<a href="#">
+			Resume
+		</a>
+	</div>
+	<div id="dropbutton">
+		<img src="www.afbaumgartner.com/baumgartner/assets/arrow.png" class="arrow">
+	</div>
+</div>
+
+<div class="hero">
+	<!--<ul id="scene">
+		<li class="layer" data-depth="0.1">-->
+	<h1>Good <span id="log"></span>.</h1>
+	<h1>My name is Adam.</h1>
+<!--</li>
+</ul-->
+</div>
+
+<div class="replacenav">
+	<div></div><div></div><div></div><div></div><div></div>
+</div>
+
+<div class="nav" id="nav">
+	<a class="link" href="#top">
+		Home
+	</a>
+	<a class="link" href="#section_one">
+		Portfolio
+	</a>
+	<a class="link" href="#section_two">
+		Experience
+	</a>
+	<a class="link" href="#section_three">
+		Contact
+	</a>
+	<a class="link" href="#">
+		Resume
+	</a>
+</div>
+<div class="main">
+
+	<div class="content">
+		<div class="text" id="section_one">
+			<p>
+					I'm a designer and a storyteller. But mostly, I'm a problem solver. Currently, I work for Vox Media. I've also done print design for the Indianapolis Star and graphics reporting for the Chicago Tribune.
+			</p>
+
+		</div>
+		<div class="portfolio">
+			<div class="portfolio-table">
+				<div class="image" id="i-large">
+					<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/brazil.png">
+				</div>
+				<div id="i-small">
+					<div class="image">
+						<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/populationchange.png">
+					</div>
+					<div class="image">
+						<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/touch.png">
+					</div>
+				</div>
+
+				<div class="image" id="i-large">
+					<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/spelling.png">
+				</div>
+				<div id="i-small">
+					<div class="image">
+						<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/quiz.png">
+					</div>
+					<div class="image">
+						<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/biofuel.png">
+					</div>
+				</div>
+				<div id="i-small">
+					<div class="image">
+						<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/virus.png">
+					</div>
+					<div class="image">
+						<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/foodtruck.png">
+					</div>
+				</div>
+
+				<div class="image" id="i-large">
+					<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/gora.png">
+				</div>
+
+				<div id="i-small">
+					<div class="image">
+						<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/fake.png">
+					</div>
+					<div class="image">
+						<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/oldlove.png">
+					</div>
+				</div>
+
+				<div class="image" id="i-large">
+					<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/72hrs.png">
+				</div>
+
+				<div id="i-small">
+					<div class="image">
+						<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/kotd.png">
+					</div>
+					<div class="image">
+						<img src="www.afbaumgartner.com/baumgartner/assets/portfolio-s/frostbite.png">
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="text" id="section_two">
+				<p>
+					Much of my work isn't tangible. I've spent a lot of my career figuring out ways to help other people get what they need to reach their goals. The best team is an empowered one.
+				</p>
+				<p>
+					As editor-in-chief of The Ball State Daily News, I motivated a volunteer staff and worked with them to identify and solve problems in our workflow. Though only a student paper, the skills I learned through The Daily News translate well to professional work environments.
+				</p>
+				<p>
+					For instance, at Vox Media, I've spent a lot of team working with the staff of <a href="http://www.vox.com">Vox.com</a>, helping figure out alternative ways to tell stories and identifying best practices for news tools.
+				</p>
+				<p>
+					More importantly, I've tried to listen to the needs of the staff to determine what new tools can help them better share their reporting.
+				</p>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+
+	</div>
+
+</div>
+
+
+<div class="konami">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<ul id="scene">
+		<li class="layer" data-depth="0.40"><img src="http://wellhealthqc.com/wp-content/uploads/2014/01/star_divider_gold_by_toxicestea-d4fsnk2.png"></li>
+		<li class="layer" data-depth="0.80"><img src="http://persephonemagazine.com/wp-content/uploads/2013/07/unicornrainbowanimated.gif"></li>
+	</ul>
+</center>
+</div>
+
+<div class="footer">
+	<div></div><div></div><div></div><div></div><div></div>
+</div>
+
+
+<script src="www.afbaumgartner.com/baumgartner/deploy/parallax.min.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+
+	<script>
+var bottom = $('.main').offset().top;
+
+$(window).scroll(function(){    
+    if ($(this).scrollTop() > bottom + 51){ 
+        $('.nav').addClass('fixed'); 
+    }
+    else{
+        $('.nav').removeClass('fixed');
+    }
+});
+</script>
+
+</body>
+
+</html>

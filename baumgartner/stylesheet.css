@@ -2,10 +2,13 @@ body {
 	margin:0px;
 }
 
+a {
+	text-decoration:none;
+}
+
 .hero {
 	width:100%;
-	/*background-image:url('/assets/subtlepatternsdotcom.png');*/
-	background-image:url('http://www.afbaumgartner.com/baumgartner/assets/glasses-v15.png');
+	background-image:url('www.afbaumgartner.com/baumgartner/assets/glasses-v15.png');
 	background-attachment:fixed;
 	background-size:400px 400px;
 	background-position:center bottom;
@@ -34,7 +37,7 @@ body {
 	width:100%;
 }
 
-.nav div {
+.link {
 	width:20%;
 	display:inline-block;
 	float:left;
@@ -45,11 +48,16 @@ body {
 	color:#ffffff;
 	text-align:center;
 	padding:5px 0px 5px 0px;
+	-o-transition:.2s;
+  		-ms-transition:.2s;
+  		-moz-transition:.2s;
+  		-webkit-transition:.2s;
+		transition:.2s;
 }
 
-.nav div:hover {
+.link:hover {
 	cursor:pointer;
-	border-top:2px solid transparent;
+	padding:7px 0px 7px 0px;
 		-o-transition:.2s;
   		-ms-transition:.2s;
   		-moz-transition:.2s;
@@ -57,23 +65,48 @@ body {
 		transition:.2s;
 }
 
-.nav div:first-child {
+.active {
+	cursor:pointer;
+	padding:7px 0px 7px 0px;
+}
+
+.active:first-child {
+	cursor:pointer;
+	padding:5px 0px 5px 0px;
+}
+
+.active:first-child:hover {
+	cursor:pointer;
+	padding:7px 0px 7px 0px;
+}
+
+.active:hover {
+	cursor:pointer;
+	padding:8px 0px 8px 0px;
+	-o-transition:.2s;
+  		-ms-transition:.2s;
+  		-moz-transition:.2s;
+  		-webkit-transition:.2s;
+		transition:.2s;
+}
+
+.link:first-child {
 	background-color:#FF5947;
 }
 
-.nav div:nth-child(2) {
+.link:nth-child(2) {
 	background-color:#FFAE53;
 }
 
-.nav div:nth-child(3) {
+.link:nth-child(3) {
 	background-color:#6AB084;
 }
 
-.nav div:nth-child(4) {
+.link:nth-child(4) {
 	background-color:#008586;
 }
 
-.nav div:nth-child(5) {
+.link:nth-child(5) {
 	background-color:#0E2F3F;
 }
 
@@ -126,7 +159,7 @@ body {
 
 .main {
 	width:100%;
-	background-color:#ffffff;
+	background-color:#F7F7F7;
 	margin:0px;
 	padding-bottom:70px;
 }
@@ -139,34 +172,43 @@ body {
 
 .portfolio {
 	width:100%;
+	margin-top:50px;
 }
 
 .portfolio-table {
 	width:60%;
 	margin:0 auto;
 	text-align:center;
-	padding-top:50px;
+	padding:0px;
 }
 
-.portfolio-table div {
-	width:30%;
-	min-width:100px;
-	margin:0px 1%;
-	display:inline-block;
-	vertical-align:top;
-}
-
-.portfolio-table div .image {
+#i-large {
 	width:100%;
-	margin:5px 0px;
-	vertical-align:top;
+	margin:7px 0px;
+}
+
+#i-small {
+	width:100%;
+	text-align:center;
+	margin:7px 0px;
+}
+
+#i-small div:first-child {
+	width:48.5%;
+	margin-right:2%;
+	display:inline-block;
+}
+
+#i-small div:nth-child(2) {
+	width:48.5%;
+	display:inline-block;
 }
 
 .image {
-	background-image:url('http://www.afbaumgartner.com/baumgartner/assets/bg-glasses-v2.png');
+	background-image:url('/assets/bg-glasses-v2.png');
 	background-position:center center;
 	background-repeat:no-repeat;
-	background-size:20%;
+	background-size:0px;
 	display:inline-block;
 	-o-transition:.4s;
   	-ms-transition:.4s;
@@ -176,7 +218,7 @@ body {
 }
 
 .image:hover {
-	background-size:50%;
+	background-size:100px;
 	-o-transition:.4s;
   	-ms-transition:.4s;
   	-moz-transition:.4s;
@@ -217,18 +259,33 @@ body {
 	padding-top:90px;
 }
 
+.text p:nth-child(2) {
+	padding:25px 0px 0px 0px;
+}
+
 .text p {
-	width:50%;
+	width:57%;
 	margin:0 auto;
-	padding:4px 0px;
+	padding:15px 0px 0px 0px;
 }
 
 p {
 	font-family:'lato', arial, sans-serif;
-	font-size:0.80em;
+	font-size:0.90em;
 	font-weight:400;
 	line-height:1.6em;
-	color:#999;
+	color:#666;
+}
+
+p a {
+	font-family:'lato', arial, sans-serif;
+	font-weight:400;
+	color:#666;
+	text-decoration:underline;
+}
+
+p a:hover {
+	text-decoration:none;
 }
 
 h5 {
@@ -277,6 +334,10 @@ ul {
 		background-color:#ffffff;
 }
 
+	.navmobile a {
+		display:block;
+	}
+
 	#drop {
 		display:none;
 }
@@ -284,7 +345,7 @@ ul {
 	#dropbutton{
 		width:100%;
 		background-color:#E3E3E3;
-		background-image:url('http://www.afbaumgartner.com/baumgartner/assets/menu-bg.png');
+		background-image:url('www.afbaumgartner.com/baumgartner/assets/menu-bg.png');
 		background-size:100%;
 		float:left;
 		font-size:0.8em;
@@ -293,9 +354,14 @@ ul {
 		text-transform: uppercase;
 		color:#ffffff;
 		text-align:center;
-		padding:0px 0px 0px 0px;
+		padding:2px 0px 2px 0px;
+
+}
 
 
+	.dropped {
+		background-color:#D4D4D4!important;
+		background-image:none!important;
 }
 
 	#dropbutton:hover{
@@ -321,7 +387,7 @@ ul {
   		-o-transform: rotate(180deg); /* Opera */
 	}
 
-	#drop div {
+	#drop a {
 		width:100%;
 		display:block;
 		float:left;
@@ -335,7 +401,7 @@ ul {
 		margin:0px;
 }
 
-	#drop div:hover {
+	#drop a:hover {
 		cursor:pointer;
 		opacity:0.85;
 			-o-transition:.2s;
@@ -346,24 +412,24 @@ ul {
 
 }
 
-	.navmobile div:first-child {
+	.navmobile a:first-child {
 		background-color:#FF5947;
 		 margin:0px;
 }
 
-	.navmobile div:nth-child(2) {
+	.navmobile a:nth-child(2) {
 		background-color:#FFAE53;
 }
 
-	.navmobile div:nth-child(3) {
+	.navmobile a:nth-child(3) {
 		background-color:#6AB084;
 }
 
-	.navmobile div:nth-child(4) {
+	.navmobile a:nth-child(4) {
 		background-color:#008586;
 }
 
-	.navmobile div:nth-child(5) {
+	.navmobile a:nth-child(5) {
 		background-color:#0E2F3F;
 }
 
@@ -399,6 +465,10 @@ ul {
 		width:80%;
 		padding-top:70px;
 }
+
+	.text p {
+		width:80%;
+}
 }
 
 
@@ -420,9 +490,13 @@ ul {
 		width:85%;
 }
 
+	.portfolio {
+		width:100%;
+		margin-top:0px;
+}
+
 	.portfolio-table {
 		width:100%;
-		padding-top:40px;
 }
 
 	.portfolio-table div {
@@ -435,6 +509,19 @@ ul {
 		width:100%;
 		padding-top:60px;
 }
+
+	.text p {
+		width:100%;
+}
+
+	#i-large {
+		margin:4px 0px;
+}
+
+	#i-small {
+		margin:4px 0px;
+}
+
 }
 
 @media (max-width:500px) {
@@ -472,6 +559,23 @@ ul {
 		font-size:0.9em;
 		padding-top:40px;
 }
+
+	#i-small div:first-child {
+		width:48%;
+		margin-right:2%;
+		display:inline-block;
+}
+
+	#i-small div:nth-child(2) {
+		width:48%;
+		display:inline-block;
+}
+
+	.image img:hover {
+		opacity:1;
+		-webkit-filter: grayscale(0%);
+		-moz-filter: grayscale(0%);
+		filter: grayscale(0%);
 
 }
 

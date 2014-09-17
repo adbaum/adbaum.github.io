@@ -416,6 +416,15 @@ ul {
 	box-shadow: 0px 2px 2px #666666;
 }
 
+.slide {
+  position: relative;
+}
+.slide .inner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 @media (max-width:930px) {
 	.resume {
 		width:90%;

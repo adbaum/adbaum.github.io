@@ -47,7 +47,6 @@ $( "#dropbutton" ).click(function() {
 </script>
 
 <script>
-
 $(document).ready(function(){
   $(".shadowbox").click(function(){
     $(".shadowbox2").slideUp("linear");
@@ -284,6 +283,12 @@ $(function () {
 				<p>
 					My first internship, I learned how to navigate the newsroom workflow, communicate effectively with large and diverse groups of people.
 				</p>
+
+				<div id="slidebottom" class="slide">
+  <button>slide it</button>
+  <div class="inner">Slide from bottom</div>
+</div>
+
 			</div>
 		</div>
 
@@ -379,6 +384,19 @@ jQuery( "img.lazy_loaded" ).each( function () {
 <script src="jquery.js"></script>
 <script src="jquery.smoothState.js"></script>
 <script src="functions.js"></script>
+
+<script>
+$(document).ready(function() {
+  $('#slideleft button').click(function() {
+    var $lefty = $(this).next();
+    $lefty.animate({
+      left: parseInt($lefty.css('left'),10) == 0 ?
+        -$lefty.outerWidth() :
+        0
+    });
+  });
+});
+</script>
 
 </body>
 

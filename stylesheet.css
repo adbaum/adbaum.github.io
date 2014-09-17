@@ -421,11 +421,33 @@ ul {
 	cursor:pointer;
 }
 
+.close-it img {
+	width:100%;
+	-webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.close-it img:hover {
+	-webkit-transform:rotate(60deg);
+    -moz-transform:rotate(60deg);
+    -o-transform:rotate(60deg);
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
 .sb-container {
 	width:60%;
 	padding:3% 0px;
 	margin:0 auto;
 	text-align:left;
+}
+
+.sb-container h3 {
+	margin-top:15px;
 }
 
 .sb-container img {

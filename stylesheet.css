@@ -585,6 +585,13 @@ ul {
 	.resume-container {
 		width:78%;
 }
+
+.shadowbox2, .shadowbox3, .shadowbox4, .shadowbox5, .shadowbox6, .shadowbox7,
+.shadowbox8, .shadowbox9, .shadowbox10, .shadowbox11, .shadowbox12, .shadowbox13,
+.shadowbox14, .shadowbox15 {
+	height:70%;
+}
+
 }
 
 

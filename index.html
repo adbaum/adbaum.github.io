@@ -39,11 +39,21 @@ $( "#dropbutton" ).click(function() {
 	$( ".arrow").toggleClass("arrow-flipped");
 	$( "#dropbutton").toggleClass("dropped");
 	});
-
-
-
 });
 
+</script>
+
+<script>
+$(document).ready(function() {
+  $('#slideleft button').click(function() {
+    var $lefty = $(this).next();
+    $lefty.animate({
+      left: parseInt($lefty.css('left'),10) == 0 ?
+        -$lefty.outerWidth() :
+        0
+    });
+  });
+});
 </script>
 
 <script>

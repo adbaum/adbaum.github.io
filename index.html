@@ -17,6 +17,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
+<script src="js/shadowbox.js"></script>
 <script src="js/javascript.js"></script>
 <script src="js/konami.js"></script>
 
@@ -286,6 +287,14 @@ $(function () {
 </div>
 
 
+<div class="shadowbox"></div>
+    <div class="shadowbox2">
+    	<h1>Work it.</h1>
+    	<p><b>By Adam Baumgartner</b></p><br>
+			<p>But, you live and you learn. Overall, I'm pleased with this product and the experience as a whole.</p>
+    </div>
+
+
 <div class="konami">
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
 	<ul id="scene">
@@ -342,6 +351,14 @@ $(window).scroll(function(){
       }).data('smoothState');
       //.data('smoothState') makes public methods available
 })(jQuery);
+</script>
+
+
+<script>
+jQuery( "img.lazy_loaded" ).each( function () {
+  var image = jQuery( this );
+  image.attr( "src", image.attr("lazy_loaded_src") );
+} );
 </script>
 
 <script src="jquery.js"></script>

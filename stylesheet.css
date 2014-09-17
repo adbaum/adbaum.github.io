@@ -396,10 +396,9 @@ ul {
 .shadowbox14, .shadowbox15 {
 	position:fixed;
 	z-index:101;
-	background-color:#ffffff;
+	background-color:#F7F7F7;
 	color:#666;
 	display:none;
-	color:#ffffff;
 	margin:0 auto;
 	top:0;
 	height:95%;

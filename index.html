@@ -100,9 +100,10 @@ $(function () {
 
 <div class="shadowbox"></div>
     <div class="shadowbox2">
-    	<h1>Work it.</h1>
-    	<p><b>By Adam Baumgartner</b></p><br>
-			<p>But, you live and you learn. Overall, I'm pleased with this product and the experience as a whole.</p>
+    	<img src="/assets/portfolio-s/brazil.png" lazy_loaded_src="/some_image.jpeg" class="lazy_loaded">
+    	<h3>Life in Brazil During the World Cup</h3>
+    	<p>When faced with this assignment, I knew I would be designing not just for this content, but future photo essays, as well. This format has since been made into a template that Vox uses often.</p>
+    	<p>I did mockups for this piece, and another designer helped stylize and refine it. I also worked closely with the developer on the project.</p>
     </div>
 
 
@@ -379,6 +380,13 @@ jQuery( "img.lazy_loaded" ).each( function () {
 <script src="jquery.js"></script>
 <script src="jquery.smoothState.js"></script>
 <script src="functions.js"></script>
+
+<script>
+jQuery( "img.lazy_loaded" ).each( function () {
+  var image = jQuery( this );
+  image.attr( "src", image.attr("lazy_loaded_src") );
+} );
+</script>
 
 </body>
 

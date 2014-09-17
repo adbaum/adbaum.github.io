@@ -100,6 +100,13 @@ $(document).ready(function(){
   $(".button3").click(function(){
     $(".shadowbox").fadeIn("fast");
   });
+
+    $(".button4").click(function(){
+    $(".shadowbox5").slideDown("linear");
+  });
+  $(".button4").click(function(){
+    $(".shadowbox").fadeIn("fast");
+  });
 });
 </script>
 
@@ -165,6 +172,16 @@ $(function () {
     	<h3>The Technology of Touch Screens</h3>
     	<p>I did all research and design for this piece, sorting through piles of patents and finding a source willing to discuss potentially proprietary details of their products.</p>
     	<p>The hand was illustrated by my good friend, Rick Tuma.</p>
+    	</div>
+    </div>
+    <div class="shadowbox5">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<a href="http://www.vox.com/2014/5/28/5740250/spell-it-out"><img lazy_loaded_src="/assets/portfolio-s/spelling.png" class="lazy_loaded"></a>
+    	<h3>Spell It Out</h3>
+    	<p>My second week at Vox, I overheard reporters saying it would be cool if they could make a quiz for the Spelling Bee.</p>
+    	<p>Never having done anything quite like this, I spent some time figuring out the JavaScript with a bit of help from a coworker. Once I got a working prototype, I showed it to my editors, and they gave me the go ahead to build it out.</p>
+    	<p>This was Vox's first interactive piece, and it inspired a series of quiz formats I later helped design that are now in use.</p>
     	</div>
     </div>
 
@@ -243,7 +260,7 @@ $(function () {
 				</div>
 
 				<div class="image" id="i-large">
-					<img src="/assets/portfolio-s/spelling.png">
+					<img class="button4" src="/assets/portfolio-s/spelling.png">
 				</div>
 				<div id="i-small">
 					<div class="image">

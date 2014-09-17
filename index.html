@@ -47,7 +47,12 @@ $( "#dropbutton" ).click(function() {
 
 <script>
 $(document).ready(function(){
-  $("#x").click(function(){
+  $(".shadowbox").click(function(){
+    $(".shadowbox2").slideUp("linear");
+    $(".shadowbox").fadeOut("fast");
+  });
+
+  $(".close-it").click(function(){
     $(".shadowbox2").slideUp("linear");
     $(".shadowbox").fadeOut("fast");
   });

@@ -411,7 +411,7 @@ ul {
 
 .close-it {
 	text-align: left;
-	position: relative;
+	position: fixed;
 	top: 0px;
 	color:#666;
 	font-size:20pt;

@@ -1,3 +1,4 @@
+$(document).ready(function() {
 $(".shadowbox").click(function(){
     $(".shadowbox2").slideUp("linear");
     $(".shadowbox").fadeOut("fast");
@@ -67,4 +68,5 @@ $(".shadowbox").click(function(){
   });
   $(".button4").click(function(){
     $(".shadowbox").fadeIn("fast");
+  });
   });

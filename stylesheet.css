@@ -402,7 +402,7 @@ ul {
 	color:#ffffff;
 	margin:0 auto;
 	top:0;
-	height:70%;
+	height:80%;
 	width:100%;
 	box-shadow: 0px 2px 2px #666666;
 	overflow:auto;
@@ -411,7 +411,7 @@ ul {
 
 .sb-container {
 	width:60%;
-	padding:10% 0px;
+	padding:3% 0px;
 	margin:0 auto;
 	text-align:left;
 }

@@ -46,13 +46,6 @@ $( "#dropbutton" ).click(function() {
 </script>
 
 <script>
-jQuery( "img.lazy_loaded" ).each( function () {
-  var image = jQuery( this );
-  image.attr( "src", image.attr("lazy_loaded_src") );
-} );
-</script>
-
-<script>
 $(document).ready(function(){
   $(".shadowbox").click(function(){
     $(".shadowbox2").slideUp("linear");
@@ -60,7 +53,7 @@ $(document).ready(function(){
   });
 
   $(".close-it").click(function(){
-    $(".shadowbox2").slideUp("linear");
+    $(".shadowbox2", ".shadowbox3").slideUp("linear");
     $(".shadowbox").fadeOut("fast");
   });
 
@@ -410,6 +403,13 @@ jQuery( "img.lazy_loaded" ).each( function () {
 <script src="jquery.js"></script>
 <script src="jquery.smoothState.js"></script>
 <script src="functions.js"></script>
+
+<script>
+jQuery( "img.lazy_loaded" ).each( function () {
+  var image = jQuery( this );
+  image.attr( "src", image.attr("lazy_loaded_src") );
+} );
+</script>
 
 </body>
 

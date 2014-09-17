@@ -441,6 +441,7 @@ ul {
 
 .sb-container {
 	width:60%;
+	max-width:800px;
 	padding:3% 0px;
 	margin:0 auto;
 	text-align:left;

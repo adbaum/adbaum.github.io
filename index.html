@@ -47,12 +47,13 @@ $( "#dropbutton" ).click(function() {
 </script>
 
 <script>
+
 $(document).ready(function(){
   $(".shadowbox").click(function(){
-    $(".shadowbox, .shadowbox2").fadeOut()
+    $(".shadowbox, .shadowbox2").toggle(slide, right, fast)
   });
   $(".button1").click(function(){
-    $(".shadowbox, .shadowbox2").fadeIn();
+    $(".shadowbox, .shadowbox2").toggle(slide, right, fast);
   });
 });
 </script>

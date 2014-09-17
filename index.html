@@ -47,7 +47,7 @@ $( "#dropbutton" ).click(function() {
 
 <script>
 $(document).ready(function(){
-  $(".shadowbox").click(function(){
+  $("#x").click(function(){
     $(".shadowbox2").slideUp("linear");
     $(".shadowbox").fadeOut("fast");
   });
@@ -98,8 +98,9 @@ $(function () {
 
 <body id="top">
 
-<div class="shadowbox"></div>
+<div class="shadowbox" id="x"></div>
     <div class="shadowbox2">
+    	<div class="close" id="x">x</div>
     	<div class="sb-container">
     	<img lazy_loaded_src="/assets/portfolio-s/brazil.png" class="lazy_loaded">
     	<h3>Life in Brazil During the World Cup</h3>

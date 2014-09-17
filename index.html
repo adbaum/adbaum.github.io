@@ -50,10 +50,10 @@ $( "#dropbutton" ).click(function() {
 
 $(document).ready(function(){
   $(".shadowbox").click(function(){
-    $(".shadowbox, .shadowbox2").toggle(slide, right, 500)
+    $(".shadowbox, .shadowbox2").fadeOut()
   });
   $(".button1").click(function(){
-    $(".shadowbox, .shadowbox2").toggle(slide, right, 500);
+    $(".shadowbox, .shadowbox2").fadeIn();
   });
 });
 </script>

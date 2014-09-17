@@ -431,13 +431,13 @@ ul {
 }
 
 .close-it img:hover {
-	-webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg);
-    -o-transform:rotate(360deg);
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
+	-webkit-transform:rotate(405deg);
+    -moz-transform:rotate(405deg);
+    -o-transform:rotate(405deg);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
 }
 
 .sb-container {
@@ -696,6 +696,10 @@ ul {
 	width:20px;
 }
 
+.sb-container {
+	width:80%;
+}
+
 
 }
 
@@ -760,6 +764,10 @@ ul {
 
 	.footer-text {
 			margin-top:50px;
+}
+	.sb-container {
+		width:95%;
+}
 }
 
 @media (max-width:300px) {

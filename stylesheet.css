@@ -293,7 +293,7 @@ a {
 	vertical-align:top;
 }
 
-.resume h3 {
+h3 {
 	font-family:'lato', sans-serif;
 	font-weight:700;
 	font-size:1em;
@@ -303,7 +303,7 @@ a {
 
 }
 
-.resume h4 {
+h4 {
 	font-family:'lato', sans-serif;
 	font-weight:700;
 	font-size:0.6em;
@@ -315,7 +315,7 @@ a {
 	color:#666;
 }
 
-.resume h5 {
+h5 {
 	font-family:'lato', sans-serif;
 	font-weight:700;
 	font-size:0.6em;
@@ -362,16 +362,6 @@ p a {
 
 p a:hover {
 	text-decoration:none;
-}
-
-h5 {
-	font-family:'lato', arial, sans-serif;
-	font-size:0.9em;
-	font-weight:900;
-	text-transform:uppercase;
-	margin:0px;
-	width:100%;
-	color:#999;
 }
 
 .konami {

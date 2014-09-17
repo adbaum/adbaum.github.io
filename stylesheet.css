@@ -410,9 +410,15 @@ ul {
 }
 
 .close-it {
-	top:5px;
-	left:5px;
-	position:absolute;
+	text-align: left;
+	position: relative;
+	top: 0px;
+	color:#666;
+	font-size:20pt;
+	display:block;
+	margin-left:20px;
+	width:30px;
+	cursor:pointer;
 }
 
 .sb-container {

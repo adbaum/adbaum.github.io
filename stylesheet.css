@@ -455,6 +455,11 @@ ul {
 	width:100%;
 }
 
+.shadowbox15 img {
+	width:100%;
+	max-width:400px;
+}
+
 @media (max-width:930px) {
 	.resume {
 		width:90%;

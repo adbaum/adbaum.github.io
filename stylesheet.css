@@ -401,7 +401,9 @@ ul {
 	display:none;
 }
 
-.shadowbox2 {
+.shadowbox2, .shadowbox3, .shadowbox4, .shadowbox5, .shadowbox6, .shadowbox7,
+.shadowbox8, .shadowbox9, .shadowbox10, .shadowbox11, .shadowbox12, .shadowbox13,
+.shadowbox14, .shadowbox15 {
 	position:fixed;
 	z-index:101;
 	background-color:#F7F7F7;
@@ -410,7 +412,7 @@ ul {
 	color:#ffffff;
 	padding:50px;
 	top:0;
-	height:70%;
+	height:80%;
 	width:100%;
 	overflow-y:auto;
 	box-shadow: 0px 2px 2px #666666;

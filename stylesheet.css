@@ -400,18 +400,21 @@ ul {
 	color:#666;
 	display:none;
 	color:#ffffff;
-	padding:5% 5%;
 	margin:0 auto;
 	top:0;
 	height:70%;
 	width:100%;
 	box-shadow: 0px 2px 2px #666666;
+	overflow:auto;
 }
 
-.shadowbox2 img, .shadowbox3 img, .shadowbox4 img, .shadowbox5 img, .shadowbox6 img, .shadowbox7 img,
-.shadowbox8 img, .shadowbox9 img, .shadowbox10 img, .shadowbox11 img, .shadowbox12 img, .shadowbox13 img,
-.shadowbox14 img, .shadowbox15 img {
-	width:100%;
+.sb-container {
+	width:60%;
+	padding:10% 0px;
+}
+
+.sb-container img {
+	width:60%;
 }
 
 @media (max-width:930px) {

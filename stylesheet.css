@@ -411,9 +411,10 @@ ul {
 	color:#ffffff;
 	padding:50px;
 	top:5%;
-	height:100%;
-	width:100%;
+	height:70%;
 	overflow-y:auto;
+	left:20%;
+	width:50%;
 	-moz-border-radius: 10px;
     	-webkit-border-radius: 10px;
     	-khtml-border-radius: 10px;

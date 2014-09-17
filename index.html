@@ -47,6 +47,17 @@ $( "#dropbutton" ).click(function() {
 </script>
 
 <script>
+$(document).ready(function(){
+  $(".shadowbox").click(function(){
+    $(".shadowbox, .shadowbox2").fadeOut()
+  });
+  $(".button").click(function(){
+    $(".shadowbox, .shadowbox2").fadeIn();
+  });
+});
+</script>
+
+<script>
 $(document).ready(function () {
     $(window).scroll(function () {
 

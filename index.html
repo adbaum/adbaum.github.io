@@ -50,7 +50,8 @@ $( "#dropbutton" ).click(function() {
 
 $(document).ready(function(){
   $(".shadowbox").click(function(){
-    $(".shadowbox, .shadowbox2").slideUp("linear")
+    $(".shadowbox2").slideUp("linear");
+    $(".shadowbox").fadeOut("slow");
   });
   $(".button1").click(function(){
     $(".shadowbox2").slideDown("linear");

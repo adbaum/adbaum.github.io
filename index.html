@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="shortcut icon" href="/assets/header.png">
+<title>AdBaum | Media Designer</title>
+
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<link href="animate.css" rel="stylesheet" type="text/css">
+
+<link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script src="js/javascript.js"></script>
+<script src="js/konami.js"></script>
+
+<script>
+
+var easter_egg = new Konami();
+easter_egg.code = function() { 
+	$( ".konami" ).fadeIn( "slow" );
+	$( ".main" ).fadeOut( "fast" );
+}
+easter_egg.load();
+
+</script>
+
+<script>
+$(document).ready(function() {
+$( "#dropbutton" ).click(function() {
+	$( "#drop" ).slideToggle( "fast" );
+	$( ".arrow").toggleClass("arrow-flipped");
+	$( "#dropbutton").toggleClass("dropped");
+	});
+
+
+
+});
+
+</script>
+
+<script>
+$(document).ready(function () {
+    $(window).scroll(function () {
+
+        var y = $(this).scrollTop();
+
+        $('.link').each(function (event) {
+            if (y >= $($(this).attr('href')).offset().top - 0) {
+                $('.link').not(this).removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+
+    });
+});
+
+$(function () {
+    $('a[href*=#]:not([href=#]);').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: (target.offset().top - 0)
+                }, 850);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+
+</head>
+
+<body id="top">
+
+
+<div class="navmobile">
+	<div id="drop">
+		<a href="#top">
+			Home
+		</a>
+		<a href="#section_one">
+			Portfolio
+		</a>
+		<a href="#section_two">
+			Experience
+		</a>
+		<a href="#section_three">
+			Contact
+		</a>
+	</div>
+	<div id="dropbutton">
+		<img src="/assets/arrow.png" class="arrow">
+	</div>
+</div>
+
+<div class="hero">
+	<!--<ul id="scene">
+		<li class="layer" data-depth="0.1">-->
+	<h1>Good <span id="log"></span>.</h1>
+	<h1>My name is Adam.</h1>
+<!--</li>
+</ul-->
+</div>
+
+<div class="replacenav">
+	<div></div><div></div><div></div><div></div><div></div>
+</div>
+
+<div class="nav" id="nav">
+	<a class="link" href="#top">
+		Home
+	</a>
+	<a class="link" href="#section_one">
+		Portfolio
+	</a>
+	<a class="link" href="#section_two">
+		Experience
+	</a>
+	<a class="link" href="#section_three">
+		Contact
+	</a>
+	<a class="link" href="/assets/baumgartnerresume.pdf">
+		Resume
+	</a>
+</div>
+<div class="main">
+
+	<div class="content">
+		<div class="text" id="section_one">
+			<p>
+					I'm a designer and a storyteller. But mostly, I'm a problem solver. Currently, I work for Vox Media. I've also done print design for the Indianapolis Star and graphics reporting for the Chicago Tribune.
+			</p>
+
+		</div>
+		<div class="portfolio">
+			<div class="portfolio-table">
+				<div class="image" id="i-large">
+					<img src="/assets/portfolio-s/brazil.png">
+				</div>
+				<div id="i-small">
+					<div class="image">
+						<img src="/assets/portfolio-s/populationchange.png">
+					</div>
+					<div class="image">
+						<img src="/assets/portfolio-s/touch.png">
+					</div>
+				</div>
+
+				<div class="image" id="i-large">
+					<img src="/assets/portfolio-s/spelling.png">
+				</div>
+				<div id="i-small">
+					<div class="image">
+						<img src="/assets/portfolio-s/quiz.png">
+					</div>
+					<div class="image">
+						<img src="/assets/portfolio-s/biofuel.png">
+					</div>
+				</div>
+				<div id="i-small">
+					<div class="image">
+						<img src="/assets/portfolio-s/virus.png">
+					</div>
+					<div class="image">
+						<img src="/assets/portfolio-s/foodtruck.png">
+					</div>
+				</div>
+
+				<div class="image" id="i-large">
+					<img src="/assets/portfolio-s/gora.png">
+				</div>
+
+				<div id="i-small">
+					<div class="image">
+						<img src="/assets/portfolio-s/fake.png">
+					</div>
+					<div class="image">
+						<img src="/assets/portfolio-s/oldlove.png">
+					</div>
+				</div>
+
+				<div class="image" id="i-large">
+					<img src="/assets/portfolio-s/72hrs.png">
+				</div>
+
+				<div id="i-small">
+					<div class="image">
+						<img src="/assets/portfolio-s/kotd.png">
+					</div>
+					<div class="image">
+						<img src="/assets/portfolio-s/frostbite.png">
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="text" id="section_two">
+				<p>
+					Much of my work isn't tangible. I've spent a lot of my career figuring out ways to help other people get what they need to reach their goals. The best team is an empowered one.
+				</p>
+				<!--<p>
+					As editor-in-chief of The Ball State Daily News, I motivated a volunteer staff and worked with them to identify and solve problems in our workflow. Though only a student paper, the skills I learned through The Daily News translate well to professional work environments.
+				</p>
+				<p>
+					For instance, at Vox Media, I've spent a lot of team working with the staff of <a href="http://www.vox.com">Vox.com</a>, helping figure out alternative ways to tell stories and identifying best practices for news tools.
+				</p>
+				<p>
+					More importantly, I've tried to listen to the needs of the staff to determine what new tools can help them better share their reporting.
+				</p>-->
+		</div>
+		<div class="resume-container">
+			<div class="resume">
+				<h3>Vox Media</h3>
+				<h4>Designer and Developer</h4>
+				<h5>May 2014-present</h5>
+				<p>
+					Primarily having worked for <a href="http://www.vox.com">Vox.com</a>, I helped identify the needs of the budding website.
+				</p>
+				<p>
+					I haved worked closely with the engagement editor to develop image and meme styles, as well as with the features editor to design and develop longform stories. I also identified and help create tools to help reporters tell stories in different forms.
+				</p>
+				<p>
+					Currently, I'm working on the redesign of <a href="http://www.racked.com">Racked</a>, and have helped finalize details of the <a href="http://www.eater.com">Eater</a> redesign.
+				</p>
+			</div>
+			<div class="resume">
+				<h3>Chicago Tribune</h3>
+				<h4>Graphics Reporter</h4>
+				<h5>May 2013-August 2013</h5>
+				<p>
+					On a daily basis, I researched and designed graphics for the Tribune's print product. I was able to produce a graphic a day on average, coordinating with different parts of the team to keep all gears moving.
+				</p>
+				<p>
+					I was able to work the night the Blackhawks won the Stanley Cup, helping to get the team's graphics out the door for a special print section.
+				</p>
+				<p>
+					I've since returned to work during breaks from school and to help report for the Olympics.
+				</p>
+			</div>
+			<div class="resume">
+				<h3>Indy Star</h3>
+				<h4>Print Designer</h4>
+				<h5>June 2012-August 2012</h5>
+				<p>
+					By the time I left the Star, I had designed for every section of the paper. Three days a week, I would focus on the daily product, and two days a week I worked on advanced features.
+				</p>
+				<p>
+					Typically, I would design 6-12 pages a night on deadline, filling free down time with feature design
+				</p>
+				<p>
+					My first internship, I learned how to navigate the newsroom workflow, communicate effectively with large and diverse groups of people.
+				</p>
+			</div>
+		</div>
+
+		<div class="text" id="section_three">
+				<p>
+					So talk to me. I'm always looking for new career opportunities and freelance projects. Otherwise, I love the chance to talk shop and learn about others' operations. Let's keep in touch.
+				</p>
+				<p class="reachout">
+						<a href="http://www.twitter.com/adbaum/">Follow me on Twitter.</a><br>
+						<a href="mailto:adam.f.baumgartner@gmail.com">Write me an email.</a><br>
+						<a href="http://lnkd.in/fRy9sd">Connect through LinkedIn.</a><br>
+						<a href="http://newspagedesigner.org/profiles/blog/list?user=1r6dcmvgtvcwf">Read my blog.</a>
+				</p>
+			</div>
+
+	</div>
+
+<div class="footer-text">
+				<p>
+					<a href="#top">© 2014 Adam Baumgartner</a>
+				</p>
+			</div>
+
+</div>
+
+
+<div class="konami">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<ul id="scene">
+		<li class="layer" data-depth="0.40"><img src="http://wellhealthqc.com/wp-content/uploads/2014/01/star_divider_gold_by_toxicestea-d4fsnk2.png"></li>
+		<li class="layer" data-depth="0.80"><img src="http://persephonemagazine.com/wp-content/uploads/2013/07/unicornrainbowanimated.gif"></li>
+	</ul>
+</center>
+</div>
+			<div class="footer">
+		<div></div><div></div><div></div><div></div><div></div>
+	</div>
+
+
+<script src="deploy/parallax.min.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+
+	<script>
+var bottom = $('.main').offset().top;
+
+$(window).scroll(function(){    
+    if ($(this).scrollTop() > bottom + 51){ 
+        $('.nav').addClass('fixed'); 
+    }
+    else{
+        $('.nav').removeClass('fixed');
+    }
+});
+</script>
+
+<script>
+;(function($) {
+  'use strict';
+  var $body = $('html, body'),
+      content = $('#main').smoothState({
+        // Runs when a link has been activated
+        onStart: {
+          duration: 250, // Duration of our animation
+          render: function (url, $container) {
+            // toggleAnimationClass() is a public method
+            // for restarting css animations with a class
+            content.toggleAnimationClass('is-exiting');
+            // Scroll user to the top
+            $body.animate({
+              scrollTop: 0
+            });
+          }
+        }
+      }).data('smoothState');
+      //.data('smoothState') makes public methods available
+})(jQuery);
+</script>
+
+<script src="jquery.js"></script>
+<script src="jquery.smoothState.js"></script>
+<script src="functions.js"></script>
+
+</body>
+
+</html>

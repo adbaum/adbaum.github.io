@@ -417,6 +417,7 @@ ul {
 	font-size:20pt;
 	display:block;
 	margin-left:20px;
+	margin-top:20px;
 	width:30px;
 	cursor:pointer;
 }
@@ -430,9 +431,9 @@ ul {
 }
 
 .close-it img:hover {
-	-webkit-transform:rotate(60deg);
-    -moz-transform:rotate(60deg);
-    -o-transform:rotate(60deg);
+	-webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
     -webkit-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
@@ -625,7 +626,7 @@ ul {
 .shadowbox2, .shadowbox3, .shadowbox4, .shadowbox5, .shadowbox6, .shadowbox7,
 .shadowbox8, .shadowbox9, .shadowbox10, .shadowbox11, .shadowbox12, .shadowbox13,
 .shadowbox14, .shadowbox15 {
-	height:70%;
+	height:85%;
 }
 
 }
@@ -688,6 +689,13 @@ ul {
 	.footer-text {
 		margin-top:100px;
 }
+
+.close-it {
+	margin-left:10px;
+	margin-top:10px;
+	width:20px;
+}
+
 
 }
 

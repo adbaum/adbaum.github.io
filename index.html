@@ -46,6 +46,13 @@ $( "#dropbutton" ).click(function() {
 </script>
 
 <script>
+jQuery( "img.lazy_loaded" ).each( function () {
+  var image = jQuery( this );
+  image.attr( "src", image.attr("lazy_loaded_src") );
+} );
+</script>
+
+<script>
 $(document).ready(function(){
   $(".shadowbox").click(function(){
     $(".shadowbox2").slideUp("linear");
@@ -61,6 +68,13 @@ $(document).ready(function(){
     $(".shadowbox2").slideDown("linear");
   });
   $(".button1").click(function(){
+    $(".shadowbox").fadeIn("fast");
+  });
+
+  $(".button2").click(function(){
+    $(".shadowbox3").slideDown("linear");
+  });
+  $(".button2").click(function(){
     $(".shadowbox").fadeIn("fast");
   });
 });
@@ -111,6 +125,14 @@ $(function () {
     	<h3>Life in Brazil During the World Cup</h3>
     	<p>When faced with this assignment, I knew I would be designing not just for this content, but future photo essays, as well. This format has since been made into a template that Vox uses often.</p>
     	<p>I did mockups for this piece, and another designer helped stylize and refine it. I also worked closely with the developer on the project.</p>
+    	</div>
+    </div>
+    <div class="shadowbox3">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<img lazy_loaded_src="/assets/portfolio-b/populationchange.png" class="lazy_loaded">
+    	<h3>Change in Chicagoland Population</h3>
+    	<p>While at the Chicago Tribune, I used ArcGIS often. Since then, I've used GIS software to analyze land values of residential zones in Muncie and for other projects.</p>
     	</div>
     </div>
 
@@ -181,7 +203,7 @@ $(function () {
 				</div>
 				<div id="i-small">
 					<div class="image">
-						<img src="/assets/portfolio-s/populationchange.png">
+						<img class="button2" src="/assets/portfolio-s/populationchange.png">
 					</div>
 					<div class="image">
 						<img src="/assets/portfolio-s/touch.png">
@@ -388,13 +410,6 @@ jQuery( "img.lazy_loaded" ).each( function () {
 <script src="jquery.js"></script>
 <script src="jquery.smoothState.js"></script>
 <script src="functions.js"></script>
-
-<script>
-jQuery( "img.lazy_loaded" ).each( function () {
-  var image = jQuery( this );
-  image.attr( "src", image.attr("lazy_loaded_src") );
-} );
-</script>
 
 </body>
 

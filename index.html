@@ -53,9 +53,22 @@ $(document).ready(function(){
   });
 
   $(".close-it").click(function(){
-    $(".shadowbox2", ".shadowbox3").slideUp("linear");
+    $(".shadowbox2").slideUp("linear");
     $(".shadowbox").fadeOut("fast");
   });
+
+
+  $(".shadowbox").click(function(){
+    $(".shadowbox3").slideUp("linear");
+    $(".shadowbox").fadeOut("fast");
+  });
+
+  $(".close-it").click(function(){
+    $(".shadowbox3").slideUp("linear");
+    $(".shadowbox").fadeOut("fast");
+  });
+
+  //errrr
 
   $(".button1").click(function(){
     $(".shadowbox2").slideDown("linear");

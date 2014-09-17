@@ -391,6 +391,16 @@ ul {
   padding: 0;
 }
 
+.shadowbox {
+	width:100%;
+	height:100%;
+	background-color:#000000;
+	opacity:0.6;
+	position:fixed;
+	z-index:100;
+	display:none;
+}
+
 .shadowbox2 {
 	position:fixed;
 	z-index:101;

@@ -50,10 +50,10 @@ $( "#dropbutton" ).click(function() {
 
 $(document).ready(function(){
   $(".shadowbox").click(function(){
-    $(".shadowbox2").slideUp(fast)
+    $(".shadowbox, .shadowbox2").slideUp(fast)
   });
   $(".button1").click(function(){
-    $(".shadowbox2").slideDown(fast);
+    $(".shadowbox, .shadowbox2").slideDown(fast);
   });
 });
 </script>
@@ -95,8 +95,9 @@ $(function () {
 
 <body id="top">
 
+<div class="shadowbox"></div>
     <div class="shadowbox2">
-    	<h1 class="shadowbox">Work it.</h1>
+    	<h1>Work it.</h1>
     	<p><b>By Adam Baumgartner</b></p><br>
 			<p>But, you live and you learn. Overall, I'm pleased with this product and the experience as a whole.</p>
     </div>

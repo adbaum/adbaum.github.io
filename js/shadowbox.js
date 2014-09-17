@@ -144,6 +144,16 @@ $(".shadowbox").click(function(){
     $(".shadowbox").fadeOut("fast");
   });
 
+  $(".shadowbox").click(function(){
+    $(".shadowbox16").slideUp("linear");
+    $(".shadowbox").fadeOut("fast");
+  });
+
+  $(".close-it").click(function(){
+    $(".shadowbox16").slideUp("linear");
+    $(".shadowbox").fadeOut("fast");
+  });
+
   //errrr
 
   $(".button1").click(function(){
@@ -241,6 +251,13 @@ $(".button14").click(function(){
     $(".shadowbox15").slideDown("linear");
   });
   $(".button14").click(function(){
+    $(".shadowbox").fadeIn("fast");
+  });
+
+  $(".button15").click(function(){
+    $(".shadowbox16").slideDown("linear");
+  });
+  $(".button15").click(function(){
     $(".shadowbox").fadeIn("fast");
   });
   });

@@ -61,6 +61,24 @@ $( "#dropbutton" ).click(function() {
 </script>
 
 <script>
+$(document).ready(function() {
+    jQuery( "img.lazy_loaded" ).each( function () {
+  var image = jQuery( this );
+  image.attr( "src", image.attr("lazy_loaded_src") );
+} );
+});
+</script>
+
+<script>
+$(document).ready(function() {
+jQuery( "img.lazy_loaded" ).each( function () {
+  var image = jQuery( this );
+  image.attr( "src", image.attr("lazy_loaded_src") );
+} );
+});
+</script>
+
+<script>
 $(document).ready(function () {
     $(window).scroll(function () {
 
@@ -104,7 +122,7 @@ $(function () {
     	<a href="http://www.vox.com/a/world-cup-2014-brazil-pictures"><img lazy_loaded_src="/assets/portfolio-s/brazil.png" class="lazy_loaded"></a>
     	<h3>Life in Brazil During the World Cup</h3>
     	<p>When faced with this assignment, I knew I would be designing not just for this content, but future photo essays, as well. This format has since been made into a template that Vox uses often.</p>
-    	<p>I did mockups for this piece, and another designer helped stylize and refine it. I also worked closely with the developer on the project.</p>
+    	<p>I did mockups for this piece, and <a href="https://twitter.com/uytieu">Uy Tieu</a> helped stylize and refine it. I also worked closely with the developer, <a href="https://twitter.com/yurivictor">Yuri Victor</a> on the project.</p>
     	</div>
     </div>
     <div class="shadowbox3">
@@ -239,7 +257,7 @@ $(function () {
     	<h3>This Is What It's Like to Have HIV in 2014</h3>
     	<p>A total of nine illustrations are the only art in this story of more than 10,000 words.</p>
     	<p>Each illustration highlights key moments in the eight Q&As the author conducted.</p>
-    	<p>I also came up with the page design and worked with the developer to make it work.</p>
+    	<p>I also came up with the page design and worked with the developer and fellow intern, <a href="https://twitter.com/nicolelzhu">Nicole Zhu</a>, to make it come to life.</p>
     	</div>
     </div>
 
@@ -522,7 +540,7 @@ $(window).scroll(function(){
     }
 });
 </script>
-
+<!--
 <script>
 jQuery( "img.lazy_loaded" ).each( function () {
   var image = jQuery( this );
@@ -536,6 +554,7 @@ jQuery( "img.lazy_loaded" ).each( function () {
   image.attr( "src", image.attr("lazy_loaded_src") );
 } );
 </script>
+-->
 
 </body>
 

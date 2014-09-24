@@ -268,10 +268,30 @@ $(".button14").click(function(){
     $(".shadowbox").fadeIn("fast");
   });
 
+  $(".shadowbox").click(function(){
+    $(".shadowbox18").slideUp("linear");
+    $(".shadowbox").fadeOut("fast");
+  });
+
+  $(".close-it").click(function(){
+    $(".shadowbox18").slideUp("linear");
+    $(".shadowbox").fadeOut("fast");
+  });
+
  $(".button17").click(function(){
     $(".shadowbox18").slideDown("linear");
   });
   $(".button17").click(function(){
     $(".shadowbox").fadeIn("fast");
+  });
+
+  $(".shadowbox").click(function(){
+    $(".shadowbox18").slideUp("linear");
+    $(".shadowbox").fadeOut("fast");
+  });
+
+  $(".close-it").click(function(){
+    $(".shadowbox18").slideUp("linear");
+    $(".shadowbox").fadeOut("fast");
   });
   });

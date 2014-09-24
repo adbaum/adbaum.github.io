@@ -449,8 +449,20 @@ ul {
 	text-align:left;
 }
 
+.sb-container a img {
+	opacity:1;
+	-webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
 .sb-container a img:hover {
 	opacity:0.8;
+	-webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
 
 .sb-container h3 {

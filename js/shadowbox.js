@@ -269,12 +269,12 @@ $(".button14").click(function(){
   });
 
   $(".shadowbox").click(function(){
-    $(".shadowbox18").slideUp("linear");
+    $(".shadowbox17").slideUp("linear");
     $(".shadowbox").fadeOut("fast");
   });
 
   $(".close-it").click(function(){
-    $(".shadowbox18").slideUp("linear");
+    $(".shadowbox17").slideUp("linear");
     $(".shadowbox").fadeOut("fast");
   });
 

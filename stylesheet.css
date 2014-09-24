@@ -334,6 +334,11 @@ h5 {
 	text-align:center;
 }
 
+.reachout img {
+	width:100%;
+	max-width:180px;
+}
+
 
 .footer-text {
 	margin-top:200px;

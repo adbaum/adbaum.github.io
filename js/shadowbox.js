@@ -260,14 +260,12 @@ $(".button14").click(function(){
   $(".button15").click(function(){
     $(".shadowbox").fadeIn("fast");
   });
-  });
 
   $(".button16").click(function(){
     $(".shadowbox17").slideDown("linear");
   });
   $(".button16").click(function(){
     $(".shadowbox").fadeIn("fast");
-  });
   });
 
  $(".button17").click(function(){

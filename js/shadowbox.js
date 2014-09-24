@@ -261,3 +261,19 @@ $(".button14").click(function(){
     $(".shadowbox").fadeIn("fast");
   });
   });
+
+  $(".button16").click(function(){
+    $(".shadowbox17").slideDown("linear");
+  });
+  $(".button16").click(function(){
+    $(".shadowbox").fadeIn("fast");
+  });
+  });
+
+  $(".button17").click(function(){
+    $(".shadowbox18").slideDown("linear");
+  });
+  $(".button17").click(function(){
+    $(".shadowbox").fadeIn("fast");
+  });
+  });

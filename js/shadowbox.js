@@ -270,7 +270,7 @@ $(".button14").click(function(){
   });
   });
 
-  $(".button17").click(function(){
+ $(".button17").click(function(){
     $(".shadowbox18").slideDown("linear");
   });
   $(".button17").click(function(){

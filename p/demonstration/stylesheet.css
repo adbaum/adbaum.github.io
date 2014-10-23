@@ -394,20 +394,26 @@ body {
 
 	/*headline*/
 	.hero-text h1 {
-		font-size:3.75em;
+		font-size:3.5em;
 		margin-bottom:0px;
+		margin-right:2%;
+		margin-left:2%;
 	}
 
 	/*subhead*/
 	.hero-text h2 {
 		font-size:1em;
 		line-height:1.3em;
+		margin-right:2%;
+		margin-left:2%;
 	}
 
 	/*byline*/
 	.hero-text h3 {
 		font-size:1em;
 		line-height:4em;
+		margin-right:2%;
+		margin-left:2%;
 	}
 
 	#section-one-hero h1, #section-two-hero h1, #section-three-hero h1 {

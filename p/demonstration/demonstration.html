@@ -3,7 +3,7 @@
 	<head>
 		<!--link stylesheets-->
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
-		<!--add JavaScripts-->
+		<!--add JavaScripts, load jQuery-->
 		<script src="scripts/script.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script>
@@ -13,42 +13,11 @@
 				});
 			});
 		</script>
-		<!--<script>
-			$(document).ready(function () {
-			    $(window).scroll(function () {
-
-			        var y = $(this).scrollTop();
-
-			        $('.link').each(function (event) {
-			            if (y >= $($(this).attr('href')).offset().top - 0) {
-			                $('.link').not(this).removeClass('active');
-			                $(this).addClass('active');
-			            }
-			        });
-
-			    });
-			});
-
-			$(function () {
-			    $('a[href*=#]:not([href=#]);').click(function () {
-			        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-			            var target = $(this.hash);
-			            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			            if (target.length) {
-			                $('html,body').animate({
-			                    scrollTop: (target.offset().top - 0)
-			                }, 850);
-			                return false;
-			            }
-			        }
-			    });
-			});
-		</script>-->
 		<!--add fonts-->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
 		<!--scale to viewport-->
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-		<!--define character set-->
+		<!--define characters-->
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<!--bump up your SEO-->
 		<title>The Skinny | Epic Title</title>
@@ -58,7 +27,7 @@
 		<link rel="shortcut icon" href="/assets/header.png">
 	</head>
 	<body>
-
+ 
 		<div class="mobile-menu">
 			<div id="drop">
 				<a href="http://www.afbaumgartner.com/">The Skinny</a>
@@ -112,7 +81,7 @@
 				<h2>A less epic subhead further explaining the story.</h2>
 				<h3>By Name Namington</h3>
 			</div>
-			<div class="intro">
+			<div class="section">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo sapien. Fusce hendrerit, arcu eget bibendum posuere, est est efficitur tellus, sit amet posuere lorem turpis ut dolor. Vivamus interdum urna sed felis congue pulvinar. Donec vel urna sit amet erat lacinia convallis. Maecenas ex augue, dapibus in purus in, bibendum faucibus mauris.</p>
 				<p>Maecenas id metus rutrum, facilisis metus vel, molestie sem. Donec a euismod leo, vitae posuere purus. Suspendisse potenti. Vivamus facilisis a nulla ut vestibulum. Praesent vitae arcu malesuada, interdum elit a, interdum lorem. Phasellus malesuada porta molestie. Suspendisse placerat fringilla sodales. Suspendisse potenti. Donec pulvinar pulvinar nulla, a laoreet erat placerat venenatis.</p>
 				<p>Mauris placerat rhoncus mi eu convallis. Morbi non accumsan quam. Maecenas accumsan quis eros non fringilla. Maecenas enim nisl, dictum id bibendum at, porttitor in libero. Suspendisse elementum, mauris in commodo mollis, quam nisl porta velit, vel luctus sapien eros in purus. Nam at vulputate eros.</p>
@@ -122,7 +91,7 @@
 			<div id="section-one-hero" data-bottom-top="background-position:50% -300px;" data-top-bottom="background-position:50% 0px;">
 				<h1>Section One</h1>
 			</div>
-			<div class="section-one">
+			<div class="section">
 				<p>Maecenas id metus rutrum, facilisis metus vel, molestie sem. Donec a euismod leo, vitae posuere purus. Suspendisse potenti. Vivamus facilisis a nulla ut vestibulum. Praesent vitae arcu malesuada, interdum elit a, interdum lorem. Phasellus malesuada porta molestie. Suspendisse placerat fringilla sodales. Suspendisse potenti. Donec pulvinar pulvinar nulla, a laoreet erat placerat venenatis.</p>
 				<p>Phasellus sodales aliquet purus. Pellentesque molestie sed risus ut aliquet. Nunc arcu dui, rutrum eu cursus et, pretium eget erat. Praesent eu faucibus tortor. Etiam placerat nulla bibendum viverra lobortis. Aenean tortor nisl, vehicula eu urna nec, malesuada molestie urna.</p>
 					<div class="pullquote-right">
@@ -148,7 +117,7 @@
 			<div id="section-two-hero" data-bottom-top="background-position:50% -300px;" data-top-bottom="background-position:50% 0px;">
 				<h1>Section Two</h1>
 			</div>
-			<div class="section-two">
+			<div class="section">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo sapien. Fusce hendrerit, arcu eget bibendum posuere, est est efficitur tellus, sit amet posuere lorem turpis ut dolor. Vivamus interdum urna sed felis congue pulvinar. Donec vel urna sit amet erat lacinia convallis. Maecenas ex augue, dapibus in purus in, bibendum faucibus mauris.</p>
 				<p>Maecenas id metus rutrum, facilisis metus vel, molestie sem. Donec a euismod leo, vitae posuere purus. Suspendisse potenti. Vivamus facilisis a nulla ut vestibulum. Praesent vitae arcu malesuada, interdum elit a, interdum lorem. Phasellus malesuada porta molestie. Suspendisse placerat fringilla sodales. Suspendisse potenti. Donec pulvinar pulvinar nulla, a laoreet erat placerat venenatis.</p>
 				<p>Mauris placerat rhoncus mi eu convallis. Morbi non accumsan quam. Maecenas accumsan quis eros non fringilla. Maecenas enim nisl, dictum id bibendum at, porttitor in libero. Suspendisse elementum, mauris in commodo mollis, quam nisl porta velit, vel luctus sapien eros in purus. Nam at vulputate eros.</p>
@@ -163,7 +132,7 @@
 			<div id="section-three-hero" data-bottom-top="background-position:50% -300px;" data-top-bottom="background-position:50% 0px;">
 				<h1>Section Three</h1>
 			</div>
-			<div class="section-three">
+			<div class="section">
 				<p>Proin non arcu gravida, ullamcorper eros eu, bibendum lectus. Morbi ipsum mi, lobortis vitae iaculis nec, dignissim ultricies purus. Curabitur auctor imperdiet consequat. Nulla tristique consectetur porttitor. Duis pharetra mattis ipsum ut imperdiet. Vestibulum laoreet iaculis dictum. Aenean interdum, augue ut vulputate imperdiet, orci dolor suscipit sapien, ac lacinia nulla lacus nec nulla. Mauris id finibus augue. Quisque venenatis ullamcorper feugiat. Mauris accumsan arcu nec dolor consectetur posuere. Curabitur et dapibus arcu.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo sapien. Fusce hendrerit, arcu eget bibendum posuere, est est efficitur tellus, sit amet posuere lorem turpis ut dolor. Vivamus interdum urna sed felis congue pulvinar. Donec vel urna sit amet erat lacinia convallis. Maecenas ex augue, dapibus in purus in, bibendum faucibus mauris.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo sapien. Fusce hendrerit, arcu eget bibendum posuere, est est efficitur tellus, sit amet posuere lorem turpis ut dolor. Vivamus interdum urna sed felis congue pulvinar. Donec vel urna sit amet erat lacinia convallis. Maecenas ex augue, dapibus in purus in, bibendum faucibus mauris.</p>

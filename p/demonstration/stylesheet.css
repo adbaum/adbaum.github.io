@@ -21,22 +21,25 @@ body {
 	z-index:5;
 }
 
+/*menu links*/
 .menu a {
 	font-weight:400;
 	color:#ffffff;
 	padding:0px 7px;
 	text-decoration:none;
-	/*affects hover transitions*/
-	-webkit-transition: .2s; /* For Safari 3.1 to 6.0 */
+	/* the below affects hover transitions*/
+	-webkit-transition: .2s;
     transition: .2s;
 }
 
+/*menu links on hover*/
 .menu a:hover {
 	color:#D9D9D9;
-	-webkit-transition: .1s; /* For Safari 3.1 to 6.0 */
+	-webkit-transition: .1s;
     transition: .1s;
 }
 
+/*This is for your organization's link or title. In this case, "The Skinny"*/
 .menu a:first-child {
 	font-weight:700;
 	border-right:1px solid #fff;
@@ -44,9 +47,9 @@ body {
 	margin:0px 7px 0px 0px;
 }
 
+/*We will need a smaller screen menu. But for now, on large screens, let's hide it.*/
 .mobile-menu {
 	display:none; 
-	/*don't worry about this for now*/
 }
 
 /*time to work on the hero, or lead image and headline*/
@@ -60,10 +63,12 @@ body {
  	display:block;
 }
 
+/*same deal as the small screen menu*/
 .hero-text-mobile {
 	display:none;
 }
 
+/*this layer sits on top of .hero-bg to make the parallax look work*/
 .hero-text {
 	height: 110vh;
 	width:100%;
@@ -104,30 +109,17 @@ body {
 
 /*time to talk about the body*/
 
+/*this edits the paragraph text*/
 .body p {
-	color:#000;
-	font-size:1em;
-	line-height: 1.5em;
 	width:85%;
 	margin:1em auto;
 }
 
-.body p:first-child:first-letter { 
-      float: left; 
-      font-size:6.5em;
-      display:inline;
-      font-weight:700; 
-      line-height: 0.77em;
-      padding:4px 25px 10px 0px; 
-      }
 
-.intro {
-	width:60%;
-	margin:0 auto;
-	padding:60px 0px;
-}
 
-/*hero subheads*/
+/*really the first section. Lede and nutgraf, more or less*/
+
+/*these define the subheads for the section dividers*/
 #section-one-hero h1, #section-two-hero h1, #section-three-hero h1 {
 	color:#ffffff;
 	font-size:4em;
@@ -137,7 +129,27 @@ body {
 	padding:33vh 0px 0px 0px;
 }
 
-/*section one attributes*/
+/*This is the body stuff, yo. This is where your story goes.*/
+.section {
+	width:60%;
+	margin:0 auto;
+	padding:60px 0px;
+	color:#000;
+	font-size:1em;
+	line-height: 1.5em;
+}
+
+/*this creates the drop cap on the first paragraph of each section*/
+.section p:first-child:first-letter { 
+    float: left; 
+    font-size:6.5em;
+    display:inline;
+    font-weight:700; 
+    line-height: 0.77em;
+    padding:4px 25px 10px 0px; 
+}
+
+/*section one background*/
 #section-one-hero {
 	width:100%;
 	height:80vh;
@@ -145,13 +157,7 @@ body {
 	background-size:110%;
 }
 
-.section-one {
-	width:60%;
-	margin:0 auto;
-	padding:60px 0px;
-}
-
-/*section two attributes*/
+/*section two background*/
 #section-two-hero {
 	width:100%;
 	height:80vh;
@@ -159,24 +165,12 @@ body {
 	background-size:110%;
 }
 
-.section-two {
-	width:60%;
-	margin:0 auto;
-	padding:60px 0px;
-}
-
-/*section three attributes*/
+/*section three background*/
 #section-three-hero {
 	width:100%;
 	height:80vh;
 	background-image:url('http://holeintheclouds.net/sites/holeintheclouds.net/files/good_morning/10oct/firstgrade.jpg');
 	background-size:110%;
-}
-
-.section-three {
-	width:60%;
-	margin:0 auto;
-	padding:60px 0px;
 }
 
 
@@ -215,7 +209,9 @@ body {
 }
 
 
-/*images in body*/
+/*images in the body copy*/
+
+/*contains image, caption and credit*/
 .image {
 	width:100%;
 	margin:40px 0px 60px 0px;
@@ -224,10 +220,12 @@ body {
 	color:#999999;
 }
 
+/*defines the image itself*/
 .image img {
 	width:100%;
 }
 
+/*image caption, duh.*/
 .caption {
 	margin:0px;
 	float:left;
@@ -235,6 +233,7 @@ body {
 	display:inline-block;
 }
 
+/*image credit, duh.*/
 .img-credit {
 	margin:0px;
 	float:right;
@@ -245,14 +244,14 @@ body {
 }
 
 
-/*smaller screens*/
+/*Now let's adjust for smaller screens. We'll go from largest to smallest.*/
 @media (max-width:1080px) {
 	.hero-bg {
 		background-size:140%;
 		z-index:-20;
 	}
 
-	.intro, .section-one, .section-two, .section-three {
+	.section {
 		width:80%;
 		overflow:none;
 	}
@@ -284,14 +283,16 @@ body {
 }
 
 @media (max-width:575px) {
-	.intro, .section-one, .section-two, .section-three {
+	.section {
 		width:90%;
 	}
 
+	/*here is where we get rid of our large-screen menu*/
 	.menu {
 		display:none;
 	}
 
+	/*Now, let's add and define our small-screen menu*/
 	.mobile-menu {
 		font-size:1em;
 		color:#ffffff;
@@ -304,6 +305,7 @@ body {
 		display:block;
 	}
 
+	/*small-screen menu links*/
 	.mobile-menu a {
 		display:block;
 		font-weight:400;
@@ -324,16 +326,18 @@ body {
 	    transition: .1s;
 	}
 
+	/*"The Skinny," or your organization name*/
 	.mobile-menu a:first-child {
 		font-weight:700;
 		background-color:#000000;
 	}
 	
-
+	/*Let's hide the menu until called for*/
 	#drop {
 		display:none;
 	}
 
+	/*The button that shows and hides the menu. Remember, this is just the style, not the action.*/
 	#dropbutton {
 		padding:10px 0px;
 		cursor:pointer;
@@ -393,9 +397,18 @@ body {
 }
 
 @media (max-width:425px) {
-	.intro, .section-one, .section-two, .section-three {
+	.section {
 		width:95%;
 	}
+
+	.section p:first-child:first-letter { 
+     	float: left; 
+    	font-size:4em;
+    	display:inline;
+    	font-weight:700; 
+    	line-height: 1em;
+    	padding:4px 25px 0px 0px; 
+     }
 
 	.hero-bg {
 		height:50vh;
@@ -445,13 +458,4 @@ body {
 	#section-one-hero h1, #section-two-hero h1, #section-three-hero h1 {
 		font-size:2.5em;
 	}
-
-	.body p:first-child:first-letter { 
-      float: left; 
-      font-size:4em;
-      display:inline;
-      font-weight:700; 
-      line-height: 1em;
-      padding:4px 25px 0px 0px; 
-     }
 }

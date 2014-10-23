@@ -60,8 +60,12 @@ body {
  	display:block;
 }
 
+.hero-text-mobile {
+	display:none;
+}
+
 .hero-text {
-	height: 100vh;
+	height: 110vh;
 	width:100%;
 	background-color:transparent;
 	display:block;
@@ -393,26 +397,47 @@ body {
 		width:95%;
 	}
 
+	.hero-bg {
+		height:50vh;
+		background-size:100%;
+	}
+
+	.hero-text {
+		display:none;
+	}
+
+	.hero-text-mobile {
+		display:block;
+		font-color:#000000;
+		text-align:center;
+		margin-bottom:-60px;
+	}
+
 	/*headline*/
-	.hero-text h1 {
+	.hero-text-mobile h1 {
 		font-size:3.5em;
-		margin-bottom:0px;
+		line-height:1em;
+		font-weight:800;
+		margin-bottom:-5px;
 		margin-right:2%;
 		margin-left:2%;
+		text-transform:uppercase;
 	}
 
 	/*subhead*/
-	.hero-text h2 {
-		font-size:1em;
+	.hero-text-mobile h2 {
+		font-size:1.4em;
+		font-weight:800;
 		line-height:1.3em;
 		margin-right:2%;
 		margin-left:2%;
 	}
 
 	/*byline*/
-	.hero-text h3 {
+	.hero-text-mobile h3 {
 		font-size:1em;
-		line-height:4em;
+		font-weight:600;
+		line-height:2em;
 		margin-right:2%;
 		margin-left:2%;
 	}
@@ -420,4 +445,13 @@ body {
 	#section-one-hero h1, #section-two-hero h1, #section-three-hero h1 {
 		font-size:2.5em;
 	}
+
+	.body p:first-child:first-letter { 
+      float: left; 
+      font-size:4em;
+      display:inline;
+      font-weight:700; 
+      line-height: 1em;
+      padding:4px 25px 0px 0px; 
+     }
 }

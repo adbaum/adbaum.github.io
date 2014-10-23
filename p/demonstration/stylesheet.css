@@ -1,0 +1,334 @@
+/*universal edits made here*/
+body {
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+	/*you really shouldn't define font families here ...*/
+}
+
+/*let's determine larger screen edits here*/
+
+/*starting with the menu*/
+.menu {
+	font-size:1em;
+	color:#ffffff;
+	background-color:#000000;
+	text-align:center;
+	padding:10px 0px;
+	width:100%;
+	top:0;
+	position:fixed;
+	z-index:5;
+}
+
+.menu a {
+	font-weight:400;
+	color:#ffffff;
+	padding:0px 7px;
+	text-decoration:none;
+	/*affects hover transitions*/
+	-webkit-transition: .2s; /* For Safari 3.1 to 6.0 */
+    transition: .2s;
+}
+
+.menu a:hover {
+	color:#D9D9D9;
+	-webkit-transition: .1s; /* For Safari 3.1 to 6.0 */
+    transition: .1s;
+}
+
+.menu a:first-child {
+	font-weight:700;
+	border-right:1px solid #fff;
+	padding:0px 20px 0px 7px;
+	margin:0px 7px 0px 0px;
+}
+
+.mobile-menu {
+	display:none; 
+	/*don't worry about this for now*/
+}
+
+/*time to work on the hero, or lead image and headline*/
+.hero-bg {
+	background-color:#999999;
+	background-image:url('http://upload.wikimedia.org/wikipedia/commons/9/97/Family_watching_television_1958.jpg');
+	background-size: 110%;
+	position: relative;
+ 	height: 100vh;
+ 	z-index:-5;
+ 	display:block;
+}
+
+.hero-text {
+	height: 100vh;
+	width:100%;
+	min-width:770px;
+	background-color:transparent;
+	display:block;
+	position:absolute;
+	z-index:-2;
+	top:30vh;
+	text-align:center;
+	text-shadow: 1px 1px 10px #000000;
+}
+
+/*headline*/
+.hero-text h1 {
+	color:#ffffff;
+	font-size:6em;
+	font-weight:800;
+	margin-bottom:-50px;
+	text-transform:uppercase;
+}
+
+/*subhead*/
+.hero-text h2 {
+	color:#ffffff;
+	font-size:2em;
+	font-weight:600;
+	line-height:1.5em;
+}
+
+/*byline*/
+.hero-text h3 {
+	color:#ffffff;
+	font-size:1em;
+	font-weight:400;
+	line-height:3em;
+}
+
+
+/*time to talk about the body*/
+
+.body p {
+	color:#000;
+	font-size:1em;
+	line-height: 1.5em;
+	width:85%;
+	margin:1em auto;
+}
+
+.body p:first-child:first-letter { 
+      float: left; 
+      font-size:6.5em;
+      display:inline;
+      font-weight:700; 
+      line-height: 0.77em;
+      padding:4px 25px 10px 0px; 
+      }
+
+.intro {
+	width:60%;
+	margin:0 auto;
+	padding:60px 0px;
+}
+
+/*hero subheads*/
+#section-one-hero h1, #section-two-hero h1, #section-three-hero h1 {
+	color:#ffffff;
+	font-size:4em;
+	font-weight:800;
+	text-align:center;
+	text-shadow: 1px 1px 10px #000000;
+	padding:35vh 0px 0px 0px;
+}
+
+/*section one attributes*/
+#section-one-hero {
+	width:100%;
+	height:80vh;
+	background-image:url('http://www.hazardkentucky.com/hazard/main.jpg');
+	background-size:110%;
+}
+
+.section-one {
+	width:60%;
+	margin:0 auto;
+	padding:60px 0px;
+}
+
+/*section two attributes*/
+#section-two-hero {
+	width:100%;
+	height:80vh;
+	background-image:url('http://i0.wp.com/listverse.com/wp-content/uploads/2013/02/Screen-Shot-2013-02-27-at-5.35.02-PM.jpg?resize=600%2C399');
+	background-size:110%;
+}
+
+.section-two {
+	width:60%;
+	margin:0 auto;
+	padding:60px 0px;
+}
+
+/*section three attributes*/
+#section-three-hero {
+	width:100%;
+	height:80vh;
+	background-image:url('http://holeintheclouds.net/sites/holeintheclouds.net/files/good_morning/10oct/firstgrade.jpg');
+	background-size:110%;
+}
+
+.section-three {
+	width:60%;
+	margin:0 auto;
+	padding:60px 0px;
+}
+
+
+/*pullquotes*/
+.pullquote-right {
+	font-size:1.5em;
+	font-weight:600;
+	line-height:1.2;
+	font-style: italic;
+	width:30%;
+	padding:20px 0px 20px 5%;
+	float:right;
+	color:#999999;
+}
+
+.pullquote-left {
+	font-size:1.5em;
+	font-weight:600;
+	line-height:1.2;
+	font-style: italic;
+	width:30%;
+	padding:20px 5% 20px 0px;
+	float:left;
+	color:#999999;
+}
+
+.pullquote-center {
+	font-size:1.5em;
+	font-weight:600;
+	line-height:1.2;
+	font-style: italic;
+	width:85%;
+	padding:20px 0px;
+	margin:0 auto;
+	color:#999999;
+}
+
+
+/*images in body*/
+.image {
+	width:100%;
+	margin:40px 0px 60px 0px;
+	font-size:0.7em;
+	line-height:1.2em;
+	color:#999999;
+}
+
+.image img {
+	width:100%;
+}
+
+.caption {
+	margin:0px;
+	float:left;
+	width:70%;
+	display:inline-block;
+}
+
+.img-credit {
+	margin:0px;
+	float:right;
+	width:30%;
+	text-align:right;
+	font-weight:600;
+	display:inline-block;
+}
+
+
+/*smaller screens*/
+@media (max-width:1080px) {
+	.hero-bg {
+		background-size:140%;
+		z-index:-20;
+	}
+
+	.intro, .section-one, .section-two, .section-three {
+		width:80%;
+	}
+}
+
+@media (max-width:575px) {
+	.intro, .section-one, .section-two, .section-three {
+		width:90%;
+	}
+
+	.menu {
+		display:none;
+	}
+
+	.mobile-menu {
+		font-size:1em;
+		color:#ffffff;
+		background-color:#000000;
+		text-align:center;
+		width:100%;
+		top:0;
+		position:fixed;
+		z-index:2;
+		display:block;
+	}
+
+	.mobile-menu a {
+		display:block;
+		font-weight:400;
+		color:#ffffff;
+		background-color:#404040;
+		padding:10px 0px;
+		width:100%;
+		border-bottom:1px solid #999999;
+		text-decoration:none;
+		-webkit-transition: .1s;
+	    transition: .1s;
+	}
+
+	.mobile-menu a:hover {
+		color:#ffffff;
+		background-color:#000000;
+		-webkit-transition: .1s;
+	    transition: .1s;
+	}
+
+	.mobile-menu a:first-child {
+		font-weight:700;
+		background-color:#000000;
+	}
+	
+
+	#drop {
+		display:none;
+	}
+
+	#dropbutton {
+		padding:10px 0px;
+		cursor:pointer;
+	}
+
+	.pullquote-center, .pullquote-left, .pullquote-right {
+		font-size:1.5em;
+		font-weight:600;
+		line-height:1.2;
+		font-style: italic;
+		width:85%;
+		padding:20px 0px;
+		margin:0 auto;
+		color:#999999;
+		float:none;
+	}
+
+	.caption {
+		width:100%;
+		margin:0px 0px 30px 0px;
+	}
+}
+
+@media (max-width:425px) {
+	.intro, .section-one, .section-two, .section-three {
+		width:95%;
+	}
+}

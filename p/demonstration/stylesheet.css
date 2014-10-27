@@ -2,7 +2,6 @@
 body {
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
-	overflow:scroll;
 	width:100%;
 	/*height:100%!important;*/
 	/*you really shouldn't define font families here ...*/
@@ -11,6 +10,10 @@ body {
 /*let's determine larger screen edits here*/
 
 /*starting with the menu*/
+#skrollr-body {
+	height:100%;
+}
+
 .menu {
 	font-size:1em;
 	color:#ffffff;

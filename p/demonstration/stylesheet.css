@@ -3,6 +3,7 @@ body {
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
 	width:100%;
+	height:100%!important;
 	/*height:100%!important;*/
 	/*you really shouldn't define font families here ...*/
 }
@@ -144,6 +145,7 @@ body {
 	color:#000;
 	font-size:1em;
 	line-height: 1.5em;
+	height:100%!important;
 }
 
 /*this creates the drop cap on the first paragraph of each section*/

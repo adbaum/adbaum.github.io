@@ -114,7 +114,7 @@ body {
 .body p {
 	width:85%;
 	margin:1em auto;
-	overflow:none;
+	overflow:scroll;
 }
 
 

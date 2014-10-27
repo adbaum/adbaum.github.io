@@ -1,0 +1,39 @@
+body {
+	margin:0px;
+}
+
+.first {
+	height:2000px;
+	width:100%;
+}
+
+.speed1, .speed2, .speed3 {
+	height:100vh;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	position:fixed;
+}
+
+.speed1 {
+	z-index:10;
+	background-image:url('http://afbaumgartner.com/assets/glasses-v7.png');
+	background-repeat:repeat;
+}
+
+.speed2 {
+	z-index:5;
+	opacity:0.3;
+	background-size:300px;
+	background-image:url('http://afbaumgartner.com/assets/glasses-v7.png');
+	background-repeat:repeat;
+	/*-webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px);*/
+}
+
+.speed3 {
+	z-index:0;
+	background-image:url('http://subtlepatterns.com/patterns/gplaypattern.png');
+	background-repeat:repeat;
+	/*-webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);*/
+}

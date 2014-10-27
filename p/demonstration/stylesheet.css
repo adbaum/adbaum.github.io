@@ -181,7 +181,7 @@ body {
 	line-height:1.2;
 	font-style: italic;
 	width:30%;
-	padding:20px 0px 20px 5%;
+	padding:0px 0px 20px 5%;
 	float:right;
 	color:#999999;
 }
@@ -192,7 +192,7 @@ body {
 	line-height:1.2;
 	font-style: italic;
 	width:30%;
-	padding:20px 5% 20px 0px;
+	padding:0px 5% 20px 0px;
 	float:left;
 	color:#999999;
 }
@@ -242,7 +242,6 @@ body {
 	font-weight:600;
 	display:inline-block;
 }
-
 
 /*Now let's adjust for smaller screens. We'll go from largest to smallest.*/
 @media (max-width:1080px) {

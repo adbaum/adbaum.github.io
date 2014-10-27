@@ -10,7 +10,6 @@ body {
 .speed1, .speed2, .speed3 {
 	height:100vh;
 	width:100%;
-	position:absolute;
 	top:0;
 	left:0;
 	position:fixed;
@@ -36,4 +35,86 @@ body {
 	background-image:url('http://subtlepatterns.com/patterns/gplaypattern.png');
 	background-repeat:repeat;
 	/*-webkit-filter: blur(5px); -moz-filter: blur(5px); -o-filter: blur(5px); -ms-filter: blur(5px); filter: blur(5px);*/
+}
+
+.second {
+	height:3000px;
+	width:100%;
+	background-image:url('http://texturelib.com/Textures/road/road/road_road_0017_01_preview.jpg');
+	background-attachment:fixed;
+}
+
+.hor1, .hor2, .hor3 {
+	display:block;
+	height:33vh;
+	width:100%;
+	background-repeat:no-repeat;
+	background-size:500px;
+	position:fixed;
+}
+
+.hor1 {
+	background-image:url('http://afbaumgartner.com/assets/cars/car2.png');
+}
+
+.hor2 {
+	background-image:url('http://afbaumgartner.com/assets/cars/car3.png');
+	top:33vh;
+}
+
+.hor3 {
+	background-image:url('http://afbaumgartner.com/assets/cars/car4.png');
+	top:66vh;
+}
+
+.third {
+	height:2000px;
+	width:100%;
+	background-image:url('http://cdn.hifipanda.com/51a3ac90a91c261922.jpg');
+	background-attachment:fixed;
+}
+
+.color {
+	width:100%;
+	height:100vh;
+	position:fixed;
+}
+
+.fourth {
+	width:100%;
+}
+
+.fbg1, .fbg2, .fbg3, .fbg4, .fbg5 {
+	width:100%;
+	height:600px;
+	background-attachment:fixed;
+	background-size:100%;
+	position:relative;
+}
+
+.fbg1 {
+	background-image:url('http://placekitten.com/1500/1000');
+}
+
+.text {
+	font-family:'comic sans', tahoma, sans-serif;
+	font-size:3em;
+	text-align:center;
+	padding:0px 0px 0px 0px;
+}
+
+.fbg2 {
+	background-image:url('http://placekitten.com/1800/1000');
+}
+
+.fbg3 {
+	background-image:url('http://placekitten.com/1450/1000');
+}
+
+.fbg4 {
+	background-image:url('http://placekitten.com/1650/1000');
+}
+
+.fbg5 {
+	background-image:url('http://placekitten.com/1700/1000');
 }

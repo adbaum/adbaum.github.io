@@ -243,6 +243,26 @@ body {
 	display:inline-block;
 }
 
+.footer {
+	width:100%;
+	color:#ffffff;
+	background-color:#999999;
+	text-align:center;
+	padding:50px 0px 50px 0px;
+
+}
+
+.footer a{
+	font-weight:400;
+	color:#ffffff;
+	padding:0px 7px;
+	text-decoration:none;
+}
+
+.footer a:hover {
+	text-decoration:underline;
+}
+
 /*Now let's adjust for smaller screens. We'll go from largest to smallest.*/
 @media (max-width:1080px) {
 	.hero-bg {

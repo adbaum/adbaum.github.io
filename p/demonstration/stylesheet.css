@@ -10,9 +10,6 @@ body {
 /*let's determine larger screen edits here*/
 
 /*starting with the menu*/
-#skrollr-body {
-	height:100%;
-}
 
 .menu {
 	font-size:1em;
@@ -24,6 +21,7 @@ body {
 	top:0;
 	position:fixed;
 	z-index:5;
+
 }
 
 /*menu links*/
@@ -114,6 +112,10 @@ body {
 
 /*time to talk about the body*/
 
+
+.body {
+	height:100%!important;
+}
 /*this edits the paragraph text*/
 .body p {
 	width:85%;

@@ -246,9 +246,9 @@ body {
 .footer {
 	width:100%;
 	color:#ffffff;
-	background-color:#999999;
+	background-color:#000000;
 	text-align:center;
-	padding:50px 0px 50px 0px;
+	padding:25px 0px 25px 0px;
 
 }
 
@@ -257,10 +257,14 @@ body {
 	color:#ffffff;
 	padding:0px 7px;
 	text-decoration:none;
+	-webkit-transition: .2s;
+    transition: .2s;
 }
 
 .footer a:hover {
-	text-decoration:underline;
+	color:#999999;
+	-webkit-transition: .2s;
+    transition: .2s;
 }
 
 /*Now let's adjust for smaller screens. We'll go from largest to smallest.*/

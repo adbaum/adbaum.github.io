@@ -37,7 +37,7 @@ easter_egg.load();
 
 <script>
 $(document).ready(function() {
-$( "#dropbutton" ).click(function() {
+$( "#dropbutton, #up" ).click(function() {
 	$( "#drop" ).slideToggle( "fast" );
 	$( ".arrow").toggleClass("arrow-flipped");
 	$( "#dropbutton").toggleClass("dropped");
@@ -301,16 +301,16 @@ $(function () {
 
 <div class="navmobile">
 	<div id="drop">
-		<a href="#top">
+		<a href="#top" id="up">
 			Home
 		</a>
-		<a href="#section_one">
+		<a href="#section_one" href="#top">
 			Portfolio
 		</a>
-		<a href="#section_two">
+		<a href="#section_two" href="#top">
 			Experience
 		</a>
-		<a href="#section_three">
+		<a href="#section_three" href="#top">
 			Contact
 		</a>
 	</div>

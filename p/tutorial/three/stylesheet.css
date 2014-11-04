@@ -35,6 +35,11 @@ h5 {
 	margin-bottom:0px;
 }
 
+.content h1, .content h3, .content h5 {
+	display:none;
+	text-align:center;
+}
+
 .main {
 	width:100%;
 }
@@ -65,17 +70,70 @@ blockquote {
 	text-align:center;
 }
 
+
+
+/*edits based on screen size*/
+
+@media (max-width:900px) {
+	.hero {
+		background-size:130%;
+	}
+
+	.sectionhero {
+		background-size:130%;
+	}
+}
+
+
 @media (max-width:800px) {
 	.content {
 		width:90%;
 	}
 
+	.content h1, .content h3, .content h5 {
+		display:block;
+		color:#000;
+
+	}
+
+	.content h1 {
+		font-size:2.5em;
+		margin-top:-20px;
+		margin-bottom:-15px;
+	}
+
+	.content h3 {
+		font-size:1.25em;
+		margin-bottom:10px;
+	}
+
+	.content h5 {
+		font-size:0.9em;
+		margin-bottom:20px;
+	}
+
 	blockquote {
 		width:90%;
 		margin:0 auto;
+		font-size:1.1em;
 	}
 
-	.hero h1 {
+	.hero h1, .hero h3, .hero h5 {
 		display:none;
+	}
+
+	.hero {
+		padding:0px;
+		height:50vh;
+		background-size:110%;
+	}
+
+	.sectionhero {
+		padding:100px 0px;
+		background-size:110%;
+	}
+
+	.sectionhero h1 {
+		font-size:3em;
 	}
 }

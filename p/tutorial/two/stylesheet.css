@@ -1,0 +1,65 @@
+body {
+	margin:0px;
+}
+
+.hero {
+	width:100%;
+	padding:200px 0px;
+	background-image:url('https://vintageportland.files.wordpress.com/2012/06/sw-broadway-1950s.jpg');
+	background-size:100%;
+	text-align:center;
+}
+
+h1 {
+	font-size:5em;
+	font-weight:800;
+	font-style:italic;
+	color:#fff;
+	margin-top:0px;
+	margin-bottom:-30px;
+}
+
+h3 {
+	font-size:2em;
+	font-weight:600;
+	font-style:italic;
+	color:#fff;
+	margin-bottom:0px;
+}
+
+h5 {
+	font-size:1em;
+	font-weight:600;
+	color:#fff;
+	margin-bottom:0px;
+}
+
+.main {
+	width:100%;
+}
+
+.content {
+	width:60%;
+	margin:0 auto;
+	padding:60px 0px;
+}
+
+p {
+	font-size:0.9em;
+	color:#000;
+}
+
+blockquote {
+	font-size:1.3em;
+	color:#999;
+	font-weight:600;
+	font-style:italic;
+}
+
+.sectionhero {
+	width:100%;
+	padding:200px 0px;
+	background-image:url('http://assets.blog.hemmings.com/wp-content/uploads//2013/03/FullertonCA1950s_2000.jpg');
+	background-size:100%;
+	text-align:center;
+}

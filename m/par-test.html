@@ -31,11 +31,40 @@
           background-size:50%;
 			}
 
+			.c3 {
+				position:relative;
+				display:block;
+				height:600px;
+				width:80%;
+				margin:60px;
+				transform:skewx(-3deg) rotate(-3deg);
+				-webkit-transform: rotate(-3deg) skewx(-3deg);
+				-moz-transform: rotate(-3deg) skewx(-3deg);
+				-ms-transform: rotate(-3deg) skewx(-3deg);
+				-o-transform: rotate(-3deg) skewx(-3deg);
+				overflow:hidden;
+			}
+
+			.c3:before {
+				content:"";
+				position: absolute;
+				width: 200%;
+				height: 200%;
+				top: 0%;
+				left: 0%;
+				z-index: -2;
+				background-image:url('http://www.sweethome3d.info/wp-content/gallery/floor-tiles-mosaic-small-square/Mosaic%20Tile%2016.jpg');
+					-webkit-transform: rotate(3deg) skewx(3deg);
+					-moz-transform: rotate(3deg) skewx(3deg);
+					-ms-transform: rotate(3deg) skewx(3deg);
+					-o-transform: rotate(3deg) skewx(3deg);
+					transform: rotate(3deg) skewx(3deg);
+			}
+
 		.c2 {
 			width:20%;
 			margin:60px;
 			background-color:#F7756F;
-			position:absolute;
 			padding:20px;
 			text-align:center;
 			transform:skewx(-3deg) rotate(-3deg);
@@ -62,6 +91,8 @@
 		</div>
 		<div class="c2">
 			<p>"I am a long pullquote, and I read like this."</p>
+		</div>
+		<div class="c3">
 		</div>
 	</body>
 </html>

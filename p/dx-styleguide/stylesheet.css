@@ -95,8 +95,17 @@ body {
 ** homepage story **
 ********************/
 
+.hpel {
+	display:inline-block;
+	vertical-align:top;
+}
+
+.hpel:first-child, .hpel:nth-child(2) {
+	margin-right:30px;
+}
+
 .hp-story {
-	width:350px;
+	width:345px;
 	border-bottom:1px solid #000;
 	padding-bottom:30px;
 	margin-bottom:70px;
@@ -164,7 +173,7 @@ body {
 **********************/
 
 .hp-feature {
-	width:350px;
+	width:345px;
 }
 
 .hp-feature {
@@ -224,7 +233,7 @@ body {
 }
 
 .rail {
-	width:350px;
+	width:300px;
 }
 
 .rail .stream li {
@@ -260,6 +269,10 @@ hr {
 	cursor:pointer;
 }
 
+
+.article .rail {
+	float:right;
+}
 
 /*****************
 ** article page **
@@ -457,7 +470,7 @@ hr {
 }
 
 .feature-body .art-right, .feature-body .art-left {
-	width:350px;
+	width:300px;
 }
 
 .art-right img, .art-left img {

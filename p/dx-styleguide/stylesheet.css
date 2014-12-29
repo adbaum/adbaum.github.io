@@ -11,7 +11,7 @@ font-family: "franklin-gothic-urw";
 */
 
 body {
-	margin-bottom:600px;
+	margin-bottom:300px;
 }
 
 .content {
@@ -327,7 +327,7 @@ hr {
 
 .story-body {
 	width:675px;
-	margin:0px 0px 0px 50px;
+	margin:0px 0px 60px 50px;
 }
 
 .story-body p {
@@ -337,12 +337,13 @@ hr {
 	margin:15px 0px;
 }
 
-p:first-child:first-letter { 
+/*running into challenges here, depending on the letter*/
+.story-body p:first-child:first-letter { 
 	font-family: "franklin-gothic-urw";
-	font-size:5em;
+	font-size:4.5em;
 	font-weight:600;
 	color: #666;
-	margin:20px 0px 0px -50px;
+	margin:18px 0px 0px -50px;
 	float: left;  }
 
 .story-body blockquote {
@@ -356,4 +357,151 @@ p:first-child:first-letter {
 	width:225px;
 	display:inline-block;
 	float:left;
+}
+
+
+/*****************
+** feature page **
+******************/
+
+.feature .hero {
+	background-image:url('http://dailyxtra.com/sites/default/files/styles/stand_alone_slide_show_big/public/multiple/XT784_BDSM_3344.jpg?itok=3RA9cPmQ');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	width:100%;
+	height:95vh;
+}
+
+.feature .hero-hed {
+	background-color:#f25d50;
+	width:100%;
+	padding:40px 0px;
+	text-align:center;
+	color:#fff;
+}
+
+.hero-hed h1 {
+	font-family:"adelle";
+	font-size:7.500em;
+	line-height:1.150em;
+	max-width:60%;
+	margin:0 auto;
+}
+
+.hero-hed h2 {
+	font-family:"franklin-gothic-urw";
+	font-size:1.500em;
+	font-weight:300;
+	margin:20px 0px;
+}
+
+.feature .byline {
+	font-family:"franklin-gothic-urw";
+	font-size:1em;
+	font-weight:300;
+	font-style:italic;
+	color:#f25d50;
+	text-align:center;
+	margin:80px 0px;
+}
+
+.feature .byline a:hover {
+	text-decoration:underline;
+}
+
+.feature-body {
+	width:100%;
+	margin:0 auto;
+}
+
+.feature-body p {
+	font-family:"calluna";
+	font-size:1.250em;
+	line-height:2em;
+	padding:15px 0px;
+	margin:0 auto;
+	max-width:730px;
+}
+
+.feature-body p:first-of-type {
+	font-family:"calluna";
+	font-size:1.750em;
+	line-height:2em;
+	padding:20px 0px;
+	border-top:1px solid #f25d50;
+	border-bottom:1px solid #f25d50;
+}
+
+.feature-body p:first-of-type {
+	font-family:"calluna";
+	font-size:1.750em;
+	line-height:2em;
+	padding:20px 0px;
+	margin-bottom:40px;
+	border-top:1px solid #f25d50;
+	border-bottom:1px solid #f25d50;
+	top:0;
+	bottom:0;
+	display:block;
+	}
+
+.feature-body p:first-child:first-letter {
+	font-family:"adelle";
+	font-size:7em;
+	padding:60px 7px 0px 0px;
+	font-weight:600;
+	color:#facecb;
+	float:left;
+
+}
+
+.feature-body .art-right, .feature-body .art-left {
+	width:350px;
+}
+
+.art-right img, .art-left img {
+	width:100%;
+}
+
+.feature-body .art-left {
+	float:left;
+	margin:5px 20px 5px 0px;
+}
+
+.feature-body .art-right {
+	float:right;
+	margin:5px 0px 5px 20px;
+}
+
+.feature-body .art {
+	width:100%;
+}
+
+.art img {
+	width:100%;
+}
+
+.feature-body h1 {
+	font-family:"franklin-gothic-urw";
+	font-size:1.875em;
+	color:#f25d50;
+	font-weight:600;
+	text-transform:uppercase;
+	margin:0 auto;
+	max-width:730px;
+}
+
+.feature-body blockquote {
+	font-family:"franklin-gothic-urw-cond";
+	font-size:2.500em;
+	line-height:1.2em;
+	letter-spacing:-0.5;
+	font-style:italic;
+	color: #f25d50;
+	margin:5px 0px;
+}
+
+.art blockquote {
+	text-align:center;
 }

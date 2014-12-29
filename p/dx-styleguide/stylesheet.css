@@ -459,6 +459,8 @@ hr {
 	display:block;
 	}
 
+/* temporarily removing *******************
+
 .feature-body p:first-child:first-letter {
 	font-family:"adelle";
 	font-size:7em;
@@ -466,8 +468,8 @@ hr {
 	font-weight:600;
 	color:#facecb;
 	float:left;
-
 }
+******************************************/
 
 .feature-body .art-right, .feature-body .art-left {
 	width:300px;

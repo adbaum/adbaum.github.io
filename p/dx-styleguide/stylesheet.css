@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}a {text-decoration:none;color:inherit;}
+
+/*orange #f25d50
+font-family: "adelle";
+font-family: "franklin-gothic-urw";
+*/
+
+body {
+	margin-bottom:600px;
+}
+
+.content {
+	max-width:80%;
+	max-width:1080px;
+	margin:0 auto;
+	display:block;
+}
+
+/******************
+** homepage hero **
+*******************/
+
+.homepage {
+	width:100%;
+}
+
+.hero .image {
+	width:100%;
+	height:50vh;
+	background-image:url('http://i.huffpost.com/gen/1398734/thumbs/o-GAY-KISSING-facebook.jpg');
+	background-size:100%;
+	background-position:center;
+	display:block;
+}
+
+.hero .content {
+	margin-top:-30px;
+}
+
+.hero .content:hover, .hero .content:focus {
+	cursor:pointer;
+}
+
+.hero h1 {
+	font-family: "adelle";
+	font-size:3.750em;
+	line-height:1.3em;
+	color:#fff;
+	background-color:#f25d50;
+	display:inline;
+}
+
+.hero h1:hover, .hero h1:focus {
+	background-color:#f68e84;
+	cursor:pointer;
+}
+
+.hero h2 {
+	font-family: "franklin-gothic-urw";
+	font-weight:400;
+	font-size:1.5em;
+	margin:20px 0px;
+}
+
+.hero h2:hover,.hero h2:focus {
+	color:#999;
+	cursor:pointer;
+}
+
+.hero .byline {
+	font-family: "franklin-gothic-urw";
+	font-weight:400;
+	font-size:1em;
+	font-style:italic;
+}
+
+.homepage .hero .byline a {
+	color:#f25d50;
+}
+
+.homepage .hero .byline a:hover, .homepage .hero .byline a:focus {
+	text-decoration:underline;
+}
+
+.river {
+	margin:60px 0px 0px 0px;
+}
+
+/*******************
+** homepage story **
+********************/
+
+.hp-story {
+	width:350px;
+	border-bottom:1px solid #000;
+	padding-bottom:30px;
+	margin-bottom:70px;
+}
+
+.hp-story:hover, .hp-story:focus {
+	cursor:pointer;
+
+}
+
+.river .image {
+	width:100%;
+	height:192px;
+	background-image:url('http://dailyxtra.com/sites/default/files/styles/440px_wide/public/Gay_Pride_Madrid_2013_-_130706_202133_1.jpg?itok=Ds8PL5PO');
+	background-size:100%;
+	background-position:center;
+	display:block;
+	margin:2px 0px 0px 0px;
+}
+
+.river .image:hover {
+	opacity:0.8;
+}
+
+.section-hed {
+	font-family:"franklin-gothic-urw";
+	font-size:1em;
+	color:#fff;
+	background-color:#29b7df;
+	text-transform:uppercase;
+	margin-left:10px;
+	padding:1px 5px;
+	display:inline;
+}
+
+.section-hed:hover {
+	opacity:0.7;
+	cursor:pointer;
+}
+
+.section-hed a:hover {
+	text-decoration:underline;
+}
+
+.hp-story h1 {
+	font-family:"franklin-gothic-urw-cond";
+	font-size:1.875em;
+	font-weight:500;
+	margin:10px 0px;
+}
+
+.hp-story p {
+	font-family:"calluna";
+	font-size:1em;
+	line-height:1.250em;
+}
+
+.hp-story p:hover, .hp-story h1:hover, .hp-story p:focus, .hp-story h1:focus {
+	color:#999;
+}
+
+
+/*********************
+** homepage feature **
+**********************/
+
+.hp-feature {
+	width:350px;
+}
+
+.hp-feature {
+	height:340px;
+	background-image:url('http://dailyxtra.com/sites/default/files/styles/440px_wide/public/XT784_BDSM_3344.jpg?itok=nw3Uqxvl');
+	background-size:cover;
+	background-color: #999;
+  	background-blend-mode: multiply;
+	background-position:center;
+	display:block;
+	margin:2px 0px 0px 0px;
+	position:relative;
+}
+
+
+.hp-feature h1 {
+	font-family:"franklin-gothic-urw-cond";
+	font-size:2.750em;
+	color:#fff;
+	font-weight:700;
+	z-index:100;
+	position:absolute;
+	bottom:10px;
+	left:10px;
+}
+
+.hp-feature:hover, .hp-feature:focus {
+	background-color:#f3f3f3;
+	cursor:pointer;
+}
+
+
+/******************
+** rail elements **
+*******************/
+
+.rail h5 {
+	font-family:"adelle";
+	font-size:1.375em;
+	color:#fff;
+	background-color:#f1c141;
+	text-transform:uppercase;
+	margin-left:10px;
+	padding:1px 5px;
+	display:inline;
+}
+
+.rail h5:hover {
+	opacity:0.7;
+	cursor:pointer;
+}
+
+.rail .stream {
+	background-color:#f2f2f2;
+	padding:10px 20px;
+	margin:4px 0px;
+}
+
+.rail {
+	width:350px;
+}
+
+.rail .stream li {
+	font-family:"franklin-gothic-urw";
+	font-size:1em;
+	line-height:1.1em;
+	margin:15px 0px;
+}
+
+.rail .stream li a:hover {
+	color:#999;
+	cursor:pointer;
+}
+
+hr {
+	margin:50px 30px;
+}
+
+.more h5 {
+	font-family:"franklin-gothic-urw";
+	font-size:0.9em;
+	color:#fff;
+	background-color:#f1c141;
+	text-transform:uppercase;
+	margin:-5px 10px 0px 10px;
+	padding:2px 5px;
+	display:inline;
+	float:right;
+}
+
+.more h5:hover {
+	opacity:0.7;
+	cursor:pointer;
+}
+
+
+/*****************
+** article page **
+******************/
+
+.article .section-hed {
+	margin:0px;
+}
+
+.article h1 {
+	font-family:"franklin-gothic-urw-cond";
+	font-size:4.375em;
+	font-weight:600;
+	letter-spacing:-1;
+	margin:20px 0px;
+}
+
+.article h2 {
+	font-family:"franklin-gothic-urw";
+	font-size:1.500em;
+	margin:20px 0px;
+	font-weight:300;
+}
+
+.article .byline {
+	font-family: "franklin-gothic-urw";
+	font-weight:300;
+	font-size:1em;
+}
+
+.article .byline a {
+	color:#f25d50;
+	font-weight:600;
+	text-transform:uppercase;
+}
+
+.article .byline a:hover, .article .byline a:focus {
+	text-decoration:underline;
+}
+
+.art {
+	margin:20px 0px 30px 0px;
+	width:725px;
+}
+
+.art img {
+	margin-bottom:2px;
+	width:725px;
+}
+
+.art .caption {
+	font-family:"franklin-gothic-urw";
+	font-size:0.875em;
+	line-height:1.250em;
+	color:#666666;
+}
+
+.credit {
+	font-weight:600;
+}
+
+.credit a:hover {
+	text-decoration:underline;
+}

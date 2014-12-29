@@ -324,3 +324,36 @@ hr {
 .credit a:hover {
 	text-decoration:underline;
 }
+
+.story-body {
+	width:675px;
+	margin:0px 0px 0px 50px;
+}
+
+.story-body p {
+	font-family:"calluna";
+	font-size:1.125em;
+	line-height:1.750em;
+	margin:15px 0px;
+}
+
+p:first-child:first-letter { 
+	font-family: "franklin-gothic-urw";
+	font-size:5em;
+	font-weight:600;
+	color: #666;
+	margin:20px 0px 0px -50px;
+	float: left;  }
+
+.story-body blockquote {
+	font-family:"franklin-gothic-urw-cond";
+	font-weight:600;
+	font-style:italic;
+	color:#666;
+	font-size:1.750em;
+	line-height:1.250em;
+	margin:5px 30px 0px -50px;
+	width:225px;
+	display:inline-block;
+	float:left;
+}

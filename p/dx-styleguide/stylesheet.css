@@ -11,7 +11,7 @@ font-family: "franklin-gothic-urw";
 */
 
 body {
-	margin-bottom:300px;
+	margin-bottom:200px;
 }
 
 .content {
@@ -361,7 +361,7 @@ hr {
 
 .story-body blockquote {
 	font-family:"franklin-gothic-urw-cond";
-	font-weight:600;
+	font-weight:500;
 	font-style:italic;
 	color:#666;
 	font-size:1.750em;
@@ -437,13 +437,12 @@ hr {
 	max-width:730px;
 }
 
-.feature-body p:first-of-type {
-	font-family:"calluna";
-	font-size:1.750em;
-	line-height:2em;
-	padding:20px 0px;
-	border-top:1px solid #f25d50;
-	border-bottom:1px solid #f25d50;
+.feature-body p a {
+	color:#f25d50;
+}
+
+.feature-body p a:hover {
+	text-decoration:underline;
 }
 
 .feature-body p:first-of-type {
@@ -454,22 +453,17 @@ hr {
 	margin-bottom:40px;
 	border-top:1px solid #f25d50;
 	border-bottom:1px solid #f25d50;
-	top:0;
-	bottom:0;
-	display:block;
 	}
-
-/* temporarily removing *******************
 
 .feature-body p:first-child:first-letter {
 	font-family:"adelle";
-	font-size:7em;
+	font-size:6.750em;
 	padding:60px 7px 0px 0px;
 	font-weight:600;
 	color:#facecb;
 	float:left;
 }
-******************************************/
+
 
 .feature-body .art-right, .feature-body .art-left {
 	width:300px;

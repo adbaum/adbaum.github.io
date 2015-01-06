@@ -11,7 +11,6 @@ font-family: "franklin-gothic-urw";
 */
 
 body {
-	margin-bottom:200px;
 }
 
 .content {
@@ -396,8 +395,8 @@ hr {
 
 .hero-hed h1 {
 	font-family:"adelle";
-	font-size:7.500em;
-	line-height:1.150em;
+	font-size:6.00em;
+	line-height:1.300em;
 	max-width:60%;
 	margin:0 auto;
 }
@@ -513,4 +512,76 @@ hr {
 
 .art blockquote {
 	text-align:center;
+}
+
+.feature {
+	margin-bottom:100px;
+}
+
+
+/***********
+** footer **
+************/
+
+.footer {
+	width:100%;
+	background-color:#999;
+	color:#fff;
+	margin:0 auto;
+
+}
+
+.footer .main {
+	width:1080px;
+	margin:0 auto;
+	padding:20px 0px;
+	font-family: "franklin-gothic-urw";
+	font-size:0.875em;
+	line-height:1.175em;
+
+}
+
+.footer ul {
+	font-family: "franklin-gothic-urw";
+	display:inline-block;
+	width:16%;
+	padding:0px 1%;
+	margin:0 auto;
+	vertical-align:top;
+}
+
+.footer ul:first-child {
+	font-weight:600;
+	text-align:right;
+	vertical-align:distribute;
+}
+
+.footer ul:nth-child(2) {
+	border-left:1px solid #fff;
+}
+
+.footer ul li:first-child {
+	font-weight:600;
+}
+
+.footer ul li {
+	padding:2px 0px;
+}
+
+.footer ul li a:hover {
+	text-decoration:underline;
+}
+
+.footer .copyright {
+	background-color:#2f5373;
+	font-family: "franklin-gothic-urw";
+	font-size:0.875em;
+	color:#fff;
+	padding:10px 0px;
+	text-align:center;
+	width:100%;
+}
+
+.footer .copyright a:hover {
+	text-decoration:underline;
 }

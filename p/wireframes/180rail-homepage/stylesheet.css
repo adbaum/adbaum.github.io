@@ -24,7 +24,6 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 
 .item {
 	width:47%;
-	min-width:275px;
 	height:340px;
 	background-color:#f1f1f1;
 	margin:1%;
@@ -152,13 +151,6 @@ hr {
 }
 
 @media (max-width:1000px) {
-	.item {
-		width:100%;
-	}
-
-	.ad {
-		width:100%;
-	}
 
 	.ad3 {
 		width:728px;
@@ -172,5 +164,13 @@ hr {
 
 	.left-column {
 		margin:50px 0px;
+	}
+
+	.item {
+		width:100%;
+	}
+
+	.ad {
+		width:100%;
 	}
 }

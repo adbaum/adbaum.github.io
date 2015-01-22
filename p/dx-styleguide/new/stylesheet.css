@@ -20,6 +20,16 @@ body {
 	max-width:1060px;
 }
 
+.right-column { 
+	width:300px; 
+	float:right;  
+	margin-bottom:100px;
+}
+
+.left-column { 
+	margin-right:300px;
+}
+
 /*homepage specifics*/
 
 .homepage-hero {
@@ -44,6 +54,13 @@ body {
 
 .homepage-river {
 	margin:100px 0px;
+}
+
+.rail-list {
+	background-color:#f2f2f2;
+	display:block;
+	width:auto;
+	padding:17px 20px 20px 20px;
 }
 
 
@@ -85,6 +102,72 @@ body {
 
 /*homepage river*/
 
+
+/*rail*/
+.rail-header {
+	font-family:"adelle";
+	font-size:1.250em;
+	color:#fff;
+	background-color:#f1c141;
+	text-transform:uppercase;
+	margin-left:10px;
+	padding:5px 5px 4px 5px;
+	display:inline-block;
+	-o-transition:.1s;
+  	-ms-transition:.1s;
+  	-moz-transition:.1s;
+  	-webkit-transition:.1s;
+	transition:.1s;
+}
+
+.rail-header:hover {
+	opacity:0.7;
+	cursor:pointer;
+	display: inline-block;
+	vertical-align: middle;
+	-o-transition:.1s;
+  	-ms-transition:.1s;
+  	-moz-transition:.1s;
+  	-webkit-transition:.1s;
+	transition:.1s;
+}
+
+.rail-more {
+	font-family:"franklin-gothic-urw";
+	font-size:0.9em;
+	color:#fff;
+	background-color:#f1c141;
+	text-transform:uppercase;
+	margin-right:10px;
+	padding:3px 5px;
+	display:inline-block;
+	float:right;
+}
+
+.rail-more:hover {
+	opacity:0.7;
+	cursor:pointer;
+}
+
+.rail-list li {
+	font-family:"franklin-gothic-urw";
+	font-size:1em;
+	line-height:1.1em;
+	color:#000;
+	margin:15px 0px;
+}
+
+.rail-list li:hover {
+	color:#999;
+}
+
+.rail-list li:first-child {
+	margin-top:0px;
+}
+
+.rail-list li:last-child {
+	margin-bottom:0px;
+}
 
 
 

@@ -290,9 +290,9 @@ figure img {
 figcaption {
 	font-family:"franklin-gothic-urw", sans-serif;
 	font-size:0.875em;
-	line-height:1.250em;
+	line-height:1.40em;
 	color:#666666;
-	margin-top:1px;
+	margin-top:2px;
 }
 
 .credit {font-weight:600;}
@@ -521,10 +521,9 @@ button:focus {
 
 .footer {
 	width:100%;
-	background-color:#999;
+	background-color:#2f5373;
 	color:#fff;
 	margin:0 auto;
-
 }
 
 .footer .main {
@@ -534,7 +533,6 @@ button:focus {
 	font-family: "franklin-gothic-urw";
 	font-size:0.875em;
 	line-height:1.175em;
-
 }
 
 .footer ul {

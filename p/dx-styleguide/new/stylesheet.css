@@ -23,12 +23,10 @@ body {
 .right-column { 
 	width:300px; 
 	float:right;  
-	margin-bottom:100px;
+	margin-bottom:0px;
 }
 
-.left-column { 
-	margin-right:300px;
-}
+.left-column { margin-right:300px;}
 
 /*homepage specifics*/
 
@@ -45,16 +43,14 @@ body {
 
 }
 
-.homepage-hero .topic-title {
-	font-family:"franklin-gothic-urw";
+.topic-title {
+	font-family:"franklin-gothic-urw", sans-serif;
 	font-size:1em;
 	color:#fff;
 	text-transform:uppercase;
 }
 
-.homepage-river {
-	margin:100px 0px;
-}
+.body {margin:50px 0px;}
 
 .rail-list {
 	background-color:#f2f2f2;
@@ -78,16 +74,19 @@ body {
 }
 
 .hp-hero-2 {
-	font-family:"franklin-gothic-urw-cond";
+	font-family:"franklin-gothic-urw-cond", sans-serif;
 	font-size:2.500em;
 	color:#fff;
+	font-weight:600;
 }
 
 .hp-hero-list {
-	font-family:"franklin-gothic-urw-cond";
+	font-family:"franklin-gothic-urw-cond", sans-serif;
 	font-size:1.25em;
 	color:#fff;
 }
+
+.homepage-hero .subhead {color:#ffffff;}
 
 .homepage-hero ul li {
 	padding:6px 0px;
@@ -100,8 +99,49 @@ body {
 	border-bottom:none;
 }
 
+.hp-hero-1:hover, .hp-hero-2 a:hover, .homepage-hero ul li a:hover, .homepage-hero .topic-title a:hover, .homepage-hero .subhead a:hover {
+	opacity:0.7;
+}
+
 /*homepage river*/
 
+.hp-headline {
+	font-family:"franklin-gothic-urw-cond", sans-serif;
+	font-size:1.875em;
+	font-weight:600;
+}
+
+.hp-description {
+	font-family:"calluna";
+	font-size:1em;
+	line-height:1.250em;
+}
+
+.hp-story {
+	width:46%;
+	margin-right:3%;
+	height:340px;
+	display:inline-block;
+	vertical-align:top;
+	overflow:hidden;
+}
+
+.hp-story .image {
+	width:100%;
+	height:190px;
+	background-image:url('http://dailyxtra.com/sites/default/files/styles/440px_wide/public/Gay_Pride_Madrid_2013_-_130706_202133_1.jpg?itok=Ds8PL5PO');
+	background-size:cover;
+	display:block;
+}
+
+.hp-headline a:hover {
+	color:#6d6e70;
+	cursor:pointer;
+}
+
+.hp-story .image:hover, .hp-description a:hover {
+	cursor:pointer;
+}
 
 /*rail*/
 .rail-header {
@@ -133,7 +173,7 @@ body {
 }
 
 .rail-more {
-	font-family:"franklin-gothic-urw";
+	font-family:"franklin-gothic-urw", sans-serif;
 	font-size:0.9em;
 	color:#fff;
 	background-color:#f1c141;
@@ -150,69 +190,263 @@ body {
 }
 
 .rail-list li {
-	font-family:"franklin-gothic-urw";
+	font-family:"franklin-gothic-urw", sans-serif;
 	font-size:1em;
 	line-height:1.1em;
 	color:#000;
 	margin:15px 0px;
 }
 
-.rail-list li:hover {
-	color:#999;
-}
+.rail-list li a:hover {color:#6d6e70;}
 
-.rail-list li:first-child {
-	margin-top:0px;
-}
+.rail-list li:first-child {margin-top:0px;}
 
-.rail-list li:last-child {
-	margin-bottom:0px;
-}
+.rail-list li:last-child {margin-bottom:0px;}
 
-
-
-
-/************* margins & padding *************/
-.m0 {
-	margin:0px;
-}
-
-.vt-m0 {
-	margin-top:0px;
-}
-
-.vt-m5 {
-	margin-top:5px;
-}
-
-.vt-m10 {
-	margin-top:10px
-}
-
-.vt-m20 {
-	margin-top:20px
-}
-
-.vt-m30 {
-	margin-top:30px
-}
-
-.vt-m0 {
-	margin-bottom:0px;
-}
-
-.vb-m5 {
+.rail-list h5 {
+	font-family:"franklin-gothic-urw", sans-serif;
+	font-size:0.8em;
+	font-weight:600;
+	text-transform:uppercase;
 	margin-bottom:5px;
 }
 
-.vb-m10 {
-	margin-bottom:10px
+.tags a {
+	font-family:"franklin-gothic-urw", sans-serif;
+	font-size:0.8em;
+	color:#fff;
+	background-color:#ccc;
+	text-transform:uppercase;
+	padding:3px 5px;
+	margin:1px;
+	display:inline-block;
+	-o-transition:.1s;
+  	-ms-transition:.1s;
+  	-moz-transition:.1s;
+  	-webkit-transition:.1s;
+	transition:.1s;
 }
 
-.vb-m20 {
-	margin-bottom:20px
+.tags a:hover {
+	background-color:#E1E1E1;
+	-o-transition:.1s;
+  	-ms-transition:.1s;
+  	-moz-transition:.1s;
+  	-webkit-transition:.1s;
+	transition:.1s;
 }
 
-.vb-m30 {
-	margin-bottom:30px
+.related img {
+	width:130px;
+	display:inline-block;
+}
+
+.related p {
+		font-size:1em;
+	line-height:1.1em;
+	display:inline-block;
+	vertical-align:top;
+	width:110px;
+	margin-left:10px;
+}
+
+/************* articles **************/
+
+.article-headline {
+	font-family:"franklin-gothic-urw-cond", sans-serif;
+	font-size:4.375em;
+	font-weight:600;
+	letter-spacing:-2;
+	margin:20px 0px;
+}
+
+.subhead {
+	font-family: "franklin-gothic-urw", sans-serif;
+	font-weight:400;
+	font-size:1.5em;
+	margin:20px 0px;
+}
+
+.byline {
+	font-family: "franklin-gothic-urw", sans-serif;
+	font-weight:300;
+	font-size:1em;
+}
+
+.byline a {
+	color:#f25d50;
+	font-weight:600;
+	text-transform:uppercase;
+}
+
+.byline a:hover {text-decoration:underline;}
+
+figure img {
+	margin-bottom:2px;
+	width: 100%;
+  	height: auto; 
+}
+
+figcaption {
+	font-family:"franklin-gothic-urw", sans-serif;
+	font-size:0.875em;
+	line-height:1.250em;
+	color:#666666;
+	margin-top:1px;
+}
+
+.credit {font-weight:600;}
+
+.credit a:hover {text-decoration:underline;}
+
+.article-body {margin:0px 0px 60px 50px;}
+
+.article-body p {
+	font-family:"calluna";
+	font-size:1.125em;
+	line-height:1.750em;
+	margin:15px 0px;
+}
+
+/*running into challenges here, depending on the letter*/
+/* .article-body p:first-child:first-letter { 
+	font-family: "franklin-gothic-urw", sans-serif;
+	font-size:4.5em;
+	font-weight:600;
+	color: #666;
+	margin:18px 0px 0px -50px;
+	float: left;  
+} */
+
+.article-body blockquote {
+	font-family:"franklin-gothic-urw-cond", sans-serif;
+	font-weight:500;
+	font-style:italic;
+	color:#f25d50;
+	font-size:1.750em;
+	line-height:1.250em;
+	margin:5px 30px 0px -50px;
+	width:225px;
+	display:inline-block;
+	float:left;
+}
+
+.article-body a {border-bottom:1px solid #f25d50;}
+
+.article-body a:hover {border-bottom:2px solid #f25d50;}
+
+.article-body h1 {
+	font-family: "adelle";
+	font-size:2em;
+	line-height:1em;
+	padding:5px 7px 5px 9px;
+	color:#fff;
+	background-color:#f25d50;
+	display:inline-block;
+	margin:20px 0px -10px 0px;
+}
+
+.article-body h2 {
+	font-family: "franklin-gothic-urw", sans-serif;
+	font-size:2em;
+	font-weight:600;
+	letter-spacing:-1px;
+	text-transform: uppercase;
+	color: #666;
+	margin:20px 0px -10px 0px;
+}
+
+.article-body h3 {
+	font-family: "franklin-gothic-urw", sans-serif;
+	font-size:1.75em;
+	font-weight:600;
+	color: #666;
+	margin:20px 0px -10px 0px;
+}
+
+.article-body h4 {
+	font-family: "franklin-gothic-urw-cond", sans-serif;
+	font-size:1.35em;
+	font-weight:600;
+	text-transform:uppercase;
+	color: #666;
+	margin:20px 0px -10px 0px;
+}
+
+.article-body h5 {
+	font-family: "adelle";
+	font-size:1.25em;
+	font-weight:600;
+	color: #666;
+	margin:20px 0px -10px 0px;
+}
+
+/************* color *************/
+
+.comments-header {
+	background-color:#666;
+}
+
+.comments-header h4 {
+	font-family: "adelle";
+	font-size:1.25em;
+	font-weight:600;
+	color: #fff;
+	padding:3px 0px 2px 4px;
+	display:inline-block;
+}
+
+.login {
+	float:right;
+	display:inline-block;
+}
+
+.login h5 {
+	font-family:"franklin-gothic-urw", sans-serif;
+	color:#fff;
+	font-size:1em;
+	font-weight:400;
+	vertical-align:center;
+	padding:5px 6px 0px 0px;
+}
+
+.login h5 a:hover {
+	text-decoration:underline;
+}
+
+
+/************* color *************/
+
+.dark-blue-highlight {
+	background-color:#2f5373;
+	padding:3px 4px 2px 6px;
+	display:inline-block;
+}
+
+.dark-blue-highlight:hover { background-color:#5a768e;}
+
+.yellow-highlight {
+	background-color:#f1c141;
+	padding:1px 3px;
+	display:inline-block;
+}
+
+/************* margins & padding *************/
+.m0 {margin:0px;}
+
+/*top*/
+.vt-m-10 {margin-top:-10px;}.vt-m0 {margin-top:0px;}.vt-m5 {margin-top:5px;}.vt-m10 {margin-top:10px}.vt-m20 {margin-top:20px}.vt-m30 {margin-top:30px}.vt-m40 {margin-top:40px}.vt-m50 {margin-top:50px}.vt-m60 {margin-top:60px}
+
+/*bottom*/
+.vb-m-10 {margin-bottom:-10px;}.vb-m0 {margin-bottom:0px;}.vb-m5 {margin-bottom:5px;}.vb-m10 {margin-bottom:10px}.vb-m20 {margin-bottom:20px}.vb-m30 {margin-bottom:30px}.vb-m40 {margin-bottom:40px}.vb-m50 {margin-bottom:50px}.vb-m60 {margin-bottom:60px}
+
+/*left*/
+.vl-m-10 {margin-left:-10px;}.vl-m0 {margin-left:0px;}.vl-m5 {margin-left:5px;}.vl-m10 {margin-left:10px}.vl-m20 {margin-left:20px}.vl-m30 {margin-left:30px}
+
+/*right*/
+.vr-m-10 {margin-right:-10px;}.vr-m0 {margin-right:0px;}.vr-m5 {margin-right:5px;}.vr-m10 {margin-right:10px}.vr-m20 {margin-right:20px} .vr-m30 {margin-right:30px}
+
+/*exception*/
+.lc-310m { 
+	margin-right:330px;
 }

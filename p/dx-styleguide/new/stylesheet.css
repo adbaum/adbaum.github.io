@@ -335,18 +335,7 @@ figcaption {
 
 .article-body a:hover {border-bottom:2px solid #f25d50;}
 
-.article-body h1 {
-	font-family: "adelle";
-	font-size:2em;
-	line-height:1em;
-	padding:5px 7px 5px 9px;
-	color:#fff;
-	background-color:#f25d50;
-	display:inline-block;
-	margin:20px 0px -10px 0px;
-}
-
-.article-body h2 {
+.article-h2 {
 	font-family: "franklin-gothic-urw", sans-serif;
 	font-size:2em;
 	font-weight:600;
@@ -354,45 +343,49 @@ figcaption {
 	text-transform: uppercase;
 	color: #666;
 	margin:20px 0px -10px 0px;
+	display:block;
 }
 
-.article-body h3 {
+.article-h3 {
 	font-family: "franklin-gothic-urw", sans-serif;
 	font-size:1.75em;
 	font-weight:600;
 	color: #666;
 	margin:20px 0px -10px 0px;
+	display:block;
 }
 
-.article-body h4 {
+.article-h4 {
 	font-family: "franklin-gothic-urw-cond", sans-serif;
 	font-size:1.35em;
 	font-weight:600;
 	text-transform:uppercase;
 	color: #666;
 	margin:20px 0px -10px 0px;
+	display:block;
 }
 
-.article-body h5 {
+.article-h5 {
 	font-family: "adelle";
 	font-size:1.25em;
 	font-weight:600;
 	color: #666;
 	margin:20px 0px -10px 0px;
+	display:block;
 }
 
 /************* color *************/
 
 .comments-header {
 	background-color:#666;
+	color:#fff;
 }
 
 .comments-header h4 {
 	font-family: "adelle";
 	font-size:1.25em;
 	font-weight:600;
-	color: #fff;
-	padding:3px 0px 2px 4px;
+	padding:5px 5px 4px 5px;
 	display:inline-block;
 }
 
@@ -401,19 +394,55 @@ figcaption {
 	display:inline-block;
 }
 
-.login h5 {
+.comments-section h5 {
 	font-family:"franklin-gothic-urw", sans-serif;
-	color:#fff;
 	font-size:1em;
 	font-weight:400;
-	vertical-align:center;
-	padding:5px 6px 0px 0px;
+	padding:7px 7px 4px 5px;
 }
 
-.login h5 a:hover {
+.comments-section h5 a:hover {
 	text-decoration:underline;
 }
 
+.comment {
+	
+}
+
+.comment-body {
+	margin-left:80px;
+	float:right;
+	vertical-align:top;
+}
+
+.comment-body h5 {
+	font-weight:600;
+	padding:0;
+}
+
+.comment-body p {
+	font-family:"franklin-gothic-urw", sans-serif;
+	font-size:1.1em;
+	line-height:1.2em;
+	color:#000;
+	margin-top:10px;
+}
+
+.comment-author {
+	font-family:"franklin-gothic-urw", sans-serif;
+	font-size:1.1em;
+	line-height:1.2em;
+	color:#000;
+	margin-top:10px;
+	color:#999;
+}
+
+.comment-photo { 
+	background-image:url('http://a1.s6img.com/cdn/0009/p/2250559_9176873_lz.jpg');
+	background-size:cover;
+	width:65px;
+	height:65;
+}
 
 /************* color *************/
 

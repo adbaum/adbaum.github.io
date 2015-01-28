@@ -81,6 +81,14 @@ body {
 	font-weight:600;
 }
 
+.recommended-headline {
+	font-family:"franklin-gothic-urw-cond", sans-serif;
+	font-size:1.500em;
+	line-height:1.1em;
+	color:#fff;
+	font-weight:600;
+}
+
 .hp-hero-list {
 	font-family:"franklin-gothic-urw-cond", sans-serif;
 	font-size:1.25em;
@@ -100,8 +108,9 @@ body {
 	border-bottom:none;
 }
 
-.hp-hero-1:hover, .hp-hero-2 a:hover, .homepage-hero ul li a:hover, .homepage-hero .topic-title a:hover, .homepage-hero .subhead a:hover {
+.hp-hero-1:hover, .hp-hero-2 a:hover, .homepage-hero ul li a:hover, .homepage-hero .topic-title a:hover, .homepage-hero .subhead a:hover, .recommended-headline a:hover {
 	opacity:0.7;
+	cursor:pointer;
 }
 
 /*homepage river*/
@@ -251,6 +260,38 @@ body {
 	margin-left:10px;
 }
 
+/************* recommended **************/
+
+.recommended-story .recommended-headline {color:#000;}
+
+.recommended-stories {
+	width:100%;
+	padding:0px;
+}
+
+.recommended-story {
+	width:25%;
+	min-height:270px;
+	height:auto;
+	background-color:#f2f2f2;
+	border-right:1px solid #fff;
+	display:inline-block;
+	vertical-align: top;
+}
+
+.recommended-story:last-child {
+	border-right:0px;
+}
+
+.recommended-story .image {
+	width:100%;
+	height:160px;
+	background-image:url('http://dailyxtra.com/sites/default/files/styles/440px_wide/public/Gay_Pride_Madrid_2013_-_130706_202133_1.jpg?itok=Ds8PL5PO');
+	background-size:cover;
+	display:block;
+}
+
+
 /************* articles **************/
 
 .article-headline {
@@ -309,16 +350,6 @@ figcaption {
 	margin:15px 0px;
 }
 
-/*running into challenges here, depending on the letter*/
-/* .article-body p:first-child:first-letter { 
-	font-family: "franklin-gothic-urw", sans-serif;
-	font-size:4.5em;
-	font-weight:600;
-	color: #666;
-	margin:18px 0px 0px -50px;
-	float: left;  
-} */
-
 .article-body blockquote {
 	font-family:"franklin-gothic-urw-cond", sans-serif;
 	font-weight:500;
@@ -375,7 +406,7 @@ figcaption {
 	display:block;
 }
 
-/************* color *************/
+/************* comments *************/
 
 .comments-header {
 	background-color:#666;
@@ -565,8 +596,22 @@ button:focus {
 	text-decoration:underline;
 }
 
+/************* sponsored *************/
+.sponsored-highlight {
+	background-color:#05a688;
+	padding:3px 4px 2px 6px;
+	display:inline-block;
+}
 
-/************* color *************/
+.sponsored-highlight:hover {background-color:#49b7a0;}
+
+.sponsored-image {
+	background-color: rgba(5, 166, 136, 0.6);
+    background-blend-mode: multiply;
+}
+
+
+/************* highlights *************/
 
 .dark-blue-highlight {
 	background-color:#2f5373;
@@ -583,32 +628,17 @@ button:focus {
 }
 
 
-/************* sponsored *************/
-.sponsored-highlight {
-	background-color:#05a688;
-	padding:3px 4px 2px 6px;
-	display:inline-block;
-}
-
-.sponsored-highlight:hover {background-color:#49b7a0;}
-
-.sponsored-image {
-	background-color: rgba(5, 166, 136, 0.6);
-    background-blend-mode: multiply;
-}
-
-
 /************* margins & padding *************/
 .m0 {margin:0px;}
 
 /*top*/
-.vt-m-10 {margin-top:-10px;}.vt-m0 {margin-top:0px;}.vt-m5 {margin-top:5px;}.vt-m10 {margin-top:10px}.vt-m20 {margin-top:20px}.vt-m30 {margin-top:30px}.vt-m40 {margin-top:40px}.vt-m50 {margin-top:50px}.vt-m60 {margin-top:60px}
+.vt-m-10 {margin-top:-10px;}.vt-m0 {margin-top:0px;}.vt-m5 {margin-top:5px;}.vt-m10 {margin-top:10px}.vt-m20 {margin-top:20px}.vt-m30 {margin-top:30px}.vt-m40 {margin-top:40px}.vt-m50 {margin-top:50px}.vt-m60 {margin-top:60px}.vt-m100 {margin-top:100px}
 
 /*bottom*/
-.vb-m-10 {margin-bottom:-10px;}.vb-m0 {margin-bottom:0px;}.vb-m5 {margin-bottom:5px;}.vb-m10 {margin-bottom:10px}.vb-m20 {margin-bottom:20px}.vb-m30 {margin-bottom:30px}.vb-m40 {margin-bottom:40px}.vb-m50 {margin-bottom:50px}.vb-m60 {margin-bottom:60px}
+.vb-m-10 {margin-bottom:-10px;}.vb-m0 {margin-bottom:0px;}.vb-m5 {margin-bottom:5px;}.vb-m10 {margin-bottom:10px}.vb-m20 {margin-bottom:20px}.vb-m30 {margin-bottom:30px}.vb-m40 {margin-bottom:40px}.vb-m50 {margin-bottom:50px}.vb-m60 {margin-bottom:60px}.vt-m100 {margin-top:100px}
 
 /*left*/
-.vl-m-10 {margin-left:-10px;}.vl-m0 {margin-left:0px;}.vl-m5 {margin-left:5px;}.vl-m10 {margin-left:10px}.vl-m20 {margin-left:20px}.vl-m30 {margin-left:30px}
+.vl-m-5 {margin-left:-5px;}.vl-m-10 {margin-left:-10px;}.vl-m0 {margin-left:0px;}.vl-m5 {margin-left:5px;}.vl-m10 {margin-left:10px}.vl-m20 {margin-left:20px}.vl-m30 {margin-left:30px}
 
 /*right*/
 .vr-m-10 {margin-right:-10px;}.vr-m0 {margin-right:0px;}.vr-m5 {margin-right:5px;}.vr-m10 {margin-right:10px}.vr-m20 {margin-right:20px} .vr-m30 {margin-right:30px}
@@ -617,6 +647,75 @@ button:focus {
 .lc-310m { 
 	margin-right:330px;
 }
+
+
+/************* video play *************/
+
+.play-button-large .round {
+	width:26px;
+	height:26px;
+	-webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px; 
+    background-color:#f25d50;
+}
+
+.play-button-large .round .triangle {
+	position:relative;
+	top:7px;
+	left:9px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6.5px 0 6.5px 11.3px;
+	border-color: transparent transparent transparent #ffffff;
+}
+
+.play-button-medium .round {
+	width:18px;
+	height:18px;
+	-webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px; 
+    background-color:#f25d50;
+}
+
+.play-button-medium .round .triangle {
+	position:relative;
+	top:5px;
+	left:6px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 4.5px 0 4.5px 7.8px;
+	border-color: transparent transparent transparent #ffffff;
+}
+
+.play-button-small .round {
+	width:14px;
+	height:14px;
+	-webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px; 
+    background-color:#f25d50;display:inline-block;
+}
+
+.play-button-small .round .triangle {
+	position:relative;
+	top:4px;
+	left:5px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 3px 0 3px 5.2px;
+	border-color: transparent transparent transparent #ffffff;
+}
+
+.play-button-small, .play-button-medium, .play-button-large {
+	margin: 2px 0px 0px 5px;
+	display:inline-block;
+}
+
 
 /************* breakdown *************/
 

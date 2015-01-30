@@ -23,9 +23,8 @@ body {
 	padding:50px 0px;
 	width:80%;
 	max-width:1060px;
-	/*background-image:url('assets/grid.jpg');
-	background-position:center;
-	background-repeat:repeat-y*/
+	background-image:url('assets/grid.jpg');
+	background-repeat:repeat-y
 }
 
 .right-column { 
@@ -734,7 +733,7 @@ button:focus {
 .m0 {margin:0px;}
 
 /*top*/
-.vt-m-10 {margin-top:-10px;}.vt-m0 {margin-top:0px;}.vt-m5 {margin-top:5px;}.vt-m10 {margin-top:10px}.vt-m20 {margin-top:20px}.vt-m30 {margin-top:30px}.vt-m40 {margin-top:40px}.vt-m50 {margin-top:50px}.vt-m60 {margin-top:60px}.vt-m100 {margin-top:100px}
+.vt-m-10 {margin-top:-10px;}.vt-m0 {margin-top:0px;}.vt-m5 {margin-top:5px;}.vt-m10 {margin-top:10px}.vt-m20 {margin-top:20px}.vt-m30 {margin-top:30px}.vt-m35 {margin-top:35px}.vt-m40 {margin-top:40px}.vt-m50 {margin-top:50px}.vt-m60 {margin-top:60px}.vt-m100 {margin-top:100px}
 
 /*bottom*/
 .vb-m-10 {margin-bottom:-10px;}.vb-m0 {margin-bottom:0px;}.vb-m5 {margin-bottom:5px;}.vb-m10 {margin-bottom:10px}.vb-m20 {margin-bottom:20px}.vb-m30 {margin-bottom:30px}.vb-m40 {margin-bottom:40px}.vb-m50 {margin-bottom:50px}.vb-m60 {margin-bottom:60px}.vt-m100 {margin-top:100px}

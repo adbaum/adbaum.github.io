@@ -24,7 +24,8 @@ body {
 	width:80%;
 	max-width:1060px;
 	background-image:url('assets/grid.jpg');
-	background-repeat:repeat-y
+	background-repeat:repeat-y;
+	background-position:top left;
 }
 
 .right-column { 

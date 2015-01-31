@@ -20,12 +20,12 @@ body {
 }
 .container {
 	margin:0 auto;
-	padding:50px 0px;
+	padding:85px 0px 50px 0px;
 	width:80%;
 	max-width:1060px;
 	background-image:url('assets/grid.jpg');
 	background-repeat:repeat-y;
-	background-position:top left;
+	background-position:left;
 }
 
 .right-column { 
@@ -88,19 +88,37 @@ body {
 	width:100%;
 	height:35px;
 	z-index:10;
+	position:absolute;
 	left:0px;
 	color:#fff;
-	font-family: "franklin-gothic-urw-cond";
-	font-weight:600;
-	font-size:1.250em;
-	line-height:1.175em;
-	text-transform:uppercase;
 	border-top:1px solid #6e879c;
+}
+
+.navigation-sticky a {
+	font-family: "franklin-gothic-urw-cond";
+	font-size:1.250em;
+	text-transform:uppercase;
+	display:inline-block;
+	margin:8px 7px 0px 0px;
+}
+
+.navigation-sticky a:first-child {
+	margin-left:14px;
+}
+
+.navigation-sticky a img {
+	width:16px;
+}
+
+.navigation-sticky a:hover {
+	border-bottom:1px solid #fff;
 }
 
 .fixed {
 	position:fixed;
 	top:0px;
+	border-top:0px;
+	border-bottom:1px solid #6e879c;
 }
 
 .navigation-top a:hover {
@@ -131,7 +149,11 @@ body {
 	font-size:0.875em;
 	line-height:1.175em;
 	text-transform:uppercase;
-	padding-right:5px;
+	padding: 0px 5px 0px 5px;
+}
+
+.nav-search:focus {
+	border:0px;
 }
 
 .nav-search::-webkit-input-placeholder {color: #fff;}
@@ -152,10 +174,6 @@ body {
 	background-repeat:no-repeat;
 	background-size:100%;
 	cursor:pointer;
-}
-
-.edition a:hover {
-	text-decoration:none;
 }
 
 /************* font styles *************/

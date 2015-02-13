@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<style>
+body {
+ background: #ccc;   
+}
+.flip {
+  -webkit-perspective: 800;
+  -ms-perspective: 800;
+  -moz-perspective: 800;
+  -o-perspective: 800;
+   width: 400px;
+   height: 200px;
+   position: relative;
+   display:inline-block;
+
+}
+.flip .card.flipped {
+  transform:frotatex(-2340deg);
+  -ms-transform:rotatex(-2340deg); /* IE 9 */
+  -moz-transform:rotatex(-2340deg); /* Firefox */
+  -webkit-transform:rotatex(-2340deg); /* Safari and Chrome */
+  -o-transform:rotatex(-2340deg); /* Opera */
+   -webkit-transform-style: preserve-3d;
+  -webkit-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+  -moz-transform-style: preserve-3d;
+  -moz-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+  -ms-transform-style: preserve-3d;
+  -ms-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+  -o-transform-style: preserve-3d;
+  -o-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+  transform-style: preserve-3d;
+  transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+}
+
+
+.flip:first-child .card.flipped {
+  transform:rotatex(2340deg);
+  -ms-transform:rotatex(2340deg); /* IE 9 */
+  -moz-transform:rotatex(2340deg); /* Firefox */
+  -webkit-transform:rotatex(2340deg); /* Safari and Chrome */
+  -o-transform:rotatex(2340deg); /* Opera */
+}
+
+.flip .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+  -moz-transform-style: preserve-3d;
+  -moz-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+  -ms-transform-style: preserve-3d;
+  -ms-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+  -o-transform-style: preserve-3d;
+  -o-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+  transform-style: preserve-3d;
+  transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+}
+
+.flip .card .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  font-family: Georgia;
+  font-size: 3em;
+  text-align: center;
+  line-height: 200px;
+  backface-visibility: hidden;  /* W3C */
+  -webkit-backface-visibility: hidden; /* Safari & Chrome */
+  -moz-backface-visibility: hidden; /* Firefox */
+  -ms-backface-visibility: hidden; /* Internet Explorer */
+  -o-backface-visibility: hidden; /* Opera */
+
+}
+.flip .card .front {
+  position: absolute;
+  z-index: 1;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+.flip .card .back {
+    background: black;
+    color: white;
+    cursor: pointer;
+  transform:rotatex(-2340deg);
+  -ms-transform:rotatex(-2340deg); /* IE 9 */
+  -moz-transform:rotatex(-2340deg); /* Firefox */
+  -webkit-transform:rotatex(-2340deg); /* Safari and Chrome */
+  -o-transform:rotatex(-2340deg); /* Opera */
+}
+
+}
+
+</style>
+
+<script>
+$( document ).ready(function() {
+    $(".button").click(function(){
+  $(".flip").find(".card").toggleClass("flipped");
+  return false;
+});
+});
+</script>
+
+</head>
+
+<body>
+<center>
+<div class="flip"> 
+  <div class="card"> 
+    <div class="face front">Front</div> 
+    <div class="face back">Back</div> 
+  </div>
+</div>
+<div class="flip"> 
+  <div class="card"> 
+    <div class="face front">Front</div> 
+    <div class="face back">Back</div> 
+  </div>
+</div>
+<button class="button">Clickity Click</button></center>
+
+
+</body>
+
+
+</html>

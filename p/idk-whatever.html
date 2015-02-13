@@ -18,13 +18,24 @@ body {
    height: 200px;
    position: relative;
    display:inline-block;
+
 }
 .flip .card.flipped {
-  transform:rotatex(-2340deg);
+  transform:frotatex(-2340deg);
   -ms-transform:rotatex(-2340deg); /* IE 9 */
   -moz-transform:rotatex(-2340deg); /* Firefox */
   -webkit-transform:rotatex(-2340deg); /* Safari and Chrome */
   -o-transform:rotatex(-2340deg); /* Opera */
+   -webkit-transform-style: preserve-3d;
+  -webkit-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+  -moz-transform-style: preserve-3d;
+  -moz-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+  -ms-transform-style: preserve-3d;
+  -ms-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+  -o-transform-style: preserve-3d;
+  -o-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
+  transform-style: preserve-3d;
+  transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
 }
 
 
@@ -40,16 +51,17 @@ body {
   width: 100%;
   height: 100%;
   -webkit-transform-style: preserve-3d;
-  -webkit-transition: 1s;
+  -webkit-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
   -moz-transform-style: preserve-3d;
-  -moz-transition: 1s;
+  -moz-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
   -ms-transform-style: preserve-3d;
-  -ms-transition: 1s;
+  -ms-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
   -o-transform-style: preserve-3d;
-  -o-transition: 1s;
+  -o-transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
   transform-style: preserve-3d;
-  transition: 1s;
+  transition: 1s cubic-bezier(0.1,0.9,.7,1.02);
 }
+
 .flip .card .face {
   width: 100%;
   height: 100%;
@@ -77,12 +89,12 @@ body {
     background: black;
     color: white;
     cursor: pointer;
-    
   transform:rotatex(-2340deg);
   -ms-transform:rotatex(-2340deg); /* IE 9 */
   -moz-transform:rotatex(-2340deg); /* Firefox */
   -webkit-transform:rotatex(-2340deg); /* Safari and Chrome */
   -o-transform:rotatex(-2340deg); /* Opera */
+}
 
 }
 

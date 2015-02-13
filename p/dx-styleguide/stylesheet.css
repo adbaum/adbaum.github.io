@@ -273,6 +273,50 @@ hr {
 	float:right;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/dailyxtra\/sites\/all\/themes\/dx\/sass\/custom\/_blocks\.scss}line{font-family:\00003484}}
+#block-quicktabs-event-listing-pages .quicktabs-wrapper {
+  background-color: #f2f2f2;
+  display: block;
+  width: auto;
+  padding: 17px 20px 20px 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/dailyxtra\/sites\/all\/themes\/dx\/sass\/custom\/_blocks\.scss}line{font-family:\00003491}}
+#block-quicktabs-event-listing-pages .quicktabs-wrapper .item-list ul {
+  margin: 0;
+  padding: 0 0 5px 0;
+  border-bottom: solid 1px #999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/dailyxtra\/sites\/all\/themes\/dx\/sass\/custom\/_blocks\.scss}line{font-family:\00003496}}
+#block-quicktabs-event-listing-pages .quicktabs-wrapper .item-list ul li {
+  font-family: "franklin-gothic-urw", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.750em;
+  padding-right: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/dailyxtra\/sites\/all\/themes\/dx\/sass\/custom\/_blocks\.scss}line{font-family:\00003502}}
+#block-quicktabs-event-listing-pages .quicktabs-wrapper .item-list ul li a {
+  text-decoration: none;
+  color: #999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/dailyxtra\/sites\/all\/themes\/dx\/sass\/custom\/_blocks\.scss}line{font-family:\00003508}}
+#block-quicktabs-event-listing-pages .quicktabs-wrapper .item-list ul li.active {
+  border-bottom: solid 1px #000;
+  padding-bottom: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/dailyxtra\/sites\/all\/themes\/dx\/sass\/custom\/_blocks\.scss}line{font-family:\00003512}}
+#block-quicktabs-event-listing-pages .quicktabs-wrapper .item-list ul li.active a {
+  color: #000;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/dailyxtra\/sites\/all\/themes\/dx\/sass\/custom\/_blocks\.scss}line{font-family:\00003518}}
+#block-quicktabs-event-listing-pages .quicktabs-wrapper .item-list ul li.last {
+  padding-right: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/dailyxtra\/sites\/all\/themes\/dx\/sass\/custom\/_blocks\.scss}line{font-family:\00003522}}
+#block-quicktabs-event-listing-pages .quicktabs-wrapper .item-list .ajax-progress-throbber {
+  display: none;
+}
+
 /*****************
 ** article page **
 ******************/

@@ -414,12 +414,37 @@ body {
 }
 
 .related p {
-		font-size:1em;
+	font-size:1em;
 	line-height:1.1em;
 	display:inline-block;
 	vertical-align:top;
 	width:110px;
 	margin-left:10px;
+}
+
+
+.tabs {
+	font-family: "franklin-gothic-urw", sans-serif;
+	text-transform: uppercase;
+	font-size: 0.750em;
+	margin: 0;
+	padding: 0 0 5px 0;
+	border-bottom: solid 1px #999;
+}
+
+.tabs li {
+	display: inline;
+	background: none;
+	list-style-type: none;
+	padding:6px;
+	white-space: nowrap;
+}
+
+.active {
+	color:#000;
+	font-weight:600;
+	border-bottom: solid 1px #000;
+	padding-bottom: 5px;
 }
 
 

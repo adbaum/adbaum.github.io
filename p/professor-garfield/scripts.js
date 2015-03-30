@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $('.hover').bind('touchstart touchend', function(e) {
-        e.preventDefault();
+    $('.hover').bind('touchstart', function(e) {
+        e;
         $(this).toggleClass('hover_effect');
     });
 });

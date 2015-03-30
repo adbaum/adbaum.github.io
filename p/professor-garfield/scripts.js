@@ -1,8 +1,6 @@
-var p = document.getElementsByClassName('.profile-image');
-
 $(document).ready(function() {
-
-	$(this).onclick = function() {
-	 $(this).onhover.call(p);
-};
+    $('.hover').bind('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
 });

@@ -1,6 +1,7 @@
 $(document).ready(function() {
-    $('.hover').bind('touchstart touchend', function(e) {
-        e.preventDefault();
-        $(this).toggleClass('hover_effect');
-    });
+    var p = document.getElementsByTagName('.profile-image')[0];
+	p.onclick = function() {
+	 // Trigger the `onhover` event on the paragraph
+	 p.onhover.call(p);
+};
 });

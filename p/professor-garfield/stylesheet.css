@@ -11,6 +11,11 @@ footer {
 	display:block;
 }
 
+.hover {
+-webkit-user-select: none;
+-webkit-touch-callout: none;        
+}
+
 /*** structure ***/
 
 .big-box {

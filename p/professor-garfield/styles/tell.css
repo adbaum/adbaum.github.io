@@ -140,7 +140,7 @@ li:before {
 
 .tilt-bottom {
   position: absolute;
-  top:3700px;
+  top:3200px;
   width:100%;
   -webkit-transform: skewy(-2deg);
   -ms-transform: skewy(-2deg);
@@ -153,24 +153,24 @@ li:before {
 
 @media (max-width: 1000px) {
 	.tilt-bottom {
-	  top:3900px;
+	  top:3400px;
 	}
 }
 
 @media (max-width: 800px) {
 	.tilt-bottom {
-	  top:5500px;
+	  top:5200px;
 	}
 }
 
 @media (max-width: 600px) {
 	.tilt-bottom {
-	  top:5300px;
+	  top:5000px;
 	}
 }
 
 @media (max-width: 400px) {
 	.tilt-bottom {
-	  top:5700px;
+	  top:5500px;
 	}
 }

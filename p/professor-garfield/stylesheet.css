@@ -436,7 +436,7 @@ li:last-child {
 		float:left;
 	}
 
-	.video-box {
+	.video-box-out, .video-box-in {
 		width:100%;
 	}
 

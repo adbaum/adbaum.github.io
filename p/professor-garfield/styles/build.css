@@ -1,0 +1,193 @@
+.next {
+	border:5px solid #f74441;
+}
+
+.next:hover {
+	border:5px solid #f74441;
+	color:#f74441;
+}
+
+li:before {
+    content: "• ";
+    color: #f74441; /* or whatever color you prefer */
+}
+
+/*** stripes ***/
+
+.stripes-top:before {
+  background-color:#f74441;
+  width:100%;
+}
+
+.stripes-right:before {
+  background-color:#f74441;
+}
+
+.stripes-bottom:after {
+  background-color:#f74441;
+}
+
+
+.tiles {
+	width:100%;
+}
+
+.tile-column img {
+	width:100%;
+	margin-bottom:5px;
+	border:2px solid #f74441;
+	-o-transition:.2s;
+ 	-ms-transition:.2s;
+ 	-moz-transition:.2s;
+ 	-webkit-transition:.2s;
+ 	transition:.2s;
+ 	cursor:pointer;
+}
+
+.tile-column {
+	vertical-align:top;
+	width:30%;
+	margin:10px 1%;
+	display:inline-block;
+}
+
+.tile-column:first-child {
+	margin-left:0px;
+}
+
+.tile-column img:hover {
+	border:2px solid #000;
+	-o-transition:.2s;
+ 	-ms-transition:.2s;
+ 	-moz-transition:.2s;
+ 	-webkit-transition:.2s;
+ 	transition:.2s;
+}
+
+
+.build-image {
+	position:relative;
+	background-image:url('https://placekitten.com/g/600/500');
+	background-position:center;
+	color:rgba(255,255,255,0);
+	background-size:cover;
+	width:100%;
+	height:175px;
+	margin-bottom:10px;
+	background-color:rgba(247,68,65,0.3);
+	background-blend-mode: multiply;
+	text-align:center;
+	display:table;
+	-o-transition:.2s;
+ 	-ms-transition:.2s;
+ 	-moz-transition:.2s;
+ 	-webkit-transition:.2s;
+ 	transition:.2s;
+}
+
+.build-image h3 {
+	display:table-cell;
+	vertical-align:middle;
+	text-transform: none;
+}
+
+.build-image:hover {
+	background-color:rgba(247,68,65,1);
+	color:rgba(255,255,255,1);
+	cursor:arrow;
+	-o-transition:.2s;
+ 	-ms-transition:.2s;
+ 	-moz-transition:.2s;
+ 	-webkit-transition:.2s;
+ 	transition:.2s;
+}
+
+.secret {
+	display:none;
+}
+
+
+@media (max-width:800px) {
+	.tile-column {
+		width:100%;
+		margin:10px 0px;
+	}
+
+	.build-image{
+		height:300px;
+	}
+
+	.secret {
+		display:block;
+		text-transform:none;
+	}
+
+}
+
+@media (max-width:450px) {
+	.build-image{
+		height:200px;
+	}
+}
+
+
+/*** i broke everything ***/
+
+.tilt-top {
+  position: absolute;
+  top:0px;
+  width:100%;
+  -webkit-transform: skewy(-2deg);
+  -ms-transform: skewy(-2deg);
+  -moz-transform: skewy(-2deg);
+  -o-transform: skewy(-2deg);
+  transform: skewy(-2deg);
+  z-index:-5;
+}
+
+.tilt-bottom {
+  position: absolute;
+  top:2500px;
+  width:100%;
+  -webkit-transform: skewy(-2deg);
+  -ms-transform: skewy(-2deg);
+  -moz-transform: skewy(-2deg);
+  -o-transform: skewy(-2deg);
+  transform: skewy(-2deg);
+  z-index:-2;
+  margin-bottom:250px;
+}
+
+.width100 {
+	width:100%;
+}
+
+@media (max-width: 1000px) {
+	.tilt-bottom {
+	  top:2900px;
+	}
+}
+
+@media (max-width: 800px) {
+	.tilt-bottom {
+	  top:2900px;
+	}
+}
+
+@media (max-width: 650px) {
+	.tilt-bottom {
+	  top:3100px;
+	}
+}
+
+@media (max-width: 550px) {
+	.tilt-bottom {
+	  top:3500px;
+	}
+}
+
+@media (max-width: 450px) {
+	.tilt-bottom {
+	  top:4000px;
+	}
+}

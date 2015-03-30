@@ -1,0 +1,176 @@
+.two-column-table {
+	width:100%;
+}
+
+.column-one, .column-two {
+	width:44%;
+	display:inline-block;
+	vertical-align: top;
+}
+
+.column-one div img, .column-two div img {
+	width:100%;
+}
+
+.column-one {
+	padding-right:3%;
+	border-right:1px dotted black;
+}
+
+.column-two {padding-left:3%;}
+
+
+.three-column-table {
+	width:100%;
+}
+
+.c-one, .c-two, .c-three {
+	width:30%;
+	display:inline-block;
+}
+
+.c-two {
+	margin:0px 3%;
+}
+
+.profile-image {
+	position:relative;
+	background-image:url('https://placekitten.com/g/200/300');
+	background-position:center;
+	color:rgba(255,255,255,0);
+	background-size:100%;
+	width:100%;
+	height:175px;
+	padding:4%;
+	margin-top:6%;
+	background-color:rgba(19,133,199,0.3);
+	background-blend-mode: multiply;
+	vertical-align:center;
+	-o-transition:.2s;
+ 	-ms-transition:.2s;
+ 	-moz-transition:.2s;
+ 	-webkit-transition:.2s;
+ 	transition:.2s;
+}
+
+.profile-image:hover {
+	background-color:rgba(19,133,199,1.0);
+	color:rgba(255,255,255,1);
+	cursor:arrow;
+	-o-transition:.2s;
+ 	-ms-transition:.2s;
+ 	-moz-transition:.2s;
+ 	-webkit-transition:.2s;
+ 	transition:.2s;
+}
+
+.profile-image .learn-more {
+	font-family:"boogaloo";
+	font-size:1em;
+	text-transform:uppercase;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+}
+
+.profile-image .learn-more:hover {
+	text-decoration:underline;
+}
+
+.next {
+	border:5px solid #1386c8;
+}
+
+.next:hover {
+	border:5px solid #1386c8;
+	color:#1386c8;
+}
+
+li:before {
+    content: "• ";
+    color: #1386c8; /* or whatever color you prefer */
+}
+
+.stripes-top:before {
+  background-color:#1386c8;
+}
+
+.stripes-right:before {
+  background-color:#1386c8;
+}
+
+.stripes-bottom:before {
+  background-color:#1386c8;
+}
+
+
+@media (max-width: 750px) {
+	.c-one, .c-two, .c-three {
+		width:92%;
+		margin:0px;
+	}
+}
+
+
+@media (max-width: 800px) {
+  .column-one, .column-two {
+		display:block;
+		width:100%;
+		padding:0px;
+		border:0px;
+	}
+}
+
+
+
+
+/*** i broke everything ***/
+
+.tilt-top {
+  position: absolute;
+  top:0px;
+  width:100%;
+  -webkit-transform: skewy(-2deg);
+  -ms-transform: skewy(-2deg);
+  -moz-transform: skewy(-2deg);
+  -o-transform: skewy(-2deg);
+  transform: skewy(-2deg);
+  z-index:-5;
+}
+
+.tilt-bottom {
+  position: absolute;
+  top:3700px;
+  width:100%;
+  -webkit-transform: skewy(-2deg);
+  -ms-transform: skewy(-2deg);
+  -moz-transform: skewy(-2deg);
+  -o-transform: skewy(-2deg);
+  transform: skewy(-2deg);
+  z-index:-2;
+  margin-bottom:250px;
+}
+
+@media (max-width: 1000px) {
+	.tilt-bottom {
+	  top:3900px;
+	}
+}
+
+@media (max-width: 800px) {
+	.tilt-bottom {
+	  top:5500px;
+	}
+}
+
+@media (max-width: 600px) {
+	.tilt-bottom {
+	  top:5300px;
+	}
+}
+
+@media (max-width: 400px) {
+	.tilt-bottom {
+	  top:5700px;
+	}
+}

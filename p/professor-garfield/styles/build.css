@@ -67,7 +67,6 @@ li:before {
 
 .build-image {
 	position:relative;
-	background-image:url('https://placekitten.com/g/600/500');
 	background-position:center;
 	color:rgba(255,255,255,0);
 	background-size:cover;
@@ -83,6 +82,30 @@ li:before {
  	-moz-transition:.2s;
  	-webkit-transition:.2s;
  	transition:.2s;
+}
+
+.b1 {
+	background-image:url('http://i.ytimg.com/vi/7-ZAfDkt3yQ/hqdefault.jpg');
+}
+
+.b2 {
+	background-image:url('http://curiouslittleapps.com/cla-cms/wp-content/uploads/2014/01/image_00007-960x720.jpg');
+}
+
+.b3 {
+	background-image:url('https://dabbledoneright-production.s3.amazonaws.com/production/uploads/course/photo/106921/medium_IMovie_Icon.png');
+}
+
+.b4 {
+	background-image:url('http://cdn.cultofmac.com/wp-content/uploads/2012/01/ibooksauthorabout.jpg');
+}
+
+.b5 {
+	background-image:url('https://dabbledoneright-production.s3.amazonaws.com/production/uploads/course/photo/106921/medium_IMovie_Icon.png');
+}
+
+.b6 {
+	background-image:url('http://i1-win.softpedia-static.com/screenshots/Wondershare-Video-Editor_7.jpg');
 }
 
 .build-image h3 {

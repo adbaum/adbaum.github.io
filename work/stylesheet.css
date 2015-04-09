@@ -277,7 +277,11 @@ h1 {
 	}
 
 	.boxes {
-		background-size:600px;
+		height:60vh;
+	}
+
+	.boxes-5 {
+		height:100vh;
 	}
 
 	.boxes h2 {

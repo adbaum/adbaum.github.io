@@ -301,14 +301,17 @@ h1 {
 
 	.boxes-1 {
 		background-image:url('assets/smaller/eater-background-small.jpg');
+		background-size:700px;
 	}
 
 	.boxes-2 {
 		background-image:url('assets/smaller/max-headroom-small.jpg');
+		background-size:700px;
 	}
 
 	.boxes-3 {
 		background-image:url('assets/smaller/racked-1-small.jpg');
+		background-size:700px;
 	}
 
 	.boxes-4 {

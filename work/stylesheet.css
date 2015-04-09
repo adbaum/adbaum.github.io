@@ -275,7 +275,7 @@ h1 {
 	}
 
 	.boxes {
-		height:60vh;
+		height:90vh;
 	}
 
 	.boxes-5 {
@@ -322,7 +322,7 @@ h1 {
 	}
 
 	.boxes-5 {
-		background-image:url('https://d22d7v2y1t140g.cloudfront.net/m_1785304_oCjtHkt2bPcv.jpg');
+		background-size:800px;
 	}
 }
 

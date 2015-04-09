@@ -345,6 +345,22 @@ h1 {
 		max-width:300px;
 		width:90%;
 	}
+
+	.boxes-1 {
+		background-size:500px;
+	}
+
+	.boxes-2 {
+		background-size:500px;
+	}
+
+	.boxes-3 {
+		background-size:500px;
+	}
+
+	.boxes-5 {
+		background-size:1300px;
+	}
 }
 
 @media (max-width: 300px) {

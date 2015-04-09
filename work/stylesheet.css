@@ -89,6 +89,10 @@ body {
     background-attachment:fixed;
     z-index:2;
     background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     text-align:center;
 }
 
@@ -269,6 +273,10 @@ h1 {
 
 	.hero div {
 		width:400px;
+	}
+
+	.boxes {
+		background-attachment:;
 	}
 
 	.boxes h2 {

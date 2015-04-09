@@ -94,6 +94,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
     text-align:center;
+    overflow:hidden;
 }
 
 .boxes-1 {
@@ -276,7 +277,7 @@ h1 {
 	}
 
 	.boxes {
-		background-attachment:;
+		background-size:600px;
 	}
 
 	.boxes h2 {

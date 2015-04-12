@@ -233,31 +233,19 @@ h1 {
 }
 
 @media (max-width: 1000px) {
-	h1 {
-		font-size:4em;
-	}
+	h1 {font-size:4em;}
 
-	.hero h1:nth-child(2) {
-		margin-top:-15px;
-	}
+	.hero h1:nth-child(2) {margin-top:-15px;}
 
-	.hero div {
-		width:720px;
-	}
+	.hero div {width:720px;}
 }
 
 @media (max-width: 740px) {
-	h1 {
-		font-size:3em;
-	}
+	h1 {font-size:3em;}
 
-	.hero h1:nth-child(2) {
-		margin-top:-15px;
-	}
+	.hero h1:nth-child(2) {margin-top:-15px;}
 
-	.hero div {
-		width:550px;
-	}
+	.hero div {width:550px;}
 }
 
 @media (max-width: 550px) {
@@ -266,64 +254,32 @@ h1 {
 		padding:5px;
 	}
 
-	.hero h1:nth-child(2) {
-		margin-top:-5px;
-	}
+	.hero h1:nth-child(2) {margin-top:-5px;}
 
-	.hero div {
-		width:400px;
-	}
+	.hero div {width:400px;}
 
-	.boxes {
-		height:90vh;
-	}
+	.boxes {height:90vh;}
 
-	.boxes-5 {
-		height:100vh;
-	}
+	.boxes-5 {height:100vh;}
 
 	.boxes h2 {
 		font-size:1.2em;
 		padding:5px;
 	}
 
-	.boxes h3 {
-		font-size:0.8em;
-	}
+	.boxes h3 {font-size:0.8em;}
 
-	.content {
-		width:340px;
-	}
+	.content {width:340px;}
 
-	.hero {
-		background-size:400px;
-	}
+	.hero {background-size:400px;}
 
-	.boxes-1 {
-		background-image:url('assets/smaller/eater-background-small.jpg');
-		background-size:700px;
-	}
+	.boxes-1 {background-size:1000px;}
 
-	.boxes-2 {
-		background-image:url('assets/smaller/max-headroom-small.jpg');
-		background-size:700px;
-	}
+	.boxes-2 {background-size:1300px;}
 
-	.boxes-3 {
-		background-image:url('assets/smaller/racked-1-small.jpg');
-		background-size:700px;
-	}
+	.boxes-3 {background-size:1000px;}
 
-	.boxes-4 {
-		background-image:url('http://apps.voxmedia.com/theverge/comcast-name-generator/bg.gif');
-		background-repeat:repeat;
-		background-size:initial;
-		background-attachment:fixed;
-	}
-
-	.boxes-5 {
-		background-size:1300px;
-	}
+	.boxes-5 {background-size:1500px;}
 }
 
 @media (max-width: 400px) {
@@ -332,9 +288,7 @@ h1 {
 		padding:5px;
 	}
 
-	.hero h1:nth-child(2) {
-		margin-top:-5px;
-	}
+	.hero h1:nth-child(2) {margin-top:-5px;}
 
 	.hero div {
 		max-width:300px;
@@ -344,22 +298,6 @@ h1 {
 	.content {
 		max-width:300px;
 		width:90%;
-	}
-
-	.boxes-1 {
-		background-size:500px;
-	}
-
-	.boxes-2 {
-		background-size:500px;
-	}
-
-	.boxes-3 {
-		background-size:500px;
-	}
-
-	.boxes-5 {
-		background-size:1300px;
 	}
 }
 
@@ -369,9 +307,7 @@ h1 {
 		padding:5px;
 	}
 
-	.hero h1:nth-child(2) {
-		margin-top:-5px;
-	}
+	.hero h1:nth-child(2) {margin-top:-5px;}
 
 	.hero div {
 		max-width:250px;

@@ -374,13 +374,13 @@ h1 {
 
 	.hero {background-size:400px;}
 
-	.boxes-1 {background-size:1000px;}
+	.boxes-1 {background-size:1000px;background-position:center;}
 
-	.boxes-2 {background-size:1300px;}
+	.boxes-2 {background-size:1300px;background-position:center;}
 
-	.boxes-3 {background-size:1000px;}
+	.boxes-3 {background-size:1000px;background-position:center;}
 
-	.boxes-5 {background-size:1500px;}
+	.boxes-5 {background-size:1500px;background-position:center;}
 
 	.content-text {
 		width:80%;

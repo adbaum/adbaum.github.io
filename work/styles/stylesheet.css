@@ -156,28 +156,10 @@ a:hover .boxes .boxes-overlay {
 	letter-spacing:1px;
 }
 
-p a:hover {
+.content a:hover {
 	color:#FF5947;
 }
 
-h4 a {
-	font-family:'arvo', sans-serif;
-	font-weight:400;
-	font-style: italic;
-	font-size:1em;
-	display:inline-block;
-	padding:3px 4px 2px 2px;
-	font-weight:900;
-	text-transform: uppercase;
-	color:#fff;
-	background-color:#FF5947;
-	margin:50px 0px 40px 0px;
-}
-
-/*holy shit was i really this lazy?*/
-.center {
-	text-align:center;
-}
 
 .hero {
 	width:100%;
@@ -214,104 +196,6 @@ h1 {
 
 /*** pages ***/
 
-.short {
-	height:90vh;
-	background-attachment:initial;
-}
-
-.content-body {
-	width:100%;
-	margin:30px 0px 30px 0px;
-	z-index:10;
-}
-
-.content-text {
-	width:50%;
-	margin:55px 0px 55px 25%;
-	z-index:10;
-}
-
-.content-text p {
-	line-height:1.5;
-	color:#696969;
-	margin:0px 0px 20px 0px;
-}
-
-.content-text img {
-	width:100%;
-	margin:15px 0px 30px 0px;
-}
-
-.content-image {
-	width:70%;
-	margin-left:15%;
-}
-
-.content-image img {
-	width:100%;
-}
-
-.back {
-	width:25px;
-	height:25px;
-	position:fixed;
-	background-color:transparent;
-	bottom:50%;
-	left:40px;
-	border:1px solid #FF5947;
-	border-radius:50%;
-	z-index:1;
-	opacity:0.6;
-	transition:0.3s;
-}
-
-.back .triangle {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 6px 10px 6px 0;
-	border-color: transparent #FF5947 transparent transparent;
-	position:absolute;
-	top:6px;
-	left:6px;
-}
-
-.back:hover {
-	opacity:1;
-	left:37px;
-	transition:0.3s;
-}
-
-.forward {
-	width:25px;
-	height:25px;
-	position:fixed;
-	background-color:transparent;
-	bottom:50%;
-	right:40px;
-	border:1px solid #FF5947;
-	border-radius:50%;
-	z-index:1;
-	opacity:0.6;
-	transition:0.3s;
-}
-
-.forward .triangle {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 6px 0px 6px 10px;
-	border-color: transparent transparent transparent #FF5947;
-	position:absolute;
-	top:6px;
-	left:9px;
-}
-
-.forward:hover {
-	opacity:1;
-	right:37px;
-	transition:0.3s;
-}
 
 
 
@@ -323,16 +207,6 @@ h1 {
 	.hero h1:nth-child(2) {margin-top:-15px;}
 
 	.hero div {width:720px;}
-
-	.content-text {
-		width:60%;
-		margin:55px 0px 55px 20%;
-	}
-
-	.content-image {
-		width:80%;
-		margin-left:10%;
-	}
 }
 
 @media (max-width: 740px) {
@@ -341,18 +215,12 @@ h1 {
 	.hero h1:nth-child(2) {margin-top:-15px;}
 
 	.hero div {width:550px;}
-
-	.content-text {
-		width:70%;
-		margin:45px 0px 45px 15%;
-	}
 }
 
 @media (max-width: 550px) {
 	h1 {
 		font-size:2em;
 		padding:5px;
-
 	}
 
 	.hero h1:nth-child(2) {margin-top:-5px;}
@@ -381,52 +249,6 @@ h1 {
 	.boxes-3 {background-size:1000px;}
 
 	.boxes-5 {background-size:1500px;}
-
-	.content-text {
-		width:80%;
-		margin:30px 0px 30px 10%;
-	}
-
-	.back {
-		bottom:15px;
-		left:15px;
-		border:none;
-		background-color:#FF5947;
-		opacity:1;
-	}
-
-	.back .triangle {
-		border-color: transparent #fff transparent transparent;
-	}
-
-	.back:hover {
-		left:14px;
-	}
-
-	.back .triangle {
-		border-color: transparent #fff transparent transparent;
-	}
-
-	.forward {
-		bottom:15px;
-		left:50px;
-		border:none;
-		background-color:#FF5947;
-		opacity:1;
-	}
-
-	.forward .triangle {
-		border-color: transparent transparent transparent #fff;
-	}
-
-	.forward:hover {
-		left:51px;
-	}
-
-	.content-image {
-		width:90%;
-		margin-left:5%;
-	}
 }
 
 @media (max-width: 400px) {
@@ -465,66 +287,31 @@ h1 {
 		max-width:250px;
 		width:90%;
 	}
-
-	.content-text {
-		width:80%;
-		margin:15px 0px 15px 5%;
-	}
-
-	.content h2 {
-		display:inline;
-		padding:5px 0px;
-		letter-spacing:1px;
-		line-height:1.6em;
-	}
-
-	.content-image {
-		width:94%;
-		margin-left:3%;
-	}
 }
 
 
-/*hover*/
-.hvr-sweep-to-right {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+
+
+/*what*/
+
+.m-scene .scene_element {
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
 }
-.hvr-sweep-to-right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #FFAE53!important;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+
+.m-scene .scene_element--fadein {
+  animation-name: fadeIn;
 }
-.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-  color: white;
+
+.m-scene.is-exiting .scene_element {
+  animation-direction: alternate-reverse;
 }
-.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+
+/*
+ * Keyframes
+ */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

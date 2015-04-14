@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="shortcut icon" href="/assets/header.png">
+<title>AdBaum | Media Designer</title>
+
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<link href="animate.css" rel="stylesheet" type="text/css">
+
+<link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<meta name="description" content="Adam Baumgartner is a web designer and developer based in Muncie, Indiana at Ball State University focusing on media design.">
+	<meta name="keywords" content="media, news, newspaper, design, graphics, illustration, web, internet, adam, baumgartner, adbaum">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script src="js/javascript.js"></script>
+<script src="js/konami.js"></script>
+<script src="js/shadowbox.js"></script>
+
+<script>
+
+var easter_egg = new Konami();
+easter_egg.code = function() { 
+	$( ".konami" ).fadeIn( "slow" );
+	$( ".main" ).fadeOut( "fast" );
+}
+easter_egg.load();
+
+</script>
+
+<script>
+$(document).ready(function() {
+$( "#dropbutton, #up" ).click(function() {
+	$( "#drop" ).slideToggle( "fast" );
+	$( ".arrow").toggleClass("arrow-flipped");
+	$( "#dropbutton").toggleClass("dropped");
+	});
+
+
+
+});
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47607705-1', 'afbaumgartner.com');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+$(document).ready(function() {
+    jQuery( "img.lazy_loaded" ).each( function () {
+  var image = jQuery( this );
+  image.attr( "src", image.attr("lazy_loaded_src") );
+} );
+});
+</script>
+
+<script>
+$(document).ready(function() {
+jQuery( "img.lazy_loaded" ).each( function () {
+  var image = jQuery( this );
+  image.attr( "src", image.attr("lazy_loaded_src") );
+} );
+});
+</script>
+
+<script>
+$(document).ready(function () {
+    $(window).scroll(function () {
+
+        var y = $(this).scrollTop();
+
+        $('.link').each(function (event) {
+            if (y >= $($(this).attr('href')).offset().top - 0) {
+                $('.link').not(this).removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+
+    });
+});
+
+$(function () {
+    $('a[href*=#]:not([href=#]);').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: (target.offset().top - 0)
+                }, 850);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+
+</head>
+
+<body id="top">
+
+<div class="shadowbox"></div>
+    <div class="shadowbox2">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<a href="http://www.vox.com/a/world-cup-2014-brazil-pictures" target="_blank"><img lazy_loaded_src="/assets/portfolio-s/brazil.png" class="lazy_loaded"></a>
+    	<h3>Life in Brazil During the World Cup</h3>
+    	<p>When faced with this assignment, I knew I would be designing not just for this content, but future photo essays, as well. This format has since been made into a template that Vox uses often.</p>
+    	<p>I did mockups for this piece, and <a href="https://twitter.com/uytieu">Uy Tieu</a> helped stylize and refine it. I also worked closely with the developer, <a href="https://twitter.com/yurivictor">Yuri Victor</a> on the project.</p>
+    	</div>
+    </div>
+    <div class="shadowbox3">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<a href="/assets/portfolio-b/populationchange.jpg" target="_blank"><img lazy_loaded_src="/assets/portfolio-b/populationchange.jpg" class="lazy_loaded"></a>
+    	<h3>Change in Chicagoland Population</h3>
+    	<p>While at the Chicago Tribune, I used ArcGIS often. Since then, I've used GIS software to analyze land values of residential zones in Muncie and for other projects.</p>
+    	</div>
+    </div>
+    <div class="shadowbox4">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<h3>The Technology of Touch Screens</h3>
+    	<p>I did all research and design for this piece, sorting through piles of patents and finding a source willing to discuss potentially proprietary details of their products.</p>
+    	<p>The hand was illustrated by my good friend, <a href="https://twitter.com/ricktuma">Rick Tuma</a>.</p>
+    	<a href="/assets/portfolio-b/touch.jpg" target="_blank"><img lazy_loaded_src="/assets/portfolio-b/touch.jpg" class="lazy_loaded"></a>
+    	</div>
+    </div>
+    <div class="shadowbox5">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<a href="http://www.vox.com/2014/5/28/5740250/spell-it-out" target="_blank"><img lazy_loaded_src="/assets/portfolio-s/spelling.png" class="lazy_loaded"></a>
+    	<h3>Spell It Out</h3>
+    	<p>My second week at Vox, I overheard reporters saying it would be cool if they could make a quiz for the Spelling Bee.</p>
+    	<p>Never having done anything quite like this, I spent some time figuring out the JavaScript with a bit of help from a coworker. Once I got a working prototype, I showed it to my editors, and they gave me the go ahead to build it out.</p>
+    	<p>This was Vox's first interactive piece, and it inspired a series of quiz formats I later helped design that are now in use.</p>
+    	</div>
+    </div>
+    <div class="shadowbox6">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<a href="http://quiz-generator.voxmedia.com/" target="_blank"><img lazy_loaded_src="/assets/portfolio-b/qq.png" class="lazy_loaded"></a>
+    	<h3>Quiz Generator</h3>
+    	<p>During a hackathon, my two fellow interns and I decided to make a quiz generator. We began by making a multiple-choice quiz that reporters could edit using Google Drive.</p>
+    	<p>I designed and wrote CSS for the builder page, as well as styles for each of Vox Media's verticals on Chorus.</p>
+    	<p>Following the completion of the multiple-choice quizzes, my peers built flow charts and true/false quizzes.</p>
+    	</div>
+    </div>
+
+    <div class="shadowbox7">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<h3>The Future of Biofuels</h3>
+    	<p>This award-winning page was thought up by a Chicago Tribune page designer. I designed the airplane, and my editor helped me refine it.</p>
+    	<a href="/assets/portfolio-b/biofuel.jpg" target="_blank"><img lazy_loaded_src="/assets/portfolio-b/biofuel.jpg" class="lazy_loaded"></a>
+    	</div>
+    </div>
+
+    <div class="shadowbox8">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<h3>How the Flu Reproduces</h3>
+    	<p>I researched and designed this piece in a weekend as a different approach to covering flue season.</p>
+    	<a href="/assets/portfolio-b/flu.jpg" target="_blank"><img lazy_loaded_src="/assets/portfolio-b/flu.jpg" class="lazy_loaded"></a>
+    	</div>
+    </div>
+
+    <div class="shadowbox9">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<h3>What It Takes to Own a Food Truck</h3>
+    	<p>This illustration served as the lead art for a Sunday business page in the Chicago Tribune. It was meant to be a simple, fun and digestible summary of a much longer story.</p>
+    	<a href="/assets/portfolio-b/foodtruck.png" target="_blank"><img lazy_loaded_src="/assets/portfolio-b/foodtruck.png" class="lazy_loaded"></a>
+    	</div>
+    </div>
+
+    <div class="shadowbox10">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<a href="http://feature.ballstatedaily.com/Gora/goradefiningballstate.html" target="_blank"><img lazy_loaded_src="/assets/portfolio-s/gora.png" class="lazy_loaded"></a>
+    	<h3>Gora Defining Ball State</h3>
+    	<p>Ball State University's president of 10 years resigned in 2014. It was big news. One of the student papers' reporters wrote this feature, and I decided it deserved special treatment.</p>
+    	<p>I designed this web feature, as well as a <a href="/assets/portfolio-s/gora-print.jpeg">double truck</a> in the corresponding print product.</p>
+    	</div>
+    </div>
+
+    <div class="shadowbox11">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<h3>The Science of Falling in Love</h3>
+    	<p>I did the reasearch and design for this graphic for a Valentine's Day edition of Ball State's student paper.</p>
+        <p>It won a <a href="http://cspa.columbia.edu/recepient-lists/2014-awards-student-work-gold-circle-awards-collegiate-recipients">CSPA Gold Circle.</a></p>
+    	<a href="/assets/portfolio-b/fallinginlove.jpg" target="_blank"><img lazy_loaded_src="/assets/portfolio-b/fallinginlove.jpg" class="lazy_loaded"></a>
+    	</div>
+    </div>
+
+    <div class="shadowbox12">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<h3>Never Too Late for Love</h3>
+    	<p>This was my first feature for a professional paper.</p>
+    	<p>The editor was not happy with the provided photos we had as potential lead art, so I worked with her to create an illustration that conceptualized the point of the story – that people are getting married at older ages.</p>
+    	<a href="/assets/portfolio-b/love.jpg" target="_blank"><img lazy_loaded_src="/assets/portfolio-b/love.jpg" class="lazy_loaded"></a>
+    	</div>
+    </div>
+
+    <div class="shadowbox13">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<a href="http://feature.ballstatedaily.com/72hrs/72hrsatballstate.html" target="_blank"><img lazy_loaded_src="/assets/portfolio-s/72hrs.png" class="lazy_loaded"></a>
+    	<h3>72HRS at Ball State</h3>
+    	<p>An experiment for a class and student media, I completed a majority of this longform piece in two days.</p>
+    	<p>The article chronicles a weekend at Ball State, and features a bunch of different stories and alternative forms woven together.</p>
+    	</div>
+    </div>
+
+    <div class="shadowbox14">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<a href="http://feature.ballstatedaily.com/knightsofthedinnertable.html" target="_blank"><img lazy_loaded_src="/assets/portfolio-s/kotd.png" class="lazy_loaded"></a>
+    	<h3>Knightly Ritual</h3>
+    	<p>A comic book artist from Ball State bases his strips off of his relationships with the people he was friends with while in college.</p><p>I asked him if he would be willing to illustrate a few scenes from the story, and he was more than happy to.</p><p>This is the first time the student paper used this style template I designed and developed.</a>
+    	</div>
+    </div>
+
+    <div class="shadowbox15">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<center><a href="/assets/portfolio-b/frostbite.jpg" target="_blank"><img lazy_loaded_src="/assets/portfolio-b/frostbite.jpg" class="lazy_loaded"></a></center>
+    	<h3>What's Your Risk of Frostbite?</h3>
+    	<p>In January 2014, Muncie experienced painfully low windchills, shutting the school down for three days.</p>
+    	<p>This graphic attempts to put into usuable form a chart by the CDC stating how long people can be outside in different temperatures before experiencing frostbite.</p>
+        <p>Though only two columns wide, it won an award through <a href="https://twitter.com/sndmizzou/status/455807458465054720">SND at Mizzou</a>.</p>
+    	</div>
+    </div>
+
+    <div class="shadowbox16">
+    	<div class="close-it"><img src="/assets/exit.png"></div>
+    	<div class="sb-container">
+    	<a href="http://www.vox.com/2014/8/10/5956765/this-is-what-its-like-to-have-hiv-in-2014" target="_blank"><img lazy_loaded_src="/assets/portfolio-b/hiv.jpg" class="lazy_loaded"></a>
+    	<h3>This Is What It's Like to Have HIV in 2014</h3>
+    	<p>A total of nine illustrations I did are the only art in this story of more than 10,000 words.</p>
+    	<p>Each illustration highlights key moments in the eight Q&As the author conducted.</p>
+    	<p>I also came up with the page design and worked with the developer and fellow intern, <a href="https://twitter.com/nicolelzhu">Nicole Zhu</a>, to make it come to life.</p>
+    	</div>
+    </div>
+
+   <div class="shadowbox17">
+        <div class="close-it"><img src="/assets/exit.png"></div>
+        <div class="sb-container">
+        <a href="https://twitter.com/ezraklein/status/470981336560193536" target="_blank"><img lazy_loaded_src="/assets/social/ezra-nra.png" class="lazy_loaded"></a>
+        <h3>Vox.com Social Media Design</h3>
+        <p>I worked with Vox.com's <a href="https://twitter.com/AllisonRockey">engagement editor</a> and another designer to determine meme styles and best practices for using images in tweets.</p>
+        <p>Some of the most fun I had with this project was helping reporters develop mini campaigns for their content.</p>
+        <p><img lazy_loaded_src="/assets/social/internetmaps-01.png" class="lazy_loaded"></p>
+        <p><img lazy_loaded_src="/assets/social/internetmaps-02.png" class="lazy_loaded"></p>
+        <p><img lazy_loaded_src="/assets/social/lebron-cleveland3.png" class="lazy_loaded"></p>
+        <p><img lazy_loaded_src="/assets/social/poseharder.png" class="lazy_loaded"></p>
+        <p><img lazy_loaded_src="/assets/social/highest-singer.png" class="lazy_loaded"></p>
+        <p><img lazy_loaded_src="/assets/social/dem-ineq.png" class="lazy_loaded"></p>
+        <p><img lazy_loaded_src="/assets/social/chug.png" class="lazy_loaded"></p>
+        <p>The last image is one of four cards our culture editor tweeted during the National Spelling Bee as part of Vox's related drinking game.</p>
+        </div>
+    </div>
+
+    <div class="shadowbox18">
+        <div class="close-it"><img src="/assets/exit.png"></div>
+        <div class="sb-container">
+        <a href="/assets/portfolio-b/eater-exploration-big.png" target="_blank"><img lazy_loaded_src="/assets/portfolio-b/eater-exploration-big.png" class="lazy_loaded"></a>
+        <h3>Eater redesign exploration</h3>
+        <p>I can take absolutely no credit for the redesign of <a href="http://www.eater.com/">Eater</a>. That goes to <a href="https://twitter.com/hellogeorgia">Georgia Cowley</a>, <a href="https://twitter.com/kelsa_">Kelsey Scherer</a>, and so many others.</p>
+        <p>But as the launch neared, the Georiga asked me to do some explorations for some different parts of the site.</p>
+        <p>By the way, the food illustrations you see are by <a href="https://twitter.com/DylanLathrop">Dylan Lathrop</a>.</p>
+        <p><img lazy_loaded_src="/assets/portfolio-b/eater-default.png" class="lazy_loaded"></p>
+        <p><img lazy_loaded_src="/assets/portfolio-b/eater-default-red.png" class="lazy_loaded"></p>
+        <p>These were possible images for articls when no art is attached.</p>
+        <p><center><img lazy_loaded_src="/assets/portfolio-b/eater-heatmap2.png" class="lazy_loaded" style="max-width:500px"></p>
+        <p><img lazy_loaded_src="/assets/portfolio-b/eater-heatmap.png" class="lazy_loaded" style="max-width:500px"></p></center>
+        <p>These designs corrsepond with Eater's <a href="http://www.eater.com/maps?q=Dining%20Heatmap">Heatmap</a>. The above are two of twelve images I produced while exploring styles and options. The concept and layout were used in the final product.</p>
+        <p><img lazy_loaded_src="/assets/portfolio-b/eater-social.png" class="lazy_loaded"></p>
+        <p>I also did the design for all of Eater's social media, including covers for its 23 cities' various accounts. I used Lathrop's illustrations.</p>
+        </div>
+    </div>
+
+
+<div class="navmobile">
+	<div id="drop">
+		<a href="#top" id="up">
+			Home
+		</a>
+		<a href="#section_one" href="#top" id="up">
+			Portfolio
+		</a>
+		<a href="#section_two" href="#top" id="up">
+			Experience
+		</a>
+		<a href="#section_three" href="#top" id="up">
+			Contact
+		</a>
+	</div>
+	<div id="dropbutton">
+		<img src="/assets/arrow.png" class="arrow">
+	</div>
+</div>
+
+<div class="hero">
+	<!--<ul id="scene">
+		<li class="layer" data-depth="0.1">-->
+	<h1>Good <span id="log"></span>.</h1>
+	<h1>My name is Adam.</h1>
+<!--</li>
+</ul-->
+</div>
+
+<div class="replacenav">
+	<div></div><div></div><div></div><div></div><div></div>
+</div>
+
+<div class="nav" id="nav">
+	<a class="link" href="#top">
+		Home
+	</a>
+	<a class="link" href="#section_one">
+		Portfolio
+	</a>
+	<a class="link" href="#section_two">
+		Experience
+	</a>
+	<a class="link" href="#section_three">
+		Contact
+	</a>
+	<a class="link" href="/assets/baumgartner-resume-v3.pdf" target="_blank">
+		Resume
+	</a>
+</div>
+<div class="main">
+
+	<div class="content">
+		<div class="text" id="section_one">
+			<p>
+					I'm a designer and a storyteller. But mostly, I'm a problem solver. Currently, I work for Vox Media. I've also done print design for the Indianapolis Star and graphics reporting for the Chicago Tribune.
+			</p>
+
+		</div>
+		<div class="portfolio">
+			<div class="portfolio-table">
+				<div class="image" id="i-large">
+					<img class="button1" src="/assets/portfolio-s/brazil.png">
+				</div>
+				<div id="i-small">
+					<div class="image">
+						<img class="button16" src="/assets/portfolio-s/poseharder-small.png">
+					</div>
+					<div class="image">
+						<img class="button17" src="/assets/portfolio-s/eater-exploration-small.png"> 
+					</div>
+				</div>
+                <div id="i-small">
+                    <div class="image">
+                        <img class="button2" src="/assets/portfolio-s/populationchange.png">
+                    </div>
+                    <div class="image">
+                        <img class="button3" src="/assets/portfolio-s/touch.png">
+                    </div>
+                </div>
+
+				<div class="image" id="i-large">
+					<img class="button4" src="/assets/portfolio-s/spelling.png">
+				</div>
+				<div id="i-small">
+					<div class="image">
+						<img class="button5" src="/assets/portfolio-s/quiz.png">
+					</div>
+					<div class="image">
+						<img class="button6" src="/assets/portfolio-s/biofuel.png">
+					</div>
+				</div>
+				<div id="i-small">
+					<div class="image">
+						<img class="button7" src="/assets/portfolio-s/virus.png">
+					</div>
+					<div class="image">
+						<img class="button8" src="/assets/portfolio-s/foodtruck.png">
+					</div>
+				</div>
+
+				<div class="image" id="i-large">
+					<img class="button9" src="/assets/portfolio-s/gora.png">
+				</div>
+
+				<div class="image" id="i-large">
+					<img class="button15" src="/assets/portfolio-b/hiv.jpg">
+				</div>
+
+				<div id="i-small">
+					<div class="image">
+						<img class="button10" src="/assets/portfolio-s/fallinginlove.png">
+					</div>
+					<div class="image">
+						<img class="button11" src="/assets/portfolio-s/oldlove.png">
+					</div>
+				</div>
+
+				<div class="image" id="i-large">
+					<img class="button12" src="/assets/portfolio-s/72hrs.png">
+				</div>
+
+				<div id="i-small">
+					<div class="image">
+						<img class="button13" src="/assets/portfolio-s/kotd.png">
+					</div>
+					<div class="image">
+						<img class="button14" src="/assets/portfolio-s/frostbite.png">
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="text" id="section_two">
+				<p>
+					Much of my work isn't tangible. I've spent a lot of my career figuring out ways to help other people get what they need to reach their goals. The best team is an empowered one.
+				</p>
+		</div>
+		<div class="resume-container">
+			<div class="resume">
+				<h3>Vox Media</h3>
+				<h4>Designer and Developer</h4>
+				<h5>May 2014-present</h5>
+				<p>
+					Over the summer, I worked primarily for <a href="http://www.vox.com">Vox.com</a>, identifying and solving for the quickly changing needs of the new site.
+				</p>
+				<p>
+					I worked closely with editors to create social media styles and design for features. All the while, I listened to the editorial team, figuring out what tools I or the product team could build to help enhance stories.
+				</p>
+				<p>
+					Currently, I'm working on the redesign of <a href="http://www.racked.com">Racked</a> and have helped finalize details of the <a href="http://www.eater.com">Eater</a> redesign.
+				</p>
+			</div>
+			<div class="resume">
+				<h3>Chicago Tribune</h3>
+				<h4>Graphics Reporter</h4>
+				<h5>May 2013-August 2013</h5>
+				<p>
+					On a daily basis, I researched and designed graphics for the Tribune's print product. I was able to produce a graphic a day on average, coordinating with different parts of the team to keep all gears moving.
+				</p>
+				<p>
+					The night the Blackhawks won the Stanley Cup, I helped get the special section out the door for the following day's paper.
+				</p>
+				<p>
+					I've since returned to work during breaks from school and to help report for the Olympics.
+				</p>
+			</div>
+			<div class="resume">
+				<h3>Indy Star</h3>
+				<h4>Print Designer</h4>
+				<h5>June 2012-August 2012</h5>
+				<p>
+					By the time I left the Star, I had designed for every section. Three days a week, I would focus on the daily product, spending the other two mainly on advance features.
+				</p>
+				<p>
+					Typically, I designed 6-12 pages a night on deadline, filling down time with features design.
+				</p>
+				<p>
+					It being my first internship, I learned how to follow the newsroom workflow, communicate effectively with large and diverse groups of people, and meet deadline.
+				</p>
+
+			</div>
+		</div>
+
+		<div class="text" id="section_three">
+				<p>
+					So talk to me. I'm always looking for new career opportunities and freelance projects. Otherwise, I love the chance to talk shop and learn about others' operations. Let's be in touch.
+				</p><br>
+				<p class="reachout">
+                        <img src="/assets/baum-mug.png"><br>
+						<a href="http://www.twitter.com/adbaum/">Follow me on Twitter.</a><br>
+						<a href="mailto:adam.f.baumgartner@gmail.com">Write me an email.</a><br>
+						<a href="http://lnkd.in/fRy9sd">Connect through LinkedIn.</a><br>
+						<a href="http://newspagedesigner.org/profiles/blog/list?user=1r6dcmvgtvcwf">Read my blog.</a>
+				</p>
+			</div>
+
+	</div>
+
+<div class="footer-text">
+				<p>
+					<a href="#top">© 2014 Adam Baumgartner</a>
+				</p>
+			</div>
+
+</div>
+
+
+<div class="konami">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+	<ul id="scene">
+		<li class="layer" data-depth="0.40"><img src="http://wellhealthqc.com/wp-content/uploads/2014/01/star_divider_gold_by_toxicestea-d4fsnk2.png"></li>
+		<li class="layer" data-depth="0.80"><img src="http://persephonemagazine.com/wp-content/uploads/2013/07/unicornrainbowanimated.gif"></li>
+	</ul>
+</center>
+</div>
+			<div class="footer">
+		<div></div><div></div><div></div><div></div><div></div>
+	</div>
+
+
+<script src="deploy/parallax.min.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+
+	<script>
+var bottom = $('.main').offset().top;
+
+$(window).scroll(function(){    
+    if ($(this).scrollTop() > bottom + 51){ 
+        $('.nav').addClass('fixed'); 
+    }
+    else{
+        $('.nav').removeClass('fixed');
+    }
+});
+</script>
+<!--
+<script>
+jQuery( "img.lazy_loaded" ).each( function () {
+  var image = jQuery( this );
+  image.attr( "src", image.attr("lazy_loaded_src") );
+} );
+</script>
+
+<script>
+jQuery( "img.lazy_loaded" ).each( function () {
+  var image = jQuery( this );
+  image.attr( "src", image.attr("lazy_loaded_src") );
+} );
+</script>
+-->
+
+</body>
+
+</html>

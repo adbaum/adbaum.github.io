@@ -401,13 +401,13 @@ h5 {
 
 	.hero {background-size:400px;}
 
-	.boxes-1 {background-size:1000px;background-position:center;}
+	.boxes-1 {background-size:1000px;background-position:center;background-attachment:scroll;}
 
-	.boxes-2 {background-size:1300px;background-position:center;}
+	.boxes-2 {background-size:1300px;background-position:center;background-attachment:scroll;}
 
-	.boxes-3 {background-size:1000px;background-position:center;}
+	.boxes-3 {background-size:1000px;background-position:center;background-attachment:scroll;}
 
-	.boxes-5 {background-size:1500px;background-position:center;}
+	.boxes-5 {background-size:1500px;background-position:center;background-attachment:scroll;}
 
 	.content-text {
 		width:80%;

@@ -156,9 +156,9 @@ a:hover .boxes .boxes-overlay {
 	letter-spacing:1px;
 }
 
-p a {border-bottom:1px solid #696969;}
+p a {border-bottom:1px solid #FF5947;}
 
-p a:hover {border-bottom:2px dotted #696969;transition:0.2s;}
+p a:hover {border-bottom:2px solid #FF5947;transition:0.2s;}
 
 .content p a {color:#FFF;border-bottom:none;}
 

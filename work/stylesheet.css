@@ -156,13 +156,13 @@ a:hover .boxes .boxes-overlay {
 	letter-spacing:1px;
 }
 
-p a {color:#FF5947;}
+p a {border-bottom:1px solid #696969;}
 
-p a:hover {border-bottom:1px dotted #FF5947;}
+p a:hover {border-bottom:2px dotted #696969;transition:0.2s;}
 
 .content p a {color:#FFF;}
 
-.content p a:hover {border-bottom:1px dotted #FFF;}
+.content p a:hover {border-bottom:1px solid #FFF;}
 
 h4 a {
 	font-family:'arvo', sans-serif;

@@ -160,9 +160,9 @@ p a {border-bottom:1px solid #696969;}
 
 p a:hover {border-bottom:2px dotted #696969;transition:0.2s;}
 
-.content p a {color:#FFF;}
+.content p a {color:#FFF;border-bottom:none;}
 
-.content p a:hover {border-bottom:1px solid #FFF;}
+.content p a:hover {border-bottom:2px solid #FFF;}
 
 h4 a {
 	font-family:'arvo', sans-serif;

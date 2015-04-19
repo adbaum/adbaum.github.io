@@ -52,9 +52,9 @@ body {
     z-index:2;
     background-size: cover;
     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
     text-align:center;
     overflow:hidden;
 }
@@ -283,8 +283,8 @@ h5 {
 }
 
 .back {
-	width:25px;
-	height:25px;
+	width:26px;
+	height:26px;
 	position:fixed;
 	background-color:transparent;
 	bottom:50%;
@@ -294,6 +294,10 @@ h5 {
 	z-index:1;
 	opacity:0.6;
 	transition:0.3s;
+	-o-transition:0.3s;
+	-moz-transition:0.3s;
+	-webkit-transition:0.3s;
+	-ms-transition:0.3s;
 }
 
 .back .triangle {
@@ -303,19 +307,23 @@ h5 {
 	border-width: 6px 10px 6px 0;
 	border-color: transparent #FF5947 transparent transparent;
 	position:absolute;
-	top:6px;
-	left:6px;
+	top:7px;
+	left:7px;
 }
 
 .back:hover {
 	opacity:1;
 	left:37px;
 	transition:0.3s;
+	-o-transition:0.3s;
+	-moz-transition:0.3s;
+	-webkit-transition:0.3s;
+	-ms-transition:0.3s;
 }
 
 .forward {
-	width:25px;
-	height:25px;
+	width:26px;
+	height:26px;
 	position:fixed;
 	background-color:transparent;
 	bottom:50%;
@@ -325,6 +333,10 @@ h5 {
 	z-index:1;
 	opacity:0.6;
 	transition:0.3s;
+	-o-transition:0.3s;
+	-moz-transition:0.3s;
+	-webkit-transition:0.3s;
+	-ms-transition:0.3s;
 }
 
 .forward .triangle {
@@ -334,7 +346,7 @@ h5 {
 	border-width: 6px 0px 6px 10px;
 	border-color: transparent transparent transparent #FF5947;
 	position:absolute;
-	top:6px;
+	top:7px;
 	left:9px;
 }
 
@@ -342,6 +354,72 @@ h5 {
 	opacity:1;
 	right:37px;
 	transition:0.3s;
+	-o-transition:0.3s;
+	-moz-transition:0.3s;
+	-webkit-transition:0.3s;
+	-ms-transition:0.3s;
+}
+
+.home {
+	width:26px;
+	height:26px;
+	position:fixed;
+	background-color:transparent;
+	bottom:90%;
+	left:40px;
+	border:1px solid #FF5947;
+	border-radius:50%;
+	z-index:5;
+	opacity:0.6;
+	transition:0.3s;
+	-o-transition:0.3s;
+	-moz-transition:0.3s;
+	-webkit-transition:0.3s;
+	-ms-transition:0.3s;
+}
+
+.house {
+  background: #FF5947;
+  display: inline-block;
+  position: absolute;
+  width: 14px;
+	height:9px;
+  bottom:6px;
+  right:6px;
+  transition:0.3s;
+  -o-transition:0.3s;
+  -moz-transition:0.3s;
+  -webkit-transition:0.3s;
+  -ms-transition:0.3s;
+}
+.house:before {
+  border-bottom: 5px solid #FF5947;
+  border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+  content: " ";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: -6px;
+  width: 0;
+}
+
+.house-chimney {
+	background-color:#FF5947;
+	position:absolute;
+	width:3px;
+	height:5px;
+	top:4px;
+	right:8px;
+}
+
+.home:hover {
+  opacity:1;
+  transition:0.3s;
+  -o-transition:0.3s;
+  -moz-transition:0.3s;
+  -webkit-transition:0.3s;
+  -ms-transition:0.3s;
 }
 
 
@@ -418,9 +496,42 @@ h5 {
 		margin:30px 0px 30px 10%;
 	}
 
-	.back {
+	.home {
 		bottom:15px;
 		left:15px;
+		background-color:#FF5947;
+		border:none;
+		border-radius:50%;
+		opacity:1;
+	}
+
+	.house {
+	  background: #fff;
+	  opacity:1;
+	  width: 14px;
+	  height:9px;
+  	bottom:6px;
+  	right:6px;
+	}
+
+	.house:before {
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+	  border-bottom: 5px solid #fff;
+	}
+
+	.house-chimney {
+		background-color:#fff;
+		width:3px;
+		height:5px;
+		top:4px;
+		right:8px;
+	}
+
+
+	.back {
+		bottom:15px;
+		left:50px;
 		border:none;
 		background-color:#FF5947;
 		opacity:1;
@@ -431,7 +542,7 @@ h5 {
 	}
 
 	.back:hover {
-		left:14px;
+		left:49px;
 	}
 
 	.back .triangle {
@@ -440,7 +551,7 @@ h5 {
 
 	.forward {
 		bottom:15px;
-		left:50px;
+		left:85px;
 		border:none;
 		background-color:#FF5947;
 		opacity:1;
@@ -451,7 +562,7 @@ h5 {
 	}
 
 	.forward:hover {
-		left:51px;
+		left:86px;
 	}
 
 	.content-image {
@@ -559,3 +670,121 @@ h5 {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+
+/* Setting up the "myAnim1" for all browser types
+-------------------------------------------------*/
+ @keyframes smokeMoves {
+    0% {
+      opacity:0;
+      height:0px;
+ 			width:0px;
+ 			top:5px;
+ 			right:10px;
+ 		
+    }
+    25% {
+			opacity:0.6;
+			top:-10;
+			right:-5;
+    }
+    
+    100% {
+    	height:10px;
+ 			width:10px;
+      opacity:0;
+      top:-25px;
+    	right:-15px;
+    }
+}
+/* Firefox */
+ @-moz-keyframes smokeMoves {
+    0% {
+      opacity:0;
+      height:0px;
+ 			width:0px;
+ 			top:5px;
+ 			right:10px;
+ 		
+    }
+    25% {
+			opacity:0.6;
+			top:-10;
+			right:-5;
+    }
+    
+    100% {
+    	height:10px;
+ 			width:10px;
+      opacity:0;
+      top:-25px;
+    	right:-15px;
+    }
+}
+/* Safari and Chrome */
+ @-webkit-keyframes smokeMoves {
+    0% {
+      opacity:0;
+      height:0px;
+ 			width:0px;
+ 			top:5px;
+ 			right:10px;
+ 		
+    }
+    25% {
+			opacity:0.6;
+			top:-10;
+			right:-5;
+    }
+    
+    100% {
+    	height:10px;
+ 		  width:10px;
+      opacity:0;
+      top:-25px;
+    	right:-15px;
+    }
+}
+/* Opera */
+ @-o-keyframes smokeMoves {
+    0% {
+    	opacity:0;
+    	height:0px;
+ 			width:0px;
+ 			top:5px;
+ 			right:10px;
+ 		
+    }
+    25% {
+			opacity:0.6;
+			top:-10;
+			right:-5;
+    }
+    
+    100% {
+    	height:10px;
+ 			width:10px;
+      opacity:0;
+      top:-25px;
+    	right:-15px;
+    }
+}
+/* Attaching the animations to the elements
+Notice the difference between timing!!
+-------------------------------------------------*/
+ .smoke {
+ 	background-color:#FF5947;
+ 	border-radius:50%;
+ 	opacity:0;
+ 	display:inline-block;
+ 	position:absolute;
+ }
+
+ .home:hover > .smoke {
+    background-color: #ff0000;
+    animation:smokeMoves 1s;
+    -moz-animation:smokeMoves 1s infinite;
+    -webkit-animation:smokeMoves 1s infinite;
+}
+
+

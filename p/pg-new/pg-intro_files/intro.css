@@ -1,0 +1,14 @@
+.next {
+	border:5px solid #f9a11b;
+}
+
+.next:hover {
+	border:5px solid #f9a11b;
+	color:#f9a11b;
+}
+
+.tilt-intro:before {
+  position:absolute;
+  top:0;
+  height:300px;
+}

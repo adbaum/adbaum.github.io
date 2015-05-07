@@ -1,0 +1,357 @@
+.next {
+	border:5px solid #18a984;
+}
+
+.next:hover {
+	border:5px solid #18a984;
+	color:#18a984;
+}
+
+.list li:before {
+    content: "• ";
+    color: #18a984; /* or whatever color you prefer */
+}
+
+/*toggle menu stuff*/
+
+.beginning, .middle, .end {
+	display:none;
+}
+
+.beginning .special-column {
+	border-right:2px solid #7db8dc;
+}
+
+.middle .special-column {
+	border-right:2px solid #f9a11a;
+}
+
+.end .special-column {
+	border-right:2px solid #f54647;
+}
+
+.special-column {
+	margin-right:10%;
+	width:60%;
+	padding:0px 2%;
+	position:relative;
+	margin:30px 0px 50px 0px;
+}
+
+.mm-column {
+	margin-left:10%;
+	width:60%;
+	padding:0px 2%;
+	position:relative;
+	margin:30px 0px 50px 0px;
+}
+
+.mm-column img {
+	cursor:pointer;
+}
+
+.explanation {
+	margin-right:-61%;
+	float:right;
+	width:50%;
+	margin-bottom:10px;
+	position:relative;
+}
+
+.structure-toggle {
+	position:relative;
+	margin-bottom:20px;
+	padding:10px 0px 5px 10px;
+	cursor:pointer;
+}
+
+.structure-toggle h4 {
+	padding-right:20px;
+	display:inline-block;
+}
+
+.structure-toggle h5 {
+	position:absolute;
+	right:20px;
+	padding-right:20px;
+	display:block;
+}
+
+.structure-toggle p {
+	display:inline-block;
+	padding:0px;
+	margin:0px;
+}
+
+.blue-st {
+	color:#1386c8;
+	background-color: #fff;
+	border:3px solid #1386c8;
+ 	-o-transition:.1s;
+ 	-ms-transition:.1s;
+ 	-moz-transition:.1s;
+ 	-webkit-transition:.1s;
+ 	transition:.1s;
+}
+
+.blue-st:hover {
+	color:#fff;
+	background-color: #1386c8;
+	border:3px solid #1386c8;
+ 	-o-transition:.1s;
+ 	-ms-transition:.1s;
+ 	-moz-transition:.1s;
+ 	-webkit-transition:.1s;
+ 	transition:.1s;
+}
+
+.orange-st {
+	color:#f9a11a;
+	background-color: #fff;
+	border:3px solid #f9a11a;
+ 	-o-transition:.1s;
+ 	-ms-transition:.1s;
+ 	-moz-transition:.1s;
+ 	-webkit-transition:.1s;
+ 	transition:.1s;
+}
+
+.orange-st:hover {
+	color:#fff;
+	background-color: #f9a11a;
+	border:3px solid #f9a11a;
+ 	-o-transition:.1s;
+ 	-ms-transition:.1s;
+ 	-moz-transition:.1s;
+ 	-webkit-transition:.1s;
+ 	transition:.1s;
+}
+
+.red-st {
+	color:#f54647;
+	background-color: #fff;
+	border:3px solid #f54647;
+ 	-o-transition:.1s;
+ 	-ms-transition:.1s;
+ 	-moz-transition:.1s;
+ 	-webkit-transition:.1s;
+ 	transition:.1s;
+}
+
+.red-st:hover {
+	color:#fff;
+	background-color: #f54647;
+	border:3px solid #f54647;
+ 	-o-transition:.1s;
+ 	-ms-transition:.1s;
+ 	-moz-transition:.1s;
+ 	-webkit-transition:.1s;
+ 	transition:.1s;
+}
+
+.structure-toggle:active > .down-arrow {
+	transform: translate(0px,4px);
+	-o-transform: translate(0px,4px);
+	-moz-transform: translate(0px,4px);
+	-webkit-transform: translate(0px,4px);
+	-ms-transform: translate(0px, 4px);
+	-o-transition:.1s;
+	-ms-transition:.1s;
+	-moz-transition:.1s;
+	-webkit-transition:.1s;
+	transition:.1s;
+}
+
+.structure-toggle:hover > .down-arrow {
+	border:3px solid #fff;
+	-o-transition:.1s;
+	-ms-transition:.1s;
+	-moz-transition:.1s;
+	-webkit-transition:.1s;
+	transition:.1s;
+}
+
+.structure-toggle:hover > .down-arrow:before {
+	border-color: #fff transparent transparent transparent;
+}
+
+.down-arrow {
+	border-radius:50%;
+	position:absolute;
+	top:20%;
+	right:20px;
+	width:25px;
+	height:25px;
+}
+
+.down-arrow:before {
+	content:" ";
+	position:absolute;
+	width: 0;
+	height: 0;
+	top:35%;
+	left:32%;
+	border-style: solid;
+	border-width: 9px 5px 0 5px;
+}
+
+.up-arrow {
+	border-radius:50%;
+	position:absolute;
+	top:20%;
+	right:20px;
+	width:25px;
+	height:25px;
+}
+
+.up-arrow:before {
+	content:" ";
+	position:absolute;
+	width: 0;
+	height: 0;
+	top:35%;
+	left:32%;
+	border-style: solid;
+	border-width: 0 5px 9px 5px;
+}
+
+.blue-st .down-arrow {
+	border:3px solid #1386c8;
+	-o-transition:.1s;
+	-ms-transition:.1s;
+	-moz-transition:.1s;
+	-webkit-transition:.1s;
+	transition:.1s;
+}
+
+.blue-st .down-arrow:before {
+	border-color: #1386c8 transparent transparent transparent;
+}
+
+.red-st .down-arrow {
+	border:3px solid #f54647;
+	height:25px;
+	-o-transition:.1s;
+	-ms-transition:.1s;
+	-moz-transition:.1s;
+	-webkit-transition:.1s;
+	transition:.1s;
+}
+
+.red-st .down-arrow:before {
+	border-color: #f54647 transparent transparent transparent;
+}
+
+.orange-st .down-arrow {
+	border:3px solid #f9a11a;
+	-o-transition:.1s;
+	-ms-transition:.1s;
+	-moz-transition:.1s;
+	-webkit-transition:.1s;
+	transition:.1s;
+}
+
+.orange-st .down-arrow:before {
+	border-color: #f9a11a transparent transparent transparent;
+}
+
+@-webkit-keyframes shake {
+  0%, 10%, 20%, 80%, 90%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  0%, 10%, 20%, 30%, 80%, 90%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.shake {
+	animation: shake 2s infinite;
+	-o-animation: shake 2s infinite;
+	-moz-animation: shake 2s infinite;
+	-webkit-animation: shake 2s infinite;
+	-ms-animation: shake 2s infinite;
+}
+
+.shake2 {
+	animation: shake 2s reverse infinite;
+	-o-animation: shake 2s reverse infinite;
+	-moz-animation: shake 2s infinite;
+	-webkit-animation: shake 2s reverse infinite;
+	-ms-animation: shake 2s reverse infinite;
+}
+
+/*** buttons ***/
+.gallery-space {
+	height:100vh;
+	width:80%;
+	background:#fff;
+	float:left;
+}
+
+.gallery-space div {
+	width:70%;
+	position:relative;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -55%);
+	background:#f1f1f1;
+	text-align:center;
+}
+
+.gallery-selection {
+	height:100vh;
+	width:20%;
+	background-color:#666;
+	float:right;
+	overflow:scroll;
+}
+
+.gallery-selection div {
+	height:23vh;
+	border-bottom:1px solid white;
+	cursor:pointer;
+}
+
+.linkdetails > img {
+	width:100%;
+}
+
+/*** stripes ***/
+
+.stripes-top:before {
+  background-color:#18a984;
+  width:100%;
+}
+
+.stripes-right:before {
+  background-color:#18a984;
+}
+
+.stripes-bottom:after {
+  background-color:#18a984;
+}

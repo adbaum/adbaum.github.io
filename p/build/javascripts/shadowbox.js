@@ -1,11 +1,5 @@
 //close 'em
 
-$(document).ready(function(){
-  $('.bxslider').bxSlider({
-  captions: true
-});
-});
-
 $(document).ready(function() {
 $(".sb-background").click(function(){
     $(".shadowbox1").slideUp("linear");

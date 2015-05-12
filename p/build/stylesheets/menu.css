@@ -71,6 +71,8 @@
 
 .menu > li:nth-child(4) ul li:hover {background-color:#f74441;}
 
+.menu > li:nth-child(6) ul li:hover {background-color:#999;}
+
 .logo {
 	position:absolute;
 	top:5px;
@@ -98,3 +100,4 @@
 .menu > li:nth-child(2) {margin-left:140px;}
 .menu > li:nth-child(5), .menu > li:nth-child(6) {float:right;}
 .menu > li:nth-child(5) {margin-right:15px;}
+

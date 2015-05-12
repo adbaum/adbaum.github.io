@@ -1,5 +1,11 @@
 //close 'em
 
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+  captions: true
+});
+});
+
 $(document).ready(function() {
 $(".sb-background").click(function(){
     $(".shadowbox1").slideUp("linear");
@@ -174,6 +180,10 @@ $('#middle').click(
 )
 $('#end').click(
        function(){ $(this).removeClass('shake2') }
+)
+
+$('#glow').click(
+       function(){ $(this).removeClass('shake') }
 )
 
 

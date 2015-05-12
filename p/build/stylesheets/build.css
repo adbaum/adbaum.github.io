@@ -7,11 +7,6 @@
 	color:#f74441;
 }
 
-li:before {
-    content: "• ";
-    color: #f74441; /* or whatever color you prefer */
-}
-
 /*** stripes ***/
 
 .stripes-top:before {
@@ -85,7 +80,7 @@ li:before {
 }
 
 .b1 {
-	background-image:url('http://i.ytimg.com/vi/7-ZAfDkt3yQ/hqdefault.jpg');
+	background-image:url('http://www.stridecreative.com/wordpress/wp-content/uploads/2013/12/wordpress-logo-680x400.png');
 }
 
 .b2 {
@@ -106,6 +101,18 @@ li:before {
 
 .b6 {
 	background-image:url('http://i1-win.softpedia-static.com/screenshots/Wondershare-Video-Editor_7.jpg');
+}
+
+.b7 {
+	background-image:url('http://cdns2.freepik.com/free-photo/_29-20000137.jpg');
+}
+
+.b8 {
+	background-image:url('http://designroast.org/wp-content/uploads/2014/03/infographic-infogram-logo.jpg');
+}
+
+.b9 {
+	background-image:url('http://www.literaryfusions.com/sj/wp-content/uploads/2014/06/smashable-app-thinglink.jpg');
 }
 
 .build-image h3 {

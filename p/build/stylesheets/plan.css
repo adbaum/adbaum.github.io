@@ -355,3 +355,8 @@
 .stripes-bottom:after {
   background-color:#18a984;
 }
+
+.center-garfield {
+	margin-top:25px;
+	text-align:center;
+}

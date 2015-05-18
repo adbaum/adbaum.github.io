@@ -22,10 +22,16 @@
     <link href="../../stylesheets/jquery.bxslider.css" rel="stylesheet" />
 
     <script>
+
+
       $(document).ready(function(){
       	$('.bxslider').bxSlider({
       	captions: true
       });
+
+      	$('#glow').click(
+      	       function(){ $(this).removeClass('shake') }
+      	)
       });
     </script>
   </head>
@@ -95,8 +101,11 @@
 
 						</div>
 					</div>
-
 				</div>
+				<div class="wide-column center-garfield">
+					<img src="../../images/garfield/writing.png">
+				</div>
+
 				<div class="wide-column mt50 mb50">
 					<a href="../build/putittogether.html">
 						<div class="next reverse-type green">

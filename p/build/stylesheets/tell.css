@@ -1,3 +1,77 @@
+.garfield1 img, .garfield3 img, .garfield5 img {
+	width:55%;
+}
+
+.garfield1 img {
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.garfield3 img {
+	-ms-transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+.garfield1 {
+	position:absolute;
+	top:40%;
+	left:-400px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.garfield3 {
+	position:absolute;
+	top:-300px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.garfield5 {
+	position:absolute;
+	bottom:-300px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.open1:hover > .garfield1 {
+	left:-200px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.open3:hover > .garfield3 {
+	top:-80px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.open5:hover > .garfield5 {
+	bottom:-150px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
 .what-grid-explanation {
   max-width:90%;
   width:480px;
@@ -14,6 +88,10 @@
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+}
+
+.center-garfield {
+	margin:50px auto 0px;
 }
 
 .what-grid-explanation h3 {
@@ -83,6 +161,7 @@
 .open1 {
 	background-image:url('http://formby-footprints.co.uk/sitebuildercontent/sitebuilderpictures/Aurochs.jpg');
 	position:relative;
+	overflow:hidden;
 }
 
 .open1:before {
@@ -111,6 +190,7 @@
 .open2 {
 	background-image:url('../images/ampitheatre.jpg');
 	position:relative;
+	overflow:hidden;
 }
 
 .open2:before {
@@ -139,6 +219,7 @@
 .open3 {
 	background-image:url('http://thefirenote.com/wp-content/uploads/2012/12/typewriter.jpg');
 	position:relative;
+	overflow:hidden;
 }
 
 .open3:before {
@@ -170,6 +251,7 @@
 .open4 {
 	background-image:url('http://121clicks.com/wp-content/uploads/2011/09/vintage_camera8.jpg');
 	position:relative;
+	overflow:hidden;
 }
 
 .open4:before {
@@ -201,6 +283,7 @@
 .open5 {
 	background-image:url('https://c2.staticflickr.com/4/3318/3219874303_134538d190.jpg');
 	position:relative;
+	overflow:hidden;
 }
 
 .open5:before {
@@ -228,6 +311,7 @@
 .open6 {
 	background-image:url('../images/apple-computer-image.jpg');
 	position:relative;
+	overflow:hidden;
 }
 
 .open6:before {

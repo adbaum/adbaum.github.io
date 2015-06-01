@@ -502,6 +502,23 @@
 	transform: translate(-75%, -50%);
 }
 
+.garfield-add-one {
+	margin-top:20%;
+	float:right;
+	margin-right:25%;
+	width:20%;
+}
+
+.garfield-add-one img {
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+	width:100%;
+}
+
 .text {
 	width:30%;
 	position: absolute;
@@ -768,6 +785,10 @@
   margin:0px 0px 50px 0px;
   display:none;
   width:100%;
+	}
+
+	.story-explainer3, .story-explainer2, .story-explainer1 {
+		min-height:600px;
 	}
 }
 

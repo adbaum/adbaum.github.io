@@ -10,7 +10,7 @@ $(".sb-background").click(function(){
     $(".shadowbox2").slideUp("linear");
     $(".sb-background").fadeOut("fast");
   });
-
+ 
 $(".sb-background").click(function(){
     $(".shadowbox3").slideUp("linear");
     $(".sb-background").fadeOut("fast");

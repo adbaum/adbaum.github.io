@@ -1,4 +1,4 @@
-.garfield1 img, .garfield3 img, .garfield5 img {
+.garfield1 img, .garfield2 img, .garfield3 img, .garfield4 img, .garfield5 img, .garfield6 img {
 	width:55%;
 }
 
@@ -14,10 +14,32 @@
 	transform: rotate(-180deg);
 }
 
+.garfield4 img {
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.garfield6 img {
+	-ms-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
 .garfield1 {
 	position:absolute;
 	top:40%;
 	left:-400px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.garfield2 {
+	position:absolute;
+	bottom:-400px;
 	-o-transition:.5s;
 	-ms-transition:.5s;
 	-moz-transition:.5s;
@@ -35,9 +57,31 @@
 	transition:.5s;
 }
 
+.garfield4 {
+	position:absolute;
+	top:30%;
+	left:-400px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
 .garfield5 {
 	position:absolute;
 	bottom:-300px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.garfield6 {
+	position:absolute;
+	top:30%;
+	right:-400px;
 	-o-transition:.5s;
 	-ms-transition:.5s;
 	-moz-transition:.5s;
@@ -54,8 +98,26 @@
 	transition:.5s;
 }
 
+.open2:hover > .garfield2 {
+	bottom:0px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
 .open3:hover > .garfield3 {
-	top:-80px;
+	top:-60px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.open4:hover > .garfield4 {
+	left:-150px;
 	-o-transition:.5s;
 	-ms-transition:.5s;
 	-moz-transition:.5s;
@@ -64,12 +126,28 @@
 }
 
 .open5:hover > .garfield5 {
-	bottom:-150px;
+	bottom:-100px;
 	-o-transition:.5s;
 	-ms-transition:.5s;
 	-moz-transition:.5s;
 	-webkit-transition:.5s;
 	transition:.5s;
+}
+
+.open6:hover > .garfield6 {
+	right:-150px;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+.floater {
+	width:50%;
+	float:right;
+	margin-left:40px;
+	margin-bottom:40px;
 }
 
 .what-grid-explanation {
@@ -88,10 +166,6 @@
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
-}
-
-.center-garfield {
-	margin:50px auto 0px;
 }
 
 .what-grid-explanation h3 {

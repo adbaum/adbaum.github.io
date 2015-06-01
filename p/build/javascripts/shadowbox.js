@@ -176,10 +176,6 @@ $('#end').click(
        function(){ $(this).removeClass('shake2') }
 )
 
-$('#glow').click(
-       function(){ $(this).removeClass('shake') }
-)
-
 
 $( "#beginning, #bh" ).click(function() {
   $( ".beginning" ).slideToggle( "fast" );

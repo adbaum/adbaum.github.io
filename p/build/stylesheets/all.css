@@ -348,6 +348,11 @@ p a:hover {
   border-bottom:3px solid #666;
 }
 
+p b {
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
 .caption {
   color:#999;
   font-size:0.8em;

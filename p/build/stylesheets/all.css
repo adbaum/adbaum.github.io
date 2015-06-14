@@ -78,6 +78,22 @@ body {
   float:left;
 }
 
+@media (max-width:600px) {
+  .left-column, .right-column, .wide-column {
+    width:90%;
+    float:initial!important;
+    margin:0!important;
+  }
+
+
+  .left-aside, .right-aside {
+    display:block!important;
+    float:initial!important;
+    margin:20 0!important;
+    padding:200 auto;
+  }
+}
+
 /*** margins ***/
 
 .mb100 {margin-bottom:100px;}
@@ -430,8 +446,20 @@ p b {
 
 /*** shadowbox ***/
 
+.centered-content {
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
 .sb-content {
-  width:70%;
+  position:relative;
+  width:90%;
   height:100%;
   overflow:scroll;
   margin:30px;

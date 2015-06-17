@@ -303,6 +303,32 @@ body {
   transform: skewy(-2deg);
 }
 
+.speech-bubble {
+   padding:20px;
+   background: #999;
+   position: relative;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   color:#fff;
+}
+
+.speech-bubble:before {
+   content:"";
+   position: absolute;
+   right: 70%;
+   bottom: -20px;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 20px 15px 0 15px;
+   border-color: #999 transparent transparent transparent;
+}
+
+.speech-bubble a:hover {
+  text-decoration:underline;
+}
+
 /*** font styles ***/
 
 h1 {

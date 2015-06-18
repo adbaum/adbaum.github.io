@@ -636,8 +636,8 @@
 		 * Appends prev / next controls to the controls element
 		 */
 		var appendControls = function(){
-			slider.controls.next = $('<a class="bx-next" href=""><div id="glow" class="triangle-right shake"></div></a>');
-			slider.controls.prev = $('<a class="bx-prev" href=""><div class="triangle-left"></div></a>');
+			slider.controls.next = $('<a class="bx-next" href="">' + slider.settings.nextText + '</a>');
+			slider.controls.prev = $('<a class="bx-prev" href="">' + slider.settings.prevText + '</a>');
 			// bind click actions to the controls
 			slider.controls.next.bind('click', clickNextBind);
 			slider.controls.prev.bind('click', clickPrevBind);

@@ -22,7 +22,7 @@
 }
 
 .bx-wrapper img {
-	width: 75%;
+	max-width: 100%;
 	display: block;
 }
 
@@ -30,6 +30,13 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
+	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+	border:  5px solid #fff;
+	left: -5px;
+	background: #fff;
+	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
 	-moz-transform: translatez(0);
@@ -43,6 +50,19 @@
 	position: absolute;
 	bottom: -30px;
 	width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
 }
 
 /* PAGER */
@@ -64,8 +84,7 @@
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a {
-	background: #18a984;
-	opacity:0.3;
+	background: #666;
 	text-indent: -9999px;
 	display: block;
 	width: 10px;
@@ -79,18 +98,27 @@
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #18a984;
-	opacity:1;
+	background: #000;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
 	left: 10px;
+	background: url(images/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
-	right: -30px;
+	right: 10px;
+	background: url(images/controls.png) no-repeat -43px -32px;
+}
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
 }
 
 .bx-wrapper .bx-controls-direction a {
@@ -108,102 +136,69 @@
 	display: none;
 }
 
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
 /* IMAGE CAPTIONS */
 
 .bx-wrapper .bx-caption {
 	position: absolute;
-	top: 0;
-	right: -1px;
-	background: rgba(255, 255, 255, 1);
-	width: 25%;
-	z-index:9999;
-	overflow:visible;
-}
-
-@media (min-width:701px) {
-	.bx-wrapper .bx-caption {
-		height:100%;
-	}
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
 }
 
 .bx-wrapper .bx-caption span {
-	color: #000;
+	color: #fff;
+	font-family: Arial;
 	display: block;
+	font-size: .85em;
 	padding: 10px;
-}
-
-.triangle-left {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 12.5px 20px 12.5px 0;
-	border-color: transparent #18a984 transparent transparent;
-	opacity:0.6;
-}
-
-.triangle-right {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 12.5px 0 12.5px 20px;
-	border-color: transparent transparent transparent #18a984;
-	opacity:0.6;
-}
-
-.triangle-left:hover, .triangle-right:hover {
-	opacity:1;
-}
-
-
-@media (min-width:701px) and (max-width:850px) {
-
-	.bx-wrapper img {
-		width: 70%;
-		display: block;
-	}
-	.bx-wrapper .bx-caption {
-		width: 30%;
-		height:100%;
-		overflow:auto;
-	}
-
-	.bx-wrapper .bx-caption span {
-		font-size:0.85em;
-	}
-
-}
-
-@media (max-width:700px) {
-
-	.bx-wrapper img {
-		width: 100%;
-		display: block;
-		padding-bottom:225px;
-	}
-	.bx-wrapper .bx-caption {
-		padding-top:25px;
-		height:200px;
-		width: 100%;
-		position: absolute;
-		right:initial;
-		top:initial;
-		bottom: 0px;
-		left: 0px;
-		background: rgba(255, 255, 255, 0.75);
-		overflow:auto;
-	}
-
-	.bx-wrapper .bx-next {
-		right: 10px;
-	}
-
-	.bx-wrapper .bx-controls-direction a {
-		top: 30%;
-		margin-top: -16px;
-	}
-
-	.bx-wrapper .bx-pager.bx-default-pager a {
-		margin: -240px 5px 0px;
-	}
-
 }

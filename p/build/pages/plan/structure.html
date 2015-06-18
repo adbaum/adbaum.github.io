@@ -18,6 +18,17 @@
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet' type='text/css'>
     <link href='//cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='//cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+    <!-- bxSlider Javascript file -->
+    <script src="../../javascripts/jquery.bxslider.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="../../stylesheets/jquery.bxslider.css" rel="stylesheet" />
+
+    <!-- jQuery library (served from Google) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="/js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/lib/jquery.bxslider.css" rel="stylesheet" />
   </head>
   
   <body class="pages pages_plan pages_plan_structure">
@@ -106,6 +117,16 @@
             	<p>Conclude with some fun facts about how people have come to understand volcanoes and why they exist.</p>
           	</div>
             <p>Many ancient cultures believed that volcanic eruptions were the result of supernatural causes. For example, the ancient Greeks thought volcanoes could only be explained as acts of the gods, who were angry with humans. A 16th Century astronomer even thought that volcanoes were the ducts for the Earth's tears.</p>
+            <ul class="bxslider">
+              <li><img src="http://videos.revision3.com/revision3/images/shows/animalistnews/0372/animalistnews--0372--8-reasons-to-love-sloths-even-more--large.thumb.jpg" /></li>
+              <li><img src="../../images/volcano-story/channel-full.jpg" /></li>
+              <li><img src="../../images/volcano-story/krakatoa-eruption.jpg" /></li>
+              <li><img src="../../images/volcano-story/mauna.jpg" /></li>
+              <li><img src="../../images/volcano-story/st-helens-before.jpg" /></li>
+              <li><img src="../../images/volcano-story/st-helens.jpg" /></li>
+              <li><img src="../../images/volcano-story/vesuvius-pano.jpg" /></li>
+              <li><img src="../../images/volcano-story/vesuvius.jpg" /></li>
+            </ul>
             <p>Later, volcanic action was believed to be the result of chemical reactions in a thin layer of molten rock near the Earth’s surface. But today we know that volcanoes are the awesome display of the fiery power that is deep within the Earth.</p>
             </div>
           </div>
@@ -122,6 +143,12 @@
 	    </a>
 	</div>
 </div>
+
+<script>
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+</script>
 
   </body>
 </html>

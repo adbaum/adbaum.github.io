@@ -540,6 +540,7 @@
 .c-one, .c-two, .c-three {
 	width:46%;
 	display:inline-block;
+	vertical-align: top;
 }
 
 .c-two {

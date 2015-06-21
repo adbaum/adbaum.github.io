@@ -17,6 +17,20 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet' type='text/css'>
+
+        <!-- bxSlider Javascript file -->
+    <script src="../../javascripts/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="../../stylesheets/jquery.bxslider.css" rel="stylesheet" />
+
+    <script>
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+  		captions: true,
+  		adaptiveHeight: true
+		});
+    });
+    </script>
   </head>
   
   <body class="pages pages_plan pages_build_putittogether">
@@ -66,22 +80,41 @@
 					<div class="right-aside">
 					  <img style="width:100%;margin-top:100px;" src="../../images/garfield/selfie.png">
 					</div>
-					<img style="width:100%;margin-bottom:5px;margin-top:10px;" src="../../images/LongShot.jpg" alt="distracting image">
-					<img style="width:100%;margin-bottom:5px;margin-top:5px;" src="../../images/MediumShot.jpg" alt="no distraction">
-					<img style="width:100%;margin-bottom:10px;margin-top:5px;" src="../../images/CloseupShot.jpg" alt="perfect">
-					<p><b>Change angles and points of view while shooting.</b> Capture long shots to establish location, medium shots to chronicle the action, and close-up shots to focus on details. Squat down and climb hills or stairs, to change your point of view and make pictures from different perspectives.</p>
-					<img style="width:100%;margin-bottom:5px;margin-top:10px;" src="../../images/TooDark.jpg" alt="too dark">
-					<img style="width:100%;margin-bottom:10px;margin-top:5px;" src="../../images/TooLight.jpg" alt="too light">
-					<p><b>Make sure that the subject stands out from the background.</b> Dark figures on dark backgrounds or light figures on light backgrounds will wash together.</p>
-					<img style="width:100%;margin-bottom:10px;margin-top:10px;" src="../../images/ThirdsLines.jpg" alt="rule of thirds">
-					<p><b>Use the rule of thirds.</b> Avoid placing the subject in the center of the photograph, which creates a static image. The rule of thirds helps you structure a picture so it’s more visually interesting.</p>
-					<img style="width:100%;margin-bottom:5px;margin-top:10px;" src="../../images/Distracting.jpg" alt="distracting image">
-					<img style="width:100%;margin-bottom:5px;margin-top:5px;" src="../../images/NoDistract.jpg" alt="no distraction">
-					<img style="width:100%;margin-bottom:10px;margin-top:5px;" src="../../images/JustRight.jpg" alt="perfect">
-					<p><b>Make sure there are no distracting elements,</b> such as lampposts that extend from a subject’s head. As you establish your point of view, examine the frame and move around before you take the photo to eliminate visual distractions.</p>
+					<div class="howto-text">
+						<h4>Change angles and points of view while shooting</h4>
+						<p>Capture long shots to establish location, medium shots to chronicle the action, and close-up shots to focus on details. Squat down and climb hills or stairs, to change your point of view and make pictures from different perspectives.</p>
+						<ul class="bxslider">
+						  <li><img title="This wide show helps establish the scene." style="width:100%;" src="../../images/LongShot.jpg" alt="distracting image"></li>
+						  <li><img title="This medium shot shows action." style="width:100%;" src="../../images/MediumShot.jpg" alt="no distraction"></li>
+						  <li><img title="This closeup shows a lot of detail." style="width:100%;" src="../../images/CloseupShot.jpg" alt="perfect"></li>
+						</ul>
+
+						<h4>Make sure that the subject stands out from the background</h4>
+						<p>Dark figures on dark backgrounds or light figures on light backgrounds will wash together.</p>
+						<ul class="bxslider">
+						  <li><img title="This image is too dark." style="width:100%;" src="../../images/TooDark.jpg" alt="too dark"></li>
+						  <li><img title="This image is too light." style="width:100%;" src="../../images/TooLight.jpg" alt="too light"></li>
+						</ul>
+
+						<h4>Use the rule of thirds</h4>
+						<p>Avoid placing the subject in the center of the photograph, which creates a static image. The rule of thirds helps you structure a picture so it’s more visually interesting.</p>
+						<ul class="bxslider">
+						  <li><img title="Here's an example of a well-composed photo. Notice the boy is on the right third of the screen." style="width:100%;" src="../../images/ThirdsGood.jpg" alt="rule of thirds"></li>
+						  <li><img title="This subject is in the center, making the photo less active." style="width:100%;" src="../../images/ThirdsBad.jpg" alt="rule of thirds"></li>
+						  <li><img title="Notice how you can actually split the image into three parts and see whre the subject is." style="width:100%;" src="../../images/ThirdsLines.jpg" alt="rule of thirds"></li>
+						</ul>
+
+						<h4>Make sure there are no distracting elements</h4>
+						<p>Watch out for things such as lampposts that might extend from a subject’s head. As you establish your point of view, examine the frame and move around before you take the photo to eliminate visual distractions.</p>
+						<ul class="bxslider">
+						  <li><img title="This image is too distracting." title="caption1" style="width:100%;" src="../../images/Distracting.jpg" alt="distracting image"></li>
+						  <li><img title="This one doesn't have enough interesting detail." style="width:100%;" src="../../images/NoDistract.jpg" alt="no distraction"></li>
+						  <li><img title="This image strikes the perfect balance." style="width:100%;" src="../../images/JustRight.jpg" alt="perfect"></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-				<div class="wide-column mt50 mb50">
+				<div class="wide-column mb50">
 					<a href="resources.html">
 						<div class="next reverse-type red">
 							<h3>Next</h3>

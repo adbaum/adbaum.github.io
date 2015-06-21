@@ -136,6 +136,12 @@
 	display:none;
 }
 
+.howto-text p {margin-bottom:5px;}
+
+.howto-text h4:first-child {margin-top:50px;}
+
+.howto-text h4 {margin-top:50px;}
+
 
 @media (max-width:800px) {
 	.tile-column {

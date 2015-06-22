@@ -164,7 +164,7 @@ $( "#nf, #nfh" ).click(function() {
   });
 
 
-setTimeout(function(){ 
+/*setTimeout(function(){ 
   $( ".beginning" ).slideDown();
   }, 0600);
 
@@ -186,7 +186,7 @@ $( "#middle, #mh" ).click(function() {
 $( "#end, #eh" ).click(function() {
   $( ".end" ).slideToggle( "fast" );
   });
-
+*/
 
 /*hover effect*/
 $(document).ready(function() {

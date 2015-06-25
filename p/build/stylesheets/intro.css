@@ -1,3 +1,39 @@
+.hero-left {
+	margin:0px -40px 0px -20%;
+	display:inline-block;
+	width:60%;
+}
+
+.hero-right {
+	text-align:left;
+	margin:90px 0px 0px 0px;
+	margin-left:5%;
+	display:inline-block;
+	width:50%;
+	vertical-align: top;
+}
+
+.hero-right h1 {
+	text-align:left;
+	font-size:6em;
+	color:#f9a11b;
+	line-height:0.9em;
+	margin-bottom:40px;
+}
+
+.hero-right h2 {
+	margin-bottom:0px;
+}
+
+.hero-right p {
+	line-height:1.5em;
+	font-weight: bold;
+}
+
+.hero-right p:last-child {
+	color:#f9a11b;
+}
+
 .next {
 	border:5px solid #f9a11b;
 }
@@ -31,4 +67,34 @@
 	-ms-transition: all 0.1s;
 	-o-transition: all 0.1s;
 	transition: all 0.1s;
+}
+
+.video-button {
+	cursor:pointer;
+}
+
+
+@media (max-width: 960px) {
+
+	.intro-hero {
+		width:100%;
+		margin:0 auto;
+	}
+
+	.hero-left {
+		margin:0px;
+		display:block;
+		width:30%;
+	}
+
+	.hero-right {
+		margin:10px 0px 0px 0px;
+		display:block;
+		width:50%;
+	}
+
+	.hero-right h1 {
+		font-size:5em;
+	}
+		
 }

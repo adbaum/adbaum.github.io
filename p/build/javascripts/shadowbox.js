@@ -215,6 +215,17 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+$('.video-button').click(function(e) {
+    e.preventDefault();
+  $('#video_container').html('<iframe id="player1" src="https://player.vimeo.com/video/129621655?autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+  $('.button-appear').html('<a href="pages/tell/what.html"><div class="mt10 mb50 next reverse-type orange"><h3>Next</h3></div></a>');
+  $('.splash').css('display', 'none');
+  
+});
+});
+
+
 /*gallery-space
 $(document).ready(function() {
   $(".brainstorm-button1").click(function(){

@@ -144,6 +144,7 @@
 }
 
 .floater {
+	max-width:500px;
 	width:50%;
 	float:right;
 	margin-left:40px;
@@ -705,6 +706,14 @@
 
 	.story-explainer3, .story-explainer2, .story-explainer1 {
 		min-height:600px;
+	}
+
+	.floater {
+		max-width:1000px;
+		width:100%;
+		float:left;
+		margin-left:0px;
+		margin-bottom:0px;
 	}
 }
 

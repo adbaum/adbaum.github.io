@@ -96,8 +96,17 @@
 }
 
 /*weird menu exceptions*/
-.menu > li:nth-child(5):hover, .menu > li:nth-child(6):hover {background:#999;}
+
+.right-float {
+  float:right;
+  margin-right:15px;
+}
+
+.right-float li:hover {
+  background:#999;
+}
+/*.menu > li:nth-child(5):hover, .menu > li:nth-child(6):hover {background:#999;}*/
 .menu > li:nth-child(2) {margin-left:140px;}
-.menu > li:nth-child(5), .menu > li:nth-child(6) {float:right;}
-.menu > li:nth-child(5) {margin-right:15px;}
+/*.menu > li:nth-child(5), .menu > li:nth-child(6) {float:right;}*/
+/*.menu > li:nth-child(5) {margin-right:15px;}*/
 

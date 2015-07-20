@@ -225,6 +225,20 @@ $('.video-button').click(function(e) {
 });
 });
 
+$(document).ready(function() {
+$(".menu-expand").click(function(){
+    $(".menu-mobile").addClass("active");
+});
+
+$("#main").click(function(){
+    $(".menu-mobile").removeClass("active");
+});
+
+$(".menu-hide").click(function(){
+    $(".menu-mobile").removeClass("active");
+});
+});
+
 
 /*gallery-space
 $(document).ready(function() {

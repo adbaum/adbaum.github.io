@@ -15,6 +15,12 @@ body {
   margin:0 auto;
 }
 
+@media (max-width:600px) {
+  .big-box {
+    margin-top:150px;
+  }
+}
+
 .left-column {
   margin-left:10%;
   width:46%;
@@ -65,6 +71,12 @@ body {
   z-index:5;
 }
 
+@media (max-width: 600px) {
+  .video-box-out {
+    width:100%;
+  }
+}
+
 .video-box-in {
   width:100%;
   z-index:5;
@@ -100,8 +112,9 @@ body {
   .left-aside, .right-aside {
     display:block!important;
     float:initial!important;
-    margin:20 0!important;
-    padding:200 auto;
+    margin:20px 0px 20px 10%; 
+    position:relative;
+    width:80%;
   }
 }
 
@@ -140,6 +153,15 @@ body {
 .mt150 {margin-top:150px;}
 
 .mt200 {margin-top:200px;}
+
+@media (max-width:500px) {
+  .mb50, .mb75, .mb100, .mt10, .mt20 {
+    margin-bottom:50px;
+  }
+  .mt50, .mt75, .mt100, .mt150, .mt200 {
+    margin-top:50px!important;
+  }
+}
 
 
 /*** color ***/
@@ -528,7 +550,8 @@ p b {
   top:0;
   padding:20px 0px;
   height:80%;
-  width:80%;
+  width:95%;
+  max-width:900px;
   overflow:auto;
   overflow:auto;
   text-align:center;
@@ -1023,5 +1046,11 @@ p b {
 
   .stripes-top:before {
     width:80%;
+  }
+}
+
+@media (max-width:600px) {
+  .disappear {
+    display:none;
   }
 }

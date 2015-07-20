@@ -477,6 +477,12 @@
 	-ms-filter: "FlipH";
 }
 
+@media (max-width: 600px) {
+	.special-garfield-right {
+		display:none;
+	}
+}
+
 .text-right {
 	margin-left:55%;
 }

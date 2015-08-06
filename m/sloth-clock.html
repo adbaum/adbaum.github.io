@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<style>
+			body {
+				margin:0px;
+			}
+
+			.bg {
+				width:100%;
+				height:100vh;
+				position:relative;
+				background:url("http://masswallpapers.mobi/wp-content/uploads/actual-outer-space-photos-4.jpg");
+				background-size:cover;
+			}
+
+			.sloth img {
+				width:100%;
+			}
+
+			.sloth {
+				width:150px;
+				height:100px;
+				position:absolute;
+				-webkit-animation: dance 60s ease infinite; /* Chrome, Safari, Opera */ 
+				animation: dance 60s ease infinite;
+			}v
+
+
+			@-webkit-keyframes dance {
+				0%   {left:0px;top:0px;}
+				25% {top:200px;}
+			    50% {left:600px;top:0px;}
+			    75% {top:200px;}
+			    100% {left:0px;top:0px;}
+			}
+
+			@keyframes dance {
+				0%   {left:0px;top:0px;}
+				25% {top:200px;}
+			    50% {left:600px;top:0px;}
+			    75% {top:200px;}
+			    100% {left:0px;top:0px;}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="bg">
+			<div class="sloth">
+				<img src="http://robynseverson.com/images/animals/sloth2.png" alt="Dancing Sloth">
+			</div>
+		</div>
+	</body>
+</html>

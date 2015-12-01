@@ -286,12 +286,12 @@ h5 {
 	width:26px;
 	height:26px;
 	position:fixed;
-	background-color:transparent;
+	background-color:#ffffff;
 	bottom:50%;
 	left:40px;
 	border:1px solid #FF5947;
 	border-radius:50%;
-	z-index:1;
+	z-index:10;
 	opacity:0.6;
 	transition:0.3s;
 	-o-transition:0.3s;
@@ -325,12 +325,12 @@ h5 {
 	width:26px;
 	height:26px;
 	position:fixed;
-	background-color:transparent;
+	background-color:#ffffff;
 	bottom:50%;
 	right:40px;
 	border:1px solid #FF5947;
 	border-radius:50%;
-	z-index:1;
+	z-index:10;
 	opacity:0.6;
 	transition:0.3s;
 	-o-transition:0.3s;
@@ -364,7 +364,7 @@ h5 {
 	width:26px;
 	height:26px;
 	position:fixed;
-	background-color:transparent;
+	background-color:#ffffff;
 	bottom:90%;
 	left:40px;
 	border:1px solid #FF5947;

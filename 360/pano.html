@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+.pano {
+	margin: 0 -1em;
+  height: calc(100vw*3/4);
+  background-color: #ccc;
+  overflow: hidden;
+  position: relative;
+  background-size: auto 300%;
+  background-position: 50% 75%;
+  transition: background-position .05s;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="pano" class="pano" style="background-image: url('images/car.jpg');">
+</div>
+	
+<script>
+  var pano = document.getElementById('pano');
+  function handleOrientation(event) {
+    var mAbsolute = event.absolute;
+    var mA        = event.alpha / 3.60;
+    var mB        = event.beta / 3.60;
+    var mG        = event.gamma / 3.60;
+    pano.style.backgroundPosition =
+    ((mG + 75) * -1) + '% ' + ((mB / -1.8) - 60) + '%';
+  }
+  window.addEventListener('deviceorientation', handleOrientation);
+</script>
+
+</body>
+</html>

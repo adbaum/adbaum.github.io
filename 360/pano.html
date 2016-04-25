@@ -24,7 +24,7 @@
 
 <div id="pano" class="pano" style="background-image: url('images/car.jpg');">
 </div>
-<p>11</p>
+<p>12</p>
 	
 <script>
 
@@ -32,7 +32,7 @@
 
   var pano = document.getElementById('pano');
   function handleOrientation(event) {
-    var mA        = event.alpha;
+    var mA        = event.alpha / 7.20;
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
     pano.style.backgroundPosition =

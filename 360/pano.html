@@ -14,7 +14,6 @@
   position: relative;
   background-size: auto 300%;
   background-position: 0% 75%;
-  background-repeat: repeat-x;
   transition: background-position .05s;
 }
 
@@ -25,7 +24,7 @@
 
 <div id="pano" class="pano" style="background-image: url('images/car.jpg');">
 </div>
-<p>13.8
+<p>13.7 fix
 </p>
 	
 <script>
@@ -34,8 +33,8 @@
 
   var pano = document.getElementById('pano');
   function handleOrientation(event) {
-    var mA        = event.alpha;
-    var mB        = event.beta;
+    var mA        = event.alpha  / 3.60;
+    var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
     pano.style.backgroundPosition =
     ((mA)  * -1) + '% ' + ((mB / -1.8) - 60) + '%';

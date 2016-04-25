@@ -25,6 +25,9 @@
 <p>6</p>
 	
 <script>
+
+	// this is all device orientation
+
   var pano = document.getElementById('pano');
   function handleOrientation(event) {
     var mAbsolute = event.absolute;
@@ -32,9 +35,23 @@
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
     pano.style.backgroundPosition =
-    mG + '% ' + mB + '%';
+    ((mG + 75)  * -1) + '% ' + ((mB / -1.8) - 60) + '%';
   }
   window.addEventListener('deviceorientation', handleOrientation);
+
+	/* THIS IS ALL DEVICE MOTION
+
+  var pano = document.getElementById('pano');
+
+  function handleMotion(event) {
+  	var acc = event.acceleration;
+  	var aX  = acc.x;
+  	var aY  = acc.y;
+  	var aZ  = acc.z;
+  }
+
+  window.addEventListener('devicemotion', handleMotion);
+  */
 </script>
 
 </body>

@@ -24,31 +24,16 @@
 </div>
 	
 <script>
-  /* var pano = document.getElementById('pano');
+  var pano = document.getElementById('pano');
   function handleOrientation(event) {
     var mAbsolute = event.absolute;
     var mA        = event.alpha / 3.60;
     var mB        = event.beta / 3.60;
-    var mG        = event.gamma / 3.60;
+    var mG        = event.x / 3.60;
     pano.style.backgroundPosition =
     ((mG + 75) * -1) + '% ' + ((mB / -1.8) - 60) + '%';
   }
   window.addEventListener('deviceorientation', handleOrientation);
-
-  custom below */
-
-  var pano = document.getElementById('pano');
-
-  function handleOrientation(event) {
-    var mAbsolute = event.absolute;
-    var mA        = event.alpha / 3.60;
-    var mB        = event.beta / 3.60;
-    var mG        = event.gamma / 3.60;
-    pano.style.backgroundPosition =
-    ((mG + 75) * -1) + '% ' + ((mB / -1.8) - 60) + '%';
-  }
-
-  window.addEventListener('ondevicemotion', handleOrientation);
 </script>
 
 </body>

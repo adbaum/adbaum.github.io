@@ -39,9 +39,9 @@
   var pano = document.getElementById('pano');
   function handleOrientation(event) {
     var mAbsolute = event.absolute;
-    var mA        = event.z / 3.60;
-    var mB        = event.y / 3.60;
-    var mG        = event.x / 3.60;
+    var mA        = event.z;
+    var mB        = event.y;
+    var mG        = event.x;
     pano.style.backgroundPosition =
     ((mG + 75) * -1) + '% ' + ((mB / -1.8) - 60) + '%';
   }

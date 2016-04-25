@@ -26,12 +26,12 @@
 <script>
   var pano = document.getElementById('pano');
   function handleOrientation(event) {
-    //var mAbsolute = event.absolute;
+    var mAbsolute = event.absolute;
     var mA        = event.alpha / 3.60;
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
     pano.style.backgroundPosition =
-    ((mG + 75) * -1) + '% ' + ((mB / -1.8) - 60) + '%';
+    (mG '% ' + mB '%';
   }
   window.addEventListener('deviceorientation', handleOrientation);
 </script>

@@ -2,6 +2,8 @@
 <html>
 <head>
 
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
 <style>
 
 .pano {
@@ -22,7 +24,7 @@
 
 <div id="pano" class="pano" style="background-image: url('images/car.jpg');">
 </div>
-<p>9</p>
+<p>10</p>
 	
 <script>
 
@@ -30,7 +32,6 @@
 
   var pano = document.getElementById('pano');
   function handleOrientation(event) {
-    var mAbsolute = event.absolute;
     var mA        = event.alpha / 3.60;
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;

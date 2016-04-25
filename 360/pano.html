@@ -22,12 +22,9 @@
 
 <div id="pano" class="pano" style="background-image: url('images/car.jpg');">
 </div>
-   <p><label for="aX">aX</label><span id="aX"></span></p>
-    <p><label for="aY">aY</label><span id="aY"></span></p>
-    <p><label for="aZ">aZ</label><span id="aZ"></span></p>
 	
 <script>
-  /*var pano = document.getElementById('pano');
+  var pano = document.getElementById('pano');
   function handleOrientation(event) {
     var mAbsolute = event.absolute;
     var mA        = event.alpha / 3.60;
@@ -36,29 +33,7 @@
     pano.style.backgroundPosition =
     ((mG + 75) * -1) + '% ' + ((mB / -1.8) - 60) + '%';
   }
-  window.addEventListener('deviceorientation', handleOrientation);*/
-
-
-  var s$ = function(e) {return document.getElementById(e);};
-  var pano = document.getElementById('pano');
-  function handleOrientation(event) {
-    var mAbsolute = event.absolute;
-    var mA        = event.z;
-    var mB        = event.y;
-    var mG        = event.x;
-    pano.style.backgroundPosition =
-    ((mG + 75) * -1) + '% ' + ((mB / -1.8) - 60) + '%';
-  }
-  window.addEventListener('devicemotion', handleOrientation);
-  function dmHdlr(mA, mB, mG) {
-    var currDM = new Date().getTime();
-    //if (currDM < lastDM + 1000) {return;}
-    lastDM = currDM;
-    
-    s$('aX').innerHTML = mA ? aX.toFixed(3) : '?';
-    s$('aY').innerHTML = mB ? aY.toFixed(3) : '?';
-    s$('aZ').innerHTML = mG ? aZ.toFixed(3) : '?';
-	}
+  window.addEventListener('deviceorientation', handleOrientation);
 </script>
 
 </body>

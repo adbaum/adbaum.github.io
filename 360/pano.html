@@ -36,24 +36,29 @@
 
   var pano = document.getElementById('pano');
   function handleOrientation(event) {
-    var mfix      = event.alpha;
+    // collect values
     var mA        = event.alpha  / 3.60;
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
 
 
-
+    // record old alpha values
     var alphaValues = new Array();
-
     alphaValues.push(event.alpha)
-
+    // call the last alpha value recorded
     var maOld = alphaValues.slice(-1)[0]
 
+    // test stuff
     var bg = pano.style.backgroundPosition;
+    var mfix      = event.alpha;
     document.getElementById('x').innerHTML = mfix;
     document.getElementById('mA').innerHTML = mA;
     document.getElementById('bg').innerHTML = bg;
     document.getElementById('maOld').innerHTML = maOld;
+
+
+    // Check to see if maOld is being checked correctly. The response should almost always be "The are no :)"
+
     if (maOld == mA) {
       document.getElementById('check').innerHTML = "They are :(";
     }
@@ -62,6 +67,20 @@
     }
 
 
+    // attempt to change i values for background
+
+    if (mA > maOld) {
+      document.getElementById('direction').innerHTML = "Right";
+    }
+    else if (mA < maOld) {
+      document.getElementById('direction').innerHTML = "Left";
+    }
+    else {
+      document.getElementById('direction').innerHTML = "Not moving";
+    }
+
+
+    // attempt to change i values for background
 
     var i = 0;
 

@@ -38,8 +38,8 @@
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
     pano.style.backgroundPosition =
-    ((mA)) + '% ' + ((mB / -1.8) - 60) + '%';
-    document.getElementById('x').innerHTML = mfix
+    ((mA) * -1) + '% ' + ((mB / -1.8) - 60) + '%';
+    document.getElementById('x').innerHTML = mfix;
 
   }
   window.addEventListener('deviceorientation', handleOrientation);

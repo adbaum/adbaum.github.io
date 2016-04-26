@@ -34,6 +34,8 @@
 
 	// this is all device orientation
 
+  var alphaValues = new Array();
+
   var pano = document.getElementById('pano');
   function handleOrientation(event) {
     // collect device orientation values
@@ -43,10 +45,9 @@
 
 
     // record old alpha values
-    var alphaValues = new Array();
-    alphaValues.push(event.alpha)
+    alphaValues.push(mA)
     // call the last alpha value recorded
-    var maOld = alphaValues.slice(-1)[0]
+    var maOld = alphaValues.slice(-2)[0]
 
     // test stuff
     var bg = pano.style.backgroundPosition;

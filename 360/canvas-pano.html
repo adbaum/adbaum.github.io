@@ -6,7 +6,7 @@
 
 <style>
 
-.pano {
+#canvas {
 	margin: 0 -1em;
   height: calc(100vw*3/4);
   background-color: #ccc;
@@ -22,9 +22,8 @@
 </head>
 <body>
 
-<div id="pano" class="pano" style="background-image: url('images/mountain.jpg');">
-</div>
-<p>18.9.1</p>
+<canvas id="canvas"></canvas>
+<p>1</p>
 <p>Alpha value: <span id="x"></span><br>Alpha data recorded: <span id="mA"></span></p>
 <p>What does i equal? <span id="itho"></span></p>
 <p>Direction? <span id="direction"></span></p>
@@ -32,8 +31,23 @@
 <p>Background position: <span id="bg"></span></p>
 <script>
 
-	// this is all device orientation
+	var canvas = document.getElementById("canvas");
+  var ctx = canvas.getContext("2d");
 
+  var img = new Image();
+  img.src = 'images/mountain.jpg';
+  img.onload = function() {
+    var pattern = ctx.createPattern(img, 'repeat-x');
+    ctx.fillStyle = pattern;
+    ctx.fillRect(0,0,400,400);
+  };
+
+
+
+
+
+  // rotation
+/*
   var alphaValues = new Array();
   var i = 0;
 
@@ -86,11 +100,11 @@
 
     // print direction
     pano.style.backgroundPosition =
-    (bgp * -1) + '% ' + (mB * -1 + 30) + '%';
+    (bgp * -1) + '% ' + (mB * -1 + 50) + '%';
 
   }
   window.addEventListener('deviceorientation', handleOrientation);
-
+*/
 
 
 </script>

@@ -84,9 +84,11 @@
 
     var bgp = i ;
 
+    var bgy = Math.min(Math.max((mB * -1.8 + 60), 0), 180)
+
     // print direction
     pano.style.backgroundPosition =
-    (bgp * -1) + '% ' + (mB * -2 + 60) + '%';
+    (bgp * -1) + '% ' + bgy + '%';
 
   }
   window.addEventListener('deviceorientation', handleOrientation);

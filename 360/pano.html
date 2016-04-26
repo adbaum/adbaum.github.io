@@ -24,7 +24,7 @@
 
 <div id="pano" class="pano" style="background-image: url('images/mountain.jpg');">
 </div>
-<p>18.9.3</p>
+<p>18.9.4</p>
 <p>Alpha value: <span id="x"></span><br>Alpha data recorded: <span id="mA"></span></p>
 <p>What does i equal? <span id="itho"></span></p>
 <p>Direction? <span id="direction"></span></p>
@@ -84,7 +84,7 @@
 
     var bgp = i ;
 
-    var bgy = Math.min(Math.max((mB * -1.8), 0), 180)
+    var bgy = Math.min(Math.max((mB * -1.8 + 90), 0), 180)
 
     // print direction
     pano.style.backgroundPosition =

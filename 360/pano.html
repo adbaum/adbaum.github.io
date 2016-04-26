@@ -15,6 +15,7 @@
   background-repeat: repeat-x;
   background-size: auto 300%;
   background-position: 50% 50%;
+  transition: background-position .1s;
 }
 
 </style>
@@ -36,7 +37,7 @@
   var pano = document.getElementById('pano');
   function handleOrientation(event) {
     var mfix      = event.alpha;
-    var mA        = event.alpha  / 3.60;
+    var mA        = Math.round(event.alpha)  / 3.60;
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
     pano.style.backgroundPosition =

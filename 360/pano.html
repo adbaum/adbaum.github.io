@@ -36,7 +36,7 @@
 
   var pano = document.getElementById('pano');
   function handleOrientation(event) {
-    // collect values
+    // collect device orientation values
     var mA        = event.alpha  / 3.60;
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
@@ -85,20 +85,18 @@
     var i = 0;
 
     if (mA > maOld) {
-      document.getElementById('direction').innerHTML = "Left";
       var i = i + 1;
     }
     else if (mA < maOld) {
-      document.getElementById('direction').innerHTML = "Right";
       var i = i - 1;
     }
     else {
-      document.getElementById('direction').innerHTML = "Not moving";
       var i = i;
     }
 
     var bgp = 50 + i;
 
+    // print direction
     pano.style.backgroundPosition =
     (bgp * -1) + '% ' + ((mB / -1.8) - 60) + '%';
 

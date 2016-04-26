@@ -50,7 +50,9 @@
     // call the last alpha value recorded
     var maOld = (alphaValues.slice(-2)[0] + alphaValues.slice(-3)[0] + alphaValues.slice(-4)[0] + alphaValues.slice(-5)[0] +
       alphaValues.slice(-6)[0] + alphaValues.slice(-7)[0] + alphaValues.slice(-8)[0] + alphaValues.slice(-9)[0] + 
-      alphaValues.slice(-10)[0] + alphaValues.slice(-11)[0]) / 10
+      alphaValues.slice(-10)[0] + alphaValues.slice(-11)[0] + alphaValues.slice(-12)[0] + alphaValues.slice(-13)[0] +
+      alphaValues.slice(-14)[0] + alphaValues.slice(-15)[0] + alphaValues.slice(-16)[0] + alphaValues.slice(-17)[0]
+      + alphaValues.slice(-18)[0] + alphaValues.slice(-19)[0] + alphaValues.slice(-20)[0] + alphaValues.slice(-21)[0]) / 20
 
     // test stuff
     var bg = pano.style.backgroundPosition;
@@ -74,7 +76,7 @@
 
     // attempt to change i values for background
 
-    if (mA > maOld) {
+    if (mA > maOld + 3.6) {
       i++;
     } else if (mA < maOld) {
       i--;

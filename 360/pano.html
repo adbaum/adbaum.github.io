@@ -24,8 +24,8 @@
 
 <div id="pano" class="pano" style="background-image: url('images/car.jpg');">
 </div>
-<p>17.6</p>
-<p>Alpha value: <span id="x"></span><br>Last value: <span id="maNew"></span></p>
+<p>17.7</p>
+<p>Alpha value: <span id="x"></span><br>Last value: <span id="maOld"></span></p>
 <p>Is the new alpha equal to the old alpha? <span id="check"></span></p>
 <p>Moving right? <span id="right"></span></p>
 <p>Moving left? <span id="left"></span></p>
@@ -48,14 +48,14 @@
 
     alphaValues.push(event.alpha)
 
-    var mav = alphaValues.slice(-1)[0]
+    var maOld = alphaValues.slice(-1)[0]
 
     var bg = pano.style.backgroundPosition;
     document.getElementById('x').innerHTML = mfix;
     document.getElementById('mA').innerHTML = mA;
     document.getElementById('bg').innerHTML = bg;
-    document.getElementById('maNew').innerHTML = maNew;
-    if (maNew == mA) {
+    document.getElementById('maOld').innerHTML = maOld;
+    if (maOld == mA) {
       document.getElementById('check').innerHTML = "Boo.";
     }
     else {
@@ -66,12 +66,12 @@
 
     var i = 0;
 
-    if (mA > maNew) {
+    if (mA > maOld) {
       document.getElementById('right').innerHTML = "Yes";
       document.getElementById('left').innerHTML = "No";
       var i = i + 1;
     }
-    else if (mA < maNew) {
+    else if (mA < maOld) {
       document.getElementById('right').innerHTML = "No";
       document.getElementById('left').innerHTML = "Yes";
       var i = i - 1;

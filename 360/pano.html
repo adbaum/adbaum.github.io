@@ -26,6 +26,7 @@
 </div>
 <p>17.1</p>
 <p>Alpha value: <span id="x"></span><br>Last alpha value: <span id="mav"></span></p>
+<p>Does it work? <span id="check"></span></p>
 <p>Normalized value: <span id="mA"></span></p>
 <p>Background position: <span id="bg"></span></p>
 <script>
@@ -56,6 +57,9 @@
     document.getElementById('mA').innerHTML = mA;
     document.getElementById('bg').innerHTML = bg;
     document.getElementById('mav').innerHTML = mav;
+    if (mav != mA) {
+      document.getElementById('check').innerHTML = "Yay!";
+    }
   }
   window.addEventListener('deviceorientation', handleOrientation);
 

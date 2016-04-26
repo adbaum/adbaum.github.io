@@ -26,9 +26,8 @@
 </div>
 <p>17.7</p>
 <p>Alpha value: <span id="x"></span><br>Last value: <span id="maOld"></span></p>
-<p>Is the new alpha equal to the old alpha? <span id="check"></span></p>
-<p>Moving right? <span id="right"></span></p>
-<p>Moving left? <span id="left"></span></p>
+<p>Are the values equal? <span id="check"></span></p>
+<p>Direction? <span id="right"></span></p>
 <p>Normalized value: <span id="mA"></span></p>
 <p>Background position: <span id="bg"></span></p>
 <script>
@@ -56,10 +55,10 @@
     document.getElementById('bg').innerHTML = bg;
     document.getElementById('maOld').innerHTML = maOld;
     if (maOld == mA) {
-      document.getElementById('check').innerHTML = "Boo.";
+      document.getElementById('check').innerHTML = "They are :(";
     }
     else {
-      document.getElementById('check').innerHTML = "Yay!"; 
+      document.getElementById('check').innerHTML = "They are not :)"; 
     }
 
 
@@ -67,18 +66,15 @@
     var i = 0;
 
     if (mA > maOld) {
-      document.getElementById('right').innerHTML = "Yes";
-      document.getElementById('left').innerHTML = "No";
+      document.getElementById('direction').innerHTML = "Left";
       var i = i + 1;
     }
     else if (mA < maOld) {
-      document.getElementById('right').innerHTML = "No";
-      document.getElementById('left').innerHTML = "Yes";
+      document.getElementById('direction').innerHTML = "Right";
       var i = i - 1;
     }
     else {
-      document.getElementById('right').innerHTML = "No";
-      document.getElementById('left').innerHTML = "No";
+      document.getElementById('direction').innerHTML = "Not moving";
       var i = i;
     }
 

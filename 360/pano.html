@@ -24,7 +24,7 @@
 
 <div id="pano" class="pano" style="background-image: url('images/car.jpg');">
 </div>
-<p>17.2</p>
+<p>17.3</p>
 <p>Alpha value: <span id="x"></span><br>Last value: <span id="mav"></span></p>
 <p>Does it work? <span id="check"></span></p>
 <p>Normalized value: <span id="mA"></span></p>
@@ -57,11 +57,11 @@
     document.getElementById('mA').innerHTML = mA;
     document.getElementById('bg').innerHTML = bg;
     document.getElementById('mav').innerHTML = mav;
-    if (mav != mA) {
-      document.getElementById('check').innerHTML = "Yay!";
+    if (mav == mA) {
+      document.getElementById('check').innerHTML = "Boo.";
     }
     else {
-      document.getElementById('check').innerHTML = "Boo."; 
+      document.getElementById('check').innerHTML = "Yay!"; 
     }
   }
   window.addEventListener('deviceorientation', handleOrientation);

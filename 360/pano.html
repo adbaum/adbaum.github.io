@@ -8,7 +8,7 @@
 
 .pano {
 	margin: 0 -1em;
-  height: 500px;
+  height: calc(100vw*3/4);
   background-color: #ccc;
   overflow: hidden;
   position: relative;
@@ -21,9 +21,9 @@
 </head>
 <body>
 
-<div id="pano" class="pano" style="background-image: url('images/car.jpg');">
+<div id="pano" class="pano" style="background-image: url('images/pool.jpg');">
 </div>
-<p>14.4</p>
+<p>14.5</p>
 <p>Alpha value: <span id="x"></span></p>
 <p>Normalized value: <span id="mA"></span></p>
 	
@@ -38,7 +38,7 @@
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
     pano.style.backgroundPosition =
-    ((mA) * -1) + '% ' + '50%';
+    ((mA + 75) * -1) + '% ' + '50%';
     document.getElementById('x').innerHTML = mfix;
     document.getElementById('mA').innerHTML = mA;
 

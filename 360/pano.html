@@ -24,7 +24,7 @@
 
 <div id="pano" class="pano" style="background-image: url('images/car.jpg');">
 </div>
-<p>18.7.2</p>
+<p>18.7.3</p>
 <p>Alpha value: <span id="x"></span><br>Alpha data recorded: <span id="mA"></span></p>
 <p>What does i equal? <span id="itho"></span></p>
 <p>Direction? <span id="direction"></span></p>
@@ -76,7 +76,7 @@
 
     // attempt to change i values for background
 
-    if (mA > maOld + 3.6) {
+    if (mA > maOld) {
       i++;
     } else if (mA < maOld) {
       i--;
@@ -90,7 +90,7 @@
 
     // print direction
     pano.style.backgroundPosition =
-    (bgp * -1) + '% ' + ((mB / -1.8) - 60) + '%';
+    Math.round((bgp * -1)*(1/5)) + '% ' + ((mB / -1.8) - 60) + '%';
 
   }
   window.addEventListener('deviceorientation', handleOrientation);

@@ -48,7 +48,9 @@
     // record old alpha values
     alphaValues.push(mA)
     // call the last alpha value recorded
-    var maOld = alphaValues.slice(-2)[0]
+    var maOld = (alphaValues.slice(-2)[0] + alphaValues.slice(-3)[0] + alphaValues.slice(-4)[0] + alphaValues.slice(-5)[0] +
+      alphaValues.slice(-6)[0] + alphaValues.slice(-7)[0] + alphaValues.slice(-8)[0] + alphaValues.slice(-9)[0] + 
+      alphaValues.slice(-10)[0] + alphaValues.slice(-11)[0]) / 10
 
     // test stuff
     var bg = pano.style.backgroundPosition;

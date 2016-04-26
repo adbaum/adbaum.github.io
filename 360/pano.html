@@ -13,7 +13,7 @@
   overflow: hidden;
   position: relative;
   background-size: auto 300%;
-  background-position: 120% 50%;
+  background-position: 50% 50%;
 }
 
 </style>
@@ -23,7 +23,7 @@
 
 <div id="pano" class="pano" style="background-image: url('images/pool.jpg');">
 </div>
-<p>14.7</p>
+<p>14.8</p>
 <p>Alpha value: <span id="x"></span></p>
 <p>Normalized value: <span id="mA"></span></p>
 	
@@ -38,7 +38,7 @@
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
     pano.style.backgroundPosition =
-    ((mA + 75) * -1) + '% ' + '50%';
+    ((mA) * -1) + '% ' + '50%';
     document.getElementById('x').innerHTML = mfix;
     document.getElementById('mA').innerHTML = mA;
 

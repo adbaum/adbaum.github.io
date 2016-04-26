@@ -23,8 +23,9 @@
 
 <div id="pano" class="pano" style="background-image: url('images/car.jpg');">
 </div>
-<p>14</p>
-<p id="x"></p>
+<p>14.1</p>
+<p>Alpha value: <span id="x"></span></p>
+<p>Normalized value: <span id="mA"></span></p>
 	
 <script>
 
@@ -39,6 +40,7 @@
     pano.style.backgroundPosition =
     ((mA) * -1) + '% ' + ((mB / -1.8) - 60) + '%';
     document.getElementById('x').innerHTML = mfix;
+    document.getElementById('mA').innerHTML = mA;
 
   }
   window.addEventListener('deviceorientation', handleOrientation);

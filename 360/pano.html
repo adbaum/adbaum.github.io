@@ -25,7 +25,7 @@
 
 <div id="pano" class="pano" style="background-image: url('images/selfie.jpg');">
 </div>
-<p>16.4</p>
+<p>16.5</p>
 <p>Alpha value: <span id="x"></span></p>
 <p>Normalized value: <span id="mA"></span></p>
 <p>Background position: <span id="bg"></span></p>
@@ -38,10 +38,12 @@
   function handleOrientation(event) {
     var mfix      = event.alpha;
     var mA        = event.alpha  / 3.60;
+    var i         = 0
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
+    var aNew = i + mA.preventDefault()
     pano.style.backgroundPosition =
-    ((mA + 50) * -1) + '% ' + ((mB / -1.8) - 60) + '%';
+    ((aNew + 50) * -1) + '% ' + ((mB / -1.8) - 60) + '%';
     var bg = pano.style.backgroundPosition;
     document.getElementById('x').innerHTML = mfix;
     document.getElementById('mA').innerHTML = mA;

@@ -14,7 +14,7 @@
   position: relative;
   background-size: auto 300%;
   background-position: 50% 50%;
-  transition: background-position .1s;
+  transition: background-position .5s;
 }
 
 </style>
@@ -86,7 +86,7 @@
 
     // print direction
     pano.style.backgroundPosition =
-    (bgp * -1) + '% ' + (mB + 50) + '%';
+    (bgp * -1) + '% ' + (mB * -1 + 50) + '%';
 
   }
   window.addEventListener('deviceorientation', handleOrientation);

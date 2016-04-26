@@ -48,10 +48,6 @@
 
     var mav = alphaValues.slice(-1)[0]
 
-
-
-    pano.style.backgroundPosition =
-    ((mA) * -1) + '% ' + ((mB / -1.8) - 60) + '%';
     var bg = pano.style.backgroundPosition;
     document.getElementById('x').innerHTML = mfix;
     document.getElementById('mA').innerHTML = mA;
@@ -63,6 +59,24 @@
     else {
       document.getElementById('check').innerHTML = "Yay!"; 
     }
+
+    var i = 0;
+
+    if (mA > mav) {
+      i = i + 1;
+    }
+    else if (mA < mav) {
+      i = i - 1;
+    }
+    else {
+      i = i;
+    }
+
+    var bgp = 50 + i;
+
+    pano.style.backgroundPosition =
+    (bgp * -1) + '% ' + ((mB / -1.8) - 60) + '%';
+
   }
   window.addEventListener('deviceorientation', handleOrientation);
 

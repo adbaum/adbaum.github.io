@@ -24,7 +24,7 @@
 
 <div id="pano" class="pano" style="background-image: url('images/car.jpg');">
 </div>
-<p>18.7.8</p>
+<p>18.7.9</p>
 <p>Alpha value: <span id="x"></span><br>Alpha data recorded: <span id="mA"></span></p>
 <p>What does i equal? <span id="itho"></span></p>
 <p>Direction? <span id="direction"></span></p>
@@ -40,7 +40,7 @@
   var pano = document.getElementById('pano');
   function handleOrientation(event) {
     // collect device orientation values
-    var mA        = Math.round(event.alpha / 5);
+    var mA        = Math.round(event.alpha / 36);
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
 

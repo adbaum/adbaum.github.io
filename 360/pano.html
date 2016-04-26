@@ -23,7 +23,7 @@
 
 <div id="pano" class="pano" style="background-image: url('images/pool.jpg');">
 </div>
-<p>15.1</p>
+<p>15.1.1</p>
 <p>Alpha value: <span id="x"></span></p>
 <p>Normalized value: <span id="mA"></span></p>
 <p>Background position: <span id="bg"></span></p>
@@ -38,9 +38,9 @@
     var mA        = event.alpha  / 3.60;
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
-    var pano.style.backgroundPosition = bg
     pano.style.backgroundPosition =
     ((mA) * -1) + '% ' + '50%';
+    var pano.style.backgroundPosition = bg
     document.getElementById('x').innerHTML = mfix;
     document.getElementById('mA').innerHTML = mA;
     document.getElementById('bg').innerHTML = bg;

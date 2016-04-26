@@ -40,7 +40,7 @@
   var pano = document.getElementById('pano');
   function handleOrientation(event) {
     // collect device orientation values
-    var mA        = Math.round(event.alpha / 3.60);
+    var mA        = Math.round(event.alpha);
     var mB        = event.beta / 3.60;
     var mG        = event.gamma / 3.60;
 

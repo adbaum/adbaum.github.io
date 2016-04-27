@@ -1,4 +1,4 @@
-﻿<krpano>
+﻿<krpano onload="switch(plugin[gyro].enabled);">
 	
 	<plugin name="gyro" devices="html5"
 	        url="%SWFPATH%/plugins/gyro2.js"
@@ -40,8 +40,5 @@
 		       />
 		       
 	</layer>
-	<script>
-		document.onload=function(){plugin[gyro].enabled)};
-	</script>
 
 </krpano>

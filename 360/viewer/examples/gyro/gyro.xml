@@ -8,7 +8,7 @@
 	        />
 
 	<action name="gyro_available_info">
-		set(layer[infotext].html, 'Gyroscope available, press the gyro 3...');
+		set(layer[infotext].html, 'Gyroscope available, press the gyro 4...');
 		set(layer[gyrobutton].visible, true);
 	</action>
 	
@@ -37,15 +37,8 @@
 		       />
 			
 		<layer name="gyrobutton" url="gyroicon.png" scale="0.5" align="right" x="10" visible="false" 
-		       onclick="switch(plugin[gyro].enabled);"
+		       onload="switch(plugin[gyro].enabled);"
 		       />
-
-    <script type="text/javascript">
-        function enableGyro() {
-            plugin[gyro].enabled
-        }
-        window.onload = enableGyro;
-     </script>
 		       
 	</layer>
 

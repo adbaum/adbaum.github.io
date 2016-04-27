@@ -23,7 +23,12 @@
 	<!-- the pano image -->
 	<preview url="preview.jpg" />
 	<image>
-		<cube url="pano_%s.jpg" />
+		<cube url="pano_b.jpg" />
+		<cube url="pano_d.jpg" />
+		<cube url="pano_f.jpg" />
+		<cube url="pano_l.jpg" />
+		<cube url="pano_r.jpg" />
+		<cube url="pano_u.jpg" />
 	</image>
 	
 	

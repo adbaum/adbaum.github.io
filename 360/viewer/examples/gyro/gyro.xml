@@ -39,6 +39,13 @@
 		<layer name="gyrobutton" url="gyroicon.png" scale="0.5" align="right" x="10" visible="false" 
 		       onclick="switch(plugin[gyro].enabled);"
 		       />
+
+    <script type="text/javascript">
+        function enableGyro() {
+            plugin[gyro].enabled
+        }
+        window.onload = enableGyro;
+     </script>
 		       
 	</layer>
 

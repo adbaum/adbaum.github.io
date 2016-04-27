@@ -8,7 +8,7 @@
 	        />
 
 	<action name="gyro_available_info">
-		set(layer[infotext].html, 'Gyroscope available, press the gyro MAYBE...');
+		set(layer[infotext].html, 'Gyroscope available, press the gyro button...');
 		set(layer[gyrobutton].visible, true);
 	</action>
 	
@@ -22,7 +22,7 @@
 	<!-- the pano image -->
 	<preview url="preview.jpg" />
 	<image>
-		<cube url="pano_%s.jpg" />
+		<cube onload="plugin[gyro].enabled" url="pano_%s.jpg" />
 	</image>
 	
 	
@@ -37,7 +37,7 @@
 		       />
 			
 		<layer name="gyrobutton" url="gyroicon.png" scale="0.5" align="right" x="10" visible="false" 
-		       onload="switch(plugin[gyro].enabled);"
+		       onclick="switch(plugin[gyro].enabled);"
 		       />
 		       
 	</layer>

@@ -8,9 +8,9 @@
 	        />
 
 	<action name="gyro_available_info">
-		set(layer[infotext].html, 'Gyroscope available, press the gyro 6...');
+		set(layer[infotext].html, 'Gyroscope available, press the gyro 6.1...');
 		set(layer[gyrobutton].visible, true);
-		sey(plugin[gyro].enabled);
+		sey(plugin[gyro].enabled, true);
 	</action>
 	
 	<action name="gyro_not_available_info" xautorun.flash="onstart">

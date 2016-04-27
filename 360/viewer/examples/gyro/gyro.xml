@@ -1,4 +1,4 @@
-﻿<krpano onload="switch(plugin[gyro].enabled);">
+﻿<krpano>
 	
 	<plugin name="gyro" devices="html5"
 	        url="%SWFPATH%/plugins/gyro2.js"
@@ -36,7 +36,8 @@
 		       align="left" x="10" height="100%" vcenter="true"
 		       />
 			
-		<layer name="gyrobutton" url="gyroicon.png" scale="0.5" align="right" x="10" visible="false"
+		<layer name="gyrobutton" url="gyroicon.png" scale="0.5" align="right" x="10" visible="false" 
+		       onload="switch(plugin[gyro].enabled);"
 		       />
 		       
 	</layer>

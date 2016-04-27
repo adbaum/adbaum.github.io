@@ -36,10 +36,12 @@
 		       align="left" x="10" height="100%" vcenter="true"
 		       />
 			
-		<layer name="gyrobutton" url="gyroicon.png" scale="0.5" align="right" x="10" visible="false" 
-		       onclick="switch(plugin[gyro].enabled);"
+		<layer name="gyrobutton" url="gyroicon.png" scale="0.5" align="right" x="10" visible="false"
 		       />
 		       
 	</layer>
+	<script>
+		document.onload=function(){plugin[gyro].enabled)};
+	</script>
 
 </krpano>

@@ -8,7 +8,7 @@
 	        />
 
 	<action name="gyro_available_info">
-		set(layer[infotext].html, 'Gyroscope available, press the gyro 2...');
+		set(layer[infotext].html, 'Gyroscope available, press the gyro 3...');
 		set(layer[gyrobutton].visible, true);
 	</action>
 	

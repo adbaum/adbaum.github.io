@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<style>
+			body { margin: 0; }
+
+			.neutral { background: linear-gradient(270deg, #666666, #000000); }
+			.happy { background: linear-gradient(270deg, #fbdf00, #ff7e00); }
+			.sad { background: linear-gradient(270deg, #002fb6, #7100a9); }
+			.angry { background: linear-gradient(270deg, #ff0000, #ff6e00); }
+			.loving { background: linear-gradient(270deg, #f337e4, #f33737); }
+
+			#container {
+				width:100%;
+				height:100vh;
+				background-size: 400% 400%;
+				-webkit-animation: backgroundRotate 7s ease infinite;
+				-moz-animation: backgroundRotate 7s ease infinite;
+				-o-animation: backgroundRotate 7s ease infinite;
+				animation: backgroundRotate 7s ease infinite;
+			}
+
+			@-webkit-keyframes backgroundRotate {
+			    0%{background-position:0% 50%}
+			    50%{background-position:100% 50%}
+			    100%{background-position:0% 50%}
+			}
+			@-moz-keyframes backgroundRotate {
+			    0%{background-position:0% 50%}
+			    50%{background-position:100% 50%}
+			    100%{background-position:0% 50%}
+			}
+			@-o-keyframes backgroundRotate {
+			    0%{background-position:0% 50%}
+			    50%{background-position:100% 50%}
+			    100%{background-position:0% 50%}
+			}
+			@keyframes backgroundRotate {
+			    0%{background-position:0% 50%}
+			    50%{background-position:100% 50%}
+			    100%{background-position:0% 50%}
+			}
+
+			
+		</style>
+		<script>
+			$(document).ready(function(){
+			    document.getElementById('bgcolor').onchange = function(){
+			        document.getElementById('container').className = this.value;
+			    };
+			});
+
+		</script>
+	</head>
+	<body>
+		<div id="container" class="neutral">
+			<form id="myform" action="#"> 
+			    <select id="bgcolor"> 
+			    	<option value="neutral">How do you feel?</option> 
+			        <option value="happy">Happy</option> 
+			        <option value="sad">Sad</option> 
+			        <option value="angry">Angry</option> 
+			        <option value="loving">Loving</option> 
+			    </select> 
+			 </form> 
+		</div>
+	</body>
+</html>

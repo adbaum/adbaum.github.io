@@ -151,6 +151,11 @@ footer {
 	color: #ffffff;
 }
 
+footer p {
+	padding: 0;
+	line-height: 0;
+}
+
 
 
 

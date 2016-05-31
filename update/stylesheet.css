@@ -20,14 +20,8 @@ body {
 	margin: 30px auto;
 }
 
-.accent-box {
-	width: 300px;
-	height: 300px;
-	position: absolute;
-	top: -10%;
-	left: -12%;
-	background-color: #FFD434;
-	z-index:-1;
+.intro .green p {
+	color: #00ff00!important;
 }
 
 .intro p {

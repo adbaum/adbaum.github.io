@@ -19,7 +19,7 @@
     calibrationThreshold: 100,
     calibrationDelay: 500,
     supportDelay: 500,
-    calibrateX: false,
+    calibrateX: true,
     calibrateY: true,
     invertX: true,
     invertY: true,

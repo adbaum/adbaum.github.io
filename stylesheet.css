@@ -8,31 +8,13 @@ body {
 	width: 100%;
 	height: 100%;
 	min-height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .intro {
 	width: 70%;
-	position: absolute;
-	top: 25%;
-	left: 15%;
-}
-
-.black {
-	color: #000000;
-	z-index: 3;
-	opacity: 0.1;
-}
-
-.green {
-	color: #00ff00;
-	z-index:2;
-	mix-blend-mode: multiply;
-}
-
-.pink {
-	color: #ff00ff;
-	z-index:1;
-	mix-blend-mode: multiply;
 }
 
 .intro p {
@@ -54,6 +36,9 @@ a {
 }
 
 a:hover {
+	background-image: url("fire.gif");
+	background-repeat: repeat-x;
+	background-position: bottom;
 	background-size: 20%;
 	text-decoration:none;
 }

@@ -81,13 +81,10 @@ p {
 		line-height: 1.6em;
 	}
 
-	.accent-box {
-		width: 250px;
-		height: 250px;
+	.intro {
+		width: 70%;
 		position: absolute;
-		top: -5%;
-		left: -12%;
-		background-color: #FFD434;
-		z-index:-1;
+		top: 15%;
+		left: 15%;
 	}
 }

@@ -5,23 +5,26 @@
 
 .running-man {
 	width: 100%;
-	height: 100vh;
 	text-align: center;
-	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
+	margin-top: 10%;
   	font-family: sans-serif;
 }
 
-.text, .link {display: inline-block;}
+.text, .link {display: block;}
 
-.text {margin-right: 10px;}
+.text {margin-right: 5px; padding-bottom: 3px;}
 .link {
 	width: 100px;
+	margin: 0 auto;
 	overflow: scroll;
 	padding: 3px;
 	background-color: #F0F0F0;
+}
+
+p {margin: 0;}
+
+.link p {
+	padding: 4px;
 }
 
 </style>
@@ -34,7 +37,7 @@
 Article URL:
 </div>
 <div class="link">
-http://bit.ly/2cexSHV
+<p>http://bit.ly/2cexSHV</p>
 </div>
 
 </div>

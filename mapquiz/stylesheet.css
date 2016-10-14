@@ -1,0 +1,204 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}a {text-decoration:none;color:inherit;}
+
+.nav {
+	width: 100%;
+	border-bottom: 3px solid #d30000;
+	display: table;
+	z-index: 10;
+	background-color: #ffffff;
+	position: fixed;
+}
+
+.logo {
+	background-color: #d30000;
+	display: inline-block;
+}
+
+.logo img {
+	width: 135px;
+	padding: 10px;
+}
+
+.sponsorship {
+	display: inline-block;
+	float: right;
+	padding-top: 8px;
+	padding-right: 12px;
+}
+
+.body {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+.quiz {
+	width: 500%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	/*background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Sydney_Harbour_Bridge_night.jpg');*/
+	background-size: cover;
+	background-position: center;
+	-webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+	  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.dots {
+	position: fixed;
+	bottom: 1%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.dot {
+	display: inline-block;
+	margin: 10px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #CECECE;
+	cursor: pointer;
+}
+
+.dot-active {
+	width: 10px;
+	height: 10px;
+	margin: 10px;
+	border-radius: 50%;
+	background-color: #828282;
+	z-index: 10;
+	position: absolute;
+	-webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.q-container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.question {
+	top: 0!important;
+	width: 20%;
+	height: 100vh;
+	margin: 0px -2px 0px -2px;
+	position: relative;
+	display: inline-block;
+}
+
+.text {
+	width: 85%;
+	max-width: 1100px;
+	position: relative;
+}
+
+.q {
+	font-size: 80px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	width: 52%;
+	text-align: right;
+	display:inline-block;
+}
+
+.a {
+	display: inline-block;
+	font-size: 40px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	width: 40%;
+	margin-left: 7%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.a ul li {
+	margin-top: 15px;
+	position: relative;
+	cursor: pointer;
+}
+
+.a ul li:before {
+	content:' ';
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -30px;
+	display: block;
+	width: 18px;
+	height: 18px;
+	background-image: url('assets/circle.svg');
+	background-repeat: no-repeat;
+}
+
+.checked:before {
+	content:' ';
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -30px;
+	display: block;
+	width: 18px;
+	height: 18px;
+	background-image: url('assets/checked.svg');
+	background-repeat: no-repeat; 
+}
+
+.selector {
+	display:inline-block;
+	width: 40%;
+	margin-left: 4%;
+	padding: 10px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 65px;
+	text-transform: uppercase;
+	background-color: #F1F1F1;
+	box-sizing: border-box;
+	position: relative;
+	cursor: pointer;
+}
+
+.selector .down {
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 100%;
+	position: absolute;
+	background-color: #999999;
+	background-image: url('http://cliparts.co/cliparts/ziX/5yr/ziX5yr5kT.png');
+	background-position: center;
+	background-size: 20px;
+	background-repeat: no-repeat;
+}
+
+
+.selector-content {
+	display: none;
+	background-color: #F1F1F1;
+	overflow: scroll;
+	font-size: 30px;
+	line-height: 1.5em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	padding: 10px;
+	text-transform: initial;
+	position: absolute;
+	cursor: pointer;
+	width: 100%;
+}
+
+.selector:hover .selector-content {
+	display: block;
+	cursor: pointer;
+}
+
+

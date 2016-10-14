@@ -1,0 +1,160 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title>So You're Going on a Date ...</title>
+	<link rel="icon" href="https://www.thrillist.com/thrillist_favicon.ico">
+	<meta name="description" content="Find spots to take your hot date.">
+	<meta name="keywords" content="date, quiz, map, thrillist">
+	<meta name="author" content="Adam Baumgartner">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Oswald" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<nav>
+		<div class="nav">
+			<span class="logo">
+				<img src="assets/TL-Logo_Primary-White.svg">
+			</span>
+			<span class="sponsorship">
+				<img src="https://assets3.thrillist.com/v1/image/1782217/135x40">
+			</span>
+		</div>
+	</nav>
+	<content>
+		<div class="body">
+			<div class="quiz" id="quiz">
+				<div class="question" id="question-one">
+					<div class="q-container">
+						<div class="text">
+							<p class="q">So, you're going on a date in</p>
+							<div class="selector">
+								Pick a City
+								<div class="down">
+								</div>
+								<div class="selector-content">
+									<ul>
+										<li>New York</li>
+										<li>Chicago</li>
+										<li>Los Angeles</li>
+										<li>Seattle</li>
+										<li>San Diego</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="question" id="question-two">
+					<div class="q-container">
+						<div class="text">
+							<p class="q">When are you going out?</p>
+							<div class="a">
+								<ul>
+									<li id="option">In the morning.</li>
+									<li id="option">Probably in the afternoon.</li>
+									<li id="option">Sometime in the evening.</li>
+									<li id="option">At night.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="question" id="question-three">
+					<div class="q-container">
+						<div class="text">
+							<p class="q">What date is this?</p>
+						</div>
+					</div>
+				</div>
+				<div class="question" id="question-four">
+					<div class="q-container">
+						<div class="text">
+							<p class="q">What type of drinks?</p>
+						</div>
+					</div>
+				</div>
+				<div class="question" id="question-five">
+					<div class="q-container">
+						<div class="text">
+							<p class="q">What cuisine do you want?</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dots">
+				<div class="dot-active">
+				</div>
+				<div class="dot" id="dot-one">
+				</div>
+				<div class="dot" id="dot-two">
+				</div>
+				<div class="dot" id="dot-three">
+				</div>
+				<div class="dot" id="dot-four">
+				</div>
+				<div class="dot" id="dot-five">
+				</div>
+			</div>
+			<button class="nav-buttons" id="button-one">
+				NEXT
+			</button>
+		</div>
+	</content>
+</body>
+
+	<script>
+		$('#dot-one').click(function() {
+		    $('.quiz').css({
+		        'margin-left': '0',
+		    });
+		    $('.dot-active').css({
+		        'margin-left': '10px',
+		    });
+		});
+
+		$('#dot-two').click(function() {
+		    $('.quiz').css({
+		        'margin-left': '-100%',
+		    });
+		    $('.dot-active').css({
+		        'margin-left': '44px',
+		    });
+		});
+
+		$('#dot-three').click(function() {
+		    $('.quiz').css({
+		        'margin-left': '-200%',
+		    });
+		    $('.dot-active').css({
+		        'margin-left': '78px',
+		    });
+		});
+
+
+		$('#dot-four').click(function() {
+		    $('.quiz').css({
+		        'margin-left': '-300%',
+		    });
+		    $('.dot-active').css({
+		        'margin-left': '112px',
+		    });
+		});
+
+		$('#dot-five').click(function() {
+		    $('.quiz').css({
+		        'margin-left': '-400%',
+		    });
+		    $('.dot-active').css({
+		        'margin-left': '146px',
+		    });
+		});
+
+		$('.a').on('click','#options',function () {
+		    $(this).siblings('#options').removeClass('checked');
+		    $(this).addClass('checked');
+		});
+	</script>
+</html>

@@ -105,12 +105,12 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 	text-transform: uppercase;
 	width: 52%;
 	text-align: right;
-	display:inline-block;
+	display: inline-block;
 }
 
 .a {
 	display: inline-block;
-	font-size: 40px;
+	font-size: 30px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	width: 40%;
@@ -119,41 +119,64 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 	position: relative;
 }
 
-.a ul li {
-	margin-top: 15px;
+.a label {
+	margin-top: 20px;
 	position: relative;
 	cursor: pointer;
+	display: block;
 }
 
-.a ul li:before {
-	content:' ';
-	display: block;
+.a label input {
+	visibility: hidden; /* Makes input not-clickable */
+	position: absolute; /* Remove input from document flow */
+}
+
+.a label input + span:before {
+	content:url('assets/checked.svg');
+	height: 20px;
+	width: 20px;
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 	left: -30px;
-	display: block;
-	width: 18px;
-	height: 18px;
-	background-image: url('assets/circle.svg');
-	background-repeat: no-repeat;
+	top: 50%;
+	margin-top:-10px;
+	opacity: 0;
+	z-index:2;
+	transform: scale( 0.1 );
+	transition: 0.1s;
 }
 
-.checked:before {
-	content:' ';
-	display: block;
+.a label input:checked + span:before {
+	opacity: 1;
+	transform: scale( 1 );
+	transition: all 0.2s;
+}
+
+.a label input + span:after {
+	content:url('assets/circle.svg');
+	height: 20px;
+	width: 20px;
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 	left: -30px;
-	display: block;
-	width: 18px;
-	height: 18px;
-	background-image: url('assets/checked.svg');
-	background-repeat: no-repeat; 
+	top: 50%;
+	margin-top: -10px;
+	z-index: 2;
+	transform: scale( 1 );
+	transition: all 0.1s;
 }
 
-.selector {
+.a label input:checked + span:after {
+	opacity: 0;
+	transform: scale( 0.1 );
+	transition: all 0.13s;
+}
+
+input:focus + span {
+	text-shadow: 0 0 2px #d30000;
+}
+
+/* dropdown */
+
+.wrapper-dropdown-1 {
 	display:inline-block;
 	width: 40%;
 	margin-left: 4%;
@@ -165,40 +188,95 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 	box-sizing: border-box;
 	position: relative;
 	cursor: pointer;
+	outline: none;
+	background: -moz-linear-gradient(left,  #F1F1F1 0%, #F1F1F1 90%, #818181 90%, #818181 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9bc7de), color-stop(78%,#9bc7de), color-stop(78%,#ffffff), color-stop(100%,#ffffff));
+	background: -o-linear-gradient(left,  #F1F1F1 0%,#F1F1F1 90%,#818181 90%,#818181 100%);
+	background: -ms-linear-gradient(left,  #F1F1F1 0%,#F1F1F1 90%,#818181 90%,#818181 100%);
+	background: linear-gradient(to right,  #F1F1F1 0%,#F1F1F1 90%,#818181 90%,#818181 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc7de', endColorstr='#ffffff',GradientType=1 );
+	transition: 0.1s;
 }
 
-.selector .down {
-	top: 0;
-	right: 0;
-	width: 40px;
-	height: 100%;
-	position: absolute;
-	background-color: #999999;
-	background-image: url('http://cliparts.co/cliparts/ziX/5yr/ziX5yr5kT.png');
-	background-position: center;
-	background-size: 20px;
-	background-repeat: no-repeat;
+.wrapper-dropdown-1:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -6px;
+    border-width: 6px 0 6px 6px;
+    border-style: solid;
+    border-color: transparent #fff;    
 }
 
+.wrapper-dropdown-1 .dropdown {
+    /* Size & position */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
 
-.selector-content {
-	display: none;
-	background-color: #F1F1F1;
-	overflow: scroll;
-	font-size: 30px;
-	line-height: 1.5em;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	padding: 10px;
-	text-transform: initial;
-	position: absolute;
-	cursor: pointer;
-	width: 100%;
+    /* Styles */
+    background: #fff;
+    list-style: none;
+    font-weight: normal; /* Cancels previous font-weight: bold; */
+
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
 }
 
-.selector:hover .selector-content {
-	display: block;
-	cursor: pointer;
+.wrapper-dropdown-1 .dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 25px;
+    padding: 10px 20px;
 }
 
+/* Hover state */
+.wrapper-dropdown-1 .dropdown li:hover a {
+    background: #F1F1F1;
+}
 
+/* Active state */
+.wrapper-dropdown-1.active .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    max-height: 22vh;
+    overflow: scroll;
+    border-bottom: 3px solid #818181;
+}
+
+.wrapper-dropdown-1.active:after {
+    border-color: #ffffff transparent;
+    border-width: 6px 6px 0 6px ;
+    margin-top: -3px;
+}
+
+.wrapper-dropdown-1.active {
+  background: #9bc7de;
+  background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 90%, #818181 90%, #818181 100%);
+  background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 90%,#818181 90%,#818181 100%);
+  background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 90%,#818181 90%,#818181 100%);
+  background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 90%,#818181 90%,#818181 100%);
+  background: linear-gradient(to right,  #ffffff 0%,#ffffff 90%,#818181 90%,#818181 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc7de', endColorstr='#ffffff',GradientType=1 );
+  transition: 0.1s;
+}
+
+/* No CSS3 support */
+
+.no-opacity       .wrapper-dropdown-1 .dropdown,
+.no-pointerevents .wrapper-dropdown-1 .dropdown {
+    display: none;
+    opacity: 1; /* If opacity support but no pointer-events support */
+    pointer-events: auto; /* If pointer-events support but no pointer-events support */
+}
+
+.no-opacity       .wrapper-dropdown-1.active .dropdown,
+.no-pointerevents .wrapper-dropdown-1.active .dropdown {
+    display: block;
+}

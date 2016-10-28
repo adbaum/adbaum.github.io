@@ -30,20 +30,17 @@
 					<div class="q-container">
 						<div class="text">
 							<p class="q">So, you're going on a date in</p>
-							<div class="selector">
-								Pick a City
-								<div class="down">
-								</div>
-								<div class="selector-content">
-									<ul>
-										<li>New York</li>
-										<li>Chicago</li>
-										<li>Los Angeles</li>
-										<li>Seattle</li>
-										<li>San Diego</li>
-									</ul>
-								</div>
-							</div>
+							<div id="dd" class="wrapper-dropdown-1" tabindex="1">
+									<span>Pick a city</span>
+								    <ul class="dropdown" tabindex="1">
+								        <li><a href="#">New York</a></li>
+								        <li><a href="#">Los Angeles</a></li>
+								        <li><a href="#">Chicago</a></li>
+								        <li><a href="#">DC</a></li>
+
+								        <li><a href="#">Dallas</a></li>
+								    </ul>
+					</div>
 						</div>
 					</div>
 				</div>
@@ -51,21 +48,62 @@
 					<div class="q-container">
 						<div class="text">
 							<p class="q">When are you going out?</p>
-							<div class="a">
-								<ul>
-									<li id="option">In the morning.</li>
-									<li id="option">Probably in the afternoon.</li>
-									<li id="option">Sometime in the evening.</li>
-									<li id="option">At night.</li>
-								</ul>
-							</div>
+							
+							<form class="a">
+								<label>
+									<input type="radio" name="fb" value="morning" />
+									<span>In the morning.</span>
+								</label>
+								
+								<label>
+									<input type="radio" name="fb" value="afternoon"/>
+									<span>Probably in the afternoon.</span>
+								</label>
+								
+								<label>
+									<input id="fb3" type="radio" name="fb" value="evening" />
+									<span>Sometime in the evening.</span>
+								</label>
+								
+								<label>
+									<input id="fb4" type="radio" name="fb" value="night" />
+									<span>At night.</span>
+								</label>
+							</form>
+
 						</div>
 					</div>
 				</div>
 				<div class="question" id="question-three">
 					<div class="q-container">
 						<div class="text">
-							<p class="q">What date is this?</p>
+							<p class="q">What do you want to do?</p>
+							<form class="a">
+								<label>
+									<input type="radio" name="fb" value="dinner" />
+									<span>Dinner.</span>
+								</label>
+								
+								<label>
+									<input type="radio" name="fb" value="dinner-drinks"/>
+									<span>Dinner & drinks.</span>
+								</label>
+								
+								<label>
+									<input type="radio" name="fb" value="drinks" />
+									<span>Just drinks.</span>
+								</label>
+								
+								<label>
+									<input type="radio" name="fb" value="cheap" />
+									<span>Cheap drinks ...</span>
+								</label>
+
+								<label>
+									<input type="radio" name="fb" value="coffee" />
+									<span>Coffee & desserts.</span>
+								</label>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -73,6 +111,27 @@
 					<div class="q-container">
 						<div class="text">
 							<p class="q">What type of drinks?</p>
+							<form class="a">
+								<label>
+									<input type="radio" name="fb" value="morning" />
+									<span>In the morning.</span>
+								</label>
+								
+								<label>
+									<input type="radio" name="fb" value="afternoon"/>
+									<span>Probably in the afternoon.</span>
+								</label>
+								
+								<label>
+									<input id="fb3" type="radio" name="fb" value="evening" />
+									<span>Sometime in the evening.</span>
+								</label>
+								
+								<label>
+									<input id="fb4" type="radio" name="fb" value="night" />
+									<span>At night.</span>
+								</label>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -80,6 +139,27 @@
 					<div class="q-container">
 						<div class="text">
 							<p class="q">What cuisine do you want?</p>
+							<form class="a">
+								<label>
+									<input type="radio" name="fb" value="morning" />
+									<span>In the morning.</span>
+								</label>
+								
+								<label>
+									<input type="radio" name="fb" value="afternoon"/>
+									<span>Probably in the afternoon.</span>
+								</label>
+								
+								<label>
+									<input id="fb3" type="radio" name="fb" value="evening" />
+									<span>Sometime in the evening.</span>
+								</label>
+								
+								<label>
+									<input id="fb4" type="radio" name="fb" value="night" />
+									<span>At night.</span>
+								</label>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -152,9 +232,50 @@
 		    });
 		});
 
-		$('.a').on('click','#options',function () {
-		    $(this).siblings('#options').removeClass('checked');
-		    $(this).addClass('checked');
+
+		/* cheating the dropdown */
+		
+		function DropDown(el) {
+			this.dd = el;
+			this.placeholder = this.dd.children('span');
+			this.opts = this.dd.find('ul.dropdown > li');
+			this.val = '';
+			this.index = -1;
+			this.initEvents();
+		}
+		DropDown.prototype = {
+			initEvents : function() {
+				var obj = this;
+
+				obj.dd.on('click', function(event){
+					$(this).toggleClass('active');
+					return false;
+				});
+
+				obj.opts.on('click',function(){
+					var opt = $(this);
+					obj.val = opt.text();
+					obj.index = opt.index();
+					obj.placeholder.text(obj.val);
+				});
+			},
+			getValue : function() {
+				return this.val;
+			},
+			getIndex : function() {
+				return this.index;
+			}
+		}
+
+		$(function() {
+
+			var dd = new DropDown( $('#dd') );
+
+			$(document).click(function() {
+				// all dropdowns
+				$('.wrapper-dropdown-1').removeClass('active');
+			});
+
 		});
 	</script>
 </html>

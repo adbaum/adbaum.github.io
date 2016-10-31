@@ -31,16 +31,18 @@
 						<div class="text">
 							<p class="q">So, you're going on a date in</p>
 							<div id="dd" class="wrapper-dropdown-1" tabindex="1">
-									<span>Pick a city</span>
-								    <ul class="dropdown" tabindex="1">
-								        <li><a href="#">New York</a></li>
-								        <li><a href="#">Los Angeles</a></li>
-								        <li><a href="#">Chicago</a></li>
-								        <li><a href="#">DC</a></li>
-
-								        <li><a href="#">Dallas</a></li>
-								    </ul>
-					</div>
+								<span>Pick a city</span>
+								<ul class="dropdown" tabindex="1">
+								    <li><a href="#">New York</a></li>
+								    <li><a href="#">Los Angeles</a></li>
+								    <li><a href="#">Chicago</a></li>
+								    <li><a href="#">DC</a></li>
+								    <li><a href="#">Dallas</a></li>
+								</ul>
+							</div>
+							<button class="next next-hidden" id="next-1">
+								<span class="bold">Let's do this! &#8594;</span>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -49,7 +51,7 @@
 						<div class="text">
 							<p class="q">When are you going out?</p>
 							
-							<form class="a">
+							<form class="a" id="when">
 								<label>
 									<input type="radio" name="fb" value="morning" />
 									<span>In the morning.</span>
@@ -71,6 +73,10 @@
 								</label>
 							</form>
 
+							<button class="next next-hidden" id="next-2">
+								Oh I see. 😏 <span class="bold">Let's move on. &#8594;</span>
+							</button>
+
 						</div>
 					</div>
 				</div>
@@ -78,7 +84,7 @@
 					<div class="q-container">
 						<div class="text">
 							<p class="q">What do you want to do?</p>
-							<form class="a">
+							<form class="a" id="what">
 								<label>
 									<input type="radio" name="fb" value="dinner" />
 									<span>Dinner.</span>
@@ -104,6 +110,9 @@
 									<span>Coffee & desserts.</span>
 								</label>
 							</form>
+							<button class="next next-hidden" id="next-3">
+								Classy choice. <span class="bold">Let's move on. &#8594;</span>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -111,27 +120,26 @@
 					<div class="q-container">
 						<div class="text">
 							<p class="q">What type of drinks?</p>
-							<form class="a">
+							<form class="a" id="drinks">
 								<label>
 									<input type="radio" name="fb" value="morning" />
-									<span>In the morning.</span>
+									<span>I like beer.</span>
 								</label>
 								
 								<label>
 									<input type="radio" name="fb" value="afternoon"/>
-									<span>Probably in the afternoon.</span>
+									<span>Let's do wine.</span>
 								</label>
 								
 								<label>
 									<input id="fb3" type="radio" name="fb" value="evening" />
-									<span>Sometime in the evening.</span>
-								</label>
-								
-								<label>
-									<input id="fb4" type="radio" name="fb" value="night" />
-									<span>At night.</span>
+									<span>Love a good cocktail.</span>
 								</label>
 							</form>
+
+							<button class="next next-hidden" id="next-4">
+								Good call. <span class="bold">Let's move on. &#8594;</span>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -139,20 +147,20 @@
 					<div class="q-container">
 						<div class="text">
 							<p class="q">What cuisine do you want?</p>
-							<form class="a">
+							<form class="a" id="cuisine">
 								<label>
 									<input type="radio" name="fb" value="morning" />
-									<span>In the morning.</span>
+									<span>Casual.</span>
 								</label>
 								
 								<label>
 									<input type="radio" name="fb" value="afternoon"/>
-									<span>Probably in the afternoon.</span>
+									<span>Other continents.</span>
 								</label>
 								
 								<label>
 									<input id="fb3" type="radio" name="fb" value="evening" />
-									<span>Sometime in the evening.</span>
+									<span>Seafood.</span>
 								</label>
 								
 								<label>
@@ -160,6 +168,9 @@
 									<span>At night.</span>
 								</label>
 							</form>
+							<a href="http://www.thrillist.com/maps" class="next next-hidden" target="_blank" id="next-5">
+								Alright, that's all. We've got a map for you! 📍 <span class="bold">Let's see it. &#8594;</span>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -186,6 +197,7 @@
 </body>
 
 	<script>
+	/* dots */
 		$('#dot-one').click(function() {
 		    $('.quiz').css({
 		        'margin-left': '0',
@@ -232,6 +244,61 @@
 		    });
 		});
 
+		/* next buttons */
+		$('#next-1').click(function() {
+ 			$('.quiz').css({
+		        'margin-left': '-100%',
+		    });
+		    $('.dot-active').css({
+		        'margin-left': '44px',
+		    });
+		});
+
+		$('#next-2').click(function() {
+		    $('.quiz').css({
+		        'margin-left': '-200%',
+		    });
+		    $('.dot-active').css({
+		        'margin-left': '78px',
+		    });
+		});
+
+		$('#next-3').click(function() {
+		    $('.quiz').css({
+		        'margin-left': '-300%',
+		    });
+		    $('.dot-active').css({
+		        'margin-left': '112px',
+		    });
+		});
+
+		$('#next-4').click(function() {
+			$('.quiz').css({
+			    'margin-left': '-400%',
+			});
+			$('.dot-active').css({
+			    'margin-left': '146px',
+			});
+		});
+
+
+		/* make next buttons appear */
+
+		$('#when').click(function() {
+		    $('#next-2').addClass('next-visible')
+		});
+
+		$('#what').click(function() {
+		    $('#next-3').addClass('next-visible')
+		});
+
+		$('#drinks').click(function() {
+		    $('#next-4').addClass('next-visible')
+		});
+
+		$('#cuisine').click(function() {
+		    $('#next-5').addClass('next-visible')
+		});
 
 		/* cheating the dropdown */
 		
@@ -257,6 +324,10 @@
 					obj.val = opt.text();
 					obj.index = opt.index();
 					obj.placeholder.text(obj.val);
+				});
+
+				obj.opts.on('click',function(){
+					$('#next-1').addClass('next-visible')
 				});
 			},
 			getValue : function() {

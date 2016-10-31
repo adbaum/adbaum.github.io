@@ -189,6 +189,7 @@ input:focus + span {
 	position: relative;
 	cursor: pointer;
 	outline: none;
+	z-index: 1;
 	background: -moz-linear-gradient(left,  #F1F1F1 0%, #F1F1F1 90%, #818181 90%, #818181 100%);
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#9bc7de), color-stop(78%,#9bc7de), color-stop(78%,#ffffff), color-stop(100%,#ffffff));
 	background: -o-linear-gradient(left,  #F1F1F1 0%,#F1F1F1 90%,#818181 90%,#818181 100%);
@@ -217,7 +218,7 @@ input:focus + span {
     top: 100%;
     left: 0;
     right: 0;
-
+	z-index: 1;
     /* Styles */
     background: #fff;
     list-style: none;
@@ -279,4 +280,44 @@ input:focus + span {
 .no-opacity       .wrapper-dropdown-1.active .dropdown,
 .no-pointerevents .wrapper-dropdown-1.active .dropdown {
     display: block;
+}
+
+.bold {
+	font-weight: 600;
+	display: inline-block;
+	transition: 0.2s;
+}
+
+.next {
+	border: 0;
+	background: none;
+	position: relative;
+	max-width: 400px;
+	float: right;
+	margin-top: 30px;
+	cursor: pointer;
+	font-size: 24px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+.next:hover > .bold {
+	margin-right: -5px;
+	padding-left: 5px;
+	transition: 0.2s;
+}
+
+.next-hidden {
+	visibility: hidden;
+	opacity: 0;
+	transition: 1s;
+	margin-right: -20px;
+}
+
+.next-visible {
+	visibility: visible;
+	opacity: 1!important;
+	transform: translateX(0)!important;
+	transition: 0.2s;
+	margin-right: 0px;
 }

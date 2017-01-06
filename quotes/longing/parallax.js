@@ -45,12 +45,12 @@
   var NAME = 'Parallax';
   var MAGIC_NUMBER = 30;
   var DEFAULTS = {
-    relativeInput: false,
+    relativeInput: true,
     clipRelativeInput: false,
     calibrationThreshold: 100,
     calibrationDelay: 500,
     supportDelay: 500,
-    calibrateX: false,
+    calibrateX: true,
     calibrateY: true,
     invertX: true,
     invertY: true,

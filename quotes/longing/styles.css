@@ -48,28 +48,28 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 
 @media (max-width: 500px) {
 	.image-box {
-		height: 105vh;
+		height: 110vh;
 	}
 
 	.scene {
 		width: auto;
-		height: 105vh;
+		height: 110vh;
 	}
 
 	.scene li {
 		width: auto;
-		height: 105vh;
+		height: 110vh;
 	}
 
 	.scene li img {
 		width: auto;
-		height: 105vh;
+		height: 110vh;
 		opacity: 0.3;
 	}
 
 	.scene li img:last-child {
 		width: auto;
-		height: 105vh;
+		height: 110vh;
 		opacity: 0.5;
 	}
 }

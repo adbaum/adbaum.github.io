@@ -487,8 +487,8 @@
       }
 
       // Set Input
-      this.ix = x;
-      this.iy = y;
+      this.ix = x*2;
+      this.iy = y*2;
     }
   };
 

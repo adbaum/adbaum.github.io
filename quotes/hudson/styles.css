@@ -7,16 +7,38 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 	position: relative;
 }
 
+.wrapper {
+	width: 90%;
+	max-width: 500px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.caption {
+	margin-top: 4px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
 .image-box {
+	position: relative;
 	max-width: 500px;
 	max-height: 500px;
 	width: 90vw;
 	height: 90vw;
 	overflow: hidden;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .scene {

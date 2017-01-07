@@ -463,13 +463,13 @@
   Parallax.prototype.onDeviceOrientation = function(event) {
 
     // Validate environment and event properties.
-    if (!this.desktop && event.alpha !== null && event.gamma !== null) {
+    if (!this.desktop && event.beta !== null && event.gamma !== null) {
 
       // Set orientation status.
       this.orientationStatus = 1;
 
       // Extract Rotation
-      var x = (event.alpha  || 0) / MAGIC_NUMBER; //  -90 :: 90
+      var x = (event.beta  || 0) / MAGIC_NUMBER; //  -90 :: 90
       var y = (event.gamma || 0) / MAGIC_NUMBER; // -180 :: 180
 
       // Detect Orientation Change

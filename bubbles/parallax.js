@@ -25,7 +25,7 @@
 // FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
 // AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
-// OR OTHER DEALINGS IN THE SOFTWARE.
+// OR OTHER DEALINGS IN THE  SOFTWARE.
 //
 //============================================================
 
@@ -52,12 +52,12 @@
     supportDelay: 500,
     calibrateX: true,
     calibrateY: true,
-    invertX: true,
+    invertX: false,
     invertY: true,
     limitX: false,
-    limitY: false,
+    limitY: true,
     scalarX: 10.0,
-    scalarY: 10.0,
+    scalarY: 2.0,
     frictionX: 0.1,
     frictionY: 0.1,
     originX: 0.5,

@@ -5,18 +5,18 @@ body {
 	background-color: #92D6FF;
 }
 
-.nav {
-	width: 100%;
-	border-bottom: 3px solid #d30000;
-	display: table;
-	z-index: 10;
-	background-color: #ffffff;
-	position: fixed;
+.hide {
+	display: none;
 }
 
-.logo {
-	background-color: #d30000;
-	display: inline-block;
+.inactive {
+	opacity: 0.5;
+	background-color: #F2F2F2!important;
+	color: #B3B3B3;
+}
+
+.inactive:hover {
+	transform: scale(1.00)!important;
 }
 
 .logo img {
@@ -235,4 +235,3 @@ p {
 		top: 5%;
 	}
 }
-

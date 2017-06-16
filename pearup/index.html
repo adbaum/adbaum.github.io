@@ -23,15 +23,27 @@
 				<div class="header">
 					<img src="assets/pearup-logo.svg">
 				</div>
-				<div class="text">
+				<div class="text" id="before">
 					<p class="big">
 					Welcome to PearUp! I’m Pearbot, and my goal in life is to connect you with your coworkers to help foster fun, healthy work relationships.
 					</p>
 					<p class="small">
 					Let’s get started by giving me access to your Google Calendar!
 					</p>
-					<a class="access" href="#">
+					<a class="access" id="btnClick" href="http://www.afbaumgartner.com" target="_blank">
 						Connect Your Google Calendar
+					</a>
+				</div>
+
+				<div class="text hide" id="after">
+					<p class="big">
+					We’ve connected to your calendar!
+					</p>
+					<p class="small">
+					Please go back to your DM with Pearbot and type “/pearbot ready” to continue setup.
+					</p>
+					<a class="access inactive" id="btnClick" href="#">
+						You're connected!
 					</a>
 				</div>
 			</div>
@@ -50,5 +62,14 @@
 			</div>
 		</div>
 	</content>
+
+	<script>
+		$(function() {                       //run when the DOM is ready
+		  $(".access").click(function() {  //use a class, since your ID gets mangled
+		    $("#after").removeClass("hide");      //add the class to the clicked element
+		    $("#before").addClass("hide");
+		  });
+		});
+	</script>
 </body>
 </html>

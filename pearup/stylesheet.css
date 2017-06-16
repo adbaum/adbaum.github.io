@@ -1,0 +1,132 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}a {text-decoration:none;color:inherit;}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+	width: 100%;
+	border-bottom: 3px solid #d30000;
+	display: table;
+	z-index: 10;
+	background-color: #ffffff;
+	position: fixed;
+}
+
+.logo {
+	background-color: #d30000;
+	display: inline-block;
+}
+
+.logo img {
+	width: 135px;
+	padding: 10px;
+}
+
+.container {
+	width: 100%;
+	position: absolute;
+	z-index: 5;
+}
+
+.info-content {
+	width: 90%;
+	max-width: 750px;
+	margin: 75px auto;
+}
+
+.header {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+/* text */
+
+.text {
+	text-align: center;
+	margin: 50px 0px;
+}
+
+p {
+	margin: 15px 0px;
+	line-height: 1.4em;
+}
+
+.big {
+	font-size: 1.3em;
+}
+
+.small {
+	font-size: 1em;
+}
+
+/* button */
+
+.access {
+	display: inline-block;
+	background-color: #ffffff;
+	margin: 20px 0px;
+	padding: 25px;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.access:hover {
+	transform: scale(1.05);
+	transition: 0.3s;
+}
+
+
+.header img {
+	width: 100%;
+}
+
+.background {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-color: #92D6FF;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.left {
+	position: absolute;
+	top: 25%;
+	left: 5%;
+	width: 300px;
+	animation: floatLeft;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+
+.right {
+	position: absolute;
+	top: 10%;
+	right: 5%;
+	width: 300px;
+	animation: floatRight;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+.clouds img {
+	width: 100%;
+}
+
+@keyframes floatRight {
+    0%   {transform: translateX(0px);}
+    50%   {transform: translateX(20px);}
+    100% {transform: translateX(0px);}
+}
+
+
+@keyframes floatLeft {
+    0%   {transform: translateX(0px);}
+    50%   {transform: translateX(30px);}
+    100% {transform: translateX(0px);}
+}

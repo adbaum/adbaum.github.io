@@ -2,8 +2,13 @@ var elem = document.getElementById("view3d");
 
 window.addEventListener("deviceorientation", function(e) {
   // remember to use vendor-prefixed transform property
+  var z = e.alpha
+  var x = e.beta
+  var y = e.gamma
+
+
   elem.style.transform =
-    "rotateZ(" + ( e.alpha - 180 ) + "deg) " +
-    "rotateX(" + e.beta + "deg) " +
-    "rotateY(" + ( -e.gamma ) + "deg)";
+    "rotateZ(" + ( z - 180 ) + "deg) " +
+    "rotateX(" + x + "deg) " +
+    "rotateY(" + ( -y ) + "deg)";
 });

@@ -2,9 +2,11 @@ var elem = document.getElementById("view3d");
 
 window.addEventListener("deviceorientation", function(e) {
   // remember to use vendor-prefixed transform property
-  var z = e.alpha
-  var x = e.beta
-  var y = e.gamma
+  var z = e.alpha;
+  var x = e.beta;
+  var y = e.gamma;
+
+
 
 
   elem.style.transform =

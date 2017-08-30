@@ -1,7 +1,4 @@
 var elem = document.getElementById("view3d");
-var zprint = 
-var xprint = document.getElementById("x");
-var yprint = document.getElementById("y");
 
 window.addEventListener("deviceorientation", function(e) {
   // remember to use vendor-prefixed transform property

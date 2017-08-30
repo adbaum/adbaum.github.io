@@ -1,4 +1,7 @@
 var elem = document.getElementById("view3d");
+var zprint = 
+var xprint = document.getElementById("x");
+var yprint = document.getElementById("y");
 
 window.addEventListener("deviceorientation", function(e) {
   // remember to use vendor-prefixed transform property
@@ -6,6 +9,9 @@ window.addEventListener("deviceorientation", function(e) {
   var x = e.beta;
   var y = e.gamma;
 
+  document.getElementById("z").innerHTML = z;
+  document.getElementById("x").innerHTML = x;
+  document.getElementById("y").innerHTML = y;
 
   if (x >  60) { x =  60};
   if (x < -60) { x = -60};

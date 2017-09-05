@@ -9,12 +9,15 @@ window.addEventListener("deviceorientation", function(e) {
   if (x >  100) { x =  100};
   if (x <  80) { x = 80};
 
+  if (y >  30) { y =  30};
+  if (y <  -30) { y = -30};
+
   document.getElementById("z").innerHTML = z;
   document.getElementById("x").innerHTML = x;
   document.getElementById("y").innerHTML = y;
 
   elem.style.transform =
     /*"rotateZ(" + ( z - 180 ) + "deg) " +*/
-    "rotateX(" + ( x + 90 ) + "deg) ";
-    /*"rotateY(" + ( -y ) + "deg)";*/
+    "rotateX(" + ( x + 90 ) + "deg) " + 
+    "rotateY(" + ( -y ) + "deg)";
 });

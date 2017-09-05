@@ -6,12 +6,12 @@ window.addEventListener("deviceorientation", function(e) {
   var x = e.beta;
   var y = e.gamma;
 
+  if (x >  60) { x =  60};
+  if (x < -60) { x = -60};
+
   document.getElementById("z").innerHTML = z;
   document.getElementById("x").innerHTML = x;
   document.getElementById("y").innerHTML = y;
-
-  if (x >  60) { x =  60};
-  if (x < -60) { x = -60};
 
   elem.style.transform =
     /*"rotateZ(" + ( z - 180 ) + "deg) " +*/

@@ -6,8 +6,8 @@ window.addEventListener("deviceorientation", function(e) {
   var x = e.beta;
   var y = e.gamma;
 
-  if (x >  60) { x =  60};
-  if (x < -60) { x = -60};
+  if (x >  120) { x =  120};
+  if (x <  30) { x = 30};
 
   document.getElementById("z").innerHTML = z;
   document.getElementById("x").innerHTML = x;

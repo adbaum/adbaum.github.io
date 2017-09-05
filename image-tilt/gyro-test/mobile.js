@@ -6,8 +6,8 @@ window.addEventListener("deviceorientation", function(e) {
   var x = e.beta;
   var y = e.gamma;
 
-  if (x >  120) { x =  120};
-  if (x <  60) { x = 60};
+  if (x >  30) { x =  30};
+  if (x <  90) { x = 90};
 
   if (y >  30) { y =  30};
   if (y <  -30) { y = -30};
@@ -19,6 +19,6 @@ window.addEventListener("deviceorientation", function(e) {
 
   elem.style.transform =
     /*"rotateZ(" + ( z - 180 ) + "deg) " +*/
-    "rotateX(" + ( x + 90 ) + "deg) " + 
+    "rotateX(" + ( x + 60 ) + "deg) " + 
     "rotateY(" + ( -y ) + "deg)";
 });

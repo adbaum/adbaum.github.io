@@ -11,6 +11,7 @@ window.addEventListener("deviceorientation", function(e) {
 
   if (y >  30) { y =  30};
   if (y <  -30) { y = -30};
+  if (x > 89 ) { y = (-1)*y }
 
   document.getElementById("z").innerHTML = z;
   document.getElementById("x").innerHTML = x;

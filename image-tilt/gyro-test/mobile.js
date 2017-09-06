@@ -18,6 +18,6 @@ window.addEventListener("deviceorientation", function(e) {
 
   elem.style.transform =
     /*"rotateZ(" + ( z - 180 ) + "deg) " +*/
-    "rotateX(" + ( x ) + "deg) " + 
+    /* "rotateX(" + ( x ) + "deg) " + */
     "rotateY(" + ( -y ) + "deg)";
 });

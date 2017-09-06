@@ -18,8 +18,12 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 }
 
 .background {
-	width: 200%;
-	height: 200vh;
+	width: 125%;
+	height: 125vh;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	background-image: url('http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/sloth-beach-upside-down.adapt.945.1.jpg');
 	background-size: cover;
 	background-position: center;

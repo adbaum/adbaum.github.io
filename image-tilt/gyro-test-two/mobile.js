@@ -11,7 +11,7 @@ window.addEventListener("deviceorientation", function(e) {
 
   if (y >  40) { y =  40};
   if (y <  0) { y = -y}
-/*if (y <  -40) { y = 40};*/
+  if (y <  -40) { y = 40};
 
   document.getElementById("z").innerHTML = z;
   document.getElementById("x").innerHTML = x;
@@ -20,5 +20,5 @@ window.addEventListener("deviceorientation", function(e) {
   elem.style.transform =
     /*"rotateZ(" + ( z - 180 ) + "deg) " +*/
     /* "rotateX(" + ( x ) + "deg) " + */
-    "rotateY(" + ( -y ) + "deg)";
+    "rotateY(" + ( y ) + "deg)";
 });

@@ -26,5 +26,5 @@ window.addEventListener("deviceorientation", function(e) {
   elem.style.transform =
     /*"rotateZ(" + ( z - 180 ) + "deg) " +*/
     /* "rotateX(" + ( x ) + "deg) " + */
-    "scaleX(" + ( 1+y*.005 ) + ")";
+    "scaleX(" + ( 1+y*.0025 ) + ")";
 });

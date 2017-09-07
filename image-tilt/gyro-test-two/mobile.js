@@ -20,5 +20,5 @@ window.addEventListener("deviceorientation", function(e) {
     /*"rotateZ(" + ( z - 180 ) + "deg) " +*/
     /* "rotateX(" + ( x ) + "deg) " + */
     "rotateY(" + ( y ) + "deg)" +
-    "scaleX(" + ( 1+y ) + ")";
+    "scaleX(" + ( 1+y*1.001 ) + ")";
 });

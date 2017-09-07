@@ -35,6 +35,6 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 	max-width: 300px;
 	position: absolute;
 	bottom: 0px;
-	right: 50%;
-	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
 }

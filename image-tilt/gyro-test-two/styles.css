@@ -14,12 +14,11 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	overflow: hidden;
 }
 
 .background {
-	width: 125%;
-	height: 125vh;
+	width: 100%;
+	height: 100vh;
 	background-image: url('http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/sloth-beach-upside-down.adapt.945.1.jpg');
 	background-size: cover;
 	background-position: center;

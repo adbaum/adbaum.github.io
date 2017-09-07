@@ -9,8 +9,8 @@ window.addEventListener("deviceorientation", function(e) {
   /*if (x >  120) { x =  120};
   if (x <  90) { x = 90};*/
 
-  if (y >  40) { y =  40};
-  if (y <  -40) { y = -40};
+  if (y >  80) { y =  80};
+  if (y <  -80) { y = -80};
 
   document.getElementById("z").innerHTML = z;
   document.getElementById("x").innerHTML = x;

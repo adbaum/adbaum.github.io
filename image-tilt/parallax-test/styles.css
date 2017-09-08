@@ -115,6 +115,26 @@ input[type=checkbox]:checked + label:before {
   background-size: cover;
 }
 
+.layer:nth-child(5) {
+  width: 100%;
+  height: initial;
+  top: initial!important;
+  bottom: 25%!important;
+  margin: 0 auto;
+}
+
+.layer:nth-child(5) img {
+  width: auto;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+.layer:nth-child(5) img:hover {
+  transform: scale(1.075);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .expand-width {
   width: 100%;
 }

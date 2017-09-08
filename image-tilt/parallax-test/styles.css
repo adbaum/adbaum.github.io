@@ -78,7 +78,8 @@ input[type=checkbox]:checked + label:before {
 .scene li {
   width: 120%;
   height: 120vh;
-  margin: auto;
+  margin-left: -8%;
+  margin-top: -1%;
 }
 
 .layer:nth-child(1) {
@@ -94,6 +95,21 @@ input[type=checkbox]:checked + label:before {
 }
 
 .layer:nth-child(3) {
+  background-image: url('assets/text-large.png');
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 750px) {
+  .layer:nth-child(3) {
+    background-image: url('assets/text-large.png');
+    background-position: center top;
+    background-size: 120%;
+    background-repeat: no-repeat;
+  }
+}
+
+.layer:nth-child(4) {
   background-image: url('assets/fg.png');
   background-position: center;
   background-size: cover;

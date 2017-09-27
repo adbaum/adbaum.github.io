@@ -97,7 +97,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .layer:nth-child(3) {
-  background-image: url('assets/middle.png');
+  background-image: url('assets/middle-3.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

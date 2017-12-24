@@ -19,7 +19,7 @@ body {
 	background-repeat: repeat;
 	background-position: fixed;
 	-webkit-animation-name: scroll;
-	-webkit-animation-duration: 200s;
+	-webkit-animation-duration: 100s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 	background-position: fixed;

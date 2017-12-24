@@ -76,6 +76,7 @@ var el = document.getElementById('tickle');
 swipedetect(el, function(swipedir){
     // swipedir contains either "none", "left", "right", "top", or "down"
     document.getElementById('laugh').play();
+    alert("You swiped.");
 };
 
 });

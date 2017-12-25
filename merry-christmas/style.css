@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}a {text-decoration:none;color:inherit;}
+
+body {
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.container {
+	width: 90%;
+	max-width: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.text {
+	font-size: 1.5em;
+	padding-bottom: 5%;
+	position: relative;
+}
+
+.holidays {
+	bottom: -1000px;
+	right: -1000px;
+	transition: 0.3s;
+	z-index: 1;
+	background-color: #BD0000;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	border: 5px solid #8F0000;
+}
+
+.transparent {
+	opacity: 0;
+	cursor: initial;
+}
+
+.christmas {
+	z-index: 2;
+	background-color: #008C0B;
+	border: 5px solid #006608;
+	position: absolute;
+	bottom: 0;
+}
+
+.holidays:active {
+	background-color: #8F0000;
+}
+
+.christmas:active {
+	background-color: #006608;
+}
+
+.button {
+	cursor: pointer;
+	position: relative;
+	padding: 10px 20px;
+	font-size: 2em;
+	color: #ffffff;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none; /* Webkit */
+	-moz-user-select: none;    /* Firefox */
+	-ms-user-select: none;     /* IE 10  */
+}
+
+@media (max-width: 500px) {
+	.button {
+		font-size: 1em;
+		padding: 10px 10px;
+	}
+
+	.holidays {
+		transition: 0.1s;
+		z-index: 1;
+		border: 3px solid #8F0000;
+	}
+
+	.christmas {
+		z-index: 2;
+		border: 3px solid #006608;
+	}
+
+	.transparent {
+		display: none;
+	}
+}
+
+.threat {
+	position: fixed;
+	overflow: hidden;
+}
+
+
+@-webkit-keyframes wiggle {
+  0%   { transform: rotate(15deg); }
+  50%   { transform: rotate(-15deg); }
+  50%   { transform: rotate(-360deg); }
+  100% { transform: rotate(15deg); }
+}
+@-moz-keyframes wiggle {
+  0%   { transform: rotate(deg); }
+  50%   { transform: rotate(-15deg); }
+  50%   { transform: rotate(-360deg); }
+  100% { transform: rotate(deg); }
+}
+@-o-keyframes wiggle {
+  0%   { transform: rotate(deg); }
+  50%   { transform: rotate(-15deg); }
+  50%   { transform: rotate(-360deg); }
+  100% { transform: rotate(deg); }
+}
+@keyframes wiggle {
+  0%   { transform: rotate(deg); }
+  50%   { transform: rotate(-15deg); }
+  50%   { transform: rotate(-360deg); }
+  100% { transform: rotate(deg); }
+}
+
+
+#one {
+	-webkit-animation: wiggle 30s infinite; /* Safari 4+ */
+	-moz-animation:    wiggle 30s infinite; /* Fx 5+ */
+	-o-animation:      wiggle 30s infinite; /* Opera 12+ */
+	animation:         wiggle 30s infinite; /* IE 10+, Fx 29+ */
+}
+
+#two {
+	-webkit-animation: wiggle 40s infinite reverse; /* Safari 4+ */
+	-moz-animation:    wiggle 40s infinite reverse; /* Fx 5+ */
+	-o-animation:      wiggle 40s infinite reverse; /* Opera 12+ */
+	animation:         wiggle 40s infinite reverse; /* IE 10+, Fx 29+ */
+}
+
+#three {
+	-webkit-animation: wiggle 60s infinite; /* Safari 4+ */
+	-moz-animation:    wiggle 60s infinite; /* Fx 5+ */
+	-o-animation:      wiggle 60s infinite; /* Opera 12+ */
+	animation:         wiggle 60s infinite; /* IE 10+, Fx 29+ */
+}

@@ -37,6 +37,10 @@ body {
 
 .pickle svg {
 	transition: 0.3s;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none; /* Webkit */
+	-moz-user-select: none;    /* Firefox */
+	-ms-user-select: none;     /* IE 10  */
 }
 
 .pickle svg:hover {

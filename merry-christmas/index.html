@@ -1,0 +1,73 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title>Say Merry Christmas!</title>
+	<script src="update/scripts.js"></script>
+	<link rel="shortcut icon" href="pickle.png" type="image/x-icon">
+	<meta name="description" content="Tickle the pickle.">
+	<meta name="keywords" content="adam, baumgartner, product, designer, web, ball, state, freelance, vox, millennial, ux, ui, interaction, brands, storytelling, pickle, tickle, tickler">
+	<meta name="author" content="Adam Baumgartner">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name='og:image' content='share.jpg'>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="text" id="text">
+			Click the button to say Merry Christmas to your friends and family!
+		</div>
+		<button class="button holidays transparent" id="sayHappy">
+			Happy Holidays
+		</button>
+		<button class="button christmas" id="sayMerry">
+			Merry Christmas
+		</button>
+	</div>
+	<div class="threat transparent" id="one">
+		politcal correctness
+	</div>
+	<div class="threat transparent" id="two">
+		starbucks
+	</div>
+	<div class="threat transparent" id="three">
+		liberal media
+	</div>
+	<script>
+		function getMouseCoords(e) {
+		  var e = e || window.event;
+		  document.getElementById('sayHappy')
+		}
+
+
+		var followCursor = (function() {
+		  var s = document.getElementById('sayHappy');
+
+		  return {
+		    init: function() {
+		      document.body.appendChild(s);
+		    },
+
+		    run: function(e) {
+		      var e = e || window.event;
+		      s.style.left  = (e.clientX - 45) + 'px';
+		      s.style.top = (e.clientY - 30) + 'px';
+		      getMouseCoords(e);
+		    }
+		  };
+		}());
+
+		window.onload = function() {
+		  followCursor.init();
+		  document.body.onmousemove = followCursor.run;
+		}
+
+		/* the random stuff */
+
+	</script>
+</body>
+</html>

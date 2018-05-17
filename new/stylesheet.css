@@ -63,6 +63,7 @@ body {
 	background-color: #FF0023;
 	color: #ffffff;
 	font-family:'Archivo Black';
+	position: relative;
 }
 
 .masthead {
@@ -147,6 +148,10 @@ body {
 	text-transform: uppercase;
 	position: absolute;
 	bottom: 7%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 100%;
 	letter-spacing: 2;
 	font-size: 0.9em;
 }

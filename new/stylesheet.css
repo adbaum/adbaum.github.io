@@ -15,26 +15,36 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: grey;
+	background-color: #f1f1f1;
 	background-size: cover;
 	background-position: center;
+	background-repeat: repeat;
+	background-image:('assets/topography.png');
 	overflow: none;
 }
 
 .surfer {
 	background-image:url('assets/surfer.png');
+	background-size: cover;
+	background-position: center;
 }
 
 .people {
 	background-image:url('assets/people.png');
+	background-size: cover;
+	background-position: center;
 }
 
 .soup {
 	background-image:url('assets/soup.png');
+	background-size: cover;
+	background-position: center;
 }
 
 .bike {
 	background-image:url('assets/bike.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 .one, .two, .three, .four {
@@ -197,9 +207,11 @@ body {
 		height: 100%;
 		min-height: 500px;
 		display: block;
-		background-color: grey;
+		background-color: #f1f1f1;
 		background-size: cover;
 		background-position: center;
+		background-repeat: repeat;
+		background-image:('assets/topography.png');
 		overflow: none;
 	}
 

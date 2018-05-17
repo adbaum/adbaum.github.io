@@ -79,7 +79,7 @@ body {
 
 .pr-text {
 	width: 70%;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 
 .pr-bug {
@@ -105,7 +105,7 @@ body {
 	line-height: 1.1em;
 	opacity: 0;
     max-height: 0px;
-    margin-top: 10px;
+    margin-top: 15px;
     transition: 0.3s;
 }
 
@@ -114,7 +114,6 @@ body {
 	max-height: 150px;
 	transition: 0.3s;
 	bottom: 0px;
-	margin-top: 10px;
 }
 
 .learn {
@@ -267,7 +266,7 @@ body {
 		line-height: 1.1em;
 		opacity: 1;
 	    max-height: initial;
-	    margin-top: 10px;
+	    margin-top: 15px;
 	    transition: 0.3s;
 	}
 
@@ -275,7 +274,6 @@ body {
 		opacity: 1;
 		max-height: initial;
 		transition: 0.3s;
-		margin-top: 10px;
 	}
 
 	.learn {

@@ -24,19 +24,19 @@ body {
 }
 
 .surfer {
-	background-image:url('assets/surfer.jpg');
+	background-image:url('assets/surfer-lo.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
 .people {
-	background-image:url('assets/people.jpg');
+	background-image:url('assets/people-2.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
 .soup {
-	background-image:url('assets/soup.jpg');
+	background-image:url('assets/soup-2.jpg');
 	background-size: cover;
 	background-position: center;
 }

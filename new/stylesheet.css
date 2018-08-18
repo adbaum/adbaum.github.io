@@ -60,7 +60,7 @@ body {
 }
 
 .bio {
-	background-color: #FF0023;
+	background-color: #E70020;
 	color: #ffffff;
 	font-family:'Archivo Black';
 	position: relative;
@@ -71,7 +71,7 @@ body {
 }
 
 .preview {
-	color: #FF0023;
+	color: #E70020;
 	position: relative;
 	cursor: default;
 
@@ -135,6 +135,7 @@ body {
 
 .right-arrow {
 	transition: 0.2s;
+	width: 14px;
 }
 
 .learn:hover > .right-arrow {
@@ -297,4 +298,97 @@ body {
 	.gone {
 	opacity: 1;
 }
+}
+
+
+/* BELOW IS THE CASE STUDY STYLE */
+
+.hero {
+	width: 100%;
+	height: auto;
+	background-color: #E70020;
+	padding-top: 100px;
+	margin-bottom: 1000px;
+}
+
+.back {
+	color:#ffffff;
+	font-family: 'Archivo Black';
+	text-transform: uppercase;
+	letter-spacing: 2;
+	transition: 0.3s;
+	cursor: pointer;
+	top: 23px;
+	left: 20px;
+	display: block;
+	position: absolute;
+}
+
+.content-area {
+	margin-left: 12%;
+	width: 53%;
+	display: inline-block;
+	position: relative;
+}
+
+.pr-bug {
+	color: #ffffff;
+}
+
+.title {
+	color: #ffffff;
+	font-family: 'Archivo Black';
+	text-transform: uppercase;
+	font-size: 4.75em;
+	line-height: .8em;
+	letter-spacing: 0px;
+	padding: 12px 0px;
+}
+
+.content-area img {
+	width: 100%;
+	padding-top: 35px;
+	margin-bottom: -178px;
+}
+
+.back img {
+	transform: rotate(180deg);
+	padding-left: 10px;
+	transition: 0.3s;
+}
+
+.back:hover {
+	left: 15px;
+	transition: 0.3s;
+}
+
+.back:hover > img {
+	transform: rotate(180deg);
+	padding-left: 15px;
+	transition: 0.3s;
+}
+
+.details {
+	width: 18%;
+	margin-left: 3%;
+	display: inline-block;
+	position: relative;
+	color: #ffffff;
+}
+
+.details-module {
+	margin: 40px 0px;
+}
+
+.line {
+	width: 20px;
+	height: 1px;
+	background-color: #ffffff;
+	margin: 10px 0px;
+}
+
+.hero-body {
+	font-size: 1.125em;
+	line-height: 1.1875em;
+	font-family:'Archivo';
 }

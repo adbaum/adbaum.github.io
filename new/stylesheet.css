@@ -324,7 +324,12 @@ body {
 	position: absolute;
 }
 
-.content-area {
+.main {
+	width: 75%;
+	margin-left: 12%;
+}
+
+.content-module {
 	margin-left: 12%;
 	width: 53%;
 	display: inline-block;
@@ -345,7 +350,7 @@ body {
 	padding: 12px 0px;
 }
 
-.content-area img {
+.content-module img {
 	width: 100%;
 	padding-top: 35px;
 	margin-bottom: -178px;
@@ -374,6 +379,8 @@ body {
 	display: inline-block;
 	position: relative;
 	color: #ffffff;
+	vertical-align: top;
+	margin-top: 4%;
 }
 
 .details-module {

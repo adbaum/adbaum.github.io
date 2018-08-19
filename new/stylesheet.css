@@ -420,6 +420,10 @@ body {
 	width: 43%;
 }
 
+.content-2 {
+	margin-top: 15px;
+}
+
 .content p {
 	font-family: 'archivo';
 	font-size: 1.125rem;
@@ -440,6 +444,20 @@ body {
 	padding-top: 30px;
 }
 
+.caption {
+	position: absolute;
+	right: 0;
+	border-bottom: 3px solid #E70020;
+	font-family: 'archivo';
+	font-size: 0.75rem;
+	line-height: 1.125rem;
+	width: 18%;
+	margin-right: 13%;
+	margin-top: 43px;
+	padding-bottom: 10px;
+	letter-spacing: 0.5px;
+}
+
 .list {
 	font-family: 'archivo';
 	font-size: 1.125rem;
@@ -448,6 +466,10 @@ body {
 	margin-left: 30px;
 	margin-bottom: 30px;
 	position: relative;
+}
+
+.list-item {
+	margin-top: 20px;
 }
 
 .list-item:before {
@@ -655,6 +677,20 @@ body {
 		  ". picture ."
 	}
 
+	.caption {
+		float: left;
+		position: relative;
+		border-bottom: 3px solid #E70020;
+		font-family: 'archivo';
+		font-size: 0.75rem;
+		line-height: 1.125rem;
+		width: 100%;
+		margin-top: 15px;
+		margin-bottom: 55px;
+		padding-bottom: 10px;
+		letter-spacing: 0.5px;
+	}
+
 	.hero-background {
 		grid-column-start: 1;
 		grid-column-end: span 3;
@@ -802,6 +838,10 @@ body {
 	.content {
 		margin-top: 50px;
 		margin-bottom: 50px;
+	}
+
+	.content-2 {
+		margin-top: 0px;
 	}
 
 	.break {

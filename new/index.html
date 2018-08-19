@@ -18,15 +18,15 @@
 	<div class="container" id="background">
 		<div class="one bio" id="one">
 			<img class="masthead" src="assets/title.svg" alt="Adam Baumgartner, UX and UI Designer"/>
-			<div class="links"><a href="#">Email</a><a href="#">LinkedIn</a></div>
+			<div class="links"><a href="mailto:adam.f.baumgartner@gmail.com">Email</a><a href="https://www.linkedin.com/in/adam-baumgartner-06a19841">LinkedIn</a></div>
 		</div>
 		<div class="two preview" id="two">
-			<a href="pages/research.html" class="pr-text">
+			<div class="pr-text">
 				<p class="pr-bug">Strategy</p>
 				<p class="pr-title">Designing a new ad unit</p>
 				<p class="pr-body" id="test">From research to prototyping to testing, how I created an experimental ad unit that performs 5 times better than standard banners.</p>
 				<a href="pages/research.html" class="learn">Learn More <img class="right-arrow" src="assets/right-arrow.svg"></a>
-			</a>
+			</div>
 		</div>
 		<div class="three preview" id="three">
 			<div class="pr-text">
@@ -127,6 +127,13 @@
 		       function(){ $('#background').addClass('soup') },
 		       function(){ $('#background').removeClass('soup') }
 		)
+	</script>
+
+	<script>
+		$(".preview").click(function() {
+		  window.location = $(this).find("a").attr("href"); 
+		  return false;
+		});
 	</script>
 </body>
 </html>

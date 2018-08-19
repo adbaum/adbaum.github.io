@@ -155,17 +155,25 @@
 		</p>
 	</div>
 
-	<!--<div class="recirc">
-		<div class="research-link">
-
+	
+	<div class="recirc">
+		<div class="left inner">
+				<p class="recirc-bug">Research</p>
+				<p class="recirc-title">Learning from user testing</p>
+				<p class="recirc-body">How I used feedback from our audience to identify painpoints and improve our design templates.</p>
+				<a href="#" class="recirc-learn">Learn More <img class="recirc-right-arrow" src="../assets/right-arrow.svg"></a>
 		</div>
-		<div class="research-link">
-
+		<div class="right inner">
+				<p class="recirc-bug">Teamwork</p>
+				<p class="recirc-title">Unifying design and content</p>
+				<p class="recirc-body">The people making sponsored content did their own thing. The people designing it did their own thing. Until I proposed a new workflow.</p>
+				<a href="../index.html" class="recirc-learn">Learn More <img class="recirc-right-arrow" src="../assets/right-arrow.svg"></a>
 		</div>
-	</div>-->
+	</div>
+
 	<div class="page-footer">
 		<div class="lips"><a class="muah-hover" href="../index.html"><img src="../assets/lips.svg"></a><div class="muah">muah</div></div>
-		<div class="footer-links"><a href="#">Email</a><a href="#">LinkedIn</a></div>
+		<div class="footer-links"><a href="mailto:adam.f.baumgartner@gmail.com">Email</a><a href="https://www.linkedin.com/in/adam-baumgartner-06a19841">LinkedIn</a></div>
 		<div class="copyright">© ADAM BAUMGARTNER</a></div>
 	</div>
 
@@ -174,6 +182,13 @@
 	var scene = document.getElementById('scene');
 	var parallax = new Parallax(scene);
 
+	</script>
+
+	<script>
+		$(".inner").click(function() {
+		  window.location = $(this).find("a").attr("href"); 
+		  return false;
+		});
 	</script>
 
 </body>

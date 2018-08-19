@@ -73,7 +73,7 @@ body {
 .preview {
 	color: #E70020;
 	position: relative;
-	cursor: default;
+	cursor: pointer;
 
 }
 
@@ -634,6 +634,107 @@ body {
 	opacity: 1;
 }
 
+
+.recirc {
+	display: grid;
+	position: relative;
+	color: #E70020;
+	grid-template-columns: 50vw 50vw;
+	grid-template-areas:
+		"left right"
+}
+
+
+.inner {
+	display: grid;
+	grid-template-columns: 25% auto 25%;
+	grid-template-rows: 100px auto auto auto auto 100px;
+	cursor: pointer;
+	grid-template-areas:
+		". . ."
+		". bug ."
+		". title ."
+		". description ."
+		". learn ."
+		". . ."
+}
+
+.left {
+	grid-area: left;
+	border-top: 1px solid #E70020;
+	border-right: 1px solid #E70020;
+}
+
+.right {
+	grid-area: right;
+	border-top: 1px solid #E70020;
+}
+
+
+/** RECIRC CSS OMG SO MUCH**/
+
+.recirc-bug {
+	font-family:'Archivo';
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 0.875em;
+	letter-spacing: 3;
+	margin-bottom: 3px;
+	grid-area: bug;
+}
+
+.recirc-title {
+	font-family:'Archivo Black';
+	text-transform: uppercase;
+	font-size: 1.5em;
+	line-height: 1em;
+	grid-area: title;
+}
+
+.recirc-body {
+	font-family:'Archivo';
+	font-weight: 400;
+	font-size: 1.125em;
+	line-height: 1.1em;
+	opacity: 1;
+    margin-top: 15px;
+    transition: 0.3s;
+    grid-area: description;
+}
+
+.recirc-learn {
+	font-family: 'Archivo Black';
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2;
+	opacity: 1;
+	transition: 0.3s;
+	cursor: pointer;
+	margin-top: 40px;
+	align-self: end;
+	grid-area: learn;
+}
+
+.preview:hover .recirc-learn {
+	opacity: 1;
+	transition: 0.3s;
+}
+
+.recirc-right-arrow {
+	transition: 0.2s;
+	width: 14px;
+	opacity: 0;
+}
+
+.inner:hover * .recirc-right-arrow {
+	margin-left: 5px;
+	transition: 0.2s;
+	opacity: 1;
+}
+
+
+
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1300px) {
@@ -768,6 +869,21 @@ body {
 
 	.content-image img {
 		width: 84vw;
+	}
+
+
+	.inner {
+		display: grid;
+		grid-template-columns: 15% auto 15%;
+		grid-template-rows: 75px auto auto auto auto 75px;
+		cursor: pointer;
+		grid-template-areas:
+			". . ."
+			". bug ."
+			". title ."
+			". description ."
+			". learn ."
+			". . ."
 	}
 }
 
@@ -934,6 +1050,39 @@ body {
 
 	.copyright {
 		justify-self: center;
+	}
+
+	.recirc {
+		display: grid;
+		position: relative;
+		color: #E70020;
+		grid-template-columns: 100vw 100vw;
+		grid-template-areas:
+			"left"
+			"right"
+	}
+
+	.left {
+		border-right: 0px;
+	}
+
+	.recirc-right-arrow {
+		opacity: 1;
+	}
+
+
+	.inner {
+		display: grid;
+		grid-template-columns: 40px auto 40px;
+		grid-template-rows: 75px auto auto auto auto 75px;
+		cursor: pointer;
+		grid-template-areas:
+			". . ."
+			". bug ."
+			". title ."
+			". description ."
+			". learn ."
+			". . ."
 	}
 }
 }

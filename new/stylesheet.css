@@ -671,7 +671,7 @@ body {
 	.breakdown-container {
 		overflow: scroll;
 		display: grid;
-		margin-right: 8%;
+		padding-right: 8%;
 		grid-template-columns: 8% 70vw 50px 70vw 50px 70vw;
 		grid-template-areas:
 			". details-1 line-1 details-2 line-2 details-3"

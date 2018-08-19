@@ -508,7 +508,7 @@ body {
 		display: grid;
 			color: #ffffff;
 		grid-template-columns: 8% auto 8%;
-		grid-template-rows: 100px auto auto 200px;
+		grid-template-rows: 100px auto auto auto auto;
 		grid-template-areas: 
 		  ". . ."
 		  ". header ."

@@ -308,7 +308,7 @@ body {
 	display: grid;
 	color: #ffffff;
 	grid-template-columns: 13% [main-start] 53% 3% [details-start] 18% 13%;
-	grid-template-rows: 100px 220px auto 200px;
+	grid-template-rows: 100px auto auto 200px;
 	grid-template-areas: 
 	  ". . . . ."
 	  ". header header header ."
@@ -339,10 +339,10 @@ body {
 	color: #ffffff;
 	font-family: 'Archivo Black';
 	text-transform: uppercase;
-	font-size: 4.75em;
+	font-size: 6em;
 	line-height: .8em;
 	letter-spacing: 0px;
-	padding: 5px 0px 12px 0px;
+	padding: 5px 0px 40px 0px;
 }
 
 .hero-details {
@@ -430,12 +430,17 @@ body {
 		display: grid;
 			color: #ffffff;
 		grid-template-columns: 8% [main-start] auto 3% [details-start] 23% 9%;
-		grid-template-rows: 100px 220px auto 200px;
+		grid-template-rows: 100px auto auto 200px;
 		grid-template-areas: 
 		  ". . . . ."
 		  ". header header header ."
 		  ". picture . details ."
 		  ". picture . . ."
+	}
+
+	.title {
+		font-size: 4.75em;
+		padding: 5px 0px 40px 0px;
 	}
 
 	.content {
@@ -449,7 +454,7 @@ body {
 		display: grid;
 			color: #ffffff;
 		grid-template-columns: 8% auto 8%;
-		grid-template-rows: 100px 220px auto 200px;
+		grid-template-rows: 100px auto auto 200px;
 		grid-template-areas: 
 		  ". . ."
 		  ". header ."
@@ -492,6 +497,10 @@ body {
 		margin-left: 8%;
 		width: 84%;
 	}
+
+	.title {
+		padding: 5px 0px 40px 0px;
+	}
 }
 
 @media (max-width: 700px) {
@@ -511,6 +520,7 @@ body {
 	.hero-details {
 		overflow: scroll;
 		padding-left: 8%;
+		padding-top: 40px;
 		display: grid;
 		align-self: start;
 		grid-template-columns: 50vw 3% 50vw 3% 50%;
@@ -519,7 +529,7 @@ body {
 	}
 
 	.title {
-		padding: 5px 0px 40px 0px;
+		padding: 5px 0px 0px 0px;
 	}
 }
 
@@ -531,7 +541,11 @@ body {
 		font-size: 4em;
 		line-height: 0.9em;
 		letter-spacing: 0px;
-		padding: 5px 0px 24px 0px;
+		padding: 5px 0px 0px 0px;
+	}
+
+	.hero-details {
+		padding-top: 30px;
 	}
 }
 
@@ -543,7 +557,12 @@ body {
 		font-size: 3em;
 		line-height: 0.9em;
 		letter-spacing: 0px;
-		padding: 5px 0px 40px 0px;
+		padding: 5px 0px 0px 0px;
+	}
+
+	.hero-details {
+		padding-top: 30px;
+		grid-template-columns: 70vw 20px 70vw 20px 70%;
 	}
 }
 

@@ -560,9 +560,17 @@ body {
 		padding: 5px 0px 0px 0px;
 	}
 
+	.break {
+		display: none;
+	}
+
+	.hero-details .details:last-child {
+		margin-right: 8%;
+	}
+
 	.hero-details {
 		padding-top: 30px;
-		grid-template-columns: 70vw 20px 70vw 20px 70%;
+		grid-template-columns: 70vw 20px 70vw 20px 50vh;
 	}
 }
 

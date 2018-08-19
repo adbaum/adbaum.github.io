@@ -575,6 +575,21 @@ body {
 	grid-area: lips;
 	justify-self: center;
 	align-self: center;
+	position: relative;
+}
+
+.muah {
+	opacity: 0;
+	font-family: 'archivo black';
+	position: absolute;
+	color: #ffffff;
+	right: -20px;
+	top: -20px;
+	cursor: default;
+}
+
+.muah-hover:hover ~ .muah {
+	opacity: 1;
 }
 
 /* MEDIA QUERIES */

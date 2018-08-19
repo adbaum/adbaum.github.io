@@ -725,7 +725,7 @@ body {
 
 
 
-img {
+.special-container img {
   display: block;
   width: 100%;
 }

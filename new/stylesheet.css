@@ -263,8 +263,8 @@ body {
 	.pr-body {
 		font-family:'Archivo';
 		font-weight: 400;
-		font-size: 1.125em;
-		line-height: 1.1em;
+		font-size: 1.125rem;
+		line-height: 1.1rem;
 		opacity: 1;
 	    max-height: initial;
 	    margin-top: 15px;
@@ -339,8 +339,8 @@ body {
 	color: #ffffff;
 	font-family: 'Archivo Black';
 	text-transform: uppercase;
-	font-size: 6em;
-	line-height: .8em;
+	font-size: 6rem;
+	line-height: 5.25rem;
 	letter-spacing: 0px;
 	padding: 5px 0px 40px 0px;
 }
@@ -351,20 +351,18 @@ body {
 
 .hero-details .details {
 	margin-bottom: 40px;
-	font-size: 1.125em;
-	line-height: 1.1875em;
+	font-size: 1.125rem;
+	line-height: 1.1875rem;
 	font-family:'Archivo';
 	font-weight: 400;
 }
 
-
-.red-body {
-	font-size: 1.125em;
-	line-height: 1.1875em;
+.hero-body {
+	font-size: 1.125rem;
+	line-height: 1.1875rem;
 	font-family:'Archivo';
 	font-weight: 400;
 	color; #ffffff;
-
 }
 
 .hero-picture {
@@ -384,8 +382,6 @@ body {
 	background-color: #ffffff;
 	margin: 10px 0px;
 }
-
-
 
 .back {
 	color:#ffffff;
@@ -419,8 +415,67 @@ body {
 
 .content {
 	margin-top: 75px;
+	margin-left: 23%;
+	width: 43%;
+}
+
+.content p {
+	font-family: 'archivo';
+	font-size: 1.125rem;
+	line-height: 1.875rem;
+	letter-spacing: 0.2;
+	margin-bottom: 30px;
+}
+
+.breakdown {
+	background-color: #E70020;
+	color: #ffffff;
+	width: 100%;
+	padding: 56px 0px;
+}
+
+.breakdown .pr-bug {
 	margin-left: 13%;
-	width: 53%;
+	margin-bottom: 25px;
+}
+
+.breakdown-body {
+	font-size: 1.125rem;
+	line-height: 1.875rem;
+}
+
+.breakdown-container {
+	display: grid;
+	grid-template-columns: 13% auto 3% auto 3% auto 13%;
+	grid-template-areas:
+		". details-1 line-1 details-2 line-2 details-3 ."
+}
+
+.breakdown .details-1 {
+	grid-area: details-1;
+}
+
+.breakdown .details-2 {
+	grid-area: details-2;
+}
+
+.breakdown .details-3 {
+	grid-area: details-3;
+}
+
+.vert-line {
+	width: 1px;
+	height: 100%;
+	background-color: #ffffff;
+	justify-self: center;
+}
+
+.vl1 {
+	grid-area: line-1;
+}
+
+.vl2 {
+	grid-area: line-2;
 }
 
 /* MEDIA QUERIES */
@@ -428,7 +483,7 @@ body {
 @media (max-width: 1300px) {
 	.hero {
 		display: grid;
-			color: #ffffff;
+		color: #ffffff;
 		grid-template-columns: 8% [main-start] auto 3% [details-start] 23% 9%;
 		grid-template-rows: 100px auto auto 200px;
 		grid-template-areas: 
@@ -439,15 +494,29 @@ body {
 	}
 
 	.title {
-		font-size: 4.75em;
+		font-size: 4.75rem;
+		line-height: 4rem;
 		padding: 5px 0px 40px 0px;
 	}
 
 	.content {
+		margin-left: 13%;
+		width: 52%;
+	}
+
+	.breakdown-container {
+		display: grid;
+		grid-template-columns: 8% auto 4% auto 4% auto 8%;
+		grid-template-areas:
+			". details-1 line-1 details-2 line-2 details-3 ."
+	}
+
+	.breakdown .pr-bug {
 		margin-left: 8%;
-		width: 53%;
+		margin-bottom: 20px;
 	}
 }
+
 
 @media (max-width: 1080px) {
 	.hero {
@@ -523,14 +592,40 @@ body {
 		padding-top: 40px;
 		display: grid;
 		align-self: start;
-		grid-template-columns: 50vw 3% 50vw 3% 50%;
+		grid-template-columns: 50vw 3% 50vw 3% 50vw;
 		grid-template-areas:
-			"details-1 . details-2 . details-3"
+			"details-1 line-1 details-2 line-2 details-3"
+	}
+
+	.breakdown-container {
+		overflow: scroll;
+		display: grid;
+		grid-template-columns: 8% 50vw 7% 50vw 7% 50vw;
+		grid-template-areas:
+			". details-1 line-1 details-2 line-2 details-3"
 	}
 
 	.title {
 		padding: 5px 0px 0px 0px;
 	}
+
+
+/*OLD
+	.breakdown {
+		overflow: scroll;
+		padding-left: 8%;
+		padding-top: 40px;
+		display: grid;
+		align-self: start;
+		grid-template-columns: 50vw 3% 50vw 3% 50%;
+		grid-template-areas:
+			"breakdown-header breakdown-header breakdown-header breakdown-header breakdown-header"
+			"details-1 . details-2 . details-3"
+	}
+
+	.breakdown .pr-bug {
+		grid-area: breakdown-header;
+	}*/
 }
 
 @media (max-width: 685px) {
@@ -538,8 +633,8 @@ body {
 		color: #ffffff;
 		font-family: 'Archivo Black';
 		text-transform: uppercase;
-		font-size: 4em;
-		line-height: 0.9em;
+		font-size: 4rem;
+		line-height: 3.5rem;
 		letter-spacing: 0px;
 		padding: 5px 0px 0px 0px;
 	}
@@ -554,8 +649,8 @@ body {
 		color: #ffffff;
 		font-family: 'Archivo Black';
 		text-transform: uppercase;
-		font-size: 3em;
-		line-height: 0.9em;
+		font-size: 3rem;
+		line-height: 2.75rem;
 		letter-spacing: 0px;
 		padding: 5px 0px 0px 0px;
 	}
@@ -570,7 +665,16 @@ body {
 
 	.hero-details {
 		padding-top: 30px;
-		grid-template-columns: 70vw 20px 70vw 20px 50vh;
+		grid-template-columns: 70vw 50px 70vw 50px 50vh;
+	}
+
+	.breakdown-container {
+		overflow: scroll;
+		display: grid;
+		margin-right: 8%;
+		grid-template-columns: 8% 70vw 50px 70vw 50px 70vw;
+		grid-template-areas:
+			". details-1 line-1 details-2 line-2 details-3"
 	}
 }
 

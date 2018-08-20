@@ -833,7 +833,87 @@ body {
 }
 
 
+.research-results {
+	font-size: 1.125rem;
+	line-height: 1.875rem;
+	font-family: 'archivo';
+	letter-spacing: 0.2px;
+	color: #ffffff;
+	display: grid;
+	background-color: #E70020;
+	grid-template-columns: 13% 23vw 30vw auto 13%;
+	grid-template-rows: 100px auto auto auto 100px;
+	grid-template-areas:
+		". . . . ."
+		". header . . ."
+		". results chart chart ."
+		". image image caption ."
+		". . . . ."
+}
 
+.research-results .pr-bug {
+	grid-area: header;
+	align-self: start;
+	margin-bottom: 20px;
+}
+
+.results-text {
+	grid-area: results;
+	padding-right: 30px;
+	border-right: 1px solid #ffffff;
+	align-self: start;
+}
+
+.results-chart {
+	grid-area: chart;
+	padding-left: 30px;
+	font-family: 'archivo black';
+	font-size: 0.75rem;
+	line-height: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.25px;
+	align-self: start;
+}
+
+.large-bar, .standard-bar {
+	background-color: #ffffff;
+	height: 35px;
+	align-self: start;
+	margin-top: 5px;
+}
+
+.large-bar {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.standard-bar {
+	width: 50%;
+}
+
+.results-image {
+	grid-area: image;
+	align-self: start;
+	margin-top: 40px;
+}
+
+.results-image img {
+	width: 100%;
+}
+
+.results-caption {
+	grid-area: caption;
+	align-self: start;
+}
+
+.results-caption .caption {
+	border-bottom: 3px solid #fff;
+	position: relative;
+	width: auto;
+	margin-right: 0px;
+	margin-left: 14%;
+	margin-top: 50%;
+}
 
 /* MEDIA QUERIES */
 
@@ -892,6 +972,23 @@ body {
 
 	.caption-2, .caption-3 {
 		margin-top: -450px;
+	}
+
+	.research-results {
+		font-size: 1.125rem;
+		line-height: 1.875rem;
+		font-family: 'archivo';
+		letter-spacing: 0.2px;
+		color: #ffffff;
+		display: grid;
+		background-color: #E70020;
+		grid-template-columns: 8% 23vw 30vw auto 8%;
+		grid-template-areas:
+			". . . . ."
+			". header . . ."
+			". results chart chart ."
+			". image image caption ."
+			". . . . ."
 	}
 }
 
@@ -988,6 +1085,42 @@ body {
 
 	.home img {
 		width: 60px;
+	}
+
+	.research-results {
+		font-size: 1.125rem;
+		line-height: 1.875rem;
+		font-family: 'archivo';
+		letter-spacing: 0.2px;
+		color: #ffffff;
+		display: grid;
+		background-color: #E70020;
+		grid-template-columns: 8% auto 8%;
+		grid-template-rows: 75px auto auto auto auto auto 100px;
+		grid-template-areas:
+			". . ."
+			". header ."
+			". results ."
+			". chart ."
+			". image ."
+			". caption ."
+			". . ."
+	}
+
+	.research-results .caption {
+		margin-top: 20px;
+		margin-left: 0px;
+		margin-bottom: 0px;
+	}
+
+	.research-results .results-text {
+		padding-right: 0px;
+		border: 0px;
+		margin-bottom: 30px;
+	}
+
+	.research-results .results-chart {
+		padding-left: 0px;
 	}
 }
 

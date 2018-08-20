@@ -1096,7 +1096,7 @@ body {
 		display: grid;
 		background-color: #E70020;
 		grid-template-columns: 8% auto 8%;
-		grid-template-rows: 75px auto auto auto auto auto 100px;
+		grid-template-rows: 75px auto auto auto auto auto 75px;
 		grid-template-areas:
 			". . ."
 			". header ."

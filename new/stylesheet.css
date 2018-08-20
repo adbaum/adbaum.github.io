@@ -383,6 +383,23 @@ body {
 	margin: 10px 0px;
 }
 
+.home {
+	color:#ffffff;
+	font-family: 'Archivo Black';
+	text-transform: uppercase;
+	letter-spacing: 2;
+	transition: 0.3s;
+	cursor: pointer;
+	top: 23px;
+	right: 23px;
+	display: block;
+	position: absolute;
+}
+
+.home img {
+	width: 75px;
+}
+
 .back {
 	color:#ffffff;
 	font-family: 'Archivo Black';
@@ -419,6 +436,89 @@ body {
 	margin-left: 23%;
 	width: 43%;
 }
+
+
+.content a {
+	color: #000000;
+	position: relative;
+	transition: 0.2;
+}
+
+.content a:focus {
+	color: #E70020;
+	position: relative;
+}
+
+
+.content a:after {
+	content: ' ';
+	display: inline-block;
+	width: 0px;
+	height: 2px;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: -2;
+	opacity: 1;
+	right: 0px;
+	transition: 0.2s;
+}
+
+
+.content a:hover:after {
+	content: ' ';
+	display: inline-block;
+	width: 100%;
+	height: 2px;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: -2;
+	transition: 0.2;
+	right 0px;
+}
+
+
+
+.content a:before {
+	content: ' ';
+	display: inline-block;
+	width: 100%;
+	height: 2px;
+	background-color: #E70020;
+	position: absolute;
+	bottom: -2;
+	opacity: 1;
+	right: 0px;
+	transition: 0.2s;
+}
+
+
+.content a:hover:before {
+	content: ' ';
+	display: inline-block;
+	width: 0px;
+	height: 2px;
+	background-color: #E70020;
+	position: absolute;
+	bottom: -2;
+	transition: 0.2;
+	right: 100%;
+}
+
+.content a:hover {
+	color: #E70020;
+}
+
+
+.content p::selection {
+	background: #E70020;
+	color: #ffffff;
+}
+
+.content p::-moz-selection {
+  	background: #E70020;
+	color: #ffffff;
+}
+
 
 .content-2, .content-3 {
 	margin-top: 15px;
@@ -549,7 +649,7 @@ body {
 	background-color: #E70020;
 	padding: 100px 0px;
 	display: grid;
-	grid-template-columns: 13% 30% auto auto 13%;
+	grid-template-columns: 13% 30% auto 30% 13%;
 	grid-template-areas:
 		". links . copyright ."
 }
@@ -625,7 +725,7 @@ body {
 	font-family: 'archivo black';
 	position: absolute;
 	color: #ffffff;
-	right: -20px;
+	right: -25px;
 	top: -20px;
 	cursor: default;
 }
@@ -754,7 +854,7 @@ body {
 		background-color: #E70020;
 		padding: 100px 0px;
 		display: grid;
-		grid-template-columns: 13% 30% auto auto 13%;
+		grid-template-columns: 13% 30% auto 30% 13%;
 		grid-template-areas:
 			". links . copyright ."
 	}
@@ -885,13 +985,17 @@ body {
 			". learn ."
 			". . ."
 	}
+
+	.home img {
+		width: 60px;
+	}
 }
 
 .page-footer {
 	background-color: #E70020;
 	padding: 100px 0px;
 	display: grid;
-	grid-template-columns: 8% auto auto auto 8%;
+	grid-template-columns: 8% 30% auto 30% 8%;
 	grid-template-areas:
 		". links lips copyright ."
 }
@@ -932,6 +1036,7 @@ body {
 	.title {
 		padding: 5px 0px 0px 0px;
 	}
+
 
 
 /*OLD
@@ -979,6 +1084,16 @@ body {
 	.copyright {
 		text-align: right;
 	}
+
+	.home {
+		right: 20px;
+	}
+
+	.home img {
+		width: 50px;
+	}
+
+}
 
 @media (max-width: 575px) {
 	.title {
@@ -1084,7 +1199,6 @@ body {
 			". learn ."
 			". . ."
 	}
-}
 }
 
 /*

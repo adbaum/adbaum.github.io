@@ -536,11 +536,7 @@ body {
 
 
 .content-2, .content-3 {
-	margin-top: 15px;
-}
-
-.content-3 {
-	margin-top: 15px;
+	margin-top: 40px;
 }
 
 .content p {
@@ -1234,6 +1230,9 @@ body {
 		width: 84vw;
 	}
 
+	.content-2, .content-3 {
+		margin-top: 0px;
+	}
 
 	.inner {
 		display: grid;

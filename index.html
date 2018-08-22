@@ -1,28 +1,139 @@
 <DOCTYPE! html>
 <html>
 <head>
-	<title>Adam Baumgartner | UX Designer</title>
+	<title>Adam Baumgartner | Digital Product Designer</title>
 	<script src="update/scripts.js"></script>
-	<link rel="shortcut icon" href="work/assets/header.png">
-	<meta name="description" content="Designer. Millennial. Whatever.">
+	<link rel="shortcut icon" href="assets/favicon.png">
+	<meta name="description" content="UX/UI Designer">
 	<meta name="keywords" content="adam, baumgartner, product, designer, web, ball, state, freelance, vox, millennial, ux, ui, interaction, brands, storytelling">
 	<meta name="author" content="Adam Baumgartner">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 	<link href="stylesheet.css" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Archivo:400,500" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="intro">
-			<div>
-				<p>Hey there, I’m <span class="bold">Adam Baumgartner</span>. I’m a <span class="bold">UX designer</span> for <a href="http://www.groupninemedia.com/">Group Nine</a> and formerly a front-end designer with <a href="http://www.voxmedia.com/pages/about-vox-media">Vox Media</a>. I've also volunteered for groups like <a href="https://www.nycpride.org/">NYC Pride</a>, <a href="https://www.openhand.org/">Project Open Hand</a>, and <a href="https://outintech.com/">Out in Tech</a>.
-				<div class="contact-box">
-					<a href="mailto:adam.f.baumgartner@gmail.com">Email me.</a>
-					<a href="https://www.linkedin.com/in/adam-baumgartner-06a19841">LinkedIn me.</a>
-				</div>
+	<div class="container" id="background">
+		<div class="one bio" id="one">
+			<img class="masthead" src="assets/title-2.svg" alt="Adam Baumgartner, UX and UI Designer"/>
+			<div class="links"><a href="mailto:adam.f.baumgartner@gmail.com">Email</a><a href="https://www.linkedin.com/in/adam-baumgartner-06a19841" target="_blank">LinkedIn</a></div>
+		</div>
+		<div class="two preview" id="two">
+			<div class="pr-text">
+				<p class="pr-bug">Strategy</p>
+				<p class="pr-title">Designing a new ad unit</p>
+				<p class="pr-body" id="test">From research to prototyping to testing, how I created an experimental ad unit that performs 5 times better than standard banners.</p>
+				<a href="pages/strategy.html" class="learn">Learn More <img class="right-arrow" src="assets/right-arrow.svg"></a>
+			</div>
+		</div>
+		<div class="three preview" id="three">
+			<div class="pr-text">
+				<p class="pr-bug">Research</p>
+				<p class="pr-title">Gaining insights with little time</p>
+				<p class="pr-body" id="test">How I used feedback from our audience to identify painpoints and improve our design templates on a team with tight deadlines.</p>
+				<a href="pages/research.html" class="learn">Learn More <img class="right-arrow" src="assets/right-arrow.svg"></a>
+			</div>
+		</div>
+		<div class="four preview" id="four">
+			<div class="pr-text">
+				<p class="pr-bug">Design</p>
+				<p class="pr-title">Building a new tool from scratch</p>
+				<p class="pr-body" id="test">When my company needed a new media management tool, I helped create something valuable for 6 teams.</p>
+				<a href="pages/design.html" class="learn">Learn More <img class="right-arrow" src="assets/right-arrow.svg"></a>
 			</div>
 		</div>
 	</div>
+
+	<script>
+		/*$('#one').hover(
+		       function(){ $('#two').addClass('gone') },
+		       function(){ $('#two').removeClass('gone') }
+		)
+		$('#one').hover(
+		       function(){ $('#three').addClass('gone') },
+		       function(){ $('#three').removeClass('gone') }
+		)
+		$('#one').hover(
+		       function(){ $('#four').addClass('gone') },
+		       function(){ $('#four').removeClass('gone') }
+		)
+		$('#one').hover(
+		       function(){ $('#background').addClass('bike') },
+		       function(){ $('#background').removeClass('bike') }
+		)*/
+
+
+		/*$('#one').hover(
+		       function(){ $('#aboutme').addClass('active') }
+		)
+
+		$('#aboutme').hover(
+			function(){ $('#aboutme').addClass('active') },
+		       function(){ $('#aboutme').removeClass('active') }
+		)*/
+
+		//second div
+		/*$('#two').hover(
+		       function(){ $('#one').addClass('gone') },
+		       function(){ $('#one').removeClass('gone') }
+		)*/
+		$('#two').hover(
+		       function(){ $('#three').addClass('gone') },
+		       function(){ $('#three').removeClass('gone') }
+		)
+		$('#two').hover(
+		       function(){ $('#four').addClass('gone') },
+		       function(){ $('#four').removeClass('gone') }
+		)
+		$('#two').hover(
+		       function(){ $('#background').addClass('surfer') },
+		       function(){ $('#background').removeClass('surfer') }
+		)
+
+		//third div
+		/*$('#three').hover(
+		       function(){ $('#one').addClass('gone') },
+		       function(){ $('#one').removeClass('gone') }
+		)*/
+		$('#three').hover(
+		       function(){ $('#two').addClass('gone') },
+		       function(){ $('#two').removeClass('gone') }
+		)
+		$('#three').hover(
+		       function(){ $('#four').addClass('gone') },
+		       function(){ $('#four').removeClass('gone') }
+		)
+		$('#three').hover(
+		       function(){ $('#background').addClass('people') },
+		       function(){ $('#background').removeClass('people') }
+		)
+
+		//fourth div
+		/*$('#four').hover(
+		       function(){ $('#one').addClass('gone') },
+		       function(){ $('#one').removeClass('gone') }
+		)*/
+		$('#four').hover(
+		       function(){ $('#two').addClass('gone') },
+		       function(){ $('#two').removeClass('gone') }
+		)
+		$('#four').hover(
+		       function(){ $('#three').addClass('gone') },
+		       function(){ $('#three').removeClass('gone') }
+		)
+		$('#four').hover(
+		       function(){ $('#background').addClass('soup') },
+		       function(){ $('#background').removeClass('soup') }
+		)
+	</script>
+
+	<script>
+		$(".preview").click(function() {
+		  window.location = $(this).find("a").attr("href"); 
+		  return false;
+		});
+	</script>
 </body>
 </html>

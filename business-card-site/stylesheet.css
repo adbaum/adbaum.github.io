@@ -1,0 +1,75 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}a {text-decoration:none;color:inherit;}
+
+body {
+	font-family:'lato', sans-serif;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	min-height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro {
+	width: 70%;
+}
+
+.intro p {
+	width: 100%;
+	max-width: 620px;
+	font-size: 2em;
+	line-height: 1.6em;
+}
+
+.intro a {
+	text-decoration: underline;
+	font-size: 1em;
+	line-height: 1em;
+	position:relative;
+}
+
+a {
+	font-weight: 900;
+}
+
+a:hover {
+	background-image: url("fire.gif");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	background-size: 20%;
+	text-decoration:none;
+}
+
+.contact-box {
+	margin-top: 40px;
+}
+
+.contact-box a {
+	padding-right: 10px;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.6em;
+}
+
+.bold {
+	font-weight: 900;
+}
+
+@media (max-width: 600px) {
+	.intro p {
+		font-size: 1.5em;
+		line-height: 1.6em;
+	}
+
+	.intro {
+		width: 70%;
+		position: absolute;
+		top: 15%;
+		left: 15%;
+	}
+}

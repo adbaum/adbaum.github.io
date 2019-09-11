@@ -141,6 +141,13 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%,-50%);
+				z-index:10;
+			}
+
+			.close {
+				width: 100%;
+				height: 100%;
+				position: absolute;
 			}
 
 			.modal form input {
@@ -213,9 +220,9 @@
 						Yello's Privacy Policy
 				</div>
 				<div id="myModal" class="modal">
+					<div class="close">
+					</div>
 					<div class="modal-content">
-						<div class="close">
-						</div>
 						<div class="title">
 							<div class="instructions">We see you have a <img style="vertical-align: middle" src="assets/yello-logo.svg"> profile.</div>
 							<div class="explainer">Enter your Yello code to fill out this form faster</div>
@@ -225,10 +232,10 @@
 						</form>
 						<div class="buttons">
 							
-							<button class="enter close2">
+							<button class="enter">
 								<a href="https://forms.gle/NxfLXHfBUabST2SSA" target="_blank"><div><span>Continue</span> <img style="vertical-align: middle" src="assets/arrow-forward.svg"></div></a>
 							</button>
-							<button class="skip close3">
+							<button class="skip">
 								<a href="https://forms.gle/NxfLXHfBUabST2SSA" target="_blank"><div><span>Skip</span></div></a>
 							</button>
 						</div>
@@ -245,8 +252,6 @@
 
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close")[0];
-		var span = document.getElementsByClassName("close2")[0];
-		var span = document.getElementsByClassName("close3")[0];
 
 		// When the user clicks on the button, open the modal
 		btn.onclick = function() {

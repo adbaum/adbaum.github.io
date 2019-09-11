@@ -212,7 +212,7 @@
 						<div class="instructions">Enter your email address</div>
 					</div>
 					<form>
-						<input autocorrect="off" autocapitalize="none" placeholder="email@example.com or a1b2c3" type="text" name="email-or-code">
+						<input pattern="\d*" autocorrect="off" autocapitalize="none" placeholder="email@example.com or a1b2c3" type="text" name="email-or-code">
 					</form>
 				</div>
 				<div class="privacy">
@@ -227,7 +227,7 @@
 							<div class="explainer">Enter your pin number to fill out this form faster</div>
 						</div>
 						<form>
-							<input maxlength="4" autocorrect="off" autocapitalize="none" placeholder="_ _ _ _" type="email" name="email-or-code">
+							<input maxlength="4" type="number" pattern="\d*"/ autocorrect="off" autocapitalize="none" placeholder="_ _ _ _" name="email-or-code">
 						</form>
 						<div class="buttons">
 							

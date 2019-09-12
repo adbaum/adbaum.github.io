@@ -213,7 +213,7 @@
 						<div class="explainer">Email Address or Yello Code</div>
 					</div>
 					<form>
-						<input autocorrect="off" autocapitalize="none" placeholder="email@example.com or a1b2c3" type="text" name="email-or-code">
+						<input id="myBox" autocorrect="off" autocapitalize="none" placeholder="email@example.com or a1b2c3" type="text" name="email-or-code">
 					</form>
 				</div>
 				<div class="privacy">
@@ -250,13 +250,18 @@
 		// Get the button that opens the modal
 		var btn = document.getElementById("myBtn");
 
+		var box = document.getElementById("myBox");
+
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close")[0];
+
+
 
 		// When the user clicks on the button, open the modal
 		btn.onclick = function() {
 		  modal.style.display = "block";
 		}
+
 
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
@@ -269,6 +274,21 @@
 		    modal.style.display = "none";
 		  }
 		}
+
+
+		var wage = document.getElementById("myBox");
+			wage.addEventListener("keydown", function (e) {
+    			if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        			validate(e);
+    	}
+
+    	function validate(e) {
+    	    modal.style.display = "block";
+    	    //validation of the input...
+    	}
+});
+
+//return key
 
 				</script>
 	</body>

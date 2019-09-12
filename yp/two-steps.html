@@ -228,7 +228,7 @@
 							<div class="explainer">Enter your Yello code to fill out this form faster</div>
 						</div>
 						<form>
-							<input autocorrect="off" autocapitalize="none" placeholder="a1b2c3" type="email" name="email-or-code">
+							<input id="myBoxTwo" autocorrect="off" autocapitalize="none" placeholder="a1b2c3" type="email" name="email-or-code">
 						</form>
 						<div class="buttons">
 							
@@ -255,6 +255,8 @@
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close")[0];
 
+		var url = "http://afbaumgartner.com/yp/two-steps-e2.html";
+
 
 
 		// When the user clicks on the button, open the modal
@@ -277,15 +279,35 @@
 
 
 		var wage = document.getElementById("myBox");
-			wage.addEventListener("keydown", function (e) {
+			wage.addEventListener("keypress", function (e) {
     			if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
         			validate(e);
     	}
 
     	function validate(e) {
+    		event.preventDefault();
     	    modal.style.display = "block";
     	    //validation of the input...
+    	    return false;
+    }
+
+
+});
+
+			var wage = document.getElementById("myBoxTwo");
+			wage.addEventListener("keypress", function (e) {
+    			if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        			validate(e);
     	}
+
+    	function validate(e) {
+    		event.preventDefault();
+    	    window.open(url, '_blank');
+    	    //validation of the input...
+    	    return false;
+    }
+
+    
 });
 
 //return key

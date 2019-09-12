@@ -27,7 +27,7 @@
 				position: relative;
 				top: 0;
 				left: 0;
-				background-color: #C2C4CC;
+				background-color: #0059B2;
 			}
 
 			.button {
@@ -205,14 +205,14 @@
 					<div><span>Continue</span> <img style="vertical-align: middle" src="assets/arrow-forward.svg"></div>
 				</button>
 				<div class="company-logo">
-					<img src="assets/AcmeEmployer.png">
+					<img style="width:512px;" src="assets/pin.png">
 				</div>
 				<div class="enter-field">
 					<div class="title">
 						<div class="instructions">Enter your email address</div>
 					</div>
 					<form>
-						<input autocorrect="off" autocapitalize="none" placeholder="email@example.com" type="email" name="email-or-code">
+						<input id="myBox" autocorrect="off" autocapitalize="none" placeholder="email@example.com" type="email" name="email-or-code">
 					</form>
 				</div>
 				<div class="privacy">
@@ -227,7 +227,7 @@
 							<div class="explainer">Enter your pin number to fill out this form faster</div>
 						</div>
 						<form>
-							<input maxlength="4" type="text" pattern="[0-9]*" autocorrect="off" autocapitalize="none" placeholder="_ _ _ _" name="code">
+							<input id="myBoxTwo" maxlength="4" type="text" pattern="[0-9]*" autocorrect="off" autocapitalize="none" placeholder="_ _ _ _" name="code">
 						</form>
 						<div class="buttons">
 							
@@ -244,18 +244,26 @@
 
 				<script>
 					// Get the modal
+				// Get the modal
 		var modal = document.getElementById("myModal");
 
 		// Get the button that opens the modal
 		var btn = document.getElementById("myBtn");
 
+		var box = document.getElementById("myBox");
+
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close")[0];
+
+		var url = "http://afbaumgartner.com/yp/two-steps-e2.html";
+
+
 
 		// When the user clicks on the button, open the modal
 		btn.onclick = function() {
 		  modal.style.display = "block";
 		}
+
 
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
@@ -268,6 +276,39 @@
 		    modal.style.display = "none";
 		  }
 		}
+
+
+		var wage = document.getElementById("myBox");
+			wage.addEventListener("keypress", function (e) {
+    			if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        			validate(e);
+    	}
+
+    	function validate(e) {
+    		event.preventDefault();
+    	    modal.style.display = "block";
+    	    //validation of the input...
+    	    return false;
+    }
+
+
+});
+
+			var wage = document.getElementById("myBoxTwo");
+			wage.addEventListener("keypress", function (e) {
+    			if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        			validate(e);
+    	}
+
+    	function validate(e) {
+    		event.preventDefault();
+    	    window.open(url, '_blank');
+    	    //validation of the input...
+    	    return false;
+    }
+
+    
+});
 
 				</script>
 	</body>

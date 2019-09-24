@@ -66,6 +66,7 @@
 	        label.style.color = 'teal';
 	        clearTimeout(label.highlightTimeout);
 	        label.highlightTimeout = setTimeout(() => label.style.color = 'inherit', 100);
+	        window.open(fileQrResult);
 	    }
 
 	    // ####### Web Cam Scanning #######
@@ -88,7 +89,6 @@
 	        }
 	        QrScanner.scanImage(file)
 	            .then(result => setResult(fileQrResult, result))
-	            .then(window.open(fileQrResult))
 	            .catch(e => setResult(fileQrResult, e || 'No QR code found.'));
 	    });
 

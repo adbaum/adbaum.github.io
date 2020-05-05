@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+
+		<style>
+			/* css reset */
+			html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;} article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}a {text-decoration:none;color:inherit;}
+
+			body {
+				font-family: 'open sans', sans-serif;
+			}
+
+			#div1, #div2 {
+			  float: left;
+			  width: 100px;
+			  height: 35px;
+			  margin: 10px;
+			  padding: 10px;
+			  border: 1px solid black;
+			}
+
+			
+
+		</style>
+		<script>
+			function allowDrop(ev) {
+			  ev.preventDefault();
+			}
+
+			function drag(ev) {
+		 		ev.dataTransfer.setData("text", ev.target.id);
+			}
+
+			function drop(ev) {
+		  		ev.preventDefault();
+		  		var data = ev.dataTransfer.getData("text");
+		  		ev.target.appendChild(document.getElementById(data));
+			}
+		</script>
+		</head>
+		<body>
+
+			<h2>Drag and Drop</h2>
+			<p>Drag the image back and forth between the two div elements.</p>
+
+			<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+		  		<img src="https://i.pinimg.com/originals/e9/1b/00/e91b006166c2c6de3320c1b377f8598e.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+			</div>
+			<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+		  		<img src="https://m.ensembl.org/i/species/Choloepus_hoffmanni.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+			</div>
+
+			<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+		</body>
+
+</html>

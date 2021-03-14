@@ -4,50 +4,50 @@
 	<title>Adam Baumgartner | Digital Product Designer</title>
 	<script src="update/scripts.js"></script>
 	<link rel="shortcut icon" href="assets/favicon.png">
-	<meta name="description" content="Digital Product Designer">
-	<meta name="keywords" content="adam, baumgartner, product, designer, web, ball, state, freelance, vox, millennial, ux, ui, interaction, brands, storytelling, true, botanicals, product">
+	<meta name="description" content="That's Baum-gart-ner.">
+	<meta name="keywords" content="adam, baumgartner, product, designer, web, ball, state, freelance, vox, millennial, ux, ui, interaction, brands, storytelling">
 	<meta name="author" content="Adam Baumgartner">
+	<meta property="og:image" content="assets/lips.png">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="sheet.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Archivo:400,500" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="drag2.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+    $( "#draggable2" ).draggable();
+    $( "#draggable3" ).draggable();
+    $( "#draggable4" ).draggable();
+    $( "#draggable5" ).draggable();
+  } );
+  </script>
 </head>
-<body>
-	<div class="container" id="background">
-		<div class="one bio" id="one">
-			<img class="masthead" src="assets/title-2.svg" alt="Adam Baumgartner, Product Designer"/>
-			<div class="links"><a href="mailto:adam.f.baumgartner@gmail.com">Email</a><a href="https://www.linkedin.com/in/adam-baumgartner-06a19841" target="_blank">LinkedIn</a></div>
-		</div>
-		<div class="two preview" id="two">
-			<div class="pr-text">
-				<p class="pr-bug">Strategy</p>
-				<p class="pr-title">Designing a new ad unit</p>
-				<p class="pr-body" id="test">From research to prototyping to testing, how I created an experimental ad unit that performs 5 times better than standard banners.</p>
-				<a href="pages/strategy.html" class="learn">Learn More <img class="right-arrow" src="assets/right-arrow.svg"></a>
+<body style="background-color:#ffffff;">
+	<div class="container">
+		<div class="name">
+			<span id="draggable" class="adam"><img src="name.svg" alt="Adam"></span><br>
+			<div class="last-name">
+				<span id="draggable2" class="baum"><img src="baum.svg" alt="Baum"></span>
+				<span id="draggable3" class="gart"><img src="gart.svg" alt="gart"></span>
+				<span id="draggable4" class="ner"><img src="ner.svg" alt="ner"></span>
 			</div>
+			<span id="draggable5" class="designer"><img class="rotate" src="productdesigner.svg" alt="Product Designer"></span>
 		</div>
-		<div class="three preview" id="three">
-			<div class="pr-text">
-				<p class="pr-bug">Research</p>
-				<p class="pr-title">Gaining insights with little time</p>
-				<p class="pr-body" id="test">How I used feedback from our audience to identify painpoints and improve our design templates on a team with tight deadlines.</p>
-				<a href="pages/research.html" class="learn">Learn More <img class="right-arrow" src="assets/right-arrow.svg"></a>
-			</div>
+		<div class="actions">
+			<a href="">About me</a>
+			<a class="actions-two" href="">Get in touch</a>
 		</div>
-		<div class="four preview" id="four">
-			<div class="pr-text">
-				<p class="pr-bug">Design</p>
-				<p class="pr-title">Building a new tool from scratch</p>
-				<p class="pr-body" id="test">When my company needed a new media management tool, I helped create something valuable for 6 teams.</p>
-				<a href="pages/design.html" class="learn">Learn More <img class="right-arrow" src="assets/right-arrow.svg"></a>
-			</div>
+		<div class="background">
 		</div>
 	</div>
+		
 
-	<script>
-		/*$('#one').hover(
+	<!-- <script>
+		$('#one').hover(
 		       function(){ $('#two').addClass('gone') },
 		       function(){ $('#two').removeClass('gone') }
 		)
@@ -62,7 +62,7 @@
 		$('#one').hover(
 		       function(){ $('#background').addClass('bike') },
 		       function(){ $('#background').removeClass('bike') }
-		)*/
+		)
 
 
 		/*$('#one').hover(
@@ -134,6 +134,6 @@
 		  window.location = $(this).find("a").attr("href"); 
 		  return false;
 		});
-	</script>
+	</script>-->
 </body>
 </html>

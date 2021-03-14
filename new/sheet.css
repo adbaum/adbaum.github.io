@@ -1,0 +1,163 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}a {text-decoration:none;color:inherit;}
+
+body {
+	font-family:'lato', sans  serif;
+}
+
+.container {
+	top: 0; right: 0; left: 0; right: 0;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+.background {
+	width: 100%;
+	height: 100vh;
+	display: block;
+	background-image: url('dotbg.png');
+	background-repeat: repeat;
+	opacity: 0.2;
+	z-index: 0;
+}
+
+.name {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom:0px;
+	left:0px;
+	width: 100%;
+	z-index: 1!important;
+	background-color: transparent;
+}
+
+.adam {
+	display: inline-block;
+	position: absolute;
+	cursor: move;
+	top: 15%;
+	left: 40px;
+	width: 25%;
+	height: 5px;
+	z-index: 1!important;
+}
+
+.last-name {
+	display:block;
+	position: absolute;
+	width: 68%;
+	top: calc(15% + 7vw);
+	left: 40px;
+}
+
+.baum {
+	display: inline-block;
+	position: relative;
+	cursor: move;
+	width: 35%;
+	height: 5px;
+	z-index: 1!important;
+}
+
+.gart {
+	display: inline-block;
+	position: relative;
+	cursor: move;
+	width: 34%;
+	height: 5px;
+	z-index: 1!important;
+}
+
+
+.ner {
+	display: inline-block;
+	position: relative;
+	cursor: move;
+	width: 25%;
+	height: 5px;
+	z-index: 1!important;
+}
+
+.designer {
+	display: inline-block;
+	position: absolute;
+	cursor: move;
+	top: 14%;
+	left: calc(21% + 40px);
+	width: 9%;
+	height: 5px;
+	z-index: 1!important;
+}
+
+@media (max-width: 750px) {
+	.last-name {
+		display:block;
+		position: absolute;
+		left: calc(90% - 40px);
+		top: calc(16% + 9.5vw + 10px);
+		left: 40px;
+	}
+
+	.designer {
+		width: 20%;
+		left: calc(35% + 40px);
+		top: 12%;
+	}
+
+	.baum, .gart, .ner, .adam {
+		display: block;
+	}
+
+	.adam {
+		width: 47%;
+		height:16vw;
+	}
+
+	.baum {
+		width: 70%;
+		height:12vw;
+	}
+
+	.gart {
+		width: 69%;
+		height:12vw;
+		margin-top:0%;
+	}
+
+	.ner {
+		width: 50%;
+		height:12vw;
+		margin-top:2px;
+	}
+}
+
+.actions {
+	display: block;
+	position: absolute;
+	left: 40px;
+	bottom:40px;
+	width: calc(100% - 40px);
+	z-index: 2!important;
+	background-color: transparent;
+	color: #E70020;
+	font-weight: medium;
+}
+
+.actions-two {
+	margin-left: 10px;
+}
+
+.rotate {
+	transform-origin: center!important;
+	animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }

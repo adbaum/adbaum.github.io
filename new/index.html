@@ -18,11 +18,16 @@
   <script src="drag2.js"></script>
   <script>
   $( function() {
-    $( "#draggable" ).draggable();
-    $( "#draggable2" ).draggable();
-    $( "#draggable3" ).draggable();
-    $( "#draggable4" ).draggable();
-    $( "#draggable5" ).draggable();
+    $( "#draggable" ).draggable({containment: "window"});
+    $( "#draggable2" ).draggable({containment: "window"});
+    $( "#draggable3" ).draggable({containment: "window"});
+    $( "#draggable4" ).draggable({containment: "window"});
+    $( "#draggable5" ).draggable({containment: "window"});
+    $( "#draggable6" ).draggable({containment: "window"});
+    $( "#draggable7" ).draggable({containment: "window"});
+    $( "#draggable8" ).draggable({containment: "window"});
+    $( "#draggable9" ).draggable({containment: "window"});
+    $( "#draggable10" ).draggable({containment: "window"});
   } );
   </script>
 </head>
@@ -38,14 +43,17 @@
 			<span id="draggable5" class="designer"><img class="rotate" src="productdesigner.svg" alt="Product Designer"></span>
 		</div>
 		<div class="actions">
-			<a href="">About me</a>
-			<a class="actions-two" href="">Get in touch</a>
+			<a class="what" id="draggable6" href="">About me</a>
+			<a class="what actions-two" id="draggable7" href="">Get in touch</a>
 		</div>
-		<div class="image-1">
+		<div class="image i1" tabindex="1" id="draggable8">
+			<a href="http://afbaumgartner.com/pages/research.html"><img src="http://afbaumgartner.com/assets/mtn-hero.jpg" alt=""></a>
 		</div>
-		<div class="image-2">
+		<div class="image i2" tabindex="1" id="draggable9">
+			<a href="http://afbaumgartner.com/pages/design.html"><img src="http://afbaumgartner.com/assets/hero-image-edited.jpg" alt=""></a>
 		</div>
-		<div class="image-3">
+		<div class="image i3" tabindex="1" id="draggable10">
+			<a href="http://afbaumgartner.com/pages/strategy.html"><img src="http://afbaumgartner.com/assets/strategy-header.jpg" alt=""></a>
 		</div>
 		<div class="background">
 		</div>

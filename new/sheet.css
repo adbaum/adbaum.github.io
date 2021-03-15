@@ -9,6 +9,7 @@ body {
 	display: block;
 	margin: 0px;
 	padding: 0px;
+	max-height: 100vh;
 }
 
 .background {
@@ -37,7 +38,7 @@ body {
 	display: inline-block;
 	position: absolute;
 	cursor: move;
-	top: 15%;
+	top: 8%;
 	left: 40px;
 	width: 25%;
 	height: 5px;
@@ -48,7 +49,7 @@ body {
 	display:block;
 	position: absolute;
 	width: 68%;
-	top: calc(15% + 7vw);
+	top: calc(8% + 7vw);
 	left: 40px;
 }
 
@@ -84,75 +85,105 @@ body {
 	display: inline-block;
 	position: absolute;
 	cursor: move;
-	top: 14%;
+	top: 10%;
 	left: calc(21% + 40px);
 	width: 9%;
 	height: 5px;
 	z-index: 1!important;
 }
 
-@media (max-width: 750px) {
-	.last-name {
-		display:block;
-		position: absolute;
-		left: calc(90% - 40px);
-		top: calc(16% + 9.5vw + 10px);
-		left: 40px;
-	}
-
-	.designer {
-		width: 20%;
-		left: calc(35% + 40px);
-		top: 12%;
-	}
-
-	.baum, .gart, .ner, .adam {
-		display: block;
-	}
-
-	.adam {
-		width: 47%;
-		height:16vw;
-	}
-
-	.baum {
-		width: 70%;
-		height:12vw;
-	}
-
-	.gart {
-		width: 69%;
-		height:12vw;
-		margin-top:0%;
-	}
-
-	.ner {
-		width: 50%;
-		height:12vw;
-		margin-top:2px;
-	}
-}
-
 .actions {
 	display: block;
 	position: absolute;
 	left: 40px;
-	bottom:40px;
+	bottom: 40px;
 	width: calc(100% - 40px);
 	z-index: 2!important;
 	background-color: transparent;
 	color: #E70020;
-	font-weight: medium;
 }
 
-.actions-two {
-	margin-left: 10px;
+.what {
+	display: inline-block;
+	margin: 8px;
+	padding:0px;
+}
+
+.what:hover {
+    animation: hover 2s infinite;
+  	animation-timing-function: linear;
+}
+
+.what:focus{
+   outline: 0;
+   padding: 6px;
+   margin: 0px;
+   border: 2px dotted #E70020;
+   border-radius: 10px;
+}
+
+/*.actions-two {
+	margin-left: 20px!important;
+}*/
+
+.image {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	z-index: 5;
+	cursor: move;
+	border-radius: 20px;
+	margin: 4px;
+}
+
+.image:focus {
+	outline: 0;
+	border: 4px solid #E70020 !important;
+	margin:0 !important;
+}
+
+
+.image img {
+	width: 100%;
+	display: block;
+	transition: 0.2s;
+}
+
+.image img:hover {
+	width: 100%;
+	border-radius: 20px;
+	transform: scale(1.1);
+}
+
+.i1 {
+	top: 53%;
+	left: 10%;
+	transform: scale(0.9);
+	transform: rotate(-4deg);
+	width: 20%;
+}
+
+.i2 {
+	top: 40%;
+	left: 40%;
+	transform: scale(0.9);
+	transform: rotate(-1deg);
+	width: 22%;
+}
+
+.i3 {
+	top: 50%;
+	right: 7%;
+	transform: scale(0.8);
+	transform: rotate(7deg);
+	width: 19%;
 }
 
 .rotate {
 	transform-origin: center!important;
 	animation: rotation 20s infinite linear;
 }
+
 
 @keyframes rotation {
   from {
@@ -161,3 +192,215 @@ body {
   to {
     transform: rotate(359deg);
   }
+ }
+
+  @keyframes hover {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+  }
+  10% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+  }
+  20% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+  }
+  30% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  35% {
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+  }
+  40% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  45% {
+    transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  55% {
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+  }
+  60% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+}
+
+@media (min-width: 401px) and (max-width: 850px) {
+	.last-name {
+		display:block;
+		position: absolute;
+		top: calc(11% + 9.5vw);
+		left: 40px;
+		width: 50%;
+	}
+
+	.designer {
+		width: 23%;
+		left: calc(38% + 40px);
+		top: 5%;
+	}
+
+	.baum, .gart, .ner, .adam {
+		display: block;
+	}
+
+	.adam {
+		width: 50%;
+		height:16vw;
+	}
+
+	.baum {
+		width: 100%;
+		height:12vw;
+	}
+
+	.gart {
+		width: 96%;
+		height: 12vw;
+		margin-top:0%;
+	}
+
+	.ner {
+		width: 71%;
+		height: 12vw;
+		margin-top:2px;
+	}
+
+	.i1 {
+		top: 35%;
+		width: 38%;
+		left: 56%;
+		z-index: 6;
+	}
+
+	.i2 {
+		top: 57%;
+		width: 43%;
+		left: 45%;
+		z-index: 7;
+	}
+
+	.i3 {
+		top: 60%;
+		width: 30%;
+		left: 23%;
+	}
+}
+
+@media (max-width: 400px) {
+	.last-name {
+		display:block;
+		position: absolute;
+		top: calc(12% + 10vw);
+		left: 40px;
+		width: 60%;
+	}
+
+	.designer {
+		width: 23%;
+		left: calc(38% + 40px);
+		top: 5%;
+	}
+
+	.baum, .gart, .ner, .adam {
+		display: block;
+	}
+
+	.adam {
+		width: 60%;
+		height:17vw;
+	}
+
+	.baum {
+		width: 100%;
+		height:17vw;
+	}
+
+	.gart {
+		width: 96%;
+		height: 17vw;
+		margin-top:0%;
+	}
+
+	.ner {
+		width: 71%;
+		height: 17vw;
+		margin-top:2px;
+	}
+
+	.i1 {
+		top: 47%;
+		width: 50%;
+		left: 25%;
+		z-index: 6;
+	}
+
+	.i2 {
+		top: 59%;
+		width: 55%;
+		left: 40%;
+		z-index: 7;
+	}
+
+	.i3 {
+		top: 64%;
+		width: 50%;
+		left: 7%;
+	}
+}

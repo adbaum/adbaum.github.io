@@ -5,7 +5,6 @@ body {
 }
 
 .container {
-	top: 0; right: 0; left: 0; right: 0;
 	display: block;
 	margin: 0px;
 	padding: 0px;
@@ -107,6 +106,7 @@ body {
 	display: inline-block;
 	margin: 8px;
 	padding:0px;
+	font-size: 20px;
 }
 
 .what:hover {
@@ -343,7 +343,7 @@ body {
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
 	.last-name {
 		display:block;
 		position: absolute;
@@ -386,21 +386,21 @@ body {
 
 	.i1 {
 		top: 47%;
-		width: 50%;
-		left: 25%;
+		width: 43%;
+		left: 30%;
 		z-index: 6;
 	}
 
 	.i2 {
 		top: 59%;
-		width: 55%;
-		left: 40%;
+		width: 47%;
+		left: 44%;
 		z-index: 7;
 	}
 
 	.i3 {
-		top: 64%;
-		width: 50%;
+		top: 60%;
+		width: 45%;
 		left: 7%;
 	}
 }

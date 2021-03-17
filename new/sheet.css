@@ -22,6 +22,19 @@ body {
 	z-index: 0;
 }
 
+.red {
+  color: #E70020
+}
+
+
+.moveable {
+	cursor: grab!important;
+}
+
+.moveable:active {
+	cursor: grabbing!important;
+}
+
 .name {
 	display: block;
 	position: absolute;
@@ -37,12 +50,15 @@ body {
 .adam {
 	display: inline-block;
 	position: absolute;
-	cursor: move;
 	top: 8%;
 	left: 40px;
 	width: 25%;
 	height: 5px;
 	z-index: 1!important;
+}
+
+.adam:active {
+	cursor: grabbing
 }
 
 .last-name {
@@ -56,7 +72,6 @@ body {
 .baum {
 	display: inline-block;
 	position: relative;
-	cursor: move;
 	width: 35%;
 	height: 5px;
 	z-index: 1!important;
@@ -65,7 +80,6 @@ body {
 .gart {
 	display: inline-block;
 	position: relative;
-	cursor: move;
 	width: 34%;
 	height: 5px;
 	z-index: 1!important;
@@ -75,7 +89,6 @@ body {
 .ner {
 	display: inline-block;
 	position: relative;
-	cursor: move;
 	width: 25%;
 	height: 5px;
 	z-index: 1!important;
@@ -84,7 +97,6 @@ body {
 .designer {
 	display: inline-block;
 	position: absolute;
-	cursor: move;
 	top: 10%;
 	left: calc(21% + 40px);
 	width: 9%;
@@ -96,7 +108,7 @@ body {
 	display: block;
 	position: absolute;
 	left: 40px;
-	bottom: 40px;
+	bottom: 33px;
 	width: calc(100% - 40px);
 	z-index: 2!important;
 	background-color: transparent;
@@ -108,6 +120,7 @@ body {
 	margin: 8px;
 	padding:0px;
 	font-size: 20px;
+	padding-bottom: 7px;
 }
 
 .what:hover {
@@ -123,6 +136,14 @@ body {
    border-radius: 10px;
 }
 
+.squiggle:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift 0.5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23E70020' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0px 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
 /*.actions-two {
 	margin-left: 20px!important;
 }*/
@@ -130,11 +151,13 @@ body {
 .image {
 	position: absolute;
 	display: block;
-	overflow: hidden;
 	z-index: 5;
-	cursor: move;
-	border-radius: 20px;
 	margin: 4px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.image:hover {
 }
 
 .image:focus {
@@ -153,31 +176,45 @@ body {
 .image img:hover {
 	width: 100%;
 	border-radius: 20px;
-	transform: scale(1.1);
+	transform: scale(1.03);
+}
+
+.image:hover:before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image: url('eye.gif');
+    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    border-radius: 20px;
 }
 
 .i1 {
-	top: 55%;
-	left: 41%;
+	top: 48%;
+	left: 22%;
 	transform: scale(0.9);
 	transform: rotate(-4deg);
-	width: 20%;
+	width: 23%;
 }
 
 .i2 {
-	top: 42%;
-	left: 51%;
+	top: 38%;
+	left: 37%;
 	transform: scale(0.9);
-	transform: rotate(-1deg);
-	width: 22%;
+	transform: rotate(2deg);
+	width: 32%;
 }
 
 .i3 {
-	top: 52%;
-	right: 12%;
+	top: 46%;
+	right: 10%;
 	transform: scale(0.8);
 	transform: rotate(7deg);
-	width: 19%;
+	width: 25%;
 }
 
 .rotate {
@@ -195,7 +232,7 @@ body {
   }
  }
 
-  @keyframes hover {
+/*  @keyframes hover {
   0% {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);

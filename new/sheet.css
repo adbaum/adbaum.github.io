@@ -181,7 +181,7 @@ body {
 	transform: scale(1.03);
 }
 
-.image:hover:before {
+.image a:hover:before {
     content: ' ';
     position: absolute;
     display: block;

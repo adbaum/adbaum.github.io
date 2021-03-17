@@ -40,11 +40,36 @@ body {
 	height: 100vh;
 	right: 0;
 	overflow-y: scroll;
+	margin-top: 30px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 140%;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'archivo';
 }
 
 .pic {
 	position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 75%;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0px 9px 16px -1px rgba(0,0,0,0.32)
+;
 }
+
+.pic img {
+	width: 100%;
+}
+
+
+
+
+

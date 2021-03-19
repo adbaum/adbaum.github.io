@@ -222,13 +222,13 @@ body {
 
 ul {
 	display: block;
-	text-indent: -27px; /* key property */
-    margin-left: 26px; /* key property */
+	text-indent: -30px; /* key property */
+	margin-left: 30px;
 }
 
 li {
 	padding: 10px 60px 10px 60px;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	color: #767676;
 	line-height: 120%;
 }
@@ -305,7 +305,6 @@ ol li:before {
 	}
 
 	.content li {
-		font-size: 1em;
 	}
 
 }
@@ -331,7 +330,6 @@ ol li:before {
 	}
 
 	.content li {
-		font-size: 1em;
 	}
 
 }
@@ -365,7 +363,6 @@ ol li:before {
 	}
 
 	.content li {
-		font-size: 1.2em;
 	}
 
 	.left {
@@ -415,7 +412,67 @@ ol li:before {
 	}
 
 	.content li {
-		font-size: 1.2em;
+	}
+
+	.left {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 70vh;
+	}
+
+	.right {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	.content {
+		margin-top: 50px;
+	}
+
+	.content p, .content h1, .content h2, .content h3, .content h4, .content ul, .content ol, .content li {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	ul {
+		display: block;
+		text-indent: -30px; /* key property */
+		margin-left: -20px;
+	}
+}
+
+@media (max-width: 500px){
+
+	.pic {
+		left: 5%;
+		top: 15%;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	.text {
+		top: 40%;
+		left: 15%;
+	}
+
+	.text p {
+		padding: 20px;
+	}
+
+	.content h1 {
+		font-size: 2.5em!important;
+		line-height: 130%;
+	}
+
+	.content h2 {
+		font-size: 1.5em!important;
+		line-height: 140%;
+	}
+
+	.content li {
 	}
 
 	.left {
@@ -439,6 +496,12 @@ ol li:before {
 	.content p, .content h1, .content h2, .content h3, .content h4, .content ul, .content ol, .content li {
 		padding-left: 20px;
 		padding-right: 20px;
+	}
+
+	ul {
+		display: block;
+		text-indent: -30px; /* key property */
+		margin-left: 10px;
 	}
 }
 

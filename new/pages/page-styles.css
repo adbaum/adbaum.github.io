@@ -222,17 +222,22 @@ body {
 
 ul {
 	display: block;
+	text-indent: -27px; /* key property */
+    margin-left: 26px; /* key property */
 }
 
 li {
 	padding: 10px 60px 10px 60px;
 	font-size: 1.2em;
 	color: #767676;
+	line-height: 120%;
 }
 
 ol {
   list-style: none;
   counter-reset: my-awesome-counter;
+  text-indent: -20px; /* key property */
+  
 }
 ol li {
   counter-increment: my-awesome-counter;
@@ -266,5 +271,175 @@ ol li:before {
 	color: #E70020;
 }
 
+@media (min-width: 1151px) and (max-width: 1250px){
+
+	.pic {
+		top: 22%;
+		width: 40%;
+	}
+
+	.text {
+		left: 22%;
+	}	
+
+}
+
+@media (min-width: 951px) and (max-width: 1150px){
+
+	.pic {
+		top: 25%;
+		width: 40%;
+	}
+
+	.text {
+		top: 62%;
+		left: 22%;
+	}	
+
+	.content h1 {
+		font-size: 4em!important;
+	}
+
+	.content h2 {
+		font-size: 2em!important;
+	}
+
+	.content li {
+		font-size: 1em;
+	}
+
+}
+
+@media (min-width: 841px) and (max-width: 950px){
+
+	.pic {
+		top: 27%;
+		width: 45%;
+	}
+
+	.text {
+		top: 62%;
+		left: 18%;
+	}	
+
+	.content h1 {
+		font-size: 3em!important;
+	}
+
+	.content h2 {
+		font-size: 1.2em!important;
+	}
+
+	.content li {
+		font-size: 1em;
+	}
+
+}
+
+@media (min-width: 701px) and (max-width: 840px){
+
+	.pic {
+		left: 12%;
+		top: 15%;
+		margin: 0 auto;
+		width: 60%;
+	}
+
+	.text {
+		top: 58%;
+		left: 40%;
+	}
+
+	.content {
+		margin-top: 50px;
+	}
+
+	.content h1 {
+		font-size: 5em!important;
+		line-height: 120%;
+	}
+
+	.content h2 {
+		font-size: 3em!important;
+		line-height: 150%;
+	}
+
+	.content li {
+		font-size: 1.2em;
+	}
+
+	.left {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 90vh;
+	}
+
+	.right {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+
+
+}
+
+@media (max-width: 700px){
+
+	.pic {
+		left: 5%;
+		top: 15%;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	.text {
+		top: 40%;
+		left: 15%;
+	}
+
+	.text p {
+		padding: 20px;
+	}
+
+	.content h1 {
+		font-size: 2.5em!important;
+		line-height: 130%;
+	}
+
+	.content h2 {
+		font-size: 1.5em!important;
+		line-height: 140%;
+	}
+
+	.content li {
+		font-size: 1.2em;
+	}
+
+	.left {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 70vh;
+	}
+
+	.right {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	.content {
+		margin-top: 50px;
+	}
+
+	.content p, .content h1, .content h2, .content h3, .content h4, .content ul, .content ol, .content li {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
 
 

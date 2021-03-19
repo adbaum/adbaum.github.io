@@ -89,7 +89,7 @@ body {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background-image: url(../dotbg.png);
+	background-image: url(../stuff/dotbg.png);
 	background-repeat: repeat;
 	opacity: 0.2;
 	z-index: -1;
@@ -122,8 +122,8 @@ body {
 	color: #E70020;
 	position: absolute;
 	width: 300px;
-	top: 70%;
-	left: 27%;
+	top: 75%;
+	left: 25%;
 	border-radius: 20px;
 	overflow: hidden;
 	z-index: 21;
@@ -274,11 +274,12 @@ ol li:before {
 @media (min-width: 1151px) and (max-width: 1250px){
 
 	.pic {
-		top: 22%;
+		top: 25%;
 		width: 40%;
 	}
 
 	.text {
+		top: 60%;
 		left: 22%;
 	}	
 
@@ -287,12 +288,12 @@ ol li:before {
 @media (min-width: 951px) and (max-width: 1150px){
 
 	.pic {
-		top: 25%;
+		top: 26%;
 		width: 40%;
 	}
 
 	.text {
-		top: 62%;
+		top: 60%;
 		left: 22%;
 	}	
 
@@ -317,8 +318,8 @@ ol li:before {
 	}
 
 	.text {
-		top: 62%;
-		left: 18%;
+		top: 60%;
+		left: 2%;
 	}	
 
 	.content h1 {
@@ -334,18 +335,18 @@ ol li:before {
 
 }
 
-@media (min-width: 701px) and (max-width: 840px){
+@media (min-width: 721px) and (max-width: 840px){
 
 	.pic {
-		left: 12%;
-		top: 15%;
+		left: 5%;
+		top: 12%;
 		margin: 0 auto;
-		width: 60%;
+		width: 90%;
 	}
 
 	.text {
-		top: 58%;
-		left: 40%;
+		top: 69%;
+		left: 45%;
 	}
 
 	.content {
@@ -383,17 +384,17 @@ ol li:before {
 
 }
 
-@media (max-width: 700px){
+@media (max-width: 720px){
 
 	.pic {
-		left: 5%;
-		top: 15%;
+		left: 10%;
+		top: 10%;
 		margin: 0 auto;
 		width: 80%;
 	}
 
 	.text {
-		top: 40%;
+		top: 53%;
 		left: 15%;
 		width: 300px;
 	}
@@ -445,7 +446,23 @@ ol li:before {
 	}
 }
 
-@media (max-width: 500px){
+@media (max-width: 620px) {
+	.pic {
+		left: 10%;
+		top: 10%;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	.text {
+		top: 50%;
+		left: 15%;
+		width: 300px;
+	}
+
+}
+
+@media (max-width: 550px){
 
 	.pic {
 		left: 5%;

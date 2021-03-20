@@ -196,11 +196,11 @@ body {
 }
 
 .i1 {
-	top: 48%;
-	left: 19%;
+	top: 44%;
+	left: 17%;
 	transform: scale(0.9);
 	transform: rotate(-4deg);
-	width: 23%;
+	width: 34%;
 }
 
 .i2 {
@@ -216,7 +216,7 @@ body {
 	right: 6%;
 	transform: scale(0.8);
 	transform: rotate(7deg);
-	width: 25%;
+	width: 30%;
 }
 
 .rotate {

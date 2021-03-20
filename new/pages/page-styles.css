@@ -645,7 +645,7 @@ ol li:before {
 			top: 13%;
 			left: 30%;
 			width: 40%;
-			max-height: 50vh;
+			max-height: 50vh!important;
 		}
 
 		.pic2 {

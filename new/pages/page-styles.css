@@ -329,35 +329,72 @@ ol li:before {
 @media (min-width: 1151px) and (max-width: 1250px){
 
 	.pic {
+		top: 10%;
+		left: 10%;
+		width: 30%;
+	}
+
+	.pic2 {
 		top: 25%;
+		left: ;
 		width: 40%;
 	}
 
+	.pic3 {
+		top: 13%;
+		left: ;
+		width: 30%;
+	}
+
+	.pic4 {
+		top: 33%;
+		left: 20%;
+		width: 30%;
+	}
+
 	.text {
-		top: 60%;
-		left: 22%;
+		top: 70%;
+		left: 23%;
 	}	
 
 }
 
 @media (min-width: 951px) and (max-width: 1150px){
-
 	.pic {
-		top: 26%;
+		top: 10%;
+		left: 13%;
+		width: 30%;
+	}
+
+	.pic2 {
+		top: 25%;
+		left: 7%;
+		width: 45%;
+	}
+
+	.pic3 {
+		top: 20%;
+		left: ;
+		width: 45%;
+	}
+
+	.pic4 {
+		top: 32%;
+		left: 10%;
 		width: 40%;
 	}
 
 	.text {
-		top: 60%;
-		left: 22%;
+		top: 70%;
+		left: 20%;
 	}	
 
 	.content h1 {
-		font-size: 4em!important;
+		font-size: 4em;
 	}
 
 	.content h2 {
-		font-size: 2em!important;
+		font-size: 2em;
 	}
 
 	.content li {
@@ -368,21 +405,40 @@ ol li:before {
 @media (min-width: 841px) and (max-width: 950px){
 
 	.pic {
-		top: 27%;
+		top: 10%;
+		left: 13%;
+		width: 30%;
+	}
+
+	.pic2 {
+		top: 25%;
+		left: 7%;
 		width: 45%;
+	}
+
+	.pic3 {
+		top: 20%;
+		left: ;
+		width: 45%;
+	}
+
+	.pic4 {
+		top: 32%;
+		left: 10%;
+		width: 40%;
 	}
 
 	.text {
 		top: 60%;
-		left: 2%;
-	}	
+		left: 18%;
+	}		
 
 	.content h1 {
-		font-size: 3em!important;
+		font-size: 3em;
 	}
 
 	.content h2 {
-		font-size: 1.2em!important;
+		font-size: 1.2em;
 	}
 
 	.content li {
@@ -393,16 +449,34 @@ ol li:before {
 @media (min-width: 721px) and (max-width: 840px){
 
 	.pic {
-		left: 5%;
-		top: 12%;
-		margin: 0 auto;
-		width: 90%;
+		top: 10%;
+		left: 20%;
+		width: 50%;
+		max-height: 70vh;
+	}
+
+	.pic2 {
+		top: 20%;
+		left: 15%;
+		width: 70%;
+	}
+
+	.pic3 {
+		top: 14%;
+		left: 7%;
+		width: 60%;
+	}
+
+	.pic4 {
+		top: 25%;
+		left: 40%;
+		width: 55%;
 	}
 
 	.text {
-		top: 69%;
-		left: 45%;
-	}
+		top: 70%;
+		left: 20%;
+	}	
 
 	.content {
 		margin-top: 50px;
@@ -442,16 +516,33 @@ ol li:before {
 @media (max-width: 720px){
 
 	.pic {
-		left: 10%;
 		top: 10%;
-		margin: 0 auto;
-		width: 80%;
+		left: 20%;
+		width: 30%;
+		max-height: 40vh;
+	}
+
+	.pic2 {
+		top: 17%;
+		left: 14%;
+		width: 60%;
+	}
+
+	.pic3 {
+		top: 20%;
+		left: 7%;
+		width: 60%;
+	}
+
+	.pic4 {
+		top: 20%;
+		left: 30%;
+		width: 55%;
 	}
 
 	.text {
-		top: 53%;
-		left: 15%;
-		width: 300px;
+		top: 55%;
+		left: 24%;
 	}
 
 	.text p {
@@ -459,12 +550,12 @@ ol li:before {
 	}
 
 	.content h1 {
-		font-size: 2.5em!important;
+		font-size: 2.5em;
 		line-height: 130%;
 	}
 
 	.content h2 {
-		font-size: 1.5em!important;
+		font-size: 1.5em;
 		line-height: 140%;
 	}
 
@@ -475,7 +566,7 @@ ol li:before {
 		display: block;
 		position: relative;
 		width: 100%;
-		height: 70vh;
+		height: 75vh;
 	}
 
 	.right {
@@ -503,16 +594,34 @@ ol li:before {
 
 @media (max-width: 620px) {
 	.pic {
-		left: 10%;
 		top: 10%;
-		margin: 0 auto;
-		width: 80%;
+		left: 20%;
+		width: 30%;
+		max-height: 40vh;
+	}
+
+	.pic2 {
+		top: 17%;
+		left: 14%;
+		width: 60%;
+	}
+
+	.pic3 {
+		top: 20%;
+		left: 7%;
+		width: 60%;
+	}
+
+	.pic4 {
+		top: 20%;
+		left: 30%;
+		width: 55%;
 	}
 
 	.text {
-		top: 50%;
-		left: 15%;
-		width: 300px;
+		top: 55%;
+		left: 24%;
+		width: 200px;
 	}
 
 }
@@ -520,29 +629,46 @@ ol li:before {
 @media (max-width: 550px){
 
 	.pic {
-		left: 5%;
-		top: 15%;
-		margin: 0 auto;
-		width: 90%;
-	}
+			top: 13%;
+			left: 30%;
+			width: 40%;
+			max-height: 50vh;
+		}
 
-	.text {
-		top: 50%;
-		left: 7%;
-		width: 250px;
-	}
+		.pic2 {
+			top: 20%;
+			left: 17%;
+			width: 60%;
+		}
+
+		.pic3 {
+			top: 18%;
+			left: 7%;
+			width: 65%;
+		}
+
+		.pic4 {
+			top: 22%;
+			left: 30%;
+			width: 60%;
+		}
+
+		.text {
+			top: 50%;
+			left: 24%;
+		}
 
 	.text p {
 		padding: 10px 20px;
 	}
 
 	.content h1 {
-		font-size: 2.5em!important;
+		font-size: 2.5em;
 		line-height: 130%;
 	}
 
 	.content h2 {
-		font-size: 1.5em!important;
+		font-size: 1.5em;
 		line-height: 140%;
 	}
 

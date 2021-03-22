@@ -5,6 +5,20 @@ body {
 	max-height: 100vh;
 }
 
+/*.swipebox {
+	width: 100%;
+}
+*/
+
+.swipebox img {
+	width: 100%;
+}
+
+.pic:focus, .pic2:focus, .pic3:focus, .pic4:focus {
+	outline: 0;
+	border: 2px dashed #E70020;
+}
+
 .container {
 	display: block;
 	margin: 0px;
@@ -221,7 +235,15 @@ body {
 	cursor: grab!important;
 }
 
-.moveable a:active {
+.moveable:active {
+	cursor: grabbing!important;
+}
+
+.moveable {
+	cursor: grab!important;
+}
+
+.moveableactive {
 	cursor: grabbing!important;
 }
 
@@ -283,7 +305,7 @@ body {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift 0.5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23E70020' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
 }
 
-.pic a:hover:before, .pic2 a:hover:before, .pic3 a:hover:before, .pic4 a:hover:before {
+.pic:hover:before, .pic2:hover:before, .pic3:hover:before, .pic4:hover:before {
     content: ' ';
     position: absolute;
     display: block;
@@ -761,30 +783,25 @@ ol li:before {
 .links a:hover, .links a:focus {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift 0.5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0px 100%;
-  background-size: auto 6px;
+  background-size: auto 7px;
   background-repeat: repeat-x;
   text-decoration: none;
 }
 
 .home-bottom {
-	display: block;
-	width: calc(100% - 180px);
-	padding: 27px;
+	display: inline-block;
+	position: relative;
 	text-align: center;
-	margin: 40px;
-	border: 3px solid #E70020;
-	border-radius: 20px;
-	transition: 0.2s;
+	width: auto;
+	left: 50%;
+	margin: 60px 0px;
+	padding-bottom: 6px;
+	transform: translateX(-50%);
+	font-size: 1.2em;
+	color: #E70020;
 }
 
 .home-bottom:hover {
-	display: block;
-	width: calc(100% - 180px);
-	padding: 30px;
-	text-align: center;
-	margin: 37px;
-	border: 3px solid #E70020;
-	border-radius: 20px;
 }
 
 @media (max-width: 700px) {

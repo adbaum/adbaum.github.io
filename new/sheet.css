@@ -409,6 +409,28 @@ body {
 	}
 }
 
+@media (max-width: 650px) {
+	.i1 {
+		top: 32%;
+		width: 55%;
+		left: 39%;
+		z-index: 6;
+	}
+
+	.i2 {
+		top: 48%;
+		width: 60%;
+		left: 30%;
+		z-index: 7;
+	}
+
+	.i3 {
+		top: 54%;
+		width: 57%;
+		left: 7%;
+	}
+}
+
 @media (max-width: 500px) {
 	.last-name {
 		display:block;
@@ -453,20 +475,20 @@ body {
 	.i1 {
 		top: 40%;
 		width: 75%;
-		left: 17%;
+		left: 15%;
 		z-index: 6;
 	}
 
 	.i2 {
 		top: 56%;
 		width: 70%;
-		left: 25%;
+		left: 23%;
 		z-index: 7;
 	}
 
 	.i3 {
 		top: 55%;
 		width: 75%;
-		left: 3%;
+		left: 4%;
 	}
 }
